@@ -49,3 +49,70 @@ $on-laptop:        800px !default;
   "theme/layout",
   "theme/syntax-highlighting"
 ;
+
+
+
+
+
+
+
+// # CUSTOM CSS
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+@include media-query($on-laptop) {
+  .grid-container {
+    
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@include media-query($on-palm) {
+    .grid-container {
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+
+
+.grid-container > a {
+  background-color: white;
+  border-radius: 1rem;
+
+  display: flex;
+
+  padding: 0.25rem;
+  
+  border-style: solid;
+  border-width: 0.05rem;
+  text-align: center;
+  text-decoration: none;
+  width: 10rem;
+}
+
+.grid-container > a > i {
+ padding: 0.20rem;
+ bottom: 0;
+}
+
+.grid-container > a:hover {
+  background-color: $brand-color;
+  
+  border-style: solid;
+  border-color: $brand-color;
+  color: white;
+}
+
+.grid-container > a > i {
+ padding: 0.20rem;
+ bottom: 0;
+}
+

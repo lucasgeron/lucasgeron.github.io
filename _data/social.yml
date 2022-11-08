@@ -1,0 +1,31 @@
+- name: Facebook
+  link:
+  icon: fa-brand fa-facebook-square 
+
+- name: Behance
+  link:
+  icon: fa-brand fa-behance
+
+- name: Github
+  link:
+  icon: fa-brand fa-github
+
+- name: Stackoverflow
+  link:
+  icon: fa-brand fa-stack-overflow 
+
+- name: WhatsApp
+  link:
+  icon: fa-brand fa-whatsapp 
+
+- name: LeetCode
+  link:
+  icon: fa-solid fa-external-link
+
+- name: LinkedIn
+  link:
+  icon: fa-brand fa-linkedin
+
+- name: Instagram
+  link:
+  icon: fa-brand fa-instagram 
