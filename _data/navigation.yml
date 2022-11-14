@@ -1,4 +1,12 @@
 - name: Início
   link: /
+
 - name: Habilidades
-  link: /habilidades/
+  link: /skills/
+
+- name: Experiências
+  link: /jobs/
+
+- name: Projetos
+  link: /projects/
+

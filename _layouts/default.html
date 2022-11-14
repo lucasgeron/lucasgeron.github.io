@@ -3,18 +3,19 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="bg-gray-200">
 
+    {%- include header.html -%}
     
-    <main class="page-content" aria-label="Content">
-      {%- include header.html -%}
-      <div class="wrapper">
+    <main class="container mx-auto" aria-label="Content">
+      <div class="">
         {{ content }}
       </div>
-      {%- include footer.html -%}
     </main>
-
-
+    
+    <!-- {%- include footer.html -%} -->
+    
+    {%- include scripts.html -%}
   </body>
 
 </html>
