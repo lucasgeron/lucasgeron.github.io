@@ -4,9 +4,17 @@
           <ul class="navbar-nav mx-auto">
 
               {% for item in site.data.navigation %}
-              <li class="nav-item"><a href="{{ item.link }}" {% if page.url == item.link %}class="nav-link active" {% else %} class="nav-link" {% endif %}>{{ item.name }}</a></li>
+              <li class="nav-item"><a href="{{ item.link }}" {% if page.url == item.link %}class="nav-link active mx-4" {% else %} class="nav-link mx-4" {% endif %}>{{ item.name }}</a></li>
               {% endfor %}
-          </ul><a class="btn btn-primary" role="button" href="signup.html">Sign up</a>
-      </div>
+          </ul>
+          <a 
+          {% if page.url ==  '/contrate-me/'' %}
+          class="btn btn-primary" 
+          {% else %}
+          class="btn btn-outline-primary"
+          {% endif %}
+          role="button" href="/contrate-me/">Contrate-me</a>
+      
+        </div>
   </div>
 </nav>

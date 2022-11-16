@@ -3,8 +3,31 @@
 
 <!-- <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script> -->
 
+
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
     AOS.init();
   </script>
+
+
+<script>
+
+  var app = document.getElementById('app');
+
+  var typewriter = new Typewriter(app, {
+  loop: false,
+  delay: 75,
+  skipAddStyles: true,
+  autoStart: true,
+  loop: true,
+  cursor: " ",
+  strings: ['Arte e Criação', '','Expert em Planilhas'],
+  });
+
+  typewriter.start()
+  
+
+</script>
