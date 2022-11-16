@@ -1,0 +1,27 @@
+---
+layout: default
+title: "Habilidades"
+permalink: /habilidades/
+---
+
+
+
+
+
+<div class="grid gap-2 grid-cols-4 ">
+
+    {% for item in site.data.skills %}
+    <div data-aos="fade-up"  class="p-4 bg-white rounded-md"> 
+
+        <p class="font-medium text-sm"> {{ item.title }}</p>
+        <p> {{ item.category }} </p>
+        <p> {{ item.group }} </p>
+        <p>Nível: <span class="bg-gray-200 font-sm rounded-md px-1"> {{ item.nivel }} </span></p>
+        <!-- {{ item.score }} -->
+        <!-- {{ item.img_path }} -->
+    </div>
+    {% endfor %}
+    
+</div>
+
+

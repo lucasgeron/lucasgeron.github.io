@@ -1,0 +1,116 @@
+---
+layout: default
+title: "Happy Jekylling!"
+---
+
+<header class="pt-5">
+    <div class="container pt-4 pt-xl-5">
+        <div class="row pt-5">
+            <div class="col-md-8 text-center text-md-start mx-auto">
+                <div class="text-center">
+                    <h1 class="display-4 fw-bold mb-5">Tools for teams that work&nbsp;<span class="underline">together</span>.</h1>
+                    <p class="fs-5 text-muted mb-5">Metus quisque ultricies vehicula proin, magna nullam.</p>
+                    
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</header>
+
+
+
+<!-- LAST POSTS -->
+{%- if site.posts.size > 0 -%}
+<section>
+    <div class="container py-4 py-xl-5">
+        <h4 class="fs-5 text-muted mb-5">Últimas publicações</h4>
+        
+        
+        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+            {%- for post in site.posts -%}
+
+            <div class="col">
+                <div class="card border-light border-2 d-flex justify-content-center p-4">
+                    <div class="card-body">
+                        <div>
+                            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                            
+                            <h4 class="fw-bold"> {{ post.title }} </h4>
+                            
+                            <p class="text-muted">{{ post.short_description }}</p>
+                            
+                                <a href="{{ post.url | relative_url }}" class=" text-secondary badge text-bg-light fw-light fs-6 text-decoration-none" type="button">
+                                    Ver mais
+                                </a>
+                                <div class=" py-2 post-meta badge text-bg-light float-end fw-light">{{ post.date | date: date_format }}</div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</section>
+{%- endif -%}
+
+
+
+
+<!-- FAQ -->
+<section class="py-4 py-xl-5 mb-5">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h2 class="display-6 fw-bold mb-5"><span class="pb-3 underline">FAQ<br></span></h2>
+                <p class="text-muted mb-5">Curae hendrerit donec commodo hendrerit egestas tempus, turpis facilisis nostra nunc. Vestibulum dui eget ultrices.</p>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-8 mx-auto">
+                <div class="accordion text-muted" role="tablist" id="accordion-1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="true" aria-controls="accordion-1 .item-1">Aenean arcu euismod aliquam, volutpat consequat?</button></h2>
+                        <div class="accordion-collapse collapse show item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                            <div class="accordion-body">
+                                <p>Maecenas diam volutpat, erat quis enim cras lobortis vivamus donec tempor. Congue ultrices donec turpis vivamus. Laoreet aenean metus, mi nunc massa feugiat duis. Pharetra erat consequat purus curae quisque, etiam accumsan class.</p>
+                                <p class="mb-0">Commodo rutrum quisque curabitur habitasse, suspendisse etiam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2">Lorem quam erat placerat mollis, rhoncus senectus?</button></h2>
+                        <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-1">
+                            <div class="accordion-body">
+                                <p class="mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">Iaculis accumsan id, facilisis proin ipsum velit neque?</button></h2>
+                        <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1">
+                            <div class="accordion-body">
+                                <p class="mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- MORE -->
+<section class="py-4 py-xl-5">
+    <div class="container">
+        <div class="text-secondary bg-light border rounded border-2 border-secondary d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5">
+            <div class="pb-2 pb-lg-1">
+                <h2 class="fw-bold mb-2">Quer saber mais? Vamos Conversar!</h2>
+                <p class="mb-0">Você consegue me encontrar em diversas redes sociais.</p>
+            </div>
+            <div class="my-2"><a class="btn btn-dark fs-5 py-2 px-4" role="button" href="/contrate-me/">Entrar em contato</a></div>
+        </div>
+    </div>
+</section>
