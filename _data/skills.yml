@@ -3,319 +3,319 @@
   nivel: Expert
   group: Image Workspace
   category: Adobe Creative Cloud
-  img_path: skills/photoshop.png 
+  img_path: /assets/images/skills/photoshop.png 
 
 - title: Illustrator
   score: 65
   nivel: Intermediário
   group: Image Workspace
   category: Adobe Creative Cloud
-  img_path: skills/illustrator.png
+  img_path: /assets/images/skills/illustrator.png
 
 - title: Bridgea
   score: 100
   nivel: Expert
   group: Image Workspace
   category: Adobe Creative Cloud
-  img_path: skills/bridge.png
+  img_path: /assets/images/skills/bridge.png
 
 - title: Lightroom
   score: 95
   nivel: Expert
   group: Image Workspace
   category: Adobe Creative Cloud
-  img_path: skills/lightroom.png
+  img_path: /assets/images/skills/lightroom.png
 
 - title: After Effects
   score: 80
   nivel: Expert
   group: Vídeo Workspace
   category: Adobe Creative Cloud
-  img_path: skills/after-effects.png
+  img_path: /assets/images/skills/after-effects.png
 
 - title: Premiere
   score: 20
   nivel: Novato
   group: Vídeo Workspace
   category: Adobe Creative Cloud
-  img_path: skills/premiere.png
+  img_path: /assets/images/skills/premiere.png
 
 - title: Media Encoder
   score: 95
   nivel: Expert
   group: Vídeo Workspace
   category: Adobe Creative Cloud
-  img_path: skills/media-encoder.png
+  img_path: /assets/images/skills/media-encoder.png
 
 - title: Final Cut Pro X
   score: 100
   nivel: Expert
   group: Vídeo Workspace
   category: Apple Inc
-  img_path: skills/final-cut-pro-x.png
+  img_path: /assets/images/skills/final-cut-pro-x.png
 
 - title: SketchUp
   score: 30
   nivel: Intermediário
   group: Hobbies Workspace
   category: Trimble Navigation
-  img_path: skills/sketchup.png
+  img_path: /assets/images/skills/sketchup.png
 
 - title: WebApps
   score: 100
   nivel: Expert
   group: Google Workspace
   category: Google G-Suite
-  img_path: skills/webapps.png
+  img_path: /assets/images/skills/webapps.png
 
 - title: Standalone Scripts
   score: 100
   nivel: Expert
   group: Google Workspace
   category: Google G-Suite
-  img_path: skills/standalone-scripts.png
+  img_path: /assets/images/skills/standalone-scripts.png
 
 - title: Google Apps Script
   score: 100
   nivel: Expert
   group: Google Workspace
   category: Técnologia
-  img_path: skills/google-apps-script.png
+  img_path: /assets/images/skills/google-apps-script.png
 
 - title: Spreadsheets
   score: 100
   nivel: Expert
   group: Google Workspace
   category: Google G-Suite
-  img_path: skills/spreadsheets.png
+  img_path: /assets/images/skills/spreadsheets.png
 
 - title: Docs
   score: 100
   nivel: Expert
   group: Google Workspace
   category: Google G-Suite
-  img_path: skills/docs.png
+  img_path: /assets/images/skills/docs.png
 
 - title: Slides
   score: 100
   nivel: Expert
   group: Google Workspace
   category: Google G-Suite
-  img_path: skills/slides.png
+  img_path: /assets/images/skills/slides.png
 
 - title: Drive
   score: 100
   nivel: Expert
   group: Google Workspace
   category: Google G-Suite
-  img_path: skills/drive.png
+  img_path: /assets/images/skills/drive.png
 
 - title: Data Studio
   score: 70
   nivel: Avançado
   group: Google Workspace
   category: Google G-Suite
-  img_path: skills/data-studio.png
+  img_path: /assets/images/skills/data-studio.png
 
 - title: AppSheet
   score: 95
   nivel: Avançado
   group: Google Workspace
   category: Google G-Suite
-  img_path: skills/app-sheet.png
+  img_path: /assets/images/skills/app-sheet.png
 
 - title: World
   score: 100
   nivel: Expert
   group: Microsoft Workspace
   category: Microsoft
-  img_path: skills/world.png
+  img_path: /assets/images/skills/world.png
 
 - title: Excel
   score: 100
   nivel: Expert
   group: Microsoft Workspace
   category: Microsoft
-  img_path: skills/excel.png
+  img_path: /assets/images/skills/excel.png
 
 - title: VBA
   score: 15
   nivel: Novato
   group: Microsoft Workspace
   category: Microsoft
-  img_path: skills/vba.png
+  img_path: /assets/images/skills/vba.png
 
 - title: Power BI
   score: 85
   nivel: Avançado
   group: Microsoft Workspace
   category: Microsoft
-  img_path: skills/power-bi.png
+  img_path: /assets/images/skills/power-bi.png
 
 - title: Power Point
   score: 10
   nivel: Novato
   group: Microsoft Workspace
   category: Microsoft
-  img_path: skills/power-point.png
+  img_path: /assets/images/skills/power-point.png
 
 - title: DAX
   score: 80
   nivel: Avançado
   group: Microsoft Workspace
   category: Microsoft
-  img_path: skills/dax.png
+  img_path: /assets/images/skills/dax.png
 
 - title: Power Query
   score: 90
   nivel: Expert
   group: Microsoft Workspace
   category: Microsoft
-  img_path: skills/power-query.png
+  img_path: /assets/images/skills/power-query.png
 
 - title: Html
   score: 90
   nivel: Expert
   group: Web Development Workspace
   category: Técnologia
-  img_path: skills/html.png
+  img_path: /assets/images/skills/html.png
 
 - title: CSS
   score: 70
   nivel: Avançado
   group: Web Development Workspace
   category: Técnologia
-  img_path: skills/css.png
+  img_path: /assets/images/skills/css.png
 
 - title: Javascript
   score: 75
   nivel: Avançado
   group: Web Development Workspace
   category: Técnologia
-  img_path: skills/javascript.png
+  img_path: /assets/images/skills/javascript.png
 
 - title: Typescript
   score: 10
   nivel: Novato
   group: Web Development Workspace
   category: Técnologia
-  img_path: skills/typescript.png
+  img_path: /assets/images/skills/typescript.png
 
 - title: Laravel 8.0
   group: We Development Workspace
   category: Tecnologia
   score: 85
   nivel: Avançado
-  img_path: skills/laravel-8.png 
+  img_path: /assets/images/skills/laravel-8.png 
 
 - title: Laravel Livewire
   group: We Development Workspace
   category: Tecnologia
   score: 80
   nivel: Avançado
-  img_path: skills/laravel-livewire.png
+  img_path: /assets/images/skills/laravel-livewire.png
 
 - title: PHP
   group: We Development Workspace
   category: Tecnologia
   score: 75
   nivel: Avançado
-  img_path: skills/php.png 
+  img_path: /assets/images/skills/php.png 
 
 - title: MYSQL
   group: We Development Workspace
   category: Tecnologia
   score: 75
   nivel: Avançado
-  img_path: skills/mysql.png 
+  img_path: /assets/images/skills/mysql.png 
 
 - title: Ruby
   group: We Development Workspace
   category: Tecnologia
   score: 85
   nivel: Avançado
-  img_path: skills/ruby.png 
+  img_path: /assets/images/skills/ruby.png 
 
 - title: Rails
   group: We Development Workspace
   category: Tecnologia
   score: 45
   nivel: Intermediário
-  img_path: skills/rails.png 
+  img_path: /assets/images/skills/rails.png 
 
 - title: Tailwind CSS
   group: We Development Workspace
   category: Tecnologia
   score: 85
   nivel: Avançado
-  img_path: skills/tailwind.png 
+  img_path: /assets/images/skills/tailwind.png 
 
 - title: Bootstrap
   group: We Development Workspace
   category: Tecnologia
   score: 80
   nivel: Avançado
-  img_path: skills/bootstrap.png 
+  img_path: /assets/images/skills/bootstrap.png 
 
 - title: Materialize
   group: We Development Workspace
   category: Tecnologia
   score: 15
   nivel: Novato
-  img_path: skills/materialize.png 
+  img_path: /assets/images/skills/materialize.png 
 
 - title: Python
   group: We Development Workspace
   category: Tecnologia
   score: 40
   nivel: Intermediário
-  img_path: skills/python.png 
+  img_path: /assets/images/skills/python.png 
 
 - title: Linux Ubuntu 20.04
   group: We Development Workspace
   category: Tecnologia
   score: 85
   nivel: Avançado
-  img_path: skills/ubuntu.png 
+  img_path: /assets/images/skills/ubuntu.png 
 
 - title: Github
   group: We Development Workspace
   category: Tecnologia
   score: 80
   nivel: Avançado
-  img_path: skills/github.png 
+  img_path: /assets/images/skills/github.png 
 
 - title: Heroku
   group: We Development Workspace
   category: Tecnologia
   score: 80
   nivel: Avançado
-  img_path: skills/heroku.png 
+  img_path: /assets/images/skills/heroku.png 
 
 - title: VPS-cloud Server
   group: We Development Workspace
   category: Tecnologia
   score: 80
   nivel: Avançado
-  img_path: skills/vps-cloud-server.png 
+  img_path: /assets/images/skills/vps-cloud-server.png 
 
 - title: Docker
   group: We Development Workspace
   category: Tecnologia
   score: 25
   nivel: Novato
-  img_path: skills/docker.png 
+  img_path: /assets/images/skills/docker.png 
 
 - title: Inglês
   grop: Idiomas
   category: Idioma
   score: 95
   nivel: Expert
-  img_path: skills/ingles.png 
+  img_path: /assets/images/skills/ingles.png 
 
 - title: Espanhol
   grop: Idiomas
   category: idioma
   score: 50
   nivel: Intermediário
-  img_path: skills/espanhol.png 
+  img_path: /assets/images/skills/espanhol.png 

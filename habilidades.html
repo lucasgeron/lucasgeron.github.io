@@ -12,7 +12,8 @@ permalink: /habilidades/
 
     {% for item in site.data.skills %}
     <div data-aos="fade-up"  class="p-4 bg-white rounded-md"> 
-
+        <img class="img-thumbnail" src="{{ item.img_path }}"> 
+       
         <p class="font-medium text-sm"> {{ item.title }}</p>
         <p> {{ item.category }} </p>
         <p> {{ item.group }} </p>
