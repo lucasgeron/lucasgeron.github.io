@@ -1,31 +1,21 @@
-- name: Facebook
-  link:
-  icon: fa-brand fa-facebook-square 
 
 - name: Behance
-  link:
+  link: https://www.be.net/lucasgeron
   icon: fa-brand fa-behance
 
 - name: Github
-  link:
+  link: https://github.com/lucasgeron
   icon: fa-brand fa-github
 
-- name: Stackoverflow
-  link:
-  icon: fa-brand fa-stack-overflow 
-
-- name: WhatsApp
-  link:
-  icon: fa-brand fa-whatsapp 
-
-- name: LeetCode
-  link:
-  icon: fa-solid fa-external-link
 
 - name: LinkedIn
-  link:
+  link: https://www.linkedin.com/in/lucasgeron/
   icon: fa-brand fa-linkedin
 
 - name: Instagram
-  link:
+  link: https://www.instagram.com/oolucasfernando/
   icon: fa-brand fa-instagram 
+
+- name: WhatsApp
+  link: https://wa.me/554699220095
+  icon: fa-brand fa-whatsapp 
