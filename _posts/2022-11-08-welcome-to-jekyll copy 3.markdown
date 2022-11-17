@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Minha Publicação"
 date:   2022-11-08 14:47:51 -0300
 categories: jekyll update
 short_description: Esta é uma descrição teste

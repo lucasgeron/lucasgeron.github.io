@@ -4,6 +4,7 @@ title: "Lucas Geron" # the name of your site, e.g. ACME Corp.
 
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 
 title: Lucas Geron
@@ -14,3 +15,4 @@ description:  Write an awesome description for your new site here. You can edit 
 
 
 
+paginate: 6
