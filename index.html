@@ -80,32 +80,24 @@ title: Início
         
         
         
-        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="position-relative row row-cols-1 row-cols-md-2 gap-4">
             
             {% for post in paginator.posts %}
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
-            <div class="col ">
-                <div data-aos="fade-up" class="card border border-dark  d-flex justify-content-center p-4">
-                    <div class="card-body">
-                        <div>
-                            
-                            <img src="{{ post.cover }}" class="img-fluid rounded"></img>
-
-                            <h4 class="fw-bold"> {{ post.title }} </h4>
-                            
-                            <p class="text-muted">{{ post.short_description }}</p>
-                            
-                            <div class=" py-2 post-meta badge text-bg-light fw-light">{{ post.date | date: date_format }}</div>
-
-                                <a href="{{ post.url | relative_url }}" class="float-end text-dark badge text-bg-light fw-light fs-6 text-decoration-none" type="button">
-                                    Ver mais
-                                </a>
-                            
-                        </div>
-                    </div>
+    
+            <div data-aos="fade-up" class="card p-0 mx-auto" style="width: 26.4rem;">
+                <img src="{{ post.cover }}" class="card-img-top" style="max-height: 13rem; object-fit: cover">
+                <div class="card-body">
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <p class="card-text">{{ post.short_description }}</p>
+                    <a href="{{ post.url | relative_url }}" class="float-end text-dark badge text-bg-light fw-light fs-6 text-decoration-none btn-hover" type="button">Ver mais</a>
+                </div>
+                <div class="position-absolute top-0 card-body">
+                    <div class=" py-2  badge text-bg-light fw-light">{{ post.date | date: date_format }}</div>
                 </div>
             </div>
+              
             {%- endfor -%}
         </div>
     </div>

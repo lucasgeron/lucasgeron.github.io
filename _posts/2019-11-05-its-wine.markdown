@@ -1,0 +1,15 @@
+---
+layout: post
+title:  It's Wine - Comercio de Vinhos
+date:   2019-11-05 14:47:51 -0300
+short_description: It's Wine é uma proposta de identidade visual para uma empresa que atua no comércio de vinhos.
+cover: https://mir-s3-cdn-cf.behance.net/projects/original/d4ee1d86425833.Y3JvcCwxMDIyLDgwMCwwLDA.jpg
+---
+
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/2c161286425833.5d991042bd686.jpg){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/cd589986425833.5d991042bca74.jpg){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/daab4e86425833.5d991042bcf6e.jpg){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/62614586425833.5d991042bc3cb.jpg){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/79832786425833.5d991042bbd83.jpg){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/4aa84386425833.5da929170e11a.gif){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/87f32886425833.5d991042bde85.jpg){: .img-fluid}
