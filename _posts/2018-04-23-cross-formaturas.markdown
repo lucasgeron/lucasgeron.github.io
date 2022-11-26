@@ -2,7 +2,7 @@
 layout: post
 title:  Branding Cross Formaturas
 date:   2018-04-23 14:47:51 -0300
-short_description: Criação de uma identidade visual para a marca Cross Formaturas
+short_description: Criação de uma identidade visual para a marca Cross Formaturas.
 cover: https://mir-s3-cdn-cf.behance.net/projects/original/796a8163556219.Y3JvcCwxMjQ5LDk3Nyw5Miww.png
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  Convites 2017 - I
 date:   2018-05-25 14:47:51 -0300
-short_description: Mostra de convites luxo desenvolvidos para Cross Formaturas no ano de 2017 
+short_description: Mostra de convites luxo desenvolvidos para Cross Formaturas no ano de 2017.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/e5fccd63621027.5ab7ca0646db9.png
 ---
 

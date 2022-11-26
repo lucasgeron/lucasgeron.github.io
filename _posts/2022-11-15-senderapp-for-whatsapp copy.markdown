@@ -3,13 +3,20 @@ layout: post
 title:  SenderApp for WhatsApp
 date:   2022-11-15 14:47:51 -0300
 categories: jekyll update
-short_description: Send hundreds of personalized text messages in minutes without adding contacts on your mobile device with SenderApp for WhatsApp.
+short_description: Envie centenas de mensagens de texto personalizadas em minutos sem adicionar contatos em seu dispositivo móvel com o SenderApp for WhatsApp.
+cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/384f5f157902067.63815a43aa8e8.png
 ---
 
 
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/3c18ec157902067.63815a43a623d.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/4c62a7157902067.63815a43a9672.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/cd92bc157902067.63815a43a8524.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/88b3a8157902067.63815a43a7426.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/0f5063157902067.63815a43a3f17.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/79736e157902067.63815a43a50ac.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/d4837c157902067.63815a43aba5f.png){: .img-fluid}
+
 # SenderApp for WhatsApp
-
-
 
 ##### Server Specifications:  
 ![](https://img.shields.io/static/v1?label=Hosted%20on&message=Google%20Apps%20Scripts%20%2F%20Google%20Cloud%20Project&color=important)
@@ -28,6 +35,7 @@ short_description: Send hundreds of personalized text messages in minutes withou
 Uma versão do serviços, hospedado na Google (WebApps) é utilizado como servidor de comunicação da aplicação. 
 
 Para utilizar o serviço, basta [criar sua conta](https://script.google.com/macros/s/AKfycbyyVrXZ2nmgwuPBcrrL2OWQWVbLKf_PkVWNIXT_kZ4UAgkhk0HrGxm7MgvxVtMx9PePjg/exec?a=r) e seguir as orientações recomendadas.
+
 **DICA**: Caso queira mais informações sobre o produto ou de como realizar a instalação do mesmo, recomenda-se a leitura do sessão [ajuda](https://script.google.com/macros/s/AKfycbyyVrXZ2nmgwuPBcrrL2OWQWVbLKf_PkVWNIXT_kZ4UAgkhk0HrGxm7MgvxVtMx9PePjg/exec?a=h).
 
 ---
