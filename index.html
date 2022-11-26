@@ -5,6 +5,7 @@ title: Início
 
 <!-- BANNER -->
 <section class=" w-full bg-light">
+    
     <div class=" pt-4 d-md-flex justify-content-start align-items-center " >
 
         <div class="">
@@ -28,8 +29,6 @@ title: Início
                     </p>
                 </div>
 
-                
-                    
                 <div class="col py-5 py-sm-4">
                     <h6 class="fw-bold">Resumo:</h6>
                     <p class="text-justify">
@@ -42,17 +41,14 @@ title: Início
 
         </div>
 
-        </div>
-
     </div>
 </section>
 
 
-
 <!-- LAST POSTS -->
 {%- if site.posts.size > 0 -%}
-<section>
-    <div class="container py-4 py-xl-5">
+<section class="container py-4 mt-4 ">
+ 
         <div class="d-flex justify-content-between align-items-center">
             <h2 data-aos="fade-up" class="display-6 fw-bold mb-5">Últimos Projetos</h2>
 
@@ -75,11 +71,9 @@ title: Início
             </div>
             {% endif %}
 
-
         </div>
         
-        
-        
+        <!-- POSTS  -->
         <div class="position-relative row gy-4 justify-content-between">
             
             {% for post in paginator.posts %}
@@ -88,48 +82,49 @@ title: Início
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
             <div class="col-md-4 d-flex flex-grow-1">
-                <div data-aos="fade-up" class="card p-0 mx-auto" >
 
+                <a href="{{ post.url | relative_url }} " class="text-decoration-none text-dark">
 
-                    <div class="group-hover">
-                        <img src="{{ post.cover }}" class="card-img-top " style="max-height: 13rem; object-fit: cover">
-                    </div>
+                    <div data-aos="fade-up" class="card p-0 mx-auto" >
+                        <div class="group-hover">
+                            <img src="{{ post.cover }}" class="card-img-top " style="max-height: 13rem; object-fit: cover">
+                        </div>
                     
-                    <div data-aos="zoom-in"class="position-absolute p-2 display-on-hover">
+                   
+                        
+                    <div data-aos="zoom-in"class="position-fixed top-0 p-2 display-on-hover">
                         <div class=" py-2  badge text-bg-light fw-light ">{{ post.date | date: date_format }}</div>
                     </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">{{ post.title }}</h5>
-                        <p class="card-text">{{ post.short_description }}</p>
-                    </div>
-
-                    <div class="px-3">
-                        {% assign labels = post.labels | split: ", " %}
-                        {% for label in labels %}
-                        <span class="badge bg-dark rounded"> {{ label }}</span>
-                        {% endfor %}
-                    </div>
+                </a>
                     
-                    <div class="justify-content-end p-4">
-                        <a href="{{ post.url | relative_url }}" class="float-end text-dark badge text-bg-light fw-light fs-6 text-decoration-none btn-hover" type="button">Ver mais</a>
-                    </div>
-                
+                <div class="card-body">
+                    <a href="{{ post.url | relative_url }}"  class="fs-5 fw-bold card-title text-decoration-none text-dark">{{ post.title }}</a>
+                    <p class="card-text">{{ post.short_description }}</p>
                 </div>
+                
+                <div class="px-3">
+                    {% assign labels = post.labels | split: ", " %}
+                    {% for label in labels %}
+                    <span class="badge bg-dark rounded"> {{ label }}</span>
+                    {% endfor %}
+                </div>
+                
+                <div class="justify-content-end p-4">
+                    <a href="{{ post.url | relative_url }}" class="float-end text-dark badge text-bg-light fw-light fs-6 text-decoration-none btn-hover" type="button">Ver mais</a>
+                </div>
+                    
             </div>
-              
-            {%- endfor -%}
+        
         </div>
-    </div>
+        {%- endfor -%}
+              
 </section>
 {%- endif -%}
 
 
 
-
-
 <!-- CONTRATE-ME -->
-<section data-aos="fade-up" class="py-4 py-xl-5">
+<section data-aos="fade-up" class="mt-4 ">
     <div class="container">
         <div class="text-dark bg-light border rounded  border-dark d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5">
             <div class="pb-2 pb-lg-1">

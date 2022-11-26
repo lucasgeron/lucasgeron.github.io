@@ -17,6 +17,67 @@
   opacity: 0%!important;
  }
  
-.group-hover:hover ~ .display-on-hover {
+.display-on-hover:hover, .group-hover:hover ~ .display-on-hover {
  opacity: 100%!important;
 }
+
+
+
+
+
+
+
+
+
+// SKILLS DEFAULTS
+.icon img {
+  max-height: 6.5rem;
+  max-width: 6.5rem;
+  margin-right: 1rem;
+  transition: transform .2s; /* Animation */
+  
+}
+
+.skill-title{
+  transform: translateY(1.5rem);
+  transition-duration: 0.3s;
+  
+}
+
+.skill-legend, .skill-pg {
+  opacity: 0%;
+}
+
+
+// SKILL HOVER EFFECTS
+.skill:hover .skill-legend .skill-pg{
+  opacity: 100%;;
+}
+
+.skill:hover .skill-title {
+  transform: translateY(0.5rem);
+  transition-duration: 0.3s;
+}
+
+
+
+.skill:hover .skill-legend {
+  transition-duration: 0.3s;
+  opacity: 100%;
+}
+
+.skill:hover .skill-pg {
+  transition-duration: 0.3s;
+  opacity: 100%;
+  transform: translateY(-5px);
+}
+
+.skill:hover .icon img {
+  transform: scale(1.1); 
+}
+
+.skill p {
+  margin-bottom: 0%;
+}
+
+

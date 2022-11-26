@@ -1,56 +1,56 @@
 - title: Photoshop
   score: 100
   nivel: Expert
-  group: Image Workspace
+  group: Creative Workspace
   category: Adobe Creative Cloud
   img_path: /assets/images/skills/photoshop.png 
 
 - title: Illustrator
   score: 65
   nivel: Intermediário
-  group: Image Workspace
+  group: Creative Workspace
   category: Adobe Creative Cloud
   img_path: /assets/images/skills/illustrator.png
 
 - title: Bridgea
   score: 100
   nivel: Expert
-  group: Image Workspace
+  group: Creative Workspace
   category: Adobe Creative Cloud
   img_path: /assets/images/skills/bridge.png
 
 - title: Lightroom
   score: 95
   nivel: Expert
-  group: Image Workspace
+  group: Creative Workspace
   category: Adobe Creative Cloud
   img_path: /assets/images/skills/lightroom.png
 
 - title: After Effects
   score: 80
   nivel: Expert
-  group: Vídeo Workspace
+  group: Creative Workspace
   category: Adobe Creative Cloud
   img_path: /assets/images/skills/after-effects.png
 
 - title: Premiere
   score: 20
   nivel: Novato
-  group: Vídeo Workspace
+  group: Creative Workspace
   category: Adobe Creative Cloud
   img_path: /assets/images/skills/premiere.png
 
 - title: Media Encoder
   score: 95
   nivel: Expert
-  group: Vídeo Workspace
+  group: Creative Workspace
   category: Adobe Creative Cloud
   img_path: /assets/images/skills/media-encoder.png
 
 - title: Final Cut Pro X
   score: 100
   nivel: Expert
-  group: Vídeo Workspace
+  group: Creative Workspace
   category: Apple Inc
   img_path: /assets/images/skills/final-cut-pro-x.png
 
@@ -202,119 +202,119 @@
   img_path: /assets/images/skills/typescript.png
 
 - title: Laravel 8.0
-  group: We Development Workspace
+  group: Web Development Workspace
   category: Tecnologia
   score: 85
   nivel: Avançado
   img_path: /assets/images/skills/laravel-8.png 
 
 - title: Laravel Livewire
-  group: We Development Workspace
+  group: Web Development Workspace
   category: Tecnologia
   score: 80
   nivel: Avançado
   img_path: /assets/images/skills/laravel-livewire.png
 
 - title: PHP
-  group: We Development Workspace
+  group: Web Development Workspace
   category: Tecnologia
   score: 75
   nivel: Avançado
   img_path: /assets/images/skills/php.png 
 
 - title: MYSQL
-  group: We Development Workspace
+  group: Web Development Workspace
   category: Tecnologia
   score: 75
   nivel: Avançado
   img_path: /assets/images/skills/mysql.png 
 
 - title: Ruby
-  group: We Development Workspace
+  group: Web Development Workspace
   category: Tecnologia
   score: 85
   nivel: Avançado
   img_path: /assets/images/skills/ruby.png 
 
 - title: Rails
-  group: We Development Workspace
+  group: Web Development Workspace
   category: Tecnologia
   score: 45
   nivel: Intermediário
   img_path: /assets/images/skills/rails.png 
 
 - title: Tailwind CSS
-  group: We Development Workspace
+  group: Web Development Workspace
   category: Tecnologia
   score: 85
   nivel: Avançado
   img_path: /assets/images/skills/tailwind.png 
 
 - title: Bootstrap
-  group: We Development Workspace
+  group: Web Development Workspace
   category: Tecnologia
   score: 80
   nivel: Avançado
   img_path: /assets/images/skills/bootstrap.png 
 
 - title: Materialize
-  group: We Development Workspace
+  group: Web Development Workspace
   category: Tecnologia
   score: 15
   nivel: Novato
   img_path: /assets/images/skills/materialize.png 
 
 - title: Python
-  group: We Development Workspace
+  group: Web Development Workspace
   category: Tecnologia
   score: 40
   nivel: Intermediário
   img_path: /assets/images/skills/python.png 
 
 - title: Linux Ubuntu 20.04
-  group: We Development Workspace
+  group: Web Development Workspace
   category: Tecnologia
   score: 85
   nivel: Avançado
   img_path: /assets/images/skills/ubuntu.png 
 
 - title: Github
-  group: We Development Workspace
+  group: Web Development Workspace
   category: Tecnologia
   score: 80
   nivel: Avançado
   img_path: /assets/images/skills/github.png 
 
 - title: Heroku
-  group: We Development Workspace
+  group: Web Development Workspace
   category: Tecnologia
   score: 80
   nivel: Avançado
   img_path: /assets/images/skills/heroku.png 
 
 - title: VPS-cloud Server
-  group: We Development Workspace
+  group: Web Development Workspace
   category: Tecnologia
   score: 80
   nivel: Avançado
   img_path: /assets/images/skills/vps-cloud-server.png 
 
 - title: Docker
-  group: We Development Workspace
+  group: Web Development Workspace
   category: Tecnologia
   score: 25
   nivel: Novato
   img_path: /assets/images/skills/docker.png 
 
 - title: Inglês
-  grop: Idiomas
+  group: Idiomas
   category: Idioma
   score: 95
   nivel: Expert
   img_path: /assets/images/skills/ingles.png 
 
 - title: Espanhol
-  grop: Idiomas
+  group: Idiomas
   category: idioma
   score: 50
   nivel: Intermediário
