@@ -4,6 +4,7 @@ title:  Gabriela Abreu Fisioterapeuta
 date:   2022-08-08 14:47:51 -0300
 short_description: Desenvolvimento de logotipo e identidade visual para uma profissional de fisioterapia, com foco em destacar seu nome no segmento.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/e09cc3146465033.62f1aa92906e6.png
+labels: Branding, Design Gráfico, Direção de Arte
 ---
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/047099146465033.62f1aa9290e07.png){: .img-fluid}

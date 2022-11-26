@@ -4,6 +4,7 @@ title:  Mais que uma Atlética
 date:   2019-04-26 14:47:51 -0300
 short_description: Este projeto foi desenvolvido para a Associação Atlética Acadêmica de Sociais Aplicadas Unicentro Guarapuava, para o evento Econo 2019.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/5aa6b979467533.5cc3a02ee4964.png
+labels: Design Gráfico, Direção de Arte, Design de Produtos
 ---
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/5aa6b979467533.5cc3a02ee4964.png){: .img-fluid}

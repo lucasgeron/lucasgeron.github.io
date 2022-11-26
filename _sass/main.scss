@@ -12,3 +12,11 @@
   text-align: justify;
 }
 
+
+.display-on-hover {
+  opacity: 0%!important;
+ }
+ 
+.group-hover:hover ~ .display-on-hover {
+ opacity: 100%!important;
+}

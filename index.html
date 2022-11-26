@@ -80,21 +80,41 @@ title: Início
         
         
         
-        <div class="position-relative row row-cols-1 row-cols-md-2 gap-4">
+        <div class="position-relative row gy-4 justify-content-between">
             
             {% for post in paginator.posts %}
+
+                
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
-    
-            <div data-aos="fade-up" class="card p-0 mx-auto" style="width: 26.4rem;">
-                <img src="{{ post.cover }}" class="card-img-top" style="max-height: 13rem; object-fit: cover">
-                <div class="card-body">
-                    <h5 class="card-title">{{ post.title }}</h5>
-                    <p class="card-text">{{ post.short_description }}</p>
-                    <a href="{{ post.url | relative_url }}" class="float-end text-dark badge text-bg-light fw-light fs-6 text-decoration-none btn-hover" type="button">Ver mais</a>
-                </div>
-                <div class="position-absolute top-0 card-body">
-                    <div class=" py-2  badge text-bg-light fw-light">{{ post.date | date: date_format }}</div>
+            <div class="col-md-4 d-flex flex-grow-1">
+                <div data-aos="fade-up" class="card p-0 mx-auto" >
+
+
+                    <div class="group-hover">
+                        <img src="{{ post.cover }}" class="card-img-top " style="max-height: 13rem; object-fit: cover">
+                    </div>
+                    
+                    <div data-aos="zoom-in"class="position-absolute p-2 display-on-hover">
+                        <div class=" py-2  badge text-bg-light fw-light ">{{ post.date | date: date_format }}</div>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        <p class="card-text">{{ post.short_description }}</p>
+                    </div>
+
+                    <div class="px-3">
+                        {% assign labels = post.labels | split: ", " %}
+                        {% for label in labels %}
+                        <span class="badge bg-dark rounded"> {{ label }}</span>
+                        {% endfor %}
+                    </div>
+                    
+                    <div class="justify-content-end p-4">
+                        <a href="{{ post.url | relative_url }}" class="float-end text-dark badge text-bg-light fw-light fs-6 text-decoration-none btn-hover" type="button">Ver mais</a>
+                    </div>
+                
                 </div>
             </div>
               

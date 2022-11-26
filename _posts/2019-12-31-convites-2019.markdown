@@ -4,6 +4,7 @@ title:  Convites 2019
 date:   2019-12-31 14:47:51 -0300
 short_description: Mostra de convites luxo desenvolvidos para Cross Formaturas no ano de 2019.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/f40d2890036137.5e0b97e397e68.jpg
+labels: Design Gráfico, Direção de Arte
 ---
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/f40d2890036137.5e0b97e397e68.jpg){: .img-fluid}
