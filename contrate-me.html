@@ -1,0 +1,38 @@
+---
+layout: default
+title: "contrate-me"
+permalink: /contrate-me/
+---
+
+
+<section id="capacitacao-extra">
+
+    <h1 class="pt-4 text-center"> Encontre-me nas redes sociais</h1>
+    <p class="pb-4 text-center fw-light fs-4"> Será uma ótima experiências poder contribuir para seu negócio!</p>
+
+    <div class="row gy-4 gx-4  d-flex justify-content-between justify-content-md-start justify-content-lg-between ">
+
+        {% assign items = site.data.social | where: "contact-me", "display" %}
+
+        {% for item in items %}
+        <a href="{{ item.link }}" target="_blank" class="col-6 col-md-4 col-lg-2 text-decoration-none ">
+            <div data-aos="fade-up" class="custom-btn btn-13 bg-light rounded p-4 ">
+                <div class=" text-center py-4">
+                    {% if item.icon %} 
+                    <i class="fa {{item.icon}} fa-lg top-0 fa-4x fa-card"></i> 
+                    {% endif %}
+                    <h3 class="pt-4 text-center align-self-center ">{{ item.name }}</h3>
+                 
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+
+    </div>
+
+
+    <p  class="py-4 text-center fw-light fs-4"> <strong>Posso contribuir de diversas maneiras! </strong><br> &nbsp;<span id="contrate-me"></span></p>
+
+  </section>
+
+

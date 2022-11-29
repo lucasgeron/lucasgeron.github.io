@@ -2,20 +2,36 @@
 - name: Behance
   link: https://www.be.net/lucasgeron
   icon: fa-brand fa-behance
+  footer: display
+  contact-me: display
 
 - name: Github
   link: https://github.com/lucasgeron
   icon: fa-brand fa-github
+  footer: display
+  contact-me: none
 
 
 - name: LinkedIn
   link: https://www.linkedin.com/in/lucasgeron/
   icon: fa-brand fa-linkedin
+  footer: display
+  contact-me: display
 
 - name: Instagram
   link: https://www.instagram.com/oolucasfernando/
   icon: fa-brand fa-instagram 
+  footer: display
+  contact-me: display
 
 - name: WhatsApp
   link: https://wa.me/554699220095
   icon: fa-brand fa-whatsapp 
+  footer: display
+  contact-me: display
+
+- name: Email
+  link: mailto:lucasf.geron@gmail.com
+  icon: fa-light fa-envelope-o
+  footer: display
+  contact-me: display

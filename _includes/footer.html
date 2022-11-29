@@ -4,12 +4,13 @@
       <div class="text-muted d-flex justify-content-between align-items-center pt-3">
           <a href="/" class="footer-link text-decoration-none text-dark mb-0 fw-normal lead">lucasgeron.github.io</a>
           <ul class="list-inline mb-0">
-            
-                  {% for item in site.data.social %}
+
+                  {% assign items = site.data.social | where: "footer", "display" %}
+                  {% for item in items  %}
                   <li class="list-inline-item">
                     <a href="{{ item.link }}" target="_blank" class=" text-decoration-none text-muted hover-text-primary hover">
                         {% if item.icon %} 
-                        <i class="fa {{item.icon}} fa-lg "></i> 
+                        <i class="fa {{item.icon}} fa-lg fa-fotter"></i> 
                         {% endif %}
                     </a>
                   </li>

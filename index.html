@@ -68,9 +68,11 @@ title: Início
                 {% endfor %}
 
                 
+                <a class="text-decoration-none text-dark p-2 bg-light btn " href="/projetos/">Ver Todos</a>
             </div>
             {% endif %}
 
+            
         </div>
         
         <!-- POSTS  -->
@@ -81,7 +83,7 @@ title: Início
                 
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
-            <div class="col-md-4 d-flex flex-grow-1">
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-grow-1">
 
                 <a href="{{ post.url | relative_url }} " class="text-decoration-none text-dark">
 

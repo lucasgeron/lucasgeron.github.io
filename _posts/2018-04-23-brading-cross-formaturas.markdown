@@ -7,6 +7,14 @@ cover: https://mir-s3-cdn-cf.behance.net/projects/original/796a8163556219.Y3JvcC
 labels: Branding, Design Gráfico, Direção de Arte
 ---
 
+<p>
+  {{ page.date | date_to_string }}
+  {% assign author = site.authors | where: 'short_name', page.author | first %}
+  {% if author %}
+    - <a href="{{ author.url }}">{{ author.name }}</a>
+  {% endif %}
+</p>
+
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/6db87a63556219.5ab42ad2cffc2.png){: .img-fluid}
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/1a7bf363556219.5ab42ad2d04ab.jpg){: .img-fluid}
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/67b09f63556219.5ab42ad2cfd3c.jpg){: .img-fluid}

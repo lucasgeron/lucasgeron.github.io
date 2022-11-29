@@ -16,6 +16,7 @@
 <script>
 
   var app = document.getElementById('app');
+  var quotes = document.getElementById('contrate-me');
 
   var typewriter = new Typewriter(app, {
   loop: false,
@@ -26,6 +27,18 @@
   loop: true,
   cursor: " ",
   strings: ['Design Gráfico', 'Criação de Sites','Planilhas Google', 'Power BI', 'Análise de Dados'],
+  });
+
+
+  var typewriter = new Typewriter(quotes, {
+  loop: false,
+  delay: 50,
+  deleteSpeed: 10,
+  skipAddStyles: true,
+  autoStart: true,
+  loop: true,
+  cursor: " ",
+  strings: ['Assessoria', 'Consultoria','Desenvolvimento', 'Sistemas', 'Planejamento', 'Dashboards', 'Aplicativos', 'Apresentações', 'Analytics'],
   });
 
   typewriter.start()
