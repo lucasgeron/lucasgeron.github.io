@@ -1,12 +1,26 @@
 <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3 bg-white shadow" id="mainNav">
-  <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span>Lucas Geron</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navcol-1">
-          <ul class="navbar-nav mx-auto">
-
+  
+  <div class="container">
+    
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <span>Lucas Geron</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+        <span class="visually-hidden">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+    <div class="collapse navbar-collapse" id="navcol-1">
+          
+        <ul class="navbar-nav mx-auto">
               {% for item in site.data.navigation %}
               <li class="nav-item"><a href="{{ item.link }}" {% if page.url == item.link %}class="nav-link active mx-4" {% else %} class="nav-link mx-4" {% endif %}>{{ item.name }}</a></li>
               {% endfor %}
           </ul>
+
+
+        <ul class="gx-4 ">
+
+          <a class="btn btn-outline-primary"href="https://drive.google.com/file/d/1Jg0dxGRiRxxoVGxCh6-s-ZwdUJ89bkZw/view?usp=share_link" target="_blank"> <i class="fa fa-cloud-download"></i> PDF </a>
+
           <a 
           {% if page.url ==  '/contrate-me/'' %}
           class="btn btn-primary" 
@@ -14,7 +28,12 @@
           class="btn btn-outline-primary"
           {% endif %}
           role="button" href="/contrate-me/">Contrate-me</a>
-      
+        
+        </ul>
+
+
         </div>
+
+
   </div>
-</nav>
+</nav> 

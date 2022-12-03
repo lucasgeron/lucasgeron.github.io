@@ -12,17 +12,17 @@ title: Início
             <img src="/assets/images/lucasgeron-full.png" class="img-fluid" style="max-height: 100vh;"> </img>
         </div>
 
-        <div class="py-5 col-md-6 fs-5 px-4 px-sm-0">
+        <div class="py-5 col-md-6 fs-5 px-4 ">
 
             
             <h4 class="display-4 mb-5">Olá, eu sou o <a href="/contrate-me/" class="text-dark header-link text-decoration-none border-bottom border-5 border-primary display-5 fw-bold">Lucas</a></h4>
             <p  class=" fw-bold"> Trabalho com: &nbsp; <span id="app"></span></p>
             
-            <div class=" text-muted d-sm-flex gap-4">
+            <div class=" text-muted d-sm-flex gap-4 ">
 
                 <div class="col py-5 py-sm-4">
                     <h6 class="fw-bold">Objetivo:</h6>
-                    <p class="text-justify">
+                    <p class="text-justify fw-light ">
                         Ambicioso e proativo, busco desafios que me façam crescer profissionalmente e
                         que contribuam para o resultado financeiro da instituição de trabalho. Um cara muito organizado, que
                         gosta de fazer parte de grandes projetos, seja liderando ou participando, de forma ativa e com metas.
@@ -31,7 +31,7 @@ title: Início
 
                 <div class="col py-5 py-sm-4">
                     <h6 class="fw-bold">Resumo:</h6>
-                    <p class="text-justify">
+                    <p class="text-justify fw-light ">
                         Perfil observador e realista, com facilidade para enxergar oportunidades de negócio, analisar e associar
                         informações de forma coerente e fundamentada. Scum e comunicação fazem parte da minha rotina.
                     </p>
@@ -52,25 +52,7 @@ title: Início
         <div class="d-flex justify-content-between align-items-center">
             <h2 data-aos="fade-up" class="display-6 fw-bold mb-5">Últimos Projetos</h2>
 
-            <!-- PAGINATION -->
-            {% if paginator.total_pages > 1 %}
-            <div data-aos="fade-up" class="pagination justify-content-end gap-2">
-
-                {% for page in (1..paginator.total_pages) %}
-
-                    {% if page == paginator.page %}
-                        <span class="text-dark p-2 bg-light btn btn-secondary">{{ page }}</span>
-                    {% elsif page == 1 %}
-                        <a class="text-decoration-none text-dark p-2 bg-light btn " href="{{ '/' | relative_url }}">{{ page }}</a>
-                    {% else %}
-                        <a class="text-decoration-none text-dark p-2 bg-light btn " href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-                    {% endif %}
-                {% endfor %}
-
-                
-                <a class="text-decoration-none text-dark p-2 bg-light btn " href="/projetos/">Ver Todos</a>
-            </div>
-            {% endif %}
+           
 
             
         </div>
@@ -119,6 +101,26 @@ title: Início
         
         </div>
         {%- endfor -%}
+
+         <!-- PAGINATION -->
+         {% if paginator.total_pages > 1 %}
+         <div data-aos="fade-up" class="pagination justify-content-end gap-2">
+
+             {% for page in (1..paginator.total_pages) %}
+
+                 {% if page == paginator.page %}
+                     <span class="text-dark p-2 bg-light btn btn-secondary">{{ page }}</span>
+                 {% elsif page == 1 %}
+                     <a class="text-decoration-none text-dark p-2 bg-light btn " href="{{ '/' | relative_url }}">{{ page }}</a>
+                 {% else %}
+                     <a class="text-decoration-none text-dark p-2 bg-light btn " href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+                 {% endif %}
+             {% endfor %}
+
+             
+             <a class="text-decoration-none text-dark p-2 bg-light btn " href="/projetos/">Ver Todos</a>
+         </div>
+         {% endif %}
               
 </section>
 {%- endif -%}
