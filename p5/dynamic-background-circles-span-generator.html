@@ -1,0 +1,106 @@
+---
+layout: blank
+title: Início
+---
+
+<style>
+  .full-container {
+  width: 100vw;
+  height: 100vh;
+
+
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .translucid {
+    background-color: rgba(255,255,255,.70);
+    backdrop-filter: blur(10px)
+  }
+
+  body {
+  margin: 0px;
+  }
+
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number]  {
+    background-color: rgba(255,255,255,.0);
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;;
+    outline: none;
+    -moz-appearance: textfield;
+
+  }
+
+  .btn:active{
+    border: none;
+  }
+
+  .btn-close:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  </style>
+
+<body>
+  <div id="main" class="full-container position-absolute">
+ 
+      <div class="col-4 pt-5 pb-4 px-5 translucid border rounded rounded-4 shadow ">
+        <div class="text-end">
+          
+          <button type="button" class="btn-close" aria-label="Close" onclick='hideDiv("main")'></button>
+        </div>
+         
+        <h1 class="pb-4 fw-bold display-6">Dynamic Background Circles Span Generator</h1>
+        
+        <p class="fw-light fs-4 text-center pb-4"> <small> PRESS SPACE TO RESET</small></p>
+        
+
+        <div class="d-flex">
+          <div class="">
+            <label for="minSize" class="form-label">Min Size</label>
+            <input type="number" min="1" max="999" value="50" class=" rounded-pill text-center py-2 fw-bold" id="minSize" onKeyUp="if(this.value>999){this.value='999';}else if(this.value<1){this.value='1';}">
+          </div>
+          <div class="">
+            <label for="maxSize" class="form-label">Max Size</label>
+            <input type="number" min="1" max="999" value="250" class=" rounded-pill text-center py-2 fw-bold" id="maxSize" onKeyUp="if(this.value>999){this.value='999';}else if(this.value<1){this.value='1';}">
+          </div>
+          <div class="">
+            <label for="fr" class="form-label col-12">Frame Rate</label>
+            <input type="range" min="1" max="60" value="15" class="mt-2" id="fr">
+            <span id="fps" class="fw-bold"> 1 </span> <b>fps</b>
+          </div>
+      </div>
+     
+      <p class="fs-3 fw-light text-center mb-0">There is <span id="counter" class="fw-bold display-4">00</span> a circles in this page.</p>
+
+      {%- include footer.html -%}
+
+      </div>
+
+  </div>
+
+  <div id="logo" class="position-absolute top-2 left-1 " style="display: none;">
+    <button class="btn btn-outline-none" onclick="showDialog()"><i class="fa fa-info"></i></button>
+  </div>
+
+
+  <script src="sketch.js"></script>
+</body>
+
+  
+
+
+
+
