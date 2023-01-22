@@ -8,7 +8,6 @@ title: Início
   width: 100vw;
   height: 100vh;
 
-
   background: transparent;
   display: flex;
   flex-direction: row;
@@ -56,37 +55,49 @@ title: Início
 <body>
   <div id="main" class="full-container position-absolute">
  
-      <div class="col-4 pt-5 pb-4 px-5 translucid border rounded rounded-4 shadow ">
+      <div class="col-10 col-sm-8 col-md-6 col-lg-5 pt-5 pb-4 px-5 translucid border rounded rounded-4 shadow ">
         <div class="text-end">
           
           <button type="button" class="btn-close" aria-label="Close" onclick='hideDiv("main")'></button>
         </div>
          
-        <h1 class="pb-4 fw-bold display-6">Dynamic Background Circles Span Generator</h1>
+        <h1 class="pb-4 fw-bold fs-2 ">Dynamic Background Circles Span Generator</h1>
         
         <p class="fw-light fs-4 text-center pb-4"> <small> PRESS SPACE TO RESET</small></p>
         
 
-        <div class="d-flex">
+        <div class="d-md-flex justify-content-around">
           <div class="">
-            <label for="minSize" class="form-label">Min Size</label>
-            <input type="number" min="1" max="999" value="50" class=" rounded-pill text-center py-2 fw-bold" id="minSize" onKeyUp="if(this.value>999){this.value='999';}else if(this.value<1){this.value='1';}">
+            <p for="minSize" class="form-label">Min Size</p>
+            <input type="number" min="1" max="999" value="50" class="col-12 rounded-pill text-center py-2 fw-bold" id="minSize" onKeyUp="if(this.value>999){this.value='999';}else if(this.value<1){this.value='1';}">
           </div>
           <div class="">
-            <label for="maxSize" class="form-label">Max Size</label>
-            <input type="number" min="1" max="999" value="250" class=" rounded-pill text-center py-2 fw-bold" id="maxSize" onKeyUp="if(this.value>999){this.value='999';}else if(this.value<1){this.value='1';}">
+            <p for="maxSize" class="form-label">Max Size</p>
+            <input type="number" min="1" max="999" value="250" class="col-12 rounded-pill text-center py-2 fw-bold" id="maxSize" onKeyUp="if(this.value>999){this.value='999';}else if(this.value<1){this.value='1';}">
           </div>
           <div class="">
-            <label for="fr" class="form-label col-12">Frame Rate</label>
-            <input type="range" min="1" max="60" value="15" class="mt-2" id="fr">
+            <p for="fr" class="form-label col-12">Frame Rate</p>
+            <input type="range" min="1" max="60" value="15" class="mt-2 col-9" id="fr">
             <span id="fps" class="fw-bold"> 1 </span> <b>fps</b>
           </div>
       </div>
      
-      <p class="fs-3 fw-light text-center mb-0">There is <span id="counter" class="fw-bold display-4">00</span> a circles in this page.</p>
+      <p class="fs-3 fw-light text-center mb-0">There is <span id="counter" class="fw-bold fs-2">00</span> a circles in this page.</p>
 
-      {%- include footer.html -%}
+      <ul class="text-center list-inline pt-4">
 
+        {% assign items = site.data.social | where: "footer", "display" %}
+        {% for item in items  %}
+        <li class="list-inline-item">
+          <a href="{{ item.link }}" target="_blank" class=" text-decoration-none text-muted hover-text-primary hover">
+              {% if item.icon %} 
+              <i class="fa {{item.icon}} fa-lg fa-fotter"></i> 
+              {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  
       </div>
 
   </div>
@@ -96,7 +107,10 @@ title: Início
   </div>
 
 
-  <script src="sketch.js"></script>
+
+  <script src="dynamic-background-circles-span-generator.js"></script>
+  
+  
 </body>
 
   
