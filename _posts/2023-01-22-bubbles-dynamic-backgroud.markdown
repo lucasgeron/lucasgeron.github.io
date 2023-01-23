@@ -5,6 +5,7 @@ date:   2023-01-22 14:47:51 -0300
 short_description: p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else! 
 cover: https://i.ibb.co/5jj4Krb/Screenshot-1.jpg
 labels: p5, Web Development, WebApp
+---
 
 # Bubbles Dynamic Background
 
