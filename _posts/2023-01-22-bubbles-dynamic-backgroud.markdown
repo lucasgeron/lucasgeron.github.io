@@ -15,4 +15,4 @@ You can control some variables as the speed and ammount of bubbles, centrifugal 
 
 ## Live Demo
 
-### [Bubbles Dynamic Background](https://lucasgeron.github.io/p5/bubbles-dynamic-backgroud)
+### [Bubbles Dynamic Background](https://lucasgeron.github.io/p5/bubbles-dynamic-background)
