@@ -39,7 +39,6 @@ title: Início
     border-color: black;;
     outline: none;
     -moz-appearance: textfield;
-
   }
 
   .btn:active{
@@ -50,8 +49,6 @@ title: Início
     outline: none !important;
     box-shadow: none !important;
   }
-
-
 
   /*Chrome*/
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -83,77 +80,67 @@ title: Início
       box-shadow: -1000px 0 0 1000px red !important;
       cursor: default !important;
     }
-
 }
-/** FF*/
- input[type="range"]::-moz-range-progress {
-  background-color: #0d6efd; 
-}
-input[type="range"]::-moz-range-track {  
-  background-color: white;
-} 
-/* IE*/
- input[type="range"]::-ms-fill-lower {
-  background-color: #0d6efd; 
-}
-input[type="range"]::-ms-fill-upper {  
-  background-color: white;
-} 
+    /** FF*/
+    input[type="range"]::-moz-range-progress {
+      background-color: #0d6efd; 
+    }
+    input[type="range"]::-moz-range-track {  
+      background-color: white;
+    } 
+    /* IE*/
+    input[type="range"]::-ms-fill-lower {
+      background-color: #0d6efd; 
+    }
+    input[type="range"]::-ms-fill-upper {  
+      background-color: white;
+    } 
 
-
-
-  </style>
+</style>
 
 <body>
   <div id="main" class="full-container position-absolute">
  
-      <div class="col-10 col-sm-8  pt-5 pb-4 px-5 translucid border rounded rounded-4 shadow ">
+      <div class="col-10 col-sm-8 col-md-6 pt-5 pb-4 px-5 translucid border rounded rounded-4 shadow ">
         <div class="text-end">
           
           <button type="button" class="btn-close" aria-label="Close" onclick='hideDiv("main")'></button>
         </div>
          
-        <h1 class="pb-md-4 fw-bold fs-2 ">Particles</h1>
+        <h1 class="pb-md-4 fw-bold fs-2 ">Bubbles Dynamic Background</h1>
         
         <p class="fw-light fs-4 text-center"> <small> PRESS SPACE TO RANDOMIZE</small></p>
         
 
         <div class="row py-md-2">
           <div class="col-md">
-            <p for="minXs" class="form-label">Min <b>X</b> Speed (  <span id="minXsValue" class="fw-bold"> 150 </span> )</p>
+            <p for="opacity" class="form-label">Dynamic Opacity </p>
            
-            <input type="range" min="-50" max="50" value="-5" class="mt-2 w-100" id="minXs" onchange="setup();">
+            <input type="checkbox" checked class="mt-2 w-100" id="opacity" onchange="setup();"> 
             
           </div>
           <div class="col-md">
-            <p for="maxXs" class="form-label">Max <b>X</b> Speed (  <span id="maxXsValue" class="fw-bold"> 150 </span> )</p>
-           
-            <input type="range" min="-50" max="50" value="5" class="mt-2 w-100" id="maxXs" onchange="setup();">
+            <p for="background" class="form-label">Dark Mode </p>
+            <input type="checkbox" class="mt-2 w-100" id="background" onchange="changeBackground();"> 
           </div>
-         <div class=" col-md-3 d-flex justify-content-between">
-           <button class="btn btn-light col-5" onclick="stopX()"> <i class="fa fa-icon fa-stop"></i></button>
-           <button class="btn btn-light col-5" onclick="resetX()"> <i class="fa fa-icon fa-refresh"></i></button>
-         </div>
+          
+         
         </div>
 
         <div class="row py-md-2">
           <div class=" col-md">
-            <p for="minYs" class="form-label">Min <b>Y</b> Speed (  <span id="minYsValue" class="fw-bold">  </span> )</p>
-            <input type="range" min="-50" max="50" value="-5" class="mt-2 w-100" id="minYs" onchange="  setup();">
-           
+            <p for="speed" class="form-label"> Centrifugal Force (  <span id="speedValue" class="fw-bold"> 0.0001 </span> ) </p>
+            <input type="range" min="-10" max="10" value="1" class="mt-2 w-100" id="speed" onchange="setSpeed(this.value);">
           </div>
+         
           <div class="col-md">
-            <p for="maxYs" class="form-label">Max <b>Y</b> Speed (  <span id="maxYsValue" class="fw-bold">  </span> )</p>
-            <input type="range" min="-50" max="50" value="5" class="mt-2 w-100" id="maxYs" onchange="  setup();">
-        
+            <p for="maxSize" class="form-label">Max Size (  <span id="maxSizeValue" class="fw-bold"> 150 </span> )</p>
+            <input type="range" min="10" max="1000" value="150" class="mt-2 w-100" id="maxSize" onchange="setup();">
           </div>
-          <div class="col-md-3 d-flex justify-content-between">
-            <button class="btn btn-light col-5" onclick="stopY()"> <i class="fa fa-icon fa-stop"></i></button>
-            <button class="btn btn-light col-5" onclick="resetY()"> <i class="fa fa-icon fa-refresh"></i></button>
-          </div>
+         
         </div>
 
-        <div class="row py-2">
+        <!-- <div class="row py-2">
           <div class=" col-md">
             <p for="cntOpacity" class="form-label">Conections Opacity (  <span id="cntOpacityValue" class="fw-bold">  </span> )</p>
             <input type="range" min="0" max="100" value="100" class="mt-2 w-100" id="cntOpacity">
@@ -162,20 +149,17 @@ input[type="range"]::-ms-fill-upper {
             <p for="cntRadius" class="form-label">Conections Radius(  <span id="cntRadiusValue" class="fw-bold">  </span> )</p>
             <input type="range" min="0" max="250" value="85" class="mt-2 w-100" id="cntRadius" >
           </div>
-         
-        </div>
+        </div> -->
 
         <div class="row py-md-2">
           <div class="col">
-            <p for="fr" class="form-label col-12">Particles</p>
-            <input type="range" min="1" max="300" value="50" class="mt-2 w-100" id="particles" onchange="setup();">
-            <span id="curParticles" class="fw-bold">  </span> <b>particles</b>
+            <p for="fr" class="form-label col-12">Bubblues</p>
+            <input type="range" min="1" max="1000" value="100" class="mt-2 w-100" id="bubbles" onchange="setup();">
+            <span id="curBubbles" class="fw-bold">  </span> <b>Bubbles</b>
           </div>
-        </div>
+        </div> 
       
-      <input type="range" min="1" max="5000" value="" class="mt-2 w-100 red" id="counter-range">
-      <div class="d-none d-md-block fs-3 fw-light text-center mb-0 py-md-2">There is <span id="counter" class="fw-bold fs-2">00</span> a connections between the particles.</div>
-
+     
       <ul class="text-center list-inline pt-md-4">
 
         {% assign items = site.data.social | where: "footer", "display" %}
@@ -200,7 +184,7 @@ input[type="range"]::-ms-fill-upper {
 
 
 
-  <script src="particles.js"></script>
+  <script src="bubbles-dynamic-background.js"></script>
   
   
 </body>
