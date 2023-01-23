@@ -1,4 +1,4 @@
-let semicircles = [];
+let circles = [];
 let speed = 0.0001;
 
 let transition = true;
@@ -99,13 +99,13 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   colorMode(HSB, 256, 100, 100);
 
-  semicircles = [];
+  circles = [];
   
   bubbles = parseInt(document.getElementById("bubbles").value);
   document.getElementById("curBubbles").innerHTML = bubbles;
 
   for(let i = 0;i<bubbles;i++){
-    semicircles.push(new Bubble());
+    circles.push(new Bubble());
   }
 
 }
@@ -127,9 +127,9 @@ function draw() {
 
   background(bg);
   
-  for(let i = 0;i<semicircles.length;i++) {
-    semicircles[i].createParticle();
-    semicircles[i].moveParticle();
+  for(let i = 0;i<circles.length;i++) {
+    circles[i].createBubble();
+    circles[i].moveBubble();
   }
   
 }
