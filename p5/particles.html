@@ -107,65 +107,65 @@ input[type="range"]::-ms-fill-upper {
 <body>
   <div id="main" class="full-container position-absolute">
  
-      <div class="col-10 col-sm-8 col-md-6 col-lg-5 pt-5 pb-4 px-5 translucid border rounded rounded-4 shadow ">
+      <div class="col-10 col-sm-8  pt-5 pb-4 px-5 translucid border rounded rounded-4 shadow ">
         <div class="text-end">
           
           <button type="button" class="btn-close" aria-label="Close" onclick='hideDiv("main")'></button>
         </div>
          
-        <h1 class="pb-4 fw-bold fs-2 ">Particles</h1>
+        <h1 class="pb-md-4 fw-bold fs-2 ">Particles</h1>
         
-        <p class="fw-light fs-4 text-center pb-4"> <small> PRESS SPACE TO RANDOMIZE</small></p>
+        <p class="fw-light fs-4 text-center"> <small> PRESS SPACE TO RANDOMIZE</small></p>
         
 
-        <div class="row py-2">
-          <div class=" col">
+        <div class="row py-md-2">
+          <div class="col-md">
             <p for="minXs" class="form-label">Min <b>X</b> Speed (  <span id="minXsValue" class="fw-bold"> 150 </span> )</p>
-            <!-- <input type="range" min="-50" max="50" value="0" class="mt-2 w-100" id="minXs" onchange="setup();"> -->
+           
             <input type="range" min="-50" max="50" value="-5" class="mt-2 w-100" id="minXs" onchange="setup();">
             
           </div>
-          <div class=" col">
+          <div class="col-md">
             <p for="maxXs" class="form-label">Max <b>X</b> Speed (  <span id="maxXsValue" class="fw-bold"> 150 </span> )</p>
-            <!-- <input type="range" min="-50" max="50" value="0" class="mt-2 w-100" id="maxXs" onchange="setup();"> -->
+           
             <input type="range" min="-50" max="50" value="5" class="mt-2 w-100" id="maxXs" onchange="setup();">
           </div>
-         <div class="col-3 d-flex justify-content-between">
+         <div class=" col-md-3 d-flex justify-content-between">
            <button class="btn btn-light col-5" onclick="stopX()"> <i class="fa fa-icon fa-stop"></i></button>
            <button class="btn btn-light col-5" onclick="resetX()"> <i class="fa fa-icon fa-refresh"></i></button>
          </div>
         </div>
 
-        <div class="row py-2">
-          <div class=" col">
+        <div class="row py-md-2">
+          <div class=" col-md">
             <p for="minYs" class="form-label">Min <b>Y</b> Speed (  <span id="minYsValue" class="fw-bold">  </span> )</p>
             <input type="range" min="-50" max="50" value="-5" class="mt-2 w-100" id="minYs" onchange="  setup();">
-            <!-- <input type="range" min="-50" max="50" value="0" class="mt-2 w-100" id="minYs" onchange="  setup();"> -->
+           
           </div>
-          <div class="col">
+          <div class="col-md">
             <p for="maxYs" class="form-label">Max <b>Y</b> Speed (  <span id="maxYsValue" class="fw-bold">  </span> )</p>
             <input type="range" min="-50" max="50" value="5" class="mt-2 w-100" id="maxYs" onchange="  setup();">
-            <!-- <input type="range" min="-50" max="50" value="0" class="mt-2 w-100" id="maxYs" onchange="  setup();"> -->
+        
           </div>
-          <div class="col-3 d-flex justify-content-between">
+          <div class="col-md-3 d-flex justify-content-between">
             <button class="btn btn-light col-5" onclick="stopY()"> <i class="fa fa-icon fa-stop"></i></button>
             <button class="btn btn-light col-5" onclick="resetY()"> <i class="fa fa-icon fa-refresh"></i></button>
           </div>
         </div>
 
         <div class="row py-2">
-          <div class=" col">
+          <div class=" col-md">
             <p for="cntOpacity" class="form-label">Conections Opacity (  <span id="cntOpacityValue" class="fw-bold">  </span> )</p>
             <input type="range" min="0" max="100" value="100" class="mt-2 w-100" id="cntOpacity">
           </div>
-          <div class="col">
+          <div class="col-md">
             <p for="cntRadius" class="form-label">Conections Radius(  <span id="cntRadiusValue" class="fw-bold">  </span> )</p>
             <input type="range" min="0" max="250" value="85" class="mt-2 w-100" id="cntRadius" >
           </div>
          
         </div>
 
-        <div class="row py-2">
+        <div class="row py-md-2">
           <div class="col">
             <p for="fr" class="form-label col-12">Particles</p>
             <input type="range" min="1" max="300" value="50" class="mt-2 w-100" id="particles" onchange="setup();">
@@ -174,9 +174,9 @@ input[type="range"]::-ms-fill-upper {
         </div>
       
       <input type="range" min="1" max="5000" value="" class="mt-2 w-100 red" id="counter-range">
-      <p class="fs-3 fw-light text-center mb-0 py-2">There is <span id="counter" class="fw-bold fs-2">00</span> a connections between the particles.</p>
+      <div class="d-none d-md-block fs-3 fw-light text-center mb-0 py-md-2">There is <span id="counter" class="fw-bold fs-2">00</span> a connections between the particles.</div>
 
-      <ul class="text-center list-inline pt-4">
+      <ul class="text-center list-inline pt-md-4">
 
         {% assign items = site.data.social | where: "footer", "display" %}
         {% for item in items  %}
