@@ -8,7 +8,7 @@ labels: p5, Web Development, WebApp
 ---
 
 
-# Dynamic Background Circles Span Generator
+# Circles Dynamic Background
 
 This project is a simple web app that generates a dynamic background with circles thought the p5.js library.
 
@@ -16,4 +16,4 @@ You can control some variables as the size of circles e the framerate of the ani
 
 ## Live Demo
 
-### [Dynamic Background Circles Span Generator](https://lucasgeron.github.io/p5/circles-dynamic-background)
+### [Circles Dynamic Background](https://lucasgeron.github.io/p5/circles-dynamic-background)

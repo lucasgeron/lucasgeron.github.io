@@ -7,7 +7,7 @@ cover: https://i.ibb.co/K9gKgy9/Screenshot-2.jpg
 labels: p5, Web Development, WebApp
 ---
 
-# Particles
+# Particles Dynamic Background
 
 This project is a simple web app that generates a network simulator background with particles thought the p5.js library.
 
@@ -15,4 +15,4 @@ You can control some variables as the speed and ammount of particles and the con
 
 ## Live Demo
 
-### [Particles](https://lucasgeron.github.io/p5/particles-dynamic-background)
+### [Particles Dynamic Background](https://lucasgeron.github.io/p5/particles-dynamic-background)
