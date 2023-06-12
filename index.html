@@ -18,7 +18,7 @@ permalink_en: /
 
     <div class="py-5 col-md-6 fs-5 px-4 ">
 
-      <h4 class="display-4 mb-5"> {% t home.main-title %} <a href="{% translate_link  hire_me %}"
+      <h4 class="display-4 mb-5"> {% t home.main-title %} <a href="{% tl  hire_me %}"
           class="text-dark header-link text-decoration-none border-bottom border-5 border-primary display-5 fw-bold">Lucas</a>
       </h4>
       <p class=" fw-bold"> {% t home.main-sub-title %}: &nbsp; <span id="app"></span></p>
@@ -59,7 +59,7 @@ permalink_en: /
     
     <p data-aos="fade-up" class="fs-1 fw-bold "> {% t home.last-projects %}</p>
     
-    <a href="{% translate_link  projects %}" class="text-decoration-none text-dark">
+    <a href="{% tl  projects %}" class="text-decoration-none text-dark">
       <p data-aos="fade-up" class="fs-3 fw-bold "> {% t global.see_all %} <i class="fa fa-arrow-right"></i>
       </p>
     </a>
@@ -102,7 +102,7 @@ permalink_en: /
 
         <div class="justify-content-end p-4">
           <a href="{{ post.url | relative_url }}"
-            class="float-end text-dark badge text-bg-light fw-light fs-6 text-decoration-none btn-hover" type="button">
+            class="float-end  btn btn-outline-dark btn-sm" type="button">
             {% t global.see_more %}
           </a>
         </div>
@@ -125,7 +125,7 @@ permalink_en: /
         <h2 class="fw-bold mb-2">{% t home.contact-title %}</h2>
         <p class="mb-0">{% t home.contact-text %}</p>
       </div>
-      <div  data-aos="fade-up" class="my-2"><a class="btn btn-outline-dark fs-5 py-2 px-4" role="button" href="/contrate-me/">{% t
+      <div  data-aos="fade-up" class="my-2"><a class="btn btn-outline-dark fs-5 py-2 px-4" role="button" href="{% tl hire_me %}">{% t
           home.contact-btn %}</a></div>
     </div>
   </div>
