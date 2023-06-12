@@ -4,6 +4,12 @@ navigation:
   experiences: Experiences
   projects: Projects
   hire_me: Hire me
+  targets:
+    home: /
+    skills: /habilidades
+    experiences: /experiencias
+    projects: /projetos
+    hire_me: /contrate-me
 global:
   translate: Português
   see_all: View All

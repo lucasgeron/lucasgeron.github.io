@@ -18,6 +18,8 @@
 
       <ul class="navbar-nav mx-auto">
 
+
+
         <li class="nav-item">
           <a href="{% translate_link home %}" class="nav-link mx-4 {% if page.title == 'Home/Início' %}active{% endif %}">
             {% t navigation.home %}
@@ -55,17 +57,30 @@
           <a class=" btn btn-outline-primary" href="https://drive.google.com/file/d/1Jg0dxGRiRxxoVGxCh6-s-ZwdUJ89bkZw/view?usp=share_link" target="_blank"> <i class="fa fa-cloud-download"></i> CV </a>
         </li>
 
+
+        <!-- LOGIC TO TRANSLATE THE CURRENT PAGE -->
+        {% case page.title %}
+        {% when "Skills/Habilidades" %}
+          {% assign target = site.translations[site.lang].navigation.targets.skills %}
+        {% when "Experience/Experiências" %}
+          {% assign target = site.translations[site.lang].navigation.targets.experiences %}
+        {% when "Projects/Projetos" %}
+          {% assign target = site.translations[site.lang].navigation.targets.projects %}
+        {% when "Hire Me/Contrate-me" %}
+          {% assign target = site.translations[site.lang].navigation.targets.hire_me %}
+        {% else %}
+          {% assign target = site.translations[site.lang].navigation.targets.home %}
+        {% endcase %}
+
         <li class="nav-item my-auto ">
            <!-- TRANSLATE BUTTON -->
-           {% if site.lang == "pt-br" %}
-           <a href="{{ site.baseurl_root }}/en/" class="text-decoration-none"  > 
+           <a href="{{ target }}" class="text-decoration-none"  > 
+             {% if site.lang == "pt-br" %}
            <img src="{{ site.baseurl_root }}/assets/images/languages/en.svg" alt="America-flag" height="32px" width="32px" class="rounded-3">
-           </a>
-         {% elsif site.lang == "en" %}
-           <a href="{{ site.baseurl_root }}/" class="text-decoration-none"  > 
+           {% elsif site.lang == "en" %}
            <img src="{{ site.baseurl_root }}/assets/images/languages/pt-br.svg" alt="Brazil-flag" height="32px" width="32px" class="rounded-3">
-           </a>
-         {% endif %}
+           {% endif %}
+          </a>
         </li>
       </ul>
 
