@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+  {%- include head.html -%}
+
+  <body class="bg-gray-200">
+
+    {%- include header.html -%}
+    
+    <main class="container mx-auto pt-5 mt-5" aria-label="Content">
+      <div class="pb-16 pt-4">
+
+        <section class="pb-4" id="experiencia_profissional">
+
+          <h1 data-aos="fade-up" class="">{% t experiences.professional_experience %}</h1>
+        
+          <div class="container py-4">
+            <div class="main-timeline">
+        
+              <div class="timeline left ">
+                <div data-aos="fade-up" class="card shadow">
+                  <div class="card-body p-4">
+                    <div class="d-flex-inline d-md-flex my-auto col my-2">
+                      <a data-aos="fade-up" href="https://www.tcc-utfpr.heroku-app.com/" class="">
+                        <img src="/assets/images/experiences/tcc-utfpr.png" height="75px"  alt="">
+                      </a>
+        
+                      <div class="my-auto pb-3 pb-md-0 md-my-0 md-mx-2">
+                        <p data-aos="fade-up" class="fs-5 fw-light mb-0">{% t experiences.tcc-utfpr.company %}</p>
+                        <p data-aos="fade-up" class="items-center mb-0 fw-light text-sm"><i class="fa fa-map-marker"></i> {% t experiences.tcc-utfpr.location %}</p>
+                      </div>
+                    </div>
+        
+                    <div class="mb-2">
+                      <p data-aos="fade-up" class="fs-5 fw-bold mb-0">{% t experiences.tcc-utfpr.title %}</p>
+                      <ul class="d-flex-inline d-md-flex justify-content-start gap-4 list-unstyled  text-sm">
+                        <li data-aos="fade-up" class="items-center"><i class="fa fa-sign-in fa-lg"></i> {% t experiences.tcc-utfpr.date_in %}</li>
+                        <li data-aos="fade-up" class="items-center"><i class="fa fa-sign-out fa-lg"></i> {% t experiences.tcc-utfpr.date_out %}</li>
+                        <li data-aos="fade-up" class="items-center"><i class="fa fa-clock-o fa-lg"></i> {% t experiences.tcc-utfpr.duration %}</li>
+                      </ul>
+                    </div>
+        
+        
+                    {% if site.lang == "pt-br" %}
+                    <p data-aos="fade-up" class="mb-2 text-justify">
+                      Desenvolvimento de uma aplicação Ruby on Rails, desde a abstração do problema até o deploy em produção, com o objetivo de gerenciar as negociações e mapas de direcionado para empresas de formaturas. O projeto foi desenvolvido como Trabalho de Conclusão de Curso da UTFPR. A Aplicação possui suporte para Docker e integração com AWS3 e as principais Ruby Gems. O sistema está hospedado no Heroku e possui cobertura de Testes e CI/CD configurados.</p>
+                    </p>
+                    {% else %}
+                    <p data-aos="fade-up" class="mb-2 text-justify">
+                      Development of a Ruby on Rails application, from problem abstraction to production deployment, with the goal of managing negotiations and directed maps for graduation companies. The project was developed as a Final Course Project at UTFPR. The application has support for Docker and integration with AWS3 and the main Ruby Gems. The system is hosted on Heroku and has test coverage and CI/CD configured. </p>
+                    </p>
+                    {% endif %}
+        
+        
+                    <a data-aos="fade-up" href="#" class="btn btn-outline-primary btn-sm"><i class="fa fa-book"></i> {% t experiences.tcc-utfpr.download %}</a>
+                    
+                    <a data-aos="fade-up" href="https://tcc-utfpr.herokuapp.com/" class="btn btn-outline-primary btn-sm"><i class="fa fa-external-link"></i> {% t experiences.tcc-utfpr.visit %}</a>
+                    <p data-aos="fade-up" class="text-muted text-sm py-2">{% t experiences.tcc-utfpr.credentials %} : admin@admin / admin </p>
+        
+        
+                  </div>
+                </div>
+              </div>
+        
+              <div class="timeline right ">
+                <div data-aos="fade-up" class="card shadow">
+                  <div class="card-body p-4 ">
+                    
+                    
+                    <div class="d-flex-inline d-md-flex my-auto col my-2">
+                      <a data-aos="fade-up" href="http://crossformaturas.com.br/" class="">
+                        <img src="/assets/images/experiences/cross.png" height="75px"  alt="">
+                      </a>
+        
+                      <div class="my-auto pb-3 pb-md-0 md-my-0 md-mx-2">
+                        <p data-aos="fade-up" class="fs-5 fw-light mb-0">{% t experiences.cross.company %}</p>
+                        <p data-aos="fade-up" class="items-center mb-0 fw-light text-sm"><i class="fa fa-map-marker"></i> {% t experiences.cross.location %}</p>
+                      </div>
+                    </div>
+        
+                    <div class="mb-2">
+                      <p data-aos="fade-up" class="fs-5 fw-bold mb-0">{% t experiences.cross.title %}</p>
+                      <ul class="d-flex-inline d-md-flex justify-content-start gap-4 list-unstyled  text-sm">
+                        <li data-aos="fade-up" class="items-center"><i class="fa fa-sign-in fa-lg"></i> {% t experiences.cross.date_in %}</li>
+                        <li data-aos="fade-up" class="items-center"><i class="fa fa-sign-out fa-lg"></i> {% t experiences.cross.date_out %}</li>
+                        <li data-aos="fade-up" class="items-center"><i class="fa fa-clock-o fa-lg"></i> {% t experiences.cross.duration %}</li>
+                      </ul>
+                    </div>
+        
+                    {% if site.lang == "pt-br" %}
+                    <p data-aos="fade-up" class="mb-2 text-justify"> Carreira iniciada como Arte Finalista, onde em pouco tempo, fui promovido a Supervisor de Criação. Durante este período, desempenhei um trabalho operacional e estratégico, desenvolvendo métodos de integrar, automatizar e realizar tarefas rotineiras com mais agilidade. Ao todos, já coordenei três times, dos quais todos são atualmente autogerenciáveis, liderei projetos de Marketing, como o rebranding da marca e sua nova identidade visual, campanhas de festas renomadas e materiais institucionais como álbuns de portfólio, social media, apresentações de slides dinâmicas e vídeos. Desenvolvi o site da instituição, que possui blog de notícias, gestão de formulários, upload de imagens além de estar associado ao google analytics e serviços de chat integrado, do zero ao deploy. </p>
+                    <p data-aos="fade-up" class="mb-2 text-justify">Ao longo dos anos, além de gerir a demanda do setor de criação, contribui desenvolvendo planilhas fundamentais para gestão da empresa, de âmbito financeiro, checklists, ordens de serviços, e a integração de diversas ferramentas como calendário de eventos, banco de horas, bot de mensagens, central de links, entre outros. Ao assumir a gestão do setor de pós-venda, contribui desenvolvendo organogramas, fluxogramas e diagramas dos processos da empresa, permitindo otimizar a gestão da demanda e inteligência empresarial de forma relevante. </p>
+                    <p data-aos="fade-up" class="mb-2 text-justify">Expandindo a área de atuação, contribui com o desenvolvimento de projetos de grande importância à empresa, a elaboração de todos os Cargos e Funções com o objetivo de formalizar a estrutura organizacional e incentivar colaboradores a avançarem em suas carreiras profissionais. Criei Dashboards Gerenciais utilizando o aplicativo Microsoft Power BI, compilando dados de planilhas, CRM, e aplicativos web como Trello, Slack, Jira, e gerando relatórios analíticos, ricos em gráficos e informações. Desenvolvi um sistema Gerador de Propostas Comerciais, com o objetivo de otimizar a gestão de valores e gerar mais lucro além de viabilizar a emissão de propostas padronizadas por qualquer pessoa através de interface intuitiva. </p>
+                    <p data-aos="fade-up" class="mb-2 text-justify">Liderei um grande projeto com empresas parceiras, nos quais detalhamos a estrutura analítica de processos de toda empresa onde estudamos e implementamos melhorias gerando resultados significativos. 
+                    </p>
+                    {% else %}
+                    <p data-aos="fade-up" class="mb-2 text-justify"> My career started as a Final Artist, where in a short time, I was promoted to Creative Supervisor. During this period, I performed operational and strategic work, developing methods to integrate, automate and perform routine tasks more quickly. In all, I have coordinated three teams, all of which are currently self-managed, led Marketing projects such as the rebranding of the brand and its new visual identity, campaigns for renowned parties and institutional materials such as portfolio albums, social media, dynamic slide presentations and videos. I developed the institution’s website, which has a news blog, form management, image upload and is associated with google analytics and integrated chat services, from scratch to deployment. </p>
+                    <p data-aos="fade-up" class="mb-2 text-justify">Over the years, in addition to managing the demand of the creative sector, I contributed by developing fundamental spreadsheets for company management, in the financial scope, checklists, service orders, and the integration of various tools such as event calendar, bank of hours, message bot, link center, among others. When assuming the management of the after-sales sector, I contributed by developing organizational charts, flowcharts and diagrams of the company’s processes, allowing to optimize demand management and business intelligence in a relevant way. </p>
+                    <p data-aos="fade-up" class="mb-2 text-justify">Expanding the area of operation, I contributed to the development of projects of great importance to the company, the elaboration of all Positions and Functions with the objective of formalizing the organizational structure and encouraging employees to advance in their professional careers. I created Management Dashboards using the Microsoft Power BI application, compiling data from spreadsheets, CRM and web applications such as Trello, Slack and Jira and generating analytical reports rich in graphs and information. I developed a Commercial Proposal Generator system with the objective of optimizing value management and generating more profit as well as enabling the issuance of standardized proposals by anyone through an intuitive interface. </p>
+                    <p data-aos="fade-up" class="mb-2 text-justify">I led a large project with partner companies in which we detailed the analytical structure of processes throughout the company where we studied and implemented improvements generating significant results.  </p>
+        
+                    {% endif %}
+        
+        
+                    <p data-aos="fade-up" class="text-muted text-sm py-2">{% t experiences.cross.visit %}. </p>
+                  
+        
+               
+                  </div>
+                </div>
+              </div>
+        
+              <div class="timeline left ">
+                <div data-aos="fade-up" class="card shadow">
+                  <div class="card-body p-4">
+                    <div class="d-flex-inline d-md-flex my-auto col my-2">
+                      <a data-aos="fade-up" href="https://www.sponte.com.br/" class="">
+                        <img src="/assets/images/experiences/sponte.png" height="75px"  alt="">
+                      </a>
+        
+                      <div class="my-auto pb-3 pb-md-0 md-my-0 md-mx-2">
+                        <p data-aos="fade-up" class="fs-5 fw-light mb-0">{% t experiences.sponte.company %}</p>
+                        <p data-aos="fade-up" class="items-center mb-0 fw-light text-sm"><i class="fa fa-map-marker"></i> {% t experiences.sponte.location %}</p>
+                      </div>
+                    </div>
+        
+                    <div class="mb-2">
+                      <p data-aos="fade-up" class="fs-5 fw-bold mb-0">{% t experiences.sponte.title %}</p>
+                      <ul class="d-flex-inline d-md-flex justify-content-start gap-4 list-unstyled  text-sm">
+                        <li data-aos="fade-up" class="items-center"><i class="fa fa-sign-in fa-lg"></i> {% t experiences.sponte.date_in %}</li>
+                        <li data-aos="fade-up" class="items-center"><i class="fa fa-sign-out fa-lg"></i> {% t experiences.sponte.date_out %}</li>
+                        <li data-aos="fade-up" class="items-center"><i class="fa fa-clock-o fa-lg"></i> {% t experiences.sponte.duration %}</li>
+                      </ul>
+                    </div>
+        
+                    {% if site.lang == "pt-br" %}
+                    <p data-aos="fade-up" class="mb-2 text-justify"> Suporte técnico prestado ao cliente através de chat, telefone e conexão remota. Criação de manuais de instrução do sistema (FAQ), acompanhamento de chamados e correções. Treinamentos e implantações aos novos clientes. Após um ano, fui promovido para área de configuração bancária, onde realizava configuração para emissão de boletos e notas fiscais, onde tive mais contato com arquivos CNAB, homologação bancária e conhecimento em nota fiscal eletrônica. </p>
+                    {% else %}
+                    <p data-aos="fade-up" class="mb-2 text-justify"> Technical support provided to the customer through chat, phone and remote connection. Creation of system instruction manuals (FAQ), monitoring of calls and corrections. Training and implementation for new customers. After a year, I was promoted to the banking configuration area, where I performed configuration for issuing bank slips and invoices, where I had more contact with CNAB files, bank homologation and knowledge in electronic invoice. </p>
+               
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+        
+              <div class="timeline right">
+                <div data-aos="fade-up" class="card shadow">
+                  <div class="card-body p-4">
+                    <div class="d-flex-inline d-md-flex my-auto col my-2">
+                      <a data-aos="fade-up" href="http://www.a1formaturas.com.br/" class="">
+                        <img src="/assets/images/experiences/a1.png" height="75px"  alt="">
+                      </a>
+        
+                      <div class="my-auto pb-3 pb-md-0 md-my-0 md-mx-2">
+                        <p data-aos="fade-up" class="fs-5 fw-light mb-0">{% t experiences.a1.company %}</p>
+                        <p data-aos="fade-up" class="items-center mb-0 fw-light text-sm"><i class="fa fa-map-marker"></i> {% t experiences.a1.location %}</p>
+                      </div>
+                    </div>
+        
+                    <div class="mb-2">
+                      <p data-aos="fade-up" class="fs-5 fw-bold mb-0">{% t experiences.a1.title %}</p>
+                      <ul class="d-flex-inline d-md-flex justify-content-start gap-4 list-unstyled  text-sm">
+                        <li data-aos="fade-up" class="items-center"><i class="fa fa-sign-in fa-lg"></i> {% t experiences.a1.date_in %}</li>
+                        <li data-aos="fade-up" class="items-center"><i class="fa fa-sign-out fa-lg"></i> {% t experiences.a1.date_out %}</li>
+                        <li data-aos="fade-up" class="items-center"><i class="fa fa-clock-o fa-lg"></i> {% t experiences.a1.duration %}</li>
+                      </ul>
+                    </div>
+                      
+                    {% if site.lang == "pt-br" %}
+                    <p data-aos="fade-up" class="mb-2 text-justify"> Criação de convites de formatura, social media, criação de campanhas de marketing e produção de materiais gráficos de uso interno. Conhecimento em gráfica, tipos de papel, laminação, impressão e perfil de cores. </p>
+                    {% else %}
+                    <p data-aos="fade-up" class="mb-2 text-justify"> Creation of graduation invitations, social media, creation of marketing campaigns and production of internal use graphic materials. Knowledge in printing, types of paper, lamination, printing and color profile. </p>
+                    {% endif %}
+        
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </section>
+
+        {{ content }}
+      </div>
+    </main>
+    
+    {%- include footer.html -%}
+    
+    {%- include scripts.html -%}
+  </body>
+
+</html>

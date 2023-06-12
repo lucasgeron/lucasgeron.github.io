@@ -1,0 +1,88 @@
+navigation:
+  home: Home
+  skills: Skills
+  experiences: Experiences
+  projects: Projects
+  hire_me: Hire me
+global:
+  translate: Português
+  see_all: View All
+  see_more: Read more
+  year: Year
+  duration: Duration
+  hours: Hours
+home:
+  main-title: Hello, I'm  
+  main-sub-title: Work with
+  objective-title: Objective 
+  objective-text: Ambitious and proactive, I seek challenges that help me grow professionally and contribute to the financial results of my workplace. I am highly organized and enjoy being part of large projects, whether leading or actively participating, with clear goals in mind.
+  resume-title: Resume
+  resume-text:  I have an observant and realistic profile, with a talent for identifying business opportunities and analyzing and connecting information in a coherent and well-founded manner. Scrum and communication are integral parts of my daily routine.
+  last-projects: Last Projects
+  contact-title: Wanna know more? Let's talk!
+  contact-text: You can find me on a lot of social networks.
+  contact-btn: Get in touch
+skills:
+  beginner: Beginner
+  intermediate: Intermediate
+  advanced: Advanced
+  expert: Expert
+  level: Level
+  tech: Technology
+experiences:
+  professional_experience: Professional Experience
+  education: Academic Education
+  extra_training: Extra Training
+  utfpr_pb:
+    course: Computer Engineering
+    graduation: Bachelor of
+    date_in: July 2011
+    date_out: December 2013
+    status: Dropout
+    description: "Reason: Course geared towards hardware and not much towards software."
+  utfpr_gp:
+    course: Systems for Internet
+    graduation: Technology in
+    date_in: July 2015
+    date_out: June 2023
+    status: Graduated
+    description: "Note: Locked in 2018/2 and continued in 2022/2 due to pandemic."
+  cross:
+    company: Cross Formaturas
+    title: Final Art to Process Manager
+    location: Guarapuava, Paraná, Brazil.
+    date_in: October 2015
+    date_out: November 2022
+    duration: 7 Years and 2 Months
+    visit: Check out some of my work in the ‘Projects’ section
+  sponte:
+    company: Sponte 
+    title: Customer Support
+    location: Pato Branco, Paraná, Brazil.
+    date_in: August 2012
+    date_out: February 2015
+    duration: 2 Years and 7 Months
+  a1:
+    company: A1 Formaturas
+    url: http://www.a1formaturas.com.br/
+    title: Graphic Designer
+    location: Pato Branco, Paraná, Brazil.
+    date_in: January 2011
+    date_out: August 2011
+    duration: 8 Months
+  tcc-utfpr: 
+    company: UTFPR (Graduation Project)
+    title: Full Stack Developer - Ruby on Rails 
+    location: Guarapuava, Paraná, Brazil. 
+    date_in: November 2022 
+    date_out: June 2023 
+    duration: 8 Months
+    download: Monograph (Only in PT-BR)
+    visit: Discover the Project
+    credentials: Use the following credentials 
+projects:
+  all_projects: All Projects
+hire_me:
+  title: Find me on social media
+  first_sub_title: It will be a great experience to be able to contribute to your business!
+  second_sub_title: I can contribute in many ways!

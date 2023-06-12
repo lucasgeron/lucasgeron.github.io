@@ -1,0 +1,87 @@
+navigation:
+  home: Início
+  skills: Habilidades
+  experiences: Experiências
+  projects: Projetos
+  hire_me: Contrate-me
+global:
+  translate: English
+  see_all: Ver Todos
+  see_more: Ler mais
+  year: Ano
+  duration: Duração
+  hours: Horas
+home:
+  main-title: Olá, eu sou o 
+  main-sub-title: Trabalho com
+  objective-title: Objetivo
+  objective-text: Ambicioso e proativo, busco desafios que me façam crescer profissionalmente e que contribuam para o resultado financeiro da instituição de trabalho. Um cara muito organizado, que gosta de fazer parte de grandes projetos, seja liderando ou participando, de forma ativa e com metas.
+  resume-title: Resumo
+  resume-text: Perfil observador e realista, com facilidade para enxergar oportunidades de negócio, analisar e associar informações de forma coerente e fundamentada. Scrum e comunicação fazem parte da minha rotina.  
+  last-projects: Últimos Projetos
+  contact-title: Quer saber mais? Vamos Conversar!
+  contact-text: Você consegue me encontrar em diversas redes sociais.
+  contact-btn: Entrar em contato
+skills:
+  beginner: Novato
+  intermediate: Intermediário
+  advanced: Avançado
+  expert: Expert
+  level: Nível
+  tech: Tecnologia
+experiences:
+  professional_experience: Experiência Profissional
+  education: Formação Acadêmica
+  extra_training: Capacitação Extra
+  utfpr_pb:
+    course: Engenharia de Computação
+    graduation: Bacharelado em
+    date_in: Julho de 2011
+    date_out: Dezembro de 2013
+    status: Desistente
+    description: "Motivo: Curso voltado para hardware e pouco para software."
+  utfpr_gp:
+    course: Sistemas para Internet
+    graduation: Tecnologia em
+    date_in: Julho de 2015
+    date_out: Junho de 2023
+    status: Formado
+    description: "Nota: Trancado em 2018/2 e continuado em 2022/2 devido a pandemia."
+  cross:
+    company: Cross Formaturas
+    title: Arte Finalista à Gerente de Processos
+    location: Guarapuava, Paraná, Brasil.
+    date_in: Outubro de 2015
+    date_out: Novembro de 2022
+    duration: 7 Anos e 2 Meses
+    visit: Conheça alguns trabalhos na seção ‘Projetos’
+  sponte:
+    company: Sponte 
+    title: Suporte ao Cliente
+    location: Pato Branco, Paraná, Brasil.
+    date_in:  Agosto de 2012
+    date_out: Fevereiro de 2015
+    duration: 2 Anos e 7 Meses
+  a1:
+    company: A1 Formaturas
+    title: Designer Gráfico
+    location: Pato Branco, Paraná, Brasil.
+    date_in: Janeiro de 2011
+    date_out: Agosto de 2011
+    duration: 8 Meses
+  tcc-utfpr:
+    company: UTFPR (Projeto de Graduação)
+    title: Full Stack Developer - Ruby on Rails 
+    location: Guarapuava, Paraná, Brasil.
+    date_in: Novembro de 2022
+    date_out: Junho de 2023
+    duration: 8 Meses
+    download: Monografia
+    visit: Conhecer Projeto
+    credentials: Use as seguintes credenciais
+projects:
+  all_projects: Todos os Projetos
+hire_me:
+  title: Encontre-me nas redes sociais
+  first_sub_title: Será uma ótima experiências poder contribuir para seu negócio!
+  second_sub_title: Posso contribuir de diversas maneiras!

@@ -1,22 +1,24 @@
 ---
 layout: default
-title: "contrate-me"
+title: "Hire Me/Contrate-me"
+namespace: hire_me
 permalink: /contrate-me/
+permalink_en: /hire-me/
 ---
 
 
 <section id="capacitacao-extra">
 
-    <h1 class="pt-4 text-center"> Encontre-me nas redes sociais</h1>
-    <p class="pb-4 text-center fw-light fs-4"> Será uma ótima experiências poder contribuir para seu negócio!</p>
+    <h1 data-aos="fade-up" class="pt-4 text-center"> {% t hire_me.title %}</h1>
+    <p data-aos="fade-up" class="pb-4 text-center fw-light fs-4"> {% t hire_me.first_sub_title %}</p>
 
-    <div class="row gy-4 gx-4  d-flex justify-content-between justify-content-md-start justify-content-lg-between ">
+    <div  data-aos="fade-up" class="row gy-4 gx-4  d-flex justify-content-between justify-content-md-start justify-content-lg-between ">
 
         {% assign items = site.data.social | where: "contact-me", "display" %}
 
         {% for item in items %}
         <a href="{{ item.link }}" target="_blank" class="col-6 col-md-4 col-lg-2 text-decoration-none ">
-            <div data-aos="fade-up" class="custom-btn btn-13 bg-light rounded p-4 ">
+            <div data-aos="fade-up" class="btn-13 custom-btn  bg-light rounded p-4 ">
                 <div class=" text-center py-4">
                     {% if item.icon %} 
                     <i class="fa {{item.icon}} fa-lg top-0 fa-4x fa-card"></i> 
@@ -31,7 +33,7 @@ permalink: /contrate-me/
     </div>
 
 
-    <p  class="py-4 text-center fw-light fs-4"> <strong>Posso contribuir de diversas maneiras! </strong><br> &nbsp;<span id="contrate-me"></span></p>
+    <p  data-aos="fade-up" class="py-4 text-center fw-light fs-4"> <strong>{% t hire_me.second_sub_title %} </strong><br> &nbsp;<span id="contrate-me"></span></p>
 
   </section>
 

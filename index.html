@@ -1,127 +1,116 @@
 ---
 layout: home
-title: Início
+title: Home/Início
+namespace: home
+permalink: /
+permalink_en: /
 ---
+
 
 <!-- BANNER -->
 <section class=" w-full bg-light">
-    
-    <div class=" pt-4 d-md-flex justify-content-start align-items-center " >
 
-        <div class="">
-            <img src="/assets/images/lucasgeron-full.png" class="img-fluid" style="max-height: 100vh;"> </img>
+  <div  data-aos="fade-up" class=" pt-4 d-md-flex justify-content-start align-items-center ">
+
+    <div class="">
+      <img src="/assets/images/lucasgeron-full.png" class="img-fluid" style="max-height: 100vh;"> </img>
+    </div>
+
+    <div class="py-5 col-md-6 fs-5 px-4 ">
+
+      <h4  data-aos="fade-up"class="display-4 mb-5"> {% t home.main-title %} <a href="{% tl hire_me %}"
+          class="text-dark header-link text-decoration-none border-bottom border-5 border-primary display-5 fw-bold">Lucas</a>
+      </h4>
+      <p  data-aos="fade-up"class=" fw-bold"> {% t home.main-sub-title %}: &nbsp; <span id="app"></span></p>
+
+      <div class=" text-muted d-sm-flex gap-4 ">
+
+        <div class="col py-5 py-sm-4">
+          <h6  data-aos="fade-up"class="fw-bold fs-5">{% t home.objective-title %}:</h6>
+          <p  data-aos="fade-up"class="text-justify fw-light fs-6 ">
+            {% t home.objective-text %}
+          </p>
         </div>
 
-        <div class="py-5 col-md-6 fs-5 px-4 ">
-
-            
-            <h4 class="display-4 mb-5">Olá, eu sou o <a href="/contrate-me/" class="text-dark header-link text-decoration-none border-bottom border-5 border-primary display-5 fw-bold">Lucas</a></h4>
-            <p  class=" fw-bold"> Trabalho com: &nbsp; <span id="app"></span></p>
-            
-            <div class=" text-muted d-sm-flex gap-4 ">
-
-                <div class="col py-5 py-sm-4">
-                    <h6 class="fw-bold">Objetivo:</h6>
-                    <p class="text-justify fw-light ">
-                        Ambicioso e proativo, busco desafios que me façam crescer profissionalmente e
-                        que contribuam para o resultado financeiro da instituição de trabalho. Um cara muito organizado, que
-                        gosta de fazer parte de grandes projetos, seja liderando ou participando, de forma ativa e com metas.
-                    </p>
-                </div>
-
-                <div class="col py-5 py-sm-4">
-                    <h6 class="fw-bold">Resumo:</h6>
-                    <p class="text-justify fw-light ">
-                        Perfil observador e realista, com facilidade para enxergar oportunidades de negócio, analisar e associar
-                        informações de forma coerente e fundamentada. Scum e comunicação fazem parte da minha rotina.
-                    </p>
-                </div>
-
-            </div>
-
+        <div class="col py-5 py-sm-4">
+          <h6  data-aos="fade-up"class="fw-bold fs-5">{% t home.resume-title%}:</h6>
+          <p data-aos="fade-up" class="text-justify fw-light fs-6 ">
+            {% t home.resume-text %}
+          </p>
         </div>
+
+      </div>
 
     </div>
+  </div>
+
+
+
+
 </section>
+
 
 
 <!-- LAST POSTS -->
 {%- if site.posts.size > 0 -%}
-<section  id="last-posts" class="container py-4 mt-4 ">
- 
-        <div class="d-flex justify-content-between align-items-center">
-            <h2 data-aos="fade-up" class="display-6 fw-bold mb-5">Últimos Projetos</h2>
+<section id="last-posts" class="container py-4 mt-4 mb-5">
 
-           
+  <div  data-aos="fade-up" class="d-flex justify-content-between align-items-center">
+    
+    <p data-aos="fade-up" class="fs-1 fw-bold "> {% t home.last-projects %}</p>
+    
+    <a href="{% tl projects %}" class="text-decoration-none text-dark">
+      <p data-aos="fade-up" class="fs-3 fw-bold "> {% t global.see_all %} <i class="fa fa-arrow-right"></i>
+      </p>
+    </a>
 
-            
+  </div>
+
+  <!-- POSTS  -->
+  <div class="position-relative row gy-4 justify-content-between">
+
+    {% for post in site.posts limit:6 %}
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+    <!-- POST CARD -->
+    <div class="col-12 col-md-6 col-lg-4 d-flex flex-grow-1">
+      <div data-aos="fade-up" class="card p-0 mx-auto">
+
+        <a href="{{ post.url | relative_url }} " class="text-decoration-none text-dark">
+          <div class="group-hover">
+            <img src="{{ post.cover }}" class="card-img-top " style="max-height: 13rem; object-fit: cover">
+          </div>
+
+          <div data-aos="zoom-in" class="position-fixed top-0 p-2 display-on-hover">
+            <div class=" py-2  badge text-bg-light fw-light ">{{ post.date | date: date_format }}</div>
+          </div>
+        </a>
+
+        <div class="card-body">
+          <a href="{{ post.url | relative_url }}" class="fs-5 fw-bold card-title text-decoration-none text-dark">
+            {{ post.title }}
+          </a>
+          <p class="card-text">{{ post.short_description }}</p>
         </div>
-        
-        <!-- POSTS  -->
-        <div class="position-relative row gy-4 justify-content-between">
-            
-            {% for post in paginator.posts %}
 
-                
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-
-            <div class="col-12 col-md-6 col-lg-4 d-flex flex-grow-1">
-
-                <a href="{{ post.url | relative_url }} " class="text-decoration-none text-dark">
-
-                    <div data-aos="fade-up" class="card p-0 mx-auto" >
-                        <div class="group-hover">
-                            <img src="{{ post.cover }}" class="card-img-top " style="max-height: 13rem; object-fit: cover">
-                        </div>
-                    
-                   
-                        
-                    <div data-aos="zoom-in"class="position-fixed top-0 p-2 display-on-hover">
-                        <div class=" py-2  badge text-bg-light fw-light ">{{ post.date | date: date_format }}</div>
-                    </div>
-                </a>
-                    
-                <div class="card-body">
-                    <a href="{{ post.url | relative_url }}"  class="fs-5 fw-bold card-title text-decoration-none text-dark">{{ post.title }}</a>
-                    <p class="card-text">{{ post.short_description }}</p>
-                </div>
-                
-                <div class="px-3">
-                    {% assign labels = post.labels | split: ", " %}
-                    {% for label in labels %}
-                    <span class="badge bg-dark rounded"> {{ label }}</span>
-                    {% endfor %}
-                </div>
-                
-                <div class="justify-content-end p-4">
-                    <a href="{{ post.url | relative_url }}" class="float-end text-dark badge text-bg-light fw-light fs-6 text-decoration-none btn-hover" type="button">Ver mais</a>
-                </div>
-                    
-            </div>
-        
+        <div class="px-3">
+          {% assign labels = post.labels | split: ", " %}
+          {% for label in labels %}
+          <span class="badge bg-dark rounded"> {{ label }}</span>
+          {% endfor %}
         </div>
-        {%- endfor -%}
 
-         <!-- PAGINATION -->
-         {% if paginator.total_pages > 1 %}
-         <div data-aos="fade-up" class="pagination justify-content-end gap-2">
+        <div class="justify-content-end p-4">
+          <a href="{{ post.url | relative_url }}"
+            class="float-end text-dark badge text-bg-light fw-light fs-6 text-decoration-none btn-hover" type="button">
+            {% t global.see_more %}
+          </a>
+        </div>
 
-             {% for page in (1..paginator.total_pages) %}
+      </div>
+    </div>
+    {%- endfor -%}
 
-                 {% if page == paginator.page %}
-                     <span class="text-dark p-2 bg-light btn btn-secondary">{{ page }}</span>
-                 {% elsif page == 1 %}
-                     <a class="text-decoration-none text-dark p-2 bg-light btn " href="{{ '/' | relative_url }}">{{ page }}</a>
-                 {% else %}
-                     <a class="text-decoration-none text-dark p-2 bg-light btn " href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-                 {% endif %}
-             {% endfor %}
-
-             
-             <a class="text-decoration-none text-dark p-2 bg-light btn " href="/projetos/">Ver Todos</a>
-         </div>
-         {% endif %}
-              
 </section>
 {%- endif -%}
 
@@ -129,14 +118,15 @@ title: Início
 
 <!-- CONTRATE-ME -->
 <section data-aos="fade-up" class="mt-4 ">
-    <div class="container">
-        <div class="text-dark bg-light border rounded  border-dark d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5">
-            <div class="pb-2 pb-lg-1">
-                <h2 class="fw-bold mb-2">Quer saber mais? Vamos Conversar!</h2>
-                <p class="mb-0">Você consegue me encontrar em diversas redes sociais.</p>
-            </div>
-            <div class="my-2"><a class="btn btn-outline-dark fs-5 py-2 px-4" role="button" href="/contrate-me/">Entrar em contato</a></div>
-        </div>
+  <div class="container">
+    <div
+      class="text-dark bg-light border rounded  border-dark d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5">
+      <div class="pb-2 pb-lg-1">
+        <h2 class="fw-bold mb-2">{% t home.contact-title %}</h2>
+        <p class="mb-0">{% t home.contact-text %}</p>
+      </div>
+      <div  data-aos="fade-up" class="my-2"><a class="btn btn-outline-dark fs-5 py-2 px-4" role="button" href="/contrate-me/">{% t
+          home.contact-btn %}</a></div>
     </div>
+  </div>
 </section>
-

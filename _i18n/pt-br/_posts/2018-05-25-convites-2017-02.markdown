@@ -1,0 +1,28 @@
+---
+layout: post
+title:  Convites 2017 - II
+date:   2018-05-25 14:47:50 -0300
+short_description: Mostra de convites luxo desenvolvidos para Cross Formaturas no ano de 2017.
+cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/e2b4aa63624621.5ab7dc588621c.png
+labels: Design Gráfico, Direção de Arte
+---
+{: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/8a1f0963624621.5ab7dc5888158.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/ec347963624621.5ab7dc5888906.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/eb755f63624621.5ab7dc5888c9e.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/f2d45863624621.5ab7dc5888467.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/46ccd563624621.5ab7dc5887ac3.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/9e1e8363624621.5ab7dc588717d.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/75691863624621.5ab7dc5889465.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/02cc7f63624621.5ab7dc5887620.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/6512a263624621.5ab7dc5887e4d.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/6484a763624621.5ab7dc58898de.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/66079063624621.5ab7dc5886533.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/be527763624621.5ab7dc5886dd9.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/ecb91663624621.5ab7dc58868f9.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/f297b063624621.5ab7dc5889152.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/e2b4aa63624621.5ab7dc588621c.png){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/49ed3f63624621.5ab7dc5885ec4.png){: .img-fluid}
+
+
+
