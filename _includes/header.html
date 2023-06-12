@@ -19,25 +19,25 @@
       <ul class="navbar-nav mx-auto">
 
         <li class="nav-item">
-          <a href="{% tl home %}" class="nav-link mx-4 {% if page.title == 'Home/Início' %}active{% endif %}">
+          <a href="{% translate_link home %}" class="nav-link mx-4 {% if page.title == 'Home/Início' %}active{% endif %}">
             {% t navigation.home %}
           </a>
         </li>
         <li class="nav-item">
 
-          <a href="{% tl skills %}" class="nav-link mx-4 {% if page.title == 'Skills/Habilidades' %}active{% endif %}">
+          <a href="{% translate_link skills %}" class="nav-link mx-4 {% if page.title == 'Skills/Habilidades' %}active{% endif %}">
             {% t navigation.skills %}
           </a>
         </li>
         <li class="nav-item">
 
-          <a href="{% tl experiences %}"
+          <a href="{% translate_link experiences %}"
             class="nav-link mx-4 {% if page.title == 'Experience/Experiências' %}active{% endif %}">
             {% t navigation.experiences %}
           </a>
         </li>
         <li class="nav-item">
-          <a href="{% tl projects %}" class="nav-link mx-4 {% if page.title == 'Projects/Projetos' %}active{% endif %}">
+          <a href="{% translate_link projects %}" class="nav-link mx-4 {% if page.title == 'Projects/Projetos' %}active{% endif %}">
             {% t navigation.projects %}
           </a>
         </li>
@@ -46,7 +46,7 @@
       <ul class="navbar-nav gap">
 
         <li class="nav-item">
-          <a  class="btn {% if page.title == 'Hire Me/Contrate-me' %} btn-primary {% else %} btn-outline-primary {% endif %}" role="button" href="{% tl hire_me %}"> {% t navigation.hire_me %}
+          <a  class="btn {% if page.title == 'Hire Me/Contrate-me' %} btn-primary {% else %} btn-outline-primary {% endif %}" role="button" href="{% translate_link hire_me %}"> {% t navigation.hire_me %}
           </a>
         </li>
 
