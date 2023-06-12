@@ -1,39 +1,75 @@
 <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3 bg-white shadow" id="mainNav">
-  
+
   <div class="container">
-    
-    <a class="navbar-brand d-flex align-items-center" href="/">
-      <span>Lucas Geron</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
-        <span class="visually-hidden">Toggle navigation</span>
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
+
+    <!-- HOME BTN -->
+    {% if site.lang == "pt-br" %}
+    <a class="navbar-brand d-flex align-items-center fw-light" href="{{ site.baseurl_root }}/"> <span>Lucas Geron</span> </a>
+    {% elsif site.lang == "en" %}
+    <a class="navbar-brand d-flex align-items-center fw-light" href="{{ site.baseurl_root }}/en/"> <span>Lucas Geron</span> </a>
+    {% endif %}
+
+    <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
     <div class="collapse navbar-collapse" id="navcol-1">
-          
-        <ul class="navbar-nav mx-auto">
-              {% for item in site.data.navigation %}
-              <li class="nav-item"><a href="{{ item.link }}" {% if page.url == item.link %}class="nav-link active mx-4" {% else %} class="nav-link mx-4" {% endif %}>{{ item.name }}</a></li>
-              {% endfor %}
-          </ul>
 
+      <ul class="navbar-nav mx-auto">
 
-        <ul class="gx-4 ">
+        <li class="nav-item">
+          <a href="{% tl home %}" class="nav-link mx-4 {% if page.title == 'Home/Início' %}active{% endif %}">
+            {% t navigation.home %}
+          </a>
+        </li>
+        <li class="nav-item">
 
-          <a class="btn btn-outline-primary"href="https://drive.google.com/file/d/1Jg0dxGRiRxxoVGxCh6-s-ZwdUJ89bkZw/view?usp=share_link" target="_blank"> <i class="fa fa-cloud-download"></i> PDF </a>
+          <a href="{% tl skills %}" class="nav-link mx-4 {% if page.title == 'Skills/Habilidades' %}active{% endif %}">
+            {% t navigation.skills %}
+          </a>
+        </li>
+        <li class="nav-item">
 
-          <a 
-          {% if page.url ==  '/contrate-me/'' %}
-          class="btn btn-primary" 
-          {% else %}
-          class="btn btn-outline-primary"
-          {% endif %}
-          role="button" href="/contrate-me/">Contrate-me</a>
-        
-        </ul>
+          <a href="{% tl experiences %}"
+            class="nav-link mx-4 {% if page.title == 'Experience/Experiências' %}active{% endif %}">
+            {% t navigation.experiences %}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{% tl projects %}" class="nav-link mx-4 {% if page.title == 'Projects/Projetos' %}active{% endif %}">
+            {% t navigation.projects %}
+          </a>
+        </li>
+      </ul>
 
+      <ul class="navbar-nav gap">
 
-        </div>
+        <li class="nav-item">
+          <a  class="btn {% if page.title == 'Hire Me/Contrate-me' %} btn-primary {% else %} btn-outline-primary {% endif %}" role="button" href="{% tl hire_me %}"> {% t navigation.hire_me %}
+          </a>
+        </li>
 
+      
+        <li class="nav-item">
+          <a class=" btn btn-outline-primary" href="https://drive.google.com/file/d/1Jg0dxGRiRxxoVGxCh6-s-ZwdUJ89bkZw/view?usp=share_link" target="_blank"> <i class="fa fa-cloud-download"></i> CV </a>
+        </li>
+
+        <li class="nav-item my-auto ">
+           <!-- TRANSLATE BUTTON -->
+           {% if site.lang == "pt-br" %}
+           <a href="{{ site.baseurl_root }}/en/" class="text-decoration-none"  > 
+           <img src="{{ site.baseurl_root }}/assets/images/languages/en.svg" alt="America-flag" height="32px" width="32px" class="rounded-3">
+           </a>
+         {% elsif site.lang == "en" %}
+           <a href="{{ site.baseurl_root }}/" class="text-decoration-none"  > 
+           <img src="{{ site.baseurl_root }}/assets/images/languages/pt-br.svg" alt="Brazil-flag" height="32px" width="32px" class="rounded-3">
+           </a>
+         {% endif %}
+        </li>
+      </ul>
+
+    </div>
 
   </div>
 </nav> 
