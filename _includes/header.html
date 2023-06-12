@@ -2,6 +2,10 @@
 
   <div class="container">
 
+    <div class="d-flex">
+
+
+
     <!-- HOME BTN -->
     {% if site.lang == "pt-br" %}
     <a class="navbar-brand d-flex align-items-center fw-light" href="{{ site.baseurl_root }}/"> <span>Lucas Geron</span> </a>
@@ -9,12 +13,39 @@
     <a class="navbar-brand d-flex align-items-center fw-light" href="{{ site.baseurl_root }}/en/"> <span>Lucas Geron</span> </a>
     {% endif %}
 
+
+    <!-- LOGIC TO TRANSLATE THE CURRENT PAGE -->
+    {% case page.title %}
+    {% when "Skills/Habilidades" %}
+      {% assign target = site.translations[site.lang].navigation.targets.skills %}
+    {% when "Experience/Experiências" %}
+      {% assign target = site.translations[site.lang].navigation.targets.experiences %}
+    {% when "Projects/Projetos" %}
+      {% assign target = site.translations[site.lang].navigation.targets.projects %}
+    {% when "Hire Me/Contrate-me" %}
+      {% assign target = site.translations[site.lang].navigation.targets.hire_me %}
+    {% else %}
+      {% assign target = site.translations[site.lang].navigation.targets.home %}
+    {% endcase %}
+
+    <!-- TRANSLATE BUTTON -->
+    <a href="{{ target }}" class="text-decoration-none my-auto"  > 
+      {% if site.lang == "pt-br" %}
+    <img src="{{ site.baseurl_root }}/assets/images/languages/en.svg" alt="America-flag" height="32px" width="32px" class="rounded-3">
+    {% elsif site.lang == "en" %}
+    <img src="{{ site.baseurl_root }}/assets/images/languages/pt-br.svg" alt="Brazil-flag" height="32px" width="32px" class="rounded-3">
+    {% endif %}
+    </a>
+
+    </div>
+
     <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
       <span class="visually-hidden">Toggle navigation</span>
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navcol-1">
+
+    <div class="collapse navbar-collapse text-center" id="navcol-1">
 
       <ul class="navbar-nav mx-auto">
 
@@ -56,35 +87,17 @@
         <li class="nav-item">
           <a class=" btn btn-outline-primary" href="https://drive.google.com/file/d/1Jg0dxGRiRxxoVGxCh6-s-ZwdUJ89bkZw/view?usp=share_link" target="_blank"> <i class="fa fa-cloud-download"></i> CV </a>
         </li>
-
-
-        <!-- LOGIC TO TRANSLATE THE CURRENT PAGE -->
-        {% case page.title %}
-        {% when "Skills/Habilidades" %}
-          {% assign target = site.translations[site.lang].navigation.targets.skills %}
-        {% when "Experience/Experiências" %}
-          {% assign target = site.translations[site.lang].navigation.targets.experiences %}
-        {% when "Projects/Projetos" %}
-          {% assign target = site.translations[site.lang].navigation.targets.projects %}
-        {% when "Hire Me/Contrate-me" %}
-          {% assign target = site.translations[site.lang].navigation.targets.hire_me %}
-        {% else %}
-          {% assign target = site.translations[site.lang].navigation.targets.home %}
-        {% endcase %}
-
-        <li class="nav-item my-auto ">
-           <!-- TRANSLATE BUTTON -->
-           <a href="{{ target }}" class="text-decoration-none"  > 
-             {% if site.lang == "pt-br" %}
-           <img src="{{ site.baseurl_root }}/assets/images/languages/en.svg" alt="America-flag" height="32px" width="32px" class="rounded-3">
-           {% elsif site.lang == "en" %}
-           <img src="{{ site.baseurl_root }}/assets/images/languages/pt-br.svg" alt="Brazil-flag" height="32px" width="32px" class="rounded-3">
-           {% endif %}
-          </a>
-        </li>
+        
       </ul>
 
     </div>
 
+
+    
+
+
   </div>
+
+
+
 </nav> 
