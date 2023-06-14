@@ -2,9 +2,9 @@
 layout: post
 title:  Fome de Ação
 date:   2020-06-28 14:47:51 -0300
-short_description: Material desenvolvido para Campanha Solidária Fome de Ação - Alimentando Vidas e Aquecendo Corações.
+short_description: Material developed for the Solidarity Campaign Hunger for Action - Feeding Lives and Warming Hearts.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/ec022099703611.5ef8e55004a27.gif
-labels: Design Gráfico, Direção de Arte
+labels: Graphic Design, Art Direction,
 ---
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/ec022099703611.5ef8e55004a27.gif){: .img-fluid}

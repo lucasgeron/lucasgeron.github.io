@@ -2,7 +2,7 @@
 layout: post
 title:  Mapeamento Comercial
 date:   2022-11-16 14:47:51 -0300
-short_description: O app pretende exibir as 'aulas' de cada 'semestre' de cada 'curso' de cada 'instituições' de cada 'cidades' - como 'tabuleiros'. Classificando as informações de exibição de forma interativa para obter uma melhor estratégia sobre as ações de vendas.
+short_description: Application developed as a prototype for mapping clients and graduating classes for the Cross Formaturas company
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/disp/b99ae1157902467.63815eaf28761.png
 labels: AppSheet, Spreadsheets.gs, WebApp
 ---
@@ -50,6 +50,3 @@ For 'Instituições'
 ### Remember
 
 Update the list of emails on automations tasks to recive notifications as well.
-
-
-

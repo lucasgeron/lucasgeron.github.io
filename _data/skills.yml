@@ -12,7 +12,7 @@
   category: Adobe Creative Cloud
   img_path: /assets/images/skills/illustrator.png
 
-- title: Bridgea
+- title: Bridge
   score: 100
   nivel: 4
   group: Creative Workspace
@@ -188,8 +188,8 @@
   img_path: /assets/images/skills/css.png
 
 - title: Javascript
-  score: 75
-  nivel: 3
+  score: 85
+  nivel: 4
   group: Web Development Workspace
   category: Technology
   img_path: /assets/images/skills/javascript.png
@@ -222,7 +222,7 @@
   nivel: 3
   img_path: /assets/images/skills/php.png 
 
-- title: MYSQL
+- title: MySQL
   group: Web Development Workspace
   category: Technology
   score: 75
@@ -232,22 +232,22 @@
 - title: Ruby
   group: Web Development Workspace
   category: Technology
-  score: 85
-  nivel: 3
+  score: 90
+  nivel: 4
   img_path: /assets/images/skills/ruby.png 
 
 - title: Rails
   group: Web Development Workspace
   category: Technology
-  score: 45
-  nivel: 2
+  score: 90
+  nivel: 4
   img_path: /assets/images/skills/rails.png 
 
 - title: Tailwind CSS
   group: Web Development Workspace
   category: Technology
-  score: 85
-  nivel: 3
+  score: 90
+  nivel: 4
   img_path: /assets/images/skills/tailwind.png 
 
 - title: Bootstrap
@@ -271,7 +271,7 @@
   nivel: 2
   img_path: /assets/images/skills/python.png 
 
-- title: Linux Ubuntu 20.04
+- title: Linux Ubuntu
   group: Web Development Workspace
   category: Technology
   score: 85
@@ -292,7 +292,7 @@
   nivel: 3
   img_path: /assets/images/skills/heroku.png 
 
-- title: VPS-cloud Server
+- title: VPS Cloud Server
   group: Web Development Workspace
   category: Technology
   score: 80
@@ -302,6 +302,6 @@
 - title: Docker
   group: Web Development Workspace
   category: Technology
-  score: 25
-  nivel: 1
+  score: 70
+  nivel: 3
   img_path: /assets/images/skills/docker.png 

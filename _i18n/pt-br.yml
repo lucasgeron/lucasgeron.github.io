@@ -17,16 +17,18 @@ global:
   year: Ano
   duration: Duração
   hours: Horas
+  not_found_title: Página não encontrada
+  not_found_description: A página solicitada não pôde ser encontrada
 home:
   main-title: Olá, eu sou o 
   main-sub-title: Trabalho com
   objective-title: Objetivo
-  objective-text: Ambicioso e proativo, busco desafios que me façam crescer profissionalmente e que contribuam para o resultado financeiro da instituição de trabalho. Um cara muito organizado, que gosta de fazer parte de grandes projetos, seja liderando ou participando, de forma ativa e com metas.
+  objective-text: Sou ambicioso e proativo, sempre em busca de desafios que me permitam crescer profissionalmente e contribuir para o sucesso financeiro da empresa em que trabalho. Sou extremamente organizado e gosto de participar de projetos importantes, seja como líder ou como membro ativo da equipe, sempre trabalhando com metas claras.
   resume-title: Resumo
-  resume-text: Perfil observador e realista, com facilidade para enxergar oportunidades de negócio, analisar e associar informações de forma coerente e fundamentada. Scrum e comunicação fazem parte da minha rotina.  
+  resume-text: Tenho um perfil observador e realista, com facilidade para identificar oportunidades de negócio e analisar informações de forma coerente e fundamentada. Scrum e boa comunicação fazem parte da minha rotina de trabalho.
   last-projects: Últimos Projetos
-  contact-title: Quer saber mais? Vamos Conversar!
-  contact-text: Você consegue me encontrar em diversas redes sociais.
+  contact-title: Quer saber mais? Vamos conversar!
+  contact-text: Você pode me encontrar em várias redes sociais.
   contact-btn: Entrar em contato
 skills:
   beginner: Novato

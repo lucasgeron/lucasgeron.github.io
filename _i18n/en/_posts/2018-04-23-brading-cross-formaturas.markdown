@@ -2,18 +2,10 @@
 layout: post
 title:  Branding Cross Formaturas
 date:   2018-04-23 14:47:51 -0300
-short_description: Criação de uma identidade visual para a marca Cross Formaturas.
+short_description: Creation of the visual identity for the Cross Graduations brand.
 cover: https://mir-s3-cdn-cf.behance.net/projects/original/796a8163556219.Y3JvcCwxMjQ5LDk3Nyw5Miww.png
-labels: Branding, Design Gráfico, Direção de Arte
+labels: Branding, Graphic Design, Art Direction
 ---
-
-<p>
-  {{ page.date | date_to_string }}
-  {% assign author = site.authors | where: 'short_name', page.author | first %}
-  {% if author %}
-    - <a href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %}
-</p>
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/6db87a63556219.5ab42ad2cffc2.png){: .img-fluid}
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/1a7bf363556219.5ab42ad2d04ab.jpg){: .img-fluid}

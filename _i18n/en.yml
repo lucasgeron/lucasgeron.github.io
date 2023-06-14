@@ -17,16 +17,18 @@ global:
   year: Year
   duration: Duration
   hours: Hours
+  not_found_title: Page not found
+  not_found_description: The requested page could not be found
 home:
   main-title: Hello, I'm  
   main-sub-title: Work with
   objective-title: Objective 
-  objective-text: Ambitious and proactive, I seek challenges that help me grow professionally and contribute to the financial results of my workplace. I am highly organized and enjoy being part of large projects, whether leading or actively participating, with clear goals in mind.
+  objective-text: I am ambitious and proactive, always seeking challenges that allow me to grow professionally and contribute to the financial success of the company I work for. I am extremely organized and enjoy participating in important projects, whether as a leader or as an active member of the team, always working with clear goals.
   resume-title: Resume
-  resume-text:  I have an observant and realistic profile, with a talent for identifying business opportunities and analyzing and connecting information in a coherent and well-founded manner. Scrum and communication are integral parts of my daily routine.
+  resume-text:  I have an observant and realistic profile, with the ability to identify business opportunities and analyze information in a coherent and well-founded manner. Scrum and effective communication are parts of my work routine.
   last-projects: Last Projects
   contact-title: Wanna know more? Let's talk!
-  contact-text: You can find me on a lot of social networks.
+  contact-text: You can find me on various social networks.
   contact-btn: Get in touch
 skills:
   beginner: Beginner

@@ -2,9 +2,10 @@
 layout: post
 title:  Cervegeada
 date:   2019-08-11 14:47:51 -0300
-short_description: Projeto desenvolvido para promover a segunda edição da festa "CerveGeada 2019" organizado pela empresa Cross Formaturas.
+short_description: Project developed to promote the second edition of the CerveGeada 2019 party organized by Cross Formaturas company.
 cover: https://mir-s3-cdn-cf.behance.net/projects/original/86141384041211.Y3JvcCwxMzk5LDEwOTUsMCww.jpg
-labels: Design Gráfico, Direção de Arte, Festas e Eventos
+labels: Graphic Design, Art Direction, Parties and Events
+---
 ---
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/1171c884041211.5d507b8ed3670.jpg){: .img-fluid}
