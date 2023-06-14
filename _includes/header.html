@@ -39,11 +39,19 @@
 
     </div>
 
+    <div class=" d-inline-flex ">
+    <ul class="navbar-nav gap d-flex d-md-none mx-2">
+      <li class="nav-item">
+        <a class=" btn btn-outline-primary" href="assets/files/Lucas Fernando Geron - (46) 9 9922 0095 ({{site.lang}}).pdf" target="_blank"> <i class="fa fa-cloud-download"></i> CV </a>
+      </li>
+    </ul>
+
+
     <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
       <span class="visually-hidden">Toggle navigation</span>
       <span class="navbar-toggler-icon"></span>
     </button>
-
+  </div>
 
     <div class="collapse navbar-collapse text-center" id="navcol-1">
 
@@ -74,9 +82,14 @@
             {% t navigation.projects %}
           </a>
         </li>
+        <li class="nav-item d-md-none">
+          <a href="{% tl hire_me %}" class="nav-link mx-4 {% if page.title == 'Hire Me/Contrate-me' %}active{% endif %}">
+            {% t navigation.hire_me %}
+          </a>
+        </li>
       </ul>
 
-      <ul class="navbar-nav gap">
+      <ul class="navbar-nav gap d-none d-md-flex">
 
         <li class="nav-item">
           <a  class="btn {% if page.title == 'Hire Me/Contrate-me' %} btn-primary {% else %} btn-outline-primary {% endif %}" role="button" href="{% tl hire_me %}"> {% t navigation.hire_me %}
@@ -85,7 +98,7 @@
 
       
         <li class="nav-item">
-          <a class=" btn btn-outline-primary" href="https://drive.google.com/file/d/1Jg0dxGRiRxxoVGxCh6-s-ZwdUJ89bkZw/view?usp=share_link" target="_blank"> <i class="fa fa-cloud-download"></i> CV </a>
+          <a class=" btn btn-outline-primary" href="assets/files/Lucas Fernando Geron - (46) 9 9922 0095 ({{site.lang}}).pdf" target="_blank"> <i class="fa fa-cloud-download"></i> CV </a>
         </li>
         
       </ul>

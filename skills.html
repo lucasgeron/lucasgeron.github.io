@@ -34,10 +34,10 @@ permalink_en: /skills/
         <h1 class="page-header"> {{ skills_group[count] }}</h1>
     </div>
 
-    <div class="row">
 
         {% for item in group %}
 
+        <div class="row">
         <!-- SKILL CARD  -->
         <div data-aos="fade-up" class="col-sm-6 col-md-6 col-lg-3 p-2  skill">
 
@@ -83,10 +83,10 @@ permalink_en: /skills/
 
         </div>
 
-
+    </div>
         {% endfor %}
 
-    </div>
+
 </section>
 {% assign count = count | plus: 1 %}
 {% endfor %}
