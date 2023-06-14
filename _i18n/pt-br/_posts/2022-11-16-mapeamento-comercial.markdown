@@ -2,54 +2,51 @@
 layout: post
 title:  Mapeamento Comercial
 date:   2022-11-16 14:47:51 -0300
-short_description: O app pretende exibir as 'aulas' de cada 'semestre' de cada 'curso' de cada 'instituições' de cada 'cidades' - como 'tabuleiros'. Classificando as informações de exibição de forma interativa para obter uma melhor estratégia sobre as ações de vendas.
+short_description: Aplicativo desenvolvido como protótipo para mapeamento de clientes e turmas de formandos para a empresa Cross Formaturas.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/disp/b99ae1157902467.63815eaf28761.png
 labels: AppSheet, Spreadsheets.gs, WebApp
 ---
 
 
 # Mapeamento-Comercial
-![version](https://img.shields.io/badge/version-1.0-blue)
+![versão](https://img.shields.io/badge/version-1.0-blue)
 
-Develop and monitor the sales strategy of the commercial team through an application for collective use.
+Desenvolva e monitore a estratégia de vendas da equipe comercial por meio de um aplicativo para uso coletivo.
 
-This project is an app builded on AppSheet and has the main objective of mapping the classes of students and new client by a simple way.
+Este projeto é um aplicativo construído no AppSheet e tem como principal objetivo mapear as turmas de alunos e novos clientes de maneira simples.
 
-This project was developed to a company who works with graduations party in brazil. 
-This repository is a empty sample of the app.
+Este projeto foi desenvolvido para uma empresa que trabalha com festas de formatura no Brasil.
+Este repositório é uma amostra vazia do aplicativo.
 
-# Live Demo
+# Demonstração ao vivo
 
-## [LIVE VERSION - Mapeamento Comercial Sample](https://www.appsheet.com/templates/Sistema-de-Intelig%C3%AAncia-Comercial-para-Empresas-de-Formaturas?appGuidString=a9436ec2-a586-494d-8352-bf38b8efe3af)
+## [VERSÃO AO VIVO - Amostra Comercial de Mapeamento](https://www.appsheet.com/templates/Sistema-de-Intelig%C3%AAncia-Comercial-para-Empresas-de-Formaturas?appGuidString=a9436ec2-a586-494d-8352-bf38b8efe3af)
 
-# Instalation Guide: 
+# Guia de instalação:
 
-- Create a new Stand alone script in Google Apps Script
-- Import 'Scripts/script.gs' into the new stand alone script.
-- Replace the 'DB_ID' to your database sheet id.
-- Check the [Mapeamento Comercial Sample](https://www.appsheet.com/templates/Sistema-de-Intelig%C3%AAncia-Comercial-para-Empresas-de-Formaturas?appGuidString=a9436ec2-a586-494d-8352-bf38b8efe3af) App and make a copy of it. 
-- In AppSheet, configure the "Script.gs" as script source in *automations* functions
-- Remeber to edit your share settings, branding info and all other configurations.
-- Deploy your app. Enjoy it. 
+- Crie um novo script autônomo no Google Apps Script
+- Importe 'Scripts/script.gs' para o novo script autônomo.
+- Substitua o 'DB_ID' pelo ID da planilha do seu banco de dados.
+- Verifique o aplicativo [Amostra Comercial de Mapeamento](https://www.appsheet.com/templates/Sistema-de-Intelig%C3%AAncia-Comercial-para-Empresas-de-Formaturas?appGuidString=a9436ec2-a586-494d-8352-bf38b8efe3af) e faça uma cópia dele.
+- No AppSheet, configure o "Script.gs" como fonte do script nas funções *automações*
+- Lembre-se de editar suas configurações de compartilhamento, informações de marca e todas as outras configurações.
+- Implante seu aplicativo. Aproveite.
 
-### Final adjustiments...
+### Ajustes finais ...
 
-Setting your Images Routes
-For 'Empresas'
-- Upload the folders "Empresas_Images" to your Goggle Drive Root Folder.
-- In AppSheet, Data/Tabuleiros/Columns/ search for 'Empresa Logo', edit it, and set the path to the image in your Google Drive Root Folder as default directory.
+Configurando suas rotas de imagens
+Para 'Empresas'
+- Faça o upload das pastas "Empresas_Images" para a pasta raiz do seu Goggle Drive.
+- No AppSheet, Data/Tabuleiros/Columns/ procure por 'Empresa Logo', edite-o e defina o caminho para a imagem na pasta raiz do seu Google Drive como diretório padrão.
 
-For 'Representantes'
-- Upload the folders "Representantes_Images" to your Goggle Drive Root Folder.
-- In AppSheet, Data/Representantes/ click 'View Source', go to the sheet 'Representates' and set the path to image in column 'avatar'.
+Para 'Representantes'
+- Faça o upload das pastas "Representantes_Images" para a pasta raiz do seu Goggle Drive.
+- No AppSheet, Data/Representantes/ clique em 'Ver fonte', vá para a planilha 'Representates' e defina o caminho para a imagem na coluna 'avatar'.
 
-For 'Instituições'
-- Upload the folders "Instituições_Images" to your Goggle Drive Root Folder.
-- In AppSheet, Data/Instituições/ click 'View Source', go to the sheet 'Instituições' and set the path to image in column 'logo'.
+Para 'Instituições'
+- Faça o upload das pastas "Instituições_Images" para a pasta raiz do seu Goggle Drive.
+- No AppSheet, Data/Instituições/ clique em 'Ver fonte', vá para a planilha 'Instituições' e defina o caminho para a imagem na coluna 'logo'.
 
-### Remember
+### Lembre-se
 
-Update the list of emails on automations tasks to recive notifications as well.
-
-
-
+Atualize a lista de emails nas tarefas de automação para receber notificações também.
