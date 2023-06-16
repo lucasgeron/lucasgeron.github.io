@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Inter Colégios - 2º Edição
-date:   2019-08-10 14:47:51 -0300
+date:   2019-08-10
 short_description: Project developed to promote the second edition of the Inter Colégios party organized by Cross Formaturas company.
 cover: https://mir-s3-cdn-cf.behance.net/projects/original/86620384027477.Y3JvcCwxMzk5LDEwOTUsMCww.jpg
 labels: Graphic Design, Art Direction, Parties and Events

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Cervegeada
-date:   2019-08-11 14:47:51 -0300
+date:   2019-08-11
 short_description: Project developed to promote the second edition of the CerveGeada 2019 party organized by Cross Formaturas company.
 cover: https://mir-s3-cdn-cf.behance.net/projects/original/86141384041211.Y3JvcCwxMzk5LDEwOTUsMCww.jpg
 labels: Graphic Design, Art Direction, Parties and Events

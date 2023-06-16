@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  SenderApp for WhatsApp
-date:   2022-11-15 14:47:51 -0300
+date:   2022-11-15
 short_description: Send hundreds of personalized text messages in minutes without adding contacts to your mobile device with SenderApp for WhatsApp.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/384f5f157902067.63815a43aa8e8.png
 labels: Bot, GAS, Python, Spreadsheets.gs, WhatsApp API

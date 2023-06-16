@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Inter Colégios - 2º Edição
-date:   2019-08-10 14:47:51 -0300
+date:   2019-08-10
 short_description: Projeto desenvolvido para promover a segunda edição da festa Intercolégios realizada pela empresa cross formaturas em Guarapuava - PR.
 cover: https://mir-s3-cdn-cf.behance.net/projects/original/86620384027477.Y3JvcCwxMzk5LDEwOTUsMCww.jpg
 labels: Design Gráfico, Direção de Arte, Festas e Eventos

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Med in Vegas
-date:   2020-03-08 14:47:51 -0300
+date:   2020-03-08
 short_description: Project developed for the 1/3 Doctor party with the Med in Vegas theme. Customer Cross Premium | Cross Formaturas | Medicine Class T1 - Campo Real - Guarapuava.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/11ad9793455281.5e657557d461b.png
 labels: Graphic Design, Art Direction, Parties and Events

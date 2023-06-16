@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  P5 Projects
-date:   2023-01-20 14:47:51 -0300
+date:   2023-01-20
 short_description: p5.js é uma biblioteca JavaScript para codificação criativa, com foco em tornar a codificação acessível e inclusiva para artistas, designers, educadores, iniciantes e qualquer outra pessoa!
 cover: https://i.ibb.co/cFwDt5D/Screenshot-1.jpg
 labels: p5, Web Development, WebApp

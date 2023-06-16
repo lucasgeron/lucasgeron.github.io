@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Mais que uma Atlética
-date:   2019-04-26 14:47:51 -0300
+date:   2019-04-26
 short_description: This project was developed for the Academic Athletic Association of Applied Social Sciences Unicentro Guarapuava, for the Econo 2019 event.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/5aa6b979467533.5cc3a02ee4964.png
 labels:  Graphic Design, Art Direction, Product Design

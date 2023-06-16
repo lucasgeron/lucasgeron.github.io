@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Gabriela Abreu Fisioterapeuta
-date:   2022-08-08 14:47:51 -0300
+date:   2022-08-08
 short_description: Development of logo and visual identity for a physiotherapy professional, with a focus on highlighting her name in the segment.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/e09cc3146465033.62f1aa92906e6.png
 labels: Branding, Graphic Design, Art Direction

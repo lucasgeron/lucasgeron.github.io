@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  It's Wine - Comercio de Vinhos
-date:   2019-11-05 14:47:51 -0300
+date:   2019-11-05
 short_description: It's Wine é uma proposta de identidade visual para uma empresa que atua no comércio de vinhos.
 cover: https://mir-s3-cdn-cf.behance.net/projects/original/d4ee1d86425833.Y3JvcCwxMDIyLDgwMCwwLDA.jpg
 labels: Branding, Design Gráfico, Direção de Arte

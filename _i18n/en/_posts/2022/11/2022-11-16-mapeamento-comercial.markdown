@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Mapeamento Comercial
-date:   2022-11-16 14:47:51 -0300
+date:   2022-11-16
 short_description: Application developed as a prototype for mapping clients and graduating classes for the Cross Formaturas company
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/disp/b99ae1157902467.63815eaf28761.png
 labels: AppSheet, Spreadsheets.gs, WebApp

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Fome de Ação
-date:   2020-06-28 14:47:51 -0300
+date:   2020-06-28
 short_description: Material developed for the Solidarity Campaign Hunger for Action - Feeding Lives and Warming Hearts.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/ec022099703611.5ef8e55004a27.gif
 labels: Graphic Design, Art Direction,

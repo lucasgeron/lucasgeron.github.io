@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Convites 2017 - II
-date:   2018-05-25 14:47:50 -0300
+date:   2018-05-25
 short_description: Mostra de convites luxo desenvolvidos para Cross Formaturas no ano de 2017.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/e2b4aa63624621.5ab7dc588621c.png
 labels: Design Gráfico, Direção de Arte

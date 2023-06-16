@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Mapeamento Comercial
-date:   2022-11-16 14:47:51 -0300
+date:   2022-11-16
 short_description: Aplicativo desenvolvido como protótipo para mapeamento de clientes e turmas de formandos para a empresa Cross Formaturas.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/disp/b99ae1157902467.63815eaf28761.png
 labels: AppSheet, Spreadsheets.gs, WebApp

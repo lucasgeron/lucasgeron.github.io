@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Bonde do PCC
-date:   2019-08-03 14:47:51 -0300
+date:   2019-08-03
 short_description: The Bonde do P.C.C is the union of the 'Pandemia', 'Cacique' and 'Calango' Athletic Associations. The project arose from the union of the three athletic associations to participate in the excursion to Universipraia 2019.
 cover: https://mir-s3-cdn-cf.behance.net/projects/original/be305885266585.Y3JvcCwxMDIyLDgwMCw2NSww.jpg
 labels: Graphic Design, Art Direction, Product Design
