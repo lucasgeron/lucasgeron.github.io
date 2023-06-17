@@ -9,4 +9,4 @@ labels: "Laravel 8.0, MySQL, Web Development"
 
 # Postagem Em Desenvolvimento
 
-## Disponível em [Cross Formaturas](www.crossformaturas.com.br)
+## Disponível em [Cross Formaturas](http://www.crossformaturas.com.br)
