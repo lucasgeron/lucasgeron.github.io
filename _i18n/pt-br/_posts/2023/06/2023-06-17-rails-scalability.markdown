@@ -4,7 +4,7 @@ layout: post
 title: "Como escalar uma aplicação RoR"
 date: 2023-06-17
 short_description: "Saiba a diferença entre escalar uma aplicação de forma horizontal ou vertical e descubra porque escalabilidade é importante para uma aplicação Ruby on Rails"
-cover: https://i0.wp.com/www.lilo.co.uk/wp-content/uploads/2011/07/ruby-on-rails.jpg?w=1024&ssl=1
+cover: https://i.ibb.co/zfX2CmL/ruby-on-rails.png
 labels: "Ruby, Rails, Web Development"
 
 ---
