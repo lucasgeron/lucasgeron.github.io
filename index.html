@@ -78,7 +78,7 @@ permalink_en: /
 
         <a href="{{ post.url | relative_url }} " class="text-decoration-none text-dark">
           <div class="group-hover">
-            <img src="{{ post.cover }}" class="card-img-top " style="max-height: 13rem; object-fit: cover">
+            <img src="{{ post.cover | prepend: site.baseurl_root }}" class="card-img-top " style="max-height: 13rem; object-fit: cover">
           </div>
 
           <div data-aos="zoom-in" class="position-fixed top-0 p-2 display-on-hover">

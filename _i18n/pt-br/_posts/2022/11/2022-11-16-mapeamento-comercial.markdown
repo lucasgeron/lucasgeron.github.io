@@ -3,13 +3,21 @@ layout: post
 title:  Mapeamento Comercial
 date:   2022-11-16
 short_description: Aplicativo desenvolvido como protótipo para mapeamento de clientes e turmas de formandos para a empresa Cross Formaturas.
-cover: https://mir-s3-cdn-cf.behance.net/project_modules/disp/b99ae1157902467.63815eaf28761.png
+cover: /assets/images/covers/all/mapeamento-comercial.png
 labels: AppSheet, Spreadsheets.gs, WebApp
 ---
 
 
 # Mapeamento-Comercial
 ![versão](https://img.shields.io/badge/version-1.0-blue)
+
+Aplicativo desenvolvido como protótipo para mapeamento de clientes e turmas de formandos para a empresa Cross Formaturas.
+
+<div>
+  <a href="https://www.appsheet.com/templates/Sistema-de-Intelig%C3%AAncia-Comercial-para-Empresas-de-Formaturas?appGuidString=a9436ec2-a586-494d-8352-bf38b8efe3af" target="_blank" class="text-decoration-none">
+  <img src="/assets/images/covers/pt-br/mapeamento-comercial.png" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
+  </a>
+</div>
 
 Desenvolva e monitore a estratégia de vendas da equipe comercial por meio de um aplicativo para uso coletivo.
 
@@ -18,9 +26,9 @@ Este projeto é um aplicativo construído no AppSheet e tem como principal objet
 Este projeto foi desenvolvido para uma empresa que trabalha com festas de formatura no Brasil.
 Este repositório é uma amostra vazia do aplicativo.
 
-# Demonstração ao vivo
+### [VERSÃO DEMO - Amostra Comercial de Mapeamento](https://www.appsheet.com/templates/Sistema-de-Intelig%C3%AAncia-Comercial-para-Empresas-de-Formaturas?appGuidString=a9436ec2-a586-494d-8352-bf38b8efe3af)
 
-## [VERSÃO AO VIVO - Amostra Comercial de Mapeamento](https://www.appsheet.com/templates/Sistema-de-Intelig%C3%AAncia-Comercial-para-Empresas-de-Formaturas?appGuidString=a9436ec2-a586-494d-8352-bf38b8efe3af)
+-----
 
 # Guia de instalação:
 

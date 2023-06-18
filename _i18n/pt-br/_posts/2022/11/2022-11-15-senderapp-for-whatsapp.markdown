@@ -3,9 +3,20 @@ layout: post
 title:  SenderApp for WhatsApp
 date:   2022-11-15
 short_description: Envie centenas de mensagens de texto personalizadas em minutos sem adicionar contatos em seu dispositivo móvel com o SenderApp for WhatsApp.
-cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/384f5f157902067.63815a43aa8e8.png
+cover: /assets/images/covers/all/senderapp-for-whatsapp.png
 labels: Bot, GAS, Python, Spreadsheets.gs, WhatsApp API
 ---
+
+# SenderApp for WhatsApp
+
+Envie centenas de mensagens de texto personalizadas em minutos sem adicionar contatos em seu dispositivo móvel com o SenderApp for WhatsApp.
+
+
+<div>
+  <img src="/assets/images/covers/all/senderapp-for-whatsapp.png" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
+</div>
+
+------
 
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/3c18ec157902067.63815a43a623d.png){: .img-fluid}
@@ -14,9 +25,9 @@ labels: Bot, GAS, Python, Spreadsheets.gs, WhatsApp API
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/88b3a8157902067.63815a43a7426.png){: .img-fluid}
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/0f5063157902067.63815a43a3f17.png){: .img-fluid}
 <!-- ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/79736e157902067.63815a43a50ac.png){: .img-fluid} -->
-![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/d4837c157902067.63815a43aba5f.png){: .img-fluid}
+<!-- ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/d4837c157902067.63815a43aba5f.png){: .img-fluid} -->
 
-# SenderApp for WhatsApp
+
 
 ##### Server Specifications:  
 ![](https://img.shields.io/static/v1?label=Hosted%20on&message=Google%20Apps%20Scripts%20%2F%20Google%20Cloud%20Project&color=important)

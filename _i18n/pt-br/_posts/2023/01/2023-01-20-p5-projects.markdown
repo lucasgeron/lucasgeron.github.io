@@ -1,45 +1,36 @@
 ---
 layout: post
-title:  P5 Projects
+title:  Projetos P5
 date:   2023-01-20
 short_description: p5.js é uma biblioteca JavaScript para codificação criativa, com foco em tornar a codificação acessível e inclusiva para artistas, designers, educadores, iniciantes e qualquer outra pessoa!
-cover: https://i.ibb.co/cFwDt5D/Screenshot-1.jpg
+cover: /assets/images/covers/all/p5-projects.png
 labels: p5, Web Development, WebApp
 ---
 
-
-# Fundo Dinâmico de Círculos
+# Projetos P5
 
 Este projeto é um aplicativo web simples que gera um fundo dinâmico com círculos através da biblioteca p5.js.
 
-Você pode controlar algumas variáveis como o tamanho dos círculos e a taxa de quadros da animação.
+<div>
+  <a href="https://lucasgeron.github.io/p5/circles-dynamic-background" target="_blank" class="text-decoration-none">
+  <img src="/assets/images/posts/p5-projects/circle-span.png" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
+  </a>
+</div>
 
-## Demonstração ao vivo
-
-### [Fundo Dinâmico de Círculos](https://lucasgeron.github.io/p5/circles-dynamic-background)
 
 ------
 
-
-# Fundo Dinâmico de Partículas
-
-Este projeto é um aplicativo web simples que gera um fundo simulador de rede com partículas através da biblioteca p5.js.
-
-Você pode controlar algumas variáveis como a velocidade e quantidade de partículas e as conexões estabelecidas através da rede.
-
-## Demonstração ao vivo
-
-### [Fundo Dinâmico de Partículas](https://lucasgeron.github.io/p5/particles-dynamic-background)
+<div>
+ <a href="https://lucasgeron.github.io/p5/particles-dynamic-background" target="_blank" class="text-decoration-none">
+  <img src="/assets/images/posts/p5-projects/particles.png" alt="" class=" w-100 img-fluid rounded-3 shadow my-4">
+  </a>
+</div>
 
 ------
 
+<div>
+ <a href="https://lucasgeron.github.io/p5/bubbles-dynamic-background" target="_blank" class="text-decoration-none">
+  <img src="/assets/images/posts/p5-projects/bubles.png" alt="" class=" w-100 img-fluid rounded-3 shadow mt-4">
+  </a>
+</div>
 
-# Fundo Dinâmico de Bolhas
-
-Este projeto é um aplicativo web simples que simula bolhas como fundo através da biblioteca p5.js.
-
-Você pode controlar algumas variáveis como a velocidade e quantidade de bolhas, força centrífuga e tamanho máximo dos elementos.
-
-## Demonstração ao vivo
-
-### [Fundo Dinâmico de Bolhas](https://lucasgeron.github.io/p5/bubbles-dynamic-background)

@@ -3,41 +3,33 @@ layout: post
 title:  P5 Projects
 date:   2023-01-20
 short_description: p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else! 
-cover: https://i.ibb.co/cFwDt5D/Screenshot-1.jpg
+cover: /assets/images/covers/all/p5-projects.png
 labels: p5, Web Development, WebApp
 ---
 
-
-# Circles Dynamic Background
-
+# P5 Projects
 This project is a simple web app that generates a dynamic background with circles thought the p5.js library.
 
-You can control some variables as the size of circles e the framerate of the animation.
+<div>
+  <a href="https://lucasgeron.github.io/p5/circles-dynamic-background" target="_blank" class="text-decoration-none">
+  <img src="/assets/images/posts/p5-projects/circle-span.png" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
+  </a>
+</div>
 
-## Live Demo
-
-### [Circles Dynamic Background](https://lucasgeron.github.io/p5/circles-dynamic-background)
-
-------
-
-# Particles Dynamic Background
-
-This project is a simple web app that generates a network simulator background with particles thought the p5.js library.
-
-You can control some variables as the speed and ammount of particles and the connections stablished thought the network.
-
-## Live Demo
-
-### [Particles Dynamic Background](https://lucasgeron.github.io/p5/particles-dynamic-background)
 
 ------
 
-# Bubbles Dynamic Background
+<div>
+ <a href="https://lucasgeron.github.io/p5/particles-dynamic-background" target="_blank" class="text-decoration-none">
+  <img src="/assets/images/posts/p5-projects/particles.png" alt="" class=" w-100 img-fluid rounded-3 shadow my-4">
+  </a>
+</div>
 
-This project is a simple web app that simulates bubbles as background thought the p5.js library.
+------
 
-You can control some variables as the speed and ammount of bubbles, centrifugal force and max size of elements.
+<div>
+ <a href="https://lucasgeron.github.io/p5/bubbles-dynamic-background" target="_blank" class="text-decoration-none">
+  <img src="/assets/images/posts/p5-projects/bubles.png" alt="" class=" w-100 img-fluid rounded-3 shadow mt-4">
+  </a>
+</div>
 
-## Live Demo
-
-### [Bubbles Dynamic Background](https://lucasgeron.github.io/p5/bubbles-dynamic-background)

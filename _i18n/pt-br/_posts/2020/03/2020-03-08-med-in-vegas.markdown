@@ -3,7 +3,7 @@ layout: post
 title:  Med in Vegas
 date:   2020-03-08
 short_description: Projeto desenvolvido para festa de 1/3 Médico com a temática Med in Vegas. Cliente Cross Premium | Cross Formaturas Turma Medicina T1 - Campo Real - Guarapuava.
-cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/11ad9793455281.5e657557d461b.png
+cover: /assets/images/covers/all/med-in-vegas.png
 labels: Design Gráfico, Direção de Arte, Festas e Eventos
 ---
 

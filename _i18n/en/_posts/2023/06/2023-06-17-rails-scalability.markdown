@@ -4,7 +4,7 @@ layout: post
 title: "How to scale a RoR Application"
 date: 2023-06-17
 short_description: "Know the difference between scaling an application horizontally or vertically and find out why scalability is important for a Ruby on Rails application."
-cover: https://i.ibb.co/pWNPznT/ruby-on-rails.png
+cover: /assets/images/covers/en/rails-scalability.png
 labels: "Ruby, Rails, Web Development"
 
 ---
@@ -13,7 +13,7 @@ labels: "Ruby, Rails, Web Development"
 Learn the difference between scaling an application horizontally or vertically and find out why scalability is important for a Ruby on Rails application.
 
 <div>
-  <img src="https://i.ibb.co/pWNPznT/ruby-on-rails.png" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
+  <img src="/assets/images/covers/en/rails-scalability.png" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
 </div>
 
 # What is scalability?
