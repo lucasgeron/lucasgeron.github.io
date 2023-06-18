@@ -18,9 +18,9 @@ Saiba a diferença entre escalar uma aplicação de forma horizontal ou vertical
 
 # O que é escalabilidade?
 
-Um framework é considerado escalável quando ele permite que uma aplicação seja construída de forma rápida e eficiente, e que possa crescer e se adaptar às mudanças de demanda sem comprometer o desempenho ou a estabilidade. 
+Um framework é considerado escalável quando ele permite que uma aplicação seja construída de forma rápida, eficiente, e que possa crescer e se adaptar às mudanças de demanda sem comprometer o desempenho ou a estabilidade. 
 
-Ruby on Rails é considerado escalável porque é um framework modularizado composto por vários outros frameworks especialistas em comportamentos diversos, como por exemplo o ActiveRecord, que é responsável por mapear classes da aplicação para tabelas do banco de dados, ActiveStorage, que facilita o upload de imagens para os servidores, ActionMailer, que permite enviar emails diretamente da aplicação, entre outros. Além disso, sua filosofia preza por um framework composto de um modo que diminui o número de decisões que um desenvolvedor precisa tomar, enquanto mantém o framework flexível e fácil de customizar. 
+Ruby on Rails é considerado escalável porque é um framework modularizado composto por vários outros frameworks especialistas em comportamentos diversos, como por exemplo o ActiveRecord, que é responsável por mapear classes da aplicação para tabelas do banco de dados, ActiveStorage, que facilita o upload de imagens para os servidores, ActionMailer, que permite enviar emails diretamente da aplicação, entre outros. Além disso, a filosofia de Rails preza por um framework composto, buscando diminuir o número de decisões que um desenvolvedor precisa tomar, enquanto mantém o framework flexível e fácil de customizar. 
 
 Ao desenvolver uma aplicação Ruby on Rails é importante tem em mente que ela pode crescer e que, em algum momento, será necessário escalar a aplicação. 
 
@@ -28,14 +28,11 @@ Ao desenvolver uma aplicação Ruby on Rails é importante tem em mente que ela 
 
 Inicialmente, quando a aplicação ainda é pequena, é possível que ela rode em um único servidor, mas conforme ela cresce, tanto em número de usuários quanto em serviços gerenciados, é necessário adicionar mais recursos para que ela continue funcionando bem. 
 
-Uma coisa é certa, sua aplicação ira ficar lenta ou até mesmo quebrar a medida que o trafego aumenta, desta forma, fazer com que os usuários esperarem demais implica que eles provavelmente desistam de usar a sua aplicação e procurem por outra mais eficiênte. Por sua vez, perder clientes reduz a receita e pode até mesmo fazer com que sua empresa feche as portas.
+Uma coisa é certa, sua aplicação irá ficar lenta ou até mesmo quebrar a medida que o trafego aumenta, desta forma, fazer com que os usuários esperem demais implica que eles provavelmente desistam de usar a sua aplicação e procurem por outra mais eficiênte. Por sua vez, perder clientes reduz a receita e pode até mesmo fazer com que sua empresa feche as portas.
 
 Escalabilidade é a capacidade de uma aplicação crescer sem que isso afete a performance. É importante ter em mente que escalar uma aplicação não é apenas adicionar mais recursos. Para que a aplicação seja escalável, é necessário que a aplicação seja desenvolvida de forma adequada.
 
-
-
 #### 5 Dicas em relação a escalabilidade
-
 
 - **Planeje a escalabilidade desde o início**: Ao projetar a arquitetura da aplicação, leve em consideração como ela pode ser escalada no futuro. Isso pode incluir escolher tecnologias e abordagens que facilitem a escalabilidade.
 
@@ -190,7 +187,7 @@ No que diz respeito a atualizações da aplicação, a forma horizontal também 
 
 Docker e Kubernetes são duas tecnologias que podem ajudar a escalar aplicativos web. Docker é uma plataforma de contêineres que permite que aplicativos sejam empacotados e implantados como contêineres, enquanto Kubernetes é uma plataforma de orquestração que automatiza o gerenciamento e escalonamento desses contêineres. Ao usar Docker e Kubernetes juntos, você pode criar e implantar contêineres em um cluster e, em seguida, usar o Kubernetes para gerenciar e escalar esses contêineres.
 
-Para escalar um aplicativo horizontalmente, você pode usar o Kubernetes para gerenciar e escalar seus contêineres em um cluster. Isso pode ajudar a garantir que seu aplicativo possa lidar com um número crescente de usuários e solicitações. Para fazer isto, você deve considerar os seguintes passos:
+Escalar um aplicativo horizontalmente pode ajudar a garantir que seu aplicativo possa lidar com um número crescente de usuários e solicitações. Para fazer isto, você deve considerar os seguintes passos:
 
 1. Certifique-se de que sua aplicação esteja contêinerizada usando uma tecnologia de contêineres como o Docker.
 2. Certifique-se que os contêineres sejam configurados como um cluster em uma plataforma de orquestração como o Kubernetes.
@@ -206,5 +203,5 @@ Nos dias atuais é muito comum que as aplicações sejam desenvolvidas para roda
 
 Os grandes provedores oferecem este serviço e permitem que você configure os servidores para escalar de forma automatica a medida em que trafego for maior do que o esperado. Para fazer isto, é necessário monitorar o desempenho da aplicação e configurar o serviço para adicionar ou remover servidores conforme necessário.
 
-É valido destacar que cada provedor tem sua própria forma de fazer isto, mas em geral, o processo é muito parecido. Por sua vez, quanto mais recursos sua aplicação utilizar do provedor, mais caro será o serviço. Também é importante destacar que assim que o fluxo de trafego é reduzido, o provedor tende a remove os servidores adicionais, que por sua vez, reduz o custo do serviço.
+É valido destacar que cada provedor tem sua própria forma de fazer isto, mas em geral, o processo é muito parecido. Quanto mais recursos sua aplicação utilizar do provedor, mais caro será o serviço, contudo, assim que o fluxo de trafego é reduzido, o provedor tende a remove os servidores adicionais e reduzir os custos dos serviços ao plano contratado.
 

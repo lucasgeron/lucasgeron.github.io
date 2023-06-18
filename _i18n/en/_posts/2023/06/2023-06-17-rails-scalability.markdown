@@ -18,9 +18,9 @@ Learn the difference between scaling an application horizontally or vertically a
 
 # What is scalability?
 
-A framework is considered scalable when it allows an application to be built quickly and efficiently, and can grow and adapt to changes in demand without compromising performance or stability.
+A framework is considered scalable when it allows an application to be built quickly, efficiently, and can grow and adapt to changes in demand without compromising performance or stability.
 
-Ruby on Rails is considered scalable because it is a modularized framework composed of several other frameworks specializing in various behaviors, such as ActiveRecord, which is responsible for mapping application classes to database tables, ActiveStorage, which facilitates image upload to servers, ActionMailer, which allows sending emails directly from the application, among others. In addition, its philosophy values a framework composed in a way that reduces the number of decisions a developer needs to make, while keeping the framework flexible and easy to customize.
+Ruby on Rails is considered scalable because it is a modularized framework composed of several other frameworks specialized in various behaviors, such as ActiveRecord, which is responsible for mapping application classes to database tables, ActiveStorage, which facilitates image upload to servers, ActionMailer, which allows sending emails directly from the application, among others. In addition, the Rails philosophy values a composite framework, seeking to reduce the number of decisions a developer needs to make while keeping the framework flexible and easy to customize.
 
 When developing a Ruby on Rails application, it is important to keep in mind that it can grow and that at some point it will be necessary to scale the application.
 
@@ -28,7 +28,7 @@ When developing a Ruby on Rails application, it is important to keep in mind tha
 
 Initially, when the application is still small, it may be possible for it to run on a single server, but as it grows, both in number of users and in managed services, it is necessary to add more resources so that it continues to work well.
 
-One thing is certain, your application will slow down or even break as traffic increases, so making users wait too long means they will probably give up using your application and look for another more efficient one. In turn, losing customers reduces revenue and can even cause your company to close its doors.
+One thing is certain, your application will become slow or even break as traffic increases, so making users wait too long means they will likely give up using your application and look for a more efficient one. In turn, losing customers reduces revenue and can even cause your company to close its doors.
 
 Scalability is the ability of an application to grow without affecting performance. It is important to keep in mind that scaling an application is not just adding more resources. For the application to be scalable, it must be developed properly.
 
@@ -186,7 +186,7 @@ With regard to application updates, horizontal form also brings advantages as it
 
 Docker and Kubernetes are two technologies that can help scale web applications. Docker is a container platform that allows applications to be packaged and deployed as containers, while Kubernetes is an orchestration platform that automates the management and scaling of these containers. By using Docker and Kubernetes together, you can create and deploy containers in a cluster and then use Kubernetes to manage and scale those containers.
 
-To scale an application horizontally, you can use Kubernetes to manage and scale your containers in a cluster. This can help ensure that your application can handle an increasing number of users and requests. To do this, you should consider the following steps:
+Scaling an application horizontally can help ensure that your application can handle an increasing number of users and requests. To do this, you should consider the following steps:
 
 1. Make sure your application is containerized using a container technology like Docker.
 2. Make sure the containers are configured as a cluster on an orchestration platform like Kubernetes.
@@ -202,4 +202,4 @@ Nowadays it is very common for applications to be developed to run in a cloud en
 
 The major providers offer this service and allow you to configure servers to scale automatically as traffic is greater than expected. To do this, it is necessary to monitor the performance of the application and configure the service to add or remove servers as needed.
 
-It is worth noting that each provider has its own way of doing this, but in general, the process is very similar. In turn, the more resources your application uses from the provider, the more expensive the service will be. It is also important to note that as soon as traffic flow is reduced, the provider tends to remove additional servers, which in turn reduces the cost of the service.
+It is worth noting that each provider has its own way of doing this, but in general, the process is very similar. The more resources your application uses from the provider, the more expensive the service will be. However, as soon as traffic flow is reduced, the provider tends to remove additional servers and reduce service costs to the contracted plan.
