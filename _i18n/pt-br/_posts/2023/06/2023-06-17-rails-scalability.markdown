@@ -12,9 +12,13 @@ labels: "Ruby, Rails, Web Development"
 # Como escalar uma aplicação RoR
 Saiba a diferença entre escalar uma aplicação de forma horizontal ou vertical e descubra porque escalabilidade é importante para uma aplicação Ruby on Rails.
 
-<div>
-  <img src="/assets/images/covers/pt-br/rails-scalability.png" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
+
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe allowtransparency="true" src="https://docs.google.com/presentation/d/e/2PACX-1vQ9DkC_30ZmtXrWdctqN7QABb0QrHwgi9MLdJeYxaYzP5E7l7r9OBzcqxkFreZwvg/embed?start=true&loop=true&delayms=1000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
+
+
 
 # O que é escalabilidade?
 
@@ -53,7 +57,7 @@ Considerando o fluxo de dados de uma aplicação web, isto é, Browser / Servido
       <p class="fw-bold mb-2 bg-secondary rounded-3 text-center text-white " > Melhorias no Browser</p>
       <ul class="">
         <li> Minifique arquivos CSS e JS </li>
-        <li> Otimize o cache da aplicaçlão </li>
+        <li> Otimize o cache da aplicação </li>
         <li> Compacte images </li>
         <li> Reduza o número de requisições </li>
       </ul>
