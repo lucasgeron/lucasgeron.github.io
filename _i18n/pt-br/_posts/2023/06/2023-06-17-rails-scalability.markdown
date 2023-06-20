@@ -18,7 +18,38 @@ Saiba a diferença entre escalar uma aplicação de forma horizontal ou vertical
   <iframe allowtransparency="true" src="https://docs.google.com/presentation/d/e/2PACX-1vQ9DkC_30ZmtXrWdctqN7QABb0QrHwgi9MLdJeYxaYzP5E7l7r9OBzcqxkFreZwvg/embed?start=true&loop=true&delayms=1000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
-
+<style>
+  .embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .embed-responsive::before {
+    display: block;
+    content: "";
+  }
+  
+  .embed-responsive .embed-responsive-item,
+  .embed-responsive iframe,
+  .embed-responsive embed,
+  .embed-responsive object,
+  .embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  .embed-responsive-16by9::before {
+    padding-top: 59.1%;
+  }
+</style>
 
 # O que é escalabilidade?
 
