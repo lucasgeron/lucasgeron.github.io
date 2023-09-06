@@ -12,7 +12,7 @@ languages: ["pt-br", "en"]
 exclude_from_localizations: ["javascript", "images", "css"]
 
 email: lucasf.geron@gmail.com
-description:  Bem-vindo ao meu site, onde você encontrará informações sobre meus projetos e habilidades em desenvolvimento web. Sou Lucas Geron, ambicioso e proativo, sempre buscando desafios que me façam crescer profissionalmente. Explore meus últimos projetos e entre em contato para saber mais.
+description:  Bem-vindo ao meu site, onde você encontrará informações sobre meus projetos e habilidades em desenvolvimento web. Explore meus últimos projetos e entre em contato para saber mais.
 
-
+highlighter: rouge
 
