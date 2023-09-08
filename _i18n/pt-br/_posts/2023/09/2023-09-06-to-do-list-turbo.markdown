@@ -43,9 +43,6 @@ De forma bem resumida, o Hotwire Turbo é um framework que permite que partes de
 <li> <a href="#resultado-final"> Resultado Final </a> </li>
 </ul>
 
-
-
-
 # Vamos começar
 ---------
 
