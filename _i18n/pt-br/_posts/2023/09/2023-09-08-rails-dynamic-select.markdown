@@ -5,7 +5,7 @@ title: "Select Dinâmico com Rails"
 date: 2023-09-08
 short_description: "Aprenda como implementar um select dinâmico com Rails e Hotwire. Neste tutorial te ensino a fazer isto do zero com um exemplo prático e muitos detalhes."
 cover: https://i.ibb.co/fXTPZ6P/20230908-200356.gif
-labels: "rails, hotwire, turbo, TIL, tutorial"
+labels: "rails, hotwire, turbo, TIL, Tutorial"
 
 ---
 
@@ -47,19 +47,13 @@ O usuário poderá adicionar/remover artigos a coleção, filtrando os artigos p
 ## 1. Criando o Projeto
 
 Em seu ambiente de Trabalho execute o comando abaixo para criar um novo projeto Rails:
-
 ```bash
-
-  rails new rails-dynamic-select --css=tailwind 
-
+rails new rails-dynamic-select --css=tailwind 
 ```
 
 Em seguida, acesse a pasta do projeto com o comando:
-
 ```bash
-
-  cd rails-dynamic-select
-
+cd rails-dynamic-select
 ```
 
 ## 2. Criando os Modelos
@@ -71,61 +65,45 @@ Os modelos da aplicação serão:
 
 
 Para criar os modelos, execute os comandos abaixo:
-
 ```bash
+rails g scaffold Author name:string --no-jbuilder
 
-  rails g scaffold Author name:string --no-jbuilder
+rails g scaffold Article title:string author:references --no-jbuilder
 
-  rails g scaffold Article title:string author:references --no-jbuilder
-
-  rails g scaffold Collection title:string --no-jbuilder
-
+rails g scaffold Collection title:string --no-jbuilder
 ```
 Considere que uma coleção pode conter vários artigos e um artigo pode pertencer a várias coleções, portanto também precisamos criar uma tabela de relacionamento entre as duas tabelas e por fim, realizar as associações entre as classes.
 
 Para criar a tabela de relacionamento, execute o comando abaixo:
-
 ```bash
-
-  rails g migration CreateArticlesCollections article:references collection:references
-
+rails g migration CreateArticlesCollections article:references collection:references
 ```
 
 Em ***app/models/author.rb*** adicione o código abaixo:
 ```ruby
-
-  class Author < ApplicationRecord
-    has_many :articles
-  end
-
+class Author < ApplicationRecord
+  has_many :articles
+end
 ```
 
 Em ***app/models/collection.rb*** adicione o código abaixo:
 ```ruby
-
-  class Collection < ApplicationRecord
-    has_and_belongs_to_many :articles
-  end
-
+class Collection < ApplicationRecord
+  has_and_belongs_to_many :articles
+end
 ```
 
 Em ***app/models/article.rb*** adicione o código abaixo:
-
 ```ruby
-
-  class Article < ApplicationRecord
-    belongs_to :author
-    has_and_belongs_to_many :collections
-  end
-
+class Article < ApplicationRecord
+  belongs_to :author
+  has_and_belongs_to_many :collections
+end
 ```
 
 Para completar a criação dos modelos, execute o comando abaixo para criar as tabelas no banco de dados:
-
 ```bash
-
-  rails db:migrate
-
+rails db:migrate
 ```
 
 ## 3. Populando a Base de Dados
@@ -133,40 +111,34 @@ Para completar a criação dos modelos, execute o comando abaixo para criar as t
 Como a intenção deste tutorial é demonstrar o select dinâmico, vamos criar alguns registros para popular o banco de dados diretamente no arquivo seed.
 
 Abra o arquivo *db/seeds.rb* e adicione o código abaixo:
-
 ```ruby
+author = Author.create(name: 'Albert Einstein')
+Article.create(author: author, title: "Sobre a Teoria da Relatividade Especial")
+Article.create(author: author, title: "A Natureza da Luz: Um Experimento de Pensamento")
+Article.create(author: author, title: "Efeito Fotoelétrico: Uma Janela para a Física Quântica")
+Article.create(author: author, title: "O Significado da E=mc²")
+Article.create(author: author, title: "A Teoria da Relatividade Geral e a Curvatura do Espaço-Tempo")
 
-  author = Author.create(name: 'Albert Einstein')
-  Article.create(author: author, title: "Sobre a Teoria da Relatividade Especial")
-  Article.create(author: author, title: "A Natureza da Luz: Um Experimento de Pensamento")
-  Article.create(author: author, title: "Efeito Fotoelétrico: Uma Janela para a Física Quântica")
-  Article.create(author: author, title: "O Significado da E=mc²")
-  Article.create(author: author, title: "A Teoria da Relatividade Geral e a Curvatura do Espaço-Tempo")
+author = Author.create(name: 'Charles Darwin')
+Article.create(author: author, title: "A Origem das Espécies por Meio de Seleção Natural")
+Article.create(author: author, title: "A Seleção Sexual e a Evolução das Características Secundárias")
+Article.create(author: author, title: "A Descendência do Homem e a Seleção em Relação ao Sexo")
+Article.create(author: author, title: "A Expressão das Emoções no Homem e nos Animais")
+Article.create(author: author, title: "A Viagem do Beagle: Uma Aventura Científica")
 
-  author = Author.create(name: 'Charles Darwin')
-  Article.create(author: author, title: "A Origem das Espécies por Meio de Seleção Natural")
-  Article.create(author: author, title: "A Seleção Sexual e a Evolução das Características Secundárias")
-  Article.create(author: author, title: "A Descendência do Homem e a Seleção em Relação ao Sexo")
-  Article.create(author: author, title: "A Expressão das Emoções no Homem e nos Animais")
-  Article.create(author: author, title: "A Viagem do Beagle: Uma Aventura Científica")
+author = Author.create(name: 'Marie Curie')
+Article.create(author: author, title: "Descoberta dos Elementos Rádio e Polônio")
+Article.create(author: author, title: "Radioatividade: Um Novo Fenômeno na Ciência")
+Article.create(author: author, title: "Aplicações Médicas da Radioterapia")
+Article.create(author: author, title: "A Vida e o Legado de Pierre Curie")
+Article.create(author: author, title: "Contribuições para a Compreensão da Radioatividade")
 
-  author = Author.create(name: 'Marie Curie')
-  Article.create(author: author, title: "Descoberta dos Elementos Rádio e Polônio")
-  Article.create(author: author, title: "Radioatividade: Um Novo Fenômeno na Ciência")
-  Article.create(author: author, title: "Aplicações Médicas da Radioterapia")
-  Article.create(author: author, title: "A Vida e o Legado de Pierre Curie")
-  Article.create(author: author, title: "Contribuições para a Compreensão da Radioatividade")
-
-  Collection.create(title: 'Minha Coleção')
-
+Collection.create(title: 'Minha Coleção')
 ```
 
 Em seguida, execute o comando abaixo para popular o banco de dados:
-
 ```bash
-
-  rails db:seed
-
+rails db:seed
 ```
 
 ## 4. Iniciando a Aplicação
@@ -174,26 +146,20 @@ Em seguida, execute o comando abaixo para popular o banco de dados:
 Antes de iniciarmos o servidor, vamos configurar as rotas da aplicação.
 
 Em ***config/routes.rb*** defina o root da aplicação para o controller *collections* e a action *index*:
-
 ```ruby
+Rails.application.routes.draw do
+  root "collections#index"
+  
+  resources :collections
+  resources :articles
+  resources :authors
 
-  Rails.application.routes.draw do
-    root "collections#index"
-    
-    resources :collections
-    resources :articles
-    resources :authors
-
-  end
-
+end
 ```
 
 Em seguida, inicie o servidor com o comando abaixo:
-
 ```bash
-
-  ./bin/dev 
-
+./bin/dev 
 ```
 
 Acesse a aplicação em http://localhost:3000 e você verá a tela abaixo:
@@ -210,27 +176,24 @@ Agora que já temos a aplicação funcionando, vamos criar o formulário dinâmi
 **Nota**: É válido lembrar que existem várias formas possível de implementar formulários com Rails, principalmente, formulários com relacionamentos entre tabelas. Tenha em mente que o objetivo deste tutorial é demonstrar como implementar um select dinâmico com Rails e Hotwire.
 
 Em ***app/views/collections/*** crie a partial ***_articles_form.html.erb*** e adicione o código abaixo:
-
 ```erb
+<%= form_with(url: add_article_collection_path(collection), class: "contents") do |form| %>
 
-  <%= form_with(url: add_article_collection_path(collection), class: "contents") do |form| %>
+  <div class="my-5">
+    <%= form.label :author %>
+    <%= form.collection_select :author, Author.all, :id, :name, {prompt: ''} %>
+  </div>
 
-    <div class="my-5">
-      <%= form.label :author %>
-      <%= form.collection_select :author, Author.all, :id, :name, {prompt: ''} %>
-    </div>
+  <div class="my-5">
+    <%= form.label :article_ids %>
+    <%= form.collection_select :article_ids, Article.none, :id, :title, {prompt: ''}, {data: {collection_target: 'articles'}} %>
+  </div>
 
-    <div class="my-5">
-      <%= form.label :article_ids %>
-      <%= form.collection_select :article_ids, Article.none, :id, :title, {prompt: ''}, {data: {collection_target: 'articles'}} %>
-    </div>
-
-    <div class="inline">
-      <%= form.submit 'Add Article', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
-    </div>
-    
-  <% end %>
-
+  <div class="inline">
+    <%= form.submit 'Add Article', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+  
+<% end %>
 ```
 Observe que o formulário em questão esta enviando os dados para a action *add_article* do controller *collections*. 
 
@@ -240,31 +203,25 @@ Portanto, vamos adicionar uma rota para a action add_article, e outra para remov
 
 
 Em ***config/routes.rb*** edite a linha *resources :collections* conforme  o código abaixo:
-
 ```ruby
-
-  resources :collections do 
-    post :add_article, on: :member
-    delete :remove_article, on: :member
-  end
-
+resources :collections do 
+  post :add_article, on: :member
+  delete :remove_article, on: :member
+end
 ```
 
 Em seguida, vamos adicionar uma teste para exibir o formulário ou o total de artigos da coleção, dependendo da requisição atual do usuário.
 
 Em ***app/views/collections/_collection.html.erb*** adicione o código a seguir, logo após o título da coleção:
-
 ```erb
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Articles: </strong>
-    <% if action_name =='show' %>
-    <%= render partial: 'articles_form', locals: {collection: @collection} %>
-    <% else %>
-      <%= collection.articles.count %>
-    <% end %>
-  </p>
-
+<p class="my-5">
+  <strong class="block font-medium mb-1">Articles: </strong>
+  <% if action_name =='show' %>
+  <%= render partial: 'articles_form', locals: {collection: @collection} %>
+  <% else %>
+    <%= collection.articles.count %>
+  <% end %>
+</p>
 ```
 
 Desta forma, na ação *index* será exibido o número total de artigos na coleção, enquanto na ação *show*, será exibido o formulário para adicionarmos artigos na coleção.
@@ -286,19 +243,13 @@ Para fazer vamos utilizar um controlador Stimulus que irá escutar o evento *cha
 Para simplificar nosso código, iremos utilizar a Gem [requestjs-rails](https://github.com/rails/requestjs-rails)
 
 Em ***Gemfile*** adicione a linha abaixo:
-
 ```ruby
-
-  gem 'requestjs-rails'
-
+gem 'requestjs-rails'
 ```
 
 Em seguida, execute o comando abaixo para instalar a Gem:
-
 ```bash
-
-  bundle install
-
+bundle install
 ```
 
 **Lembre-se de reiniciar o servidor após instalar a gem.**
@@ -307,88 +258,70 @@ Agora vamos criar o controlador stimulus.
 
 
 Em ***app/javascript/controllers/***, crie o arquivo ***collection_controller.js*** adicione o código abaixo:
-
 ```javascript
+import { Controller } from "@hotwired/stimulus"
+import { get } from '@rails/request.js'
 
-  import { Controller } from "@hotwired/stimulus"
-  import { get } from '@rails/request.js'
+export default class extends Controller {
 
-  export default class extends Controller {
-
-    connect() {
-      // console.log("Hello from collection_controller!")
-    }
-
-    filter_articles(event) {
-      let author_id = event.currentTarget.value
-      let url = `/articles/filter?author_id=${author_id}`
-      get(url, { responseKind: "turbo-stream"})
-    }   
+  connect() {
+    // console.log("Hello from collection_controller!")
   }
 
+  filter_articles(event) {
+    let author_id = event.currentTarget.value
+    let url = `/articles/filter?author_id=${author_id}`
+    get(url, { responseKind: "turbo-stream"})
+  }   
+}
 ```
 
 Observe que nossa url de requisição é `/articles/filter/`. Portanto, precisamos definir a rota para esta url.
 
 Em ***config/routes.rb*** modifique a linha de *resources :articles* conforme o código abaixo:
-
 ```ruby
-
-  resources :articles do 
-    get :filter, on: :collection
-  end 
-
+resources :articles do 
+  get :filter, on: :collection
+end 
 ```
 
 Agora, vamos implementar a action *filter* do controller *articles*.
 
 Em ***app/controllers/articles_controller.rb*** adicione o código abaixo:
-
 ```ruby
-
-  # GET /articles/filter
-  def filter
-    @articles = Article.where(author_id: params[:author_id])
-    respond_to do |format|
-      format.turbo_stream
-    end
+# GET /articles/filter
+def filter
+  @articles = Article.where(author_id: params[:author_id])
+  respond_to do |format|
+    format.turbo_stream
   end
-
+end
 ```
 
 Observe que nossa requisição espera um responseKind do tipo *turbo-stream*. Portanto, precisamos criar o template *filter.turbo_stream.erb* para retornar os dados no formato esperado.
 
 Em ***app/views/articles/*** crie o arquivo ***filter.turbo_stream.erb*** e adicione o código abaixo:
-
 ```erb
-
-  <%= turbo_stream.update 'article_ids' do %>
-    <%= options_from_collection_for_select @articles, :id, :title %>
-  <% end %>
-
+<%= turbo_stream.update 'article_ids' do %>
+  <%= options_from_collection_for_select @articles, :id, :title %>
+<% end %>
 ```
 
 Agora, vamos adicionar o controlador *collection_controller* ao select de autores.
 
 Em ***app/views/collections/_articles_form.html.erb*** atualize a instrução de *form_with* com o data-attribute, *controller : collection*. 
-
 ```erb
-
-  <%= form_with(url: add_article_collection_path(collection), class: "contents", data: {controller: 'collection'}) do |form| %>
-
+<%= form_with(url: add_article_collection_path(collection), class: "contents", data: {controller: 'collection'}) do |form| %>
 ```
 
 Para testar o controller esta funcionando corretamente, descomente o código da função *connect* do controller *collection_controller*, acesse a página da coleção e inspecione o console do navegador. A mensagem *Hello from collection_controller!* deve ser exibida.
 
 Agora, no select do autor, vamos adicionar o data-attribute *action: change->collection#filter_articles*.
-
 ```erb
-
-  <div class="my-5">
-    <%= form.label :author %>
-    <%= form.collection_select :author, Author.all, :id, :name, {prompt: ''}, {data: {action: 'change->collection#filter_articles'}} %>
-  </div>
-
+<div class="my-5">
+  <%= form.label :author %>
+  <%= form.collection_select :author, Author.all, :id, :name, {prompt: ''}, {data: {action: 'change->collection#filter_articles'}} %>
+</div>
 ```
 
 Desta forma, quando o usuário alterar o autor, o controlador *collection_controller* irá enviar uma requisição para o controlador *articles_controller* que irá popular o select de artigos com os artigos do autor selecionado.
@@ -404,41 +337,32 @@ Com o controlador stimulus configurado corretamente, o formulário deve popular 
 Para concluir o formulário, vamos implementar a lógica para adicionar artigos na coleção.
 
 Em ***app/controllers/collections_controller.rb*** adicione o código abaixo:
-
 ```ruby
+# POST /collections/1/add_article
+def add_article
+  @collection.articles << Article.find(params[:article_ids]) unless @collection.articles.include?(Article.find(params[:article_ids]))
+  redirect_to collection_url(@collection)
+end
 
-  # POST /collections/1/add_article
-  def add_article
-    @collection.articles << Article.find(params[:article_ids]) unless @collection.articles.include?(Article.find(params[:article_ids]))
-    redirect_to collection_url(@collection)
-  end
-
-  # DELETE /collections/1/remove_article
-  def remove_article
-    @collection.articles.delete(Article.find(params[:article_ids])) 
-    redirect_to collection_url(@collection)
-  end
-
+# DELETE /collections/1/remove_article
+def remove_article
+  @collection.articles.delete(Article.find(params[:article_ids])) 
+  redirect_to collection_url(@collection)
+end
 ```
 
 Além deste código, é necessário modificar mais duas linhas.
 
 Na linha 2, precisamos adicionar o *before_action :set_collection* para que o método *set_collection* seja executado antes das actions *add_article* e *remove_article*.
-
 ```ruby
-
-  before_action :set_collection, only: %i[ show edit update destroy add_article remove_article]
-
+before_action :set_collection, only: %i[ show edit update destroy add_article remove_article]
 ```
 
 e no método *collection_params* precisamos adicionar o atributo *article_ids*.
-
 ```ruby
-
-  def collection_params
-    params.require(:collection).permit(:title, :article_ids)
-  end
-
+def collection_params
+  params.require(:collection).permit(:title, :article_ids)
+end
 ```
 Uma observação importante nesta etapa é que devido a implementação feita adicionar apenas um único artigo por vez a coleção, estamos permitindo o parâmetro :article_ids.
 Em outros cenários onde é possível vincular uma coleção de elementos em uma única vez, é recomendado utilizar uma array de elementos, como article_ids: [ ].
@@ -449,30 +373,21 @@ Em outros cenários onde é possível vincular uma coleção de elementos em uma
 Para concluirmos este tutorial, vamos implementar a listagem e remoção de artigos da coleção. 
 
 Novamente, na partial ***_collection.html.erb***, logo após a tag de renderização do formulário, adicione o código abaixo:
-
 ```erb
-
-  <% collection.articles.each do |article| %>
-    <%= render article %>
-    <%= button_to "Remover", remove_article_collection_path(collection, article_ids: article.id), method: :delete%>
-  <%end%>
-
+<% collection.articles.each do |article| %>
+  <%= render article %>
+  <%= button_to "Remover", remove_article_collection_path(collection, article_ids: article.id), method: :delete%>
+<%end%>
 ```
 
 Por fim, no Arquivo ***app/views/articles/_article_.html.erb***, altere a linha:
-
 ```erb
-
-  <%= article.author_id %>
-
+<%= article.author_id %>
 ```
 
 Por: 
-
 ```erb
-
-  <%= article.author.name %>
-
+<%= article.author.name %>
 ```
 
 Desta forma, ao acessar a coleção, os artigos serão listados e o usuário poderá adicionar novos registros ou removê-los da coleção.
@@ -487,7 +402,7 @@ Neste tutorial, aprendemos como criar um formulário com campos dinâmicos utili
 
 O código fonte deste tutorial está disponível no repositorio do GitHub
 
-[lucasgeron/rails-dynamic-select](http://github.com/lucasgeron/rails-dynamic-select)
+### [lucasgeron/rails-dynamic-select](http://github.com/lucasgeron/rails-dynamic-select)
 
 Fique a vontade para personalizar o código e implementar novas funcionalidades, assim como customizar os estilos da aplicação.
 
