@@ -291,7 +291,7 @@ def perform(*args)
 end
 ```
 
-Para chamar o Job, vamos adicionar mais um botão em index.html.erb, logo após o botão ***Colorize Action***.
+Para chamar o Job, vamos adicionar mais um botão em `index.html.erb`, logo após o botão ***Colorize Action***.
 
 ```erb
 <%= button_to 'Colorize Job', pixels_colorize_job_path, class:'btn-primary', id:'btn-job', method: :post %>
