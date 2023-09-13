@@ -1,20 +1,19 @@
 ---
 
 layout: post
-title: "Rails Inifite Scroll with Stimulus"
+title: "Rails Inifite Scroll with Turbo"
 date: 2023-09-12
-short_description: "Neste artigo te mostro como criar o efeito de rolagem infinita sem utilizar javascript. De bônus também vou te dar mais duas dicas que podem ajudar muito na hora de criar um blog."
-cover: https://i.ibb.co/9t17rJv/20230912-222157.gif
+short_description: "Neste artigo te mostro como criar o <b>efeito de rolagem infinita sem utilizar javascript </b>. De bônus também vou te dar mais duas dicas que podem ajudar muito na hora de criar um blog."
+cover: https://i.ibb.co/2ZsCWts/20230913-144634.gif
 labels: "Ruby on Rails, Turbo, Infinite Scroll, ActionText, Active Storage, ActiveRecord Import, Pagy, Faker"
 
 ---
 
 # Rails Inifite Scroll with Zero Javascript
 
-<video controls loop autoplay class=" w-100 img-fluid rounded-3 shadow mb-4">
-  <source
-    src="/assets/videos/rails-infinite-scroll.mp4" type="video/mp4" />
-</video>
+<div class="w-full img-fluid rounded-3 mb-4 text-center">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/b7j8jEAd2sc?si=zxuGFeGd-j7alaJz&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 Desta vez, vamos direto ao assunto, sem enrolação. Vamos criar um blog com rolagem infinita, sem utilizar javascript. Para isso, vamos utilizar apenas [Turbo](https://turbo.hotwire.dev/) e algumas gems como [Pagy](https://ddnexus.github.io/pagy/), [ActionText](https://github.com/rails/rails/tree/main/actiontext) e [Active Record Import](https://github.com/zdennis/activerecord-import).
 
@@ -250,6 +249,7 @@ Primeiro, vamos criar uma partial chamada `_article_placeholder.html.erb` em `ap
   </div>
 </div>
 ```
+Este código será utilizado para renderizar um artigo sendo carregado enquanto a requisição é processada.
 
 Agora, no arquivo `app/views/articles/index.html.erb` vamos incluir o trecho de código a seguir,  acima da div com id ***articles***:
 
@@ -267,7 +267,9 @@ Isto deverá renderizar 3 artigos com o efeito de loading.
   <img src="https://i.ibb.co/rkP2wvK/20230912-211039.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
 </div>
 
-Continuando... vamos **remover** os artigos que são renderizados na div com id *articles*. Vamos fazer isto porque esta div passará ser um Turbo Frame, e seu conteúdo será atualizado mediante turbo_stream. Além disto, como ja conferimos que nosso placeholder de carregamento esta semelhante ao artigo, podemos refator o código para que o placeholder seja renderizado no lugar dos artigos enquanto os mesmos são carregados.
+Continuando... vamos **remover** os artigos que são renderizados na div com id *articles*. Vamos fazer isto porque esta div passará ser um Turbo Frame, e seu conteúdo será atualizado com Turbo.
+
+Além disto, como ja conferimos que nosso placeholder de carregamento esta semelhante ao artigo, podemos refatorar o código para que o placeholder seja renderizado no lugar dos artigos enquanto os mesmos são carregados.
 
 
 Ainda em `index.html.erb` substitua o trecho de código do arquivo para:
@@ -337,19 +339,19 @@ Agora, para implementarmos o comportamento esperado, vamos criar o arquivo `list
 ```
 Tudo pronto para funcionar conforme o esperado. Simples, não? (kk eu sei que não... 😅)
 
-Para fins de testes, vamos adicionar a função `sleep 1` nas actions  `index` e em `list`, e fazer uma pausa da entendermos o que esta acontecendo até aqui.
+Para fins de testes, vamos adicionar a função `sleep 1` nas actions  `index` e em `list`, e fazer uma pausa da entendermos o que está acontecendo até aqui.
 
 <div>
   <img src="https://i.ibb.co/9t17rJv/20230912-222157.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
 </div>
 
-## O que esta acontecendo? 
+## O que está acontecendo? 
 
 1. A requisição `/articles` é feita e o servidor responde com o html da página `index.html.erb`.
 
 2. O arquivo `index.html.erb` é renderizado, inicialmente carregando o placeholder dos artigos.
 
-3. Ainda no arquivo `index.html.erb`, o turbo_frame renderizado possui o atributo `loading: :lazy` que configura a renderização do elemento apenas quando ele estiver visível na tela. (isto evita que todos os artigos sejam carregados de uma única vez). Já o atributo `src`, solicita uma requisição para `list_articles_url(page: params[:page])`, ou seja, assim que o frame é renderizado,os placeholders são renderizados e a requisição de `src` é enviada para o servidor.
+3. Ainda no arquivo `index.html.erb`, o turbo_frame renderizado possui o atributo `loading: :lazy` que define a renderização do elemento apenas quando ele estiver visível na tela. (isto evita que todos os artigos sejam carregados de uma única vez). Já o atributo `src`, solicita uma requisição para `list_articles_url(page: params[:page])`, ou seja, assim que o frame é renderizado,os placeholders são renderizados e a requisição de `src` é enviada para o servidor.
 
 **OBS**: Ainda em `index.html.erb`, perceba que na última linha, existe um turbo_frame que será renderizado apenas se existir uma próxima página.
 
@@ -371,10 +373,9 @@ Certo, agora que entendemos o que esta ocorrendo, vamos criar mais artigos e rol
 
 Altere o número de artigos que deseja gerar - recomendo 50 - em `db/seeds.rb` e execute `rails db:reset`, em seguida, remova `sleep 1` de `index` e `list` teste novamente.
 
-<video controls loop class=" w-100 img-fluid rounded-3 shadow mb-4">
-  <source
-    src="/assets/videos/rails-infinite-scroll.mp4" type="video/mp4" />
-</video>
+<div class="w-full img-fluid rounded-3 mb-4 text-center">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/b7j8jEAd2sc?si=zxuGFeGd-j7alaJz&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 Agora é possível ver o scroll infinito funcionando como esperado, e o melhor de tudo, sem escrever uma linha de javascript.
 
@@ -384,10 +385,9 @@ Se você chegou aqui, talvez ainda esteja confuso em relação ao Turbo, já que
 
 Abra o console do navegador e navegue pela sua aplicação para acompanhar as requisições que estão sendo feitas. Além disto, esta implementação garante que `Turbo.visit()` seja executado conforme o esperado, isto significa que após acessar um artigo em seguida clicar no botão voltar do seu navegador, os artigos que já foram carregados, continuarão na tela, e o atributo `page` será mantido, permitindo que voce continue a rolar a página de onde parou. 
 
-<video controls loop  class=" w-100 img-fluid rounded-3 shadow mb-4">
-  <source
-    src="/assets/videos/rails-infinite-scroll-2.mp4" type="video/mp4" />
-</video>
+<div class="w-full img-fluid rounded-3 mb-4 text-center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d5aT4VQz368?si=Sjf7dbg9gAuISeJx&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 **Dica**: **As outras implementações que voce encontra por ai, talvez não tenham este comportamento implementado, algumas delas, só funcionam se você voltar a listagem desde o começo - vai por mim, eu testei!**
 
