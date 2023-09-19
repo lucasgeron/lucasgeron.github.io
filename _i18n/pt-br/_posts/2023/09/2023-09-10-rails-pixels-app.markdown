@@ -3,20 +3,19 @@
 layout: post
 title: "Rails Pixels App"
 date: 2023-09-10
-short_description: "Rails Pixels é uma aplicação criativa feita para exemplicar o funcionamento de ActiveJobs e de ActionCable/Channels. Vamos colorir alguns pixels juntos?"
+short_description: "Rails Pixels é uma aplicação criativa feita para exemplicar o funcionamento de ActiveJobs e de TurboStreams. Vamos colorir alguns pixels juntos?"
 cover: https://i.ibb.co/FXhkZsx/20230910-184020.gif
 labels: "Ruby on Rails, Active Job, Action Cable, Channels, Generative Art, TIL, Tutorial"
 
 ---
 
 
+# Rails Pixels App com Turbo
+Rails Pixels App é uma forma criativa de demonstrar o uso de **ActiveJobs** e **Turbo Streams** em uma aplicação Rails.
 
-# Rails Pixels App
-Rails Pixels App é uma forma criativa de demonstrar o uso de **ActiveJobs** e **ActionCable** em uma aplicação Rails.
+Para demonstrar essas funcionalidades, colorimos os pixels em segundo plano através de um ActiveJob e enviamos o resultado ao cliente via TurboStream em real-time.
 
-Para demonstrar essas funcionalidades, colorimos os pixels em segundo plano através de um ActiveJob e enviamos o resultado ao cliente via ActionCable em real-time.
-
-Seu principal objetivo é simples, colorir pixels. Eu sei, isso pode parecer chato, mas acredite, é divertido e além disto, é uma ótima forma de entender como ActionCable e ActiveJobs funcionam.
+Seu principal objetivo é simples, colorir pixels. Eu sei, isso pode parecer chato, mas acredite, é divertido e além disto, é uma ótima forma de entender como ActiveJobs e Turbo Streams funcionam.
 
 <div>
   <img src="https://i.ibb.co/FXhkZsx/20230910-184020.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
@@ -26,7 +25,7 @@ Seu principal objetivo é simples, colorir pixels. Eu sei, isso pode parecer cha
 # Introdução
 Se você é iniciante em Rails, provavelmente deve estar habituado com os CRUD's tradicionais, afinal, scaffold é uma das primeiras coisas que aprendemos quando começamos a estudar Rails.
 
-Mas a medida nossas aplicações vão crescendo e se tornando mais complexas, outros recursos do Rails começam a se tornar necessários, como por exemplo, **ActiveJobs** e **ActionCable**.
+Mas a medida nossas aplicações vão crescendo e se tornando mais complexas, outros recursos do Rails começam a se tornar necessários, como por exemplo, **ActiveJobs** e **Turbo Streams**. 
 
 ## ActiveJobs
 Sabe quando você precisa executar uma tarefa que leva muito tempo para ser concluída? 
@@ -37,12 +36,15 @@ Por exemplo, enviar um e-mail para todos os usuários do seu sistema. Você não
 
 Nesta aplicação, utilizamos o ActiveJobs para colorir os pixels, pois como você deve imaginar, colorir vários pixels com cores distintas de uma vez só, leva um certo tempo.
 
-## ActionCable
+<!-- ## ActionCable
 ActionCable é uma ferramenta que nos permite criar funcionalidades que utilizam WebSockets com atualização em tempo real, ou seja, aplicações que se atualizam automaticamente sem que o usuário precise atualizar a página.
 
-A aplicação mais comum de ActionCable é ser utilizado para criar chats em tempo real, mas este recurso também pode ser utilizado para muitas outras coisas, como por exemplo, barra de progresso, notificações, salvamentos automáticos, sincronização de pastas e até mesmo dashboards interativas.
+A aplicação mais comum de ActionCable é ser utilizado para criar chats em tempo real, mas este recurso também pode ser utilizado para muitas outras coisas, como por exemplo, barra de progresso, notificações, salvamentos automáticos, sincronização de pastas e até mesmo dashboards interativas. -->
 
-Nesta aplicação, utilizamos o ActionCable para atualizar os pixels em tempo real, assim que eles forem coloridos.
+## Turbo Streams
+Turbo Streams é uma ferramenta que nos permite atualizar partes específicas de uma página HTML, sem que o usuário precise atualizar a página.
+
+Nesta aplicação, utilizamos o recursos de Turbo Stream para estabelecer um canal de comunicação que transmite informação dos pixels coloridos em tempo real para o cliente. A partir das informações recebidas, Turbo Stream também se encarrega de atualizar os pixels coloridas na pagina. 
 
 # 1. Criando o Projeto
 
@@ -158,7 +160,7 @@ Por fim, vamos estilizar os pixels no arquivo `app/assets/stylesheets/applicatio
   .btn-primary {
     @apply py-2 px-4 bg-gray-200 hover:text-white hover:bg-blue-600 rounded-lg;
   }
-
+  
   .pixel {
     @apply w-5 h-5 ;
   }
@@ -325,7 +327,90 @@ Ao clicar no botão ***Colorize Job***, algumas coisas devem acontecer:
 
 Certo, agora que já temos nosso Job esteja rodando em segundo plano, ainda é necessário atualizar a página de forma manual para acompanhar o processo de colorização dos pixels, o que não é muito legal...
 
-# 9. Utilizando o ActionCable
+# 9. Utilizando Stream Channels
+
+Para fazer com que os pixels sejam coloridos em tempo real, vamos utilizar o **Turbo Streams**, que é uma biblioteca do Rails que permite a comunicação em tempo real entre o servidor e o cliente de forma simples.
+
+Em `index.html.erb` adicione o trecho de código ao fim do arquivo:
+  
+```erb
+<%= turbo_stream_from 'pixels' %>
+```
+
+Esta instrução ira criar um canal de comunicação identificado por `pixels` que será utilizado para receber informações do servidor.
+
+Agora, no nosso job, `colorize_pixels_job.rb`, vamos adicionar o código abaixo:
+
+```ruby
+def perform(*args)
+  Pixel.all.each do |pixel|
+    pixel.update(color: Pixel::COLORS.sample)
+    Turbo::StreamsChannel.broadcast_update_to('pixels', target: "pixel_#{pixel.id}", partial: 'pixels/pixel', locals: { pixel: pixel })
+  end
+end
+```
+
+Observe que a instrução `Turbo::Stream` está sendo utilizada para enviar uma mensagem para o canal '*pixels*' solicitando que o pixel seja atualizado com o pixel colorido.
+
+
+<div>
+  <img src="https://i.ibb.co/sK3MZVm/20230919-114450.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
+</div>
+
+
+Isto já deixa os pixels sendo coloridos conforme o Job é executado. Mas perceba que o botão 'Colorize Job' continua disponível para ser clicado, o que pode causar alguns problemas...
+
+Portanto, vamos desabilitar o botão enquanto existir uma requisição sendo processada. 
+
+Para tornar isto mais interessante, vamos utilizar o botão como 'barra de progresso' informando quantos pixels foram processados até o momento. 
+
+Crie portanto o arquivo `app/views/pixels/_btn_job.html.erb` com o código abaixo:
+
+```erb
+<div id="btn-job">
+  <%= button_to defined?(btn_text) ? btn_text : 'Colorize Job', pixels_colorize_job_path, class: defined?(btn_class) ? btn_class : 'btn-primary',  method: :post %>
+</div>
+```
+
+Em `index.html.erb` substitua a tag do botão ***Colorize Job*** pelo código abaixo:
+
+```erb
+<%= render partial:'btn_job'%>
+```
+
+Para que o estilo seja aplicado corretamente, adicione o trecho de código abaixo no arquivo `app/assets/stylesheets/application.tailwind.css`:
+
+```scss
+.btn-job-disabled {
+  @apply btn-primary bg-blue-600 text-white pointer-events-none;
+}
+```
+
+Inclua a classe `btn-job-disabled` na lista de `safe_list` em `config/tailwind.config.js`:
+
+Agora, novamente em `colorize_pixels_job.rb`, vamos alterar o código conforme abaixo:
+
+```ruby
+def perform(*args)
+  pixels = Pixel.all
+  total = pixels.count
+  pixels.each_with_index do |pixel, index|
+    pixel.update(color: Pixel::COLORS.sample)
+    Turbo::StreamsChannel.broadcast_update_to('pixels', target: "pixel_#{pixel.id}", partial: 'pixels/pixel', locals: { pixel: pixel })
+    Turbo::StreamsChannel.broadcast_replace_to('pixels', target: "btn-job", partial: 'pixels/btn_job', locals: { btn_text: "Colorizing: #{index+1} / #{total}", btn_class:'btn-job-disabled' })
+  end
+  Turbo::StreamsChannel.broadcast_replace_to('pixels', target: "btn-job", partial: 'pixels/btn_job')
+end
+```
+
+Desta forma, a cada iteração do loop, o botão será atualizado com o número de pixels já processados. Ao final do loop, o botão será atualizado novamente para o estado inicial.
+
+<div>
+  <img src="https://i.ibb.co/LhMCcKt/20230919-114526.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
+</div>
+
+
+<!-- # 9. Utilizando o ActionCable
 
 Para resolver este problema, vamos utilizar o **ActionCable**, que é uma biblioteca do Rails que permite a comunicação em tempo real entre o servidor e o cliente.
 
@@ -466,7 +551,7 @@ Desta forma, o job será executado com um intervalo de 0.1 segundos entre cada i
   <img src="https://i.ibb.co/Drv1nnc/20230910-174301.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
 </div>
 
-Nota: É nítido que com este intervalo, o job demora mais para ser executado, porém, é possível perceber que o progresso é exibido corretamente. O objetivo deste artigo é exemplificar a utilização destes recursos, contudo, cabe a você decidir se este intervalo é aceitável ou não para sua aplicação, assim como a necessidade de executar a tarefa em segundo plano, ou comunicar em real-time com o cliente.
+Nota: É nítido que com este intervalo, o job demora mais para ser executado, porém, é possível perceber que o progresso é exibido corretamente. O objetivo deste artigo é exemplificar a utilização destes recursos, contudo, cabe a você decidir se este intervalo é aceitável ou não para sua aplicação, assim como a necessidade de executar a tarefa em segundo plano, ou comunicar em real-time com o cliente. -->
 
 # 10. Deixando a aplicação mais divertida
 
@@ -485,15 +570,18 @@ Em `app/views/pixels/index.html.erb`, vamos alterar o código para:
     <div class="flex grow justify-end space-x-2">
       <%= button_to 'Reset', pixels_reset_path, class:'btn-primary', method: :post %>
       <%= button_to 'Colorize Action', pixels_colorize_path, class:'btn-primary', method: :post %>
-      <%= button_to 'Colorize Job', pixels_colorize_job_path, class:'btn-primary', id:'btn-job', method: :post %>
+      <%= render partial:'btn_job'%>
     </div>
   </div>
   <div class="flex flex-wrap">
-    <% 6.times do  %>
+    <% 6.times do %>
       <%= render @pixels %>
-    <%end%>
+    <% end %>
   </div>
 </div>
+
+<%= turbo_stream_from 'pixels' %>
+
 ```
 
 Ao atualizar a página, ela deverá esta semelhante a imagem abaixo:
@@ -518,27 +606,16 @@ Em `app/views/pixels/_pixel.html.erb`, vamos alterar o código para:
 <div id="<%= dom_id(pixel) %>" class="pixel <%= pixel.color%> pixel_<%=pixel.id%>"></div>
 ```
 
-Agora, em `app/javascript/channels/colorize_pixel_channel.js`, vamos alterar o código do método received(data) para:
+Agora, em `colorize_pixels_job`, basta atualizar o atributo `target` para `targets`.
 
-```js
-received(data) {
-  // console.log("Received data from the colorize_pixel_channel");
-  switch (data.command) {
-    case 'disconnect':
-      return this.disconnected();
-    default:
-      window.btn_job.innerHTML = 'Colorizing: ' + data.index + ' / ' + data.total;
-      window.btn_job.className = 'btn-primary bg-blue-600 text-white pointer-events-none animate-pulse';
+```ruby
+Turbo::StreamsChannel.broadcast_update_to('pixels', targets: ".pixel_#{pixel.id}", partial: 'pixels/pixel', locals: { pixel: pixel })
+```	
 
-      let pixels = document.getElementsByClassName('pixel_' + data.pixel.id);
-      for (var i = 0; i < pixels.length; i++) {
-        pixels[i].className = 'pixel pixel_' + data.pixel.id + ' ' + data.pixel.color;
-      }
-      
-      break;
-  }
-}
-```
+Perceba, que agora, estamos informando um seletor CSS como target, e não mais um ID.
+Perceba também que a palavra precisa estar no plural.
+
+
 Desta forma, o código atualizará todos os elementos que contenham a classe do pixel. Como estamos repetindo a renderização do pixel diversas vezes, o código irá atualizar todos os elementos que possuem a classe, como podemos ver abaixo:
 
 <div>
@@ -568,12 +645,13 @@ Em ***app/views/pixels/index.html.erb***, vamos alterar o código para:
   <%= render @pixels.shuffle %>
 <%end%>
 ```
-Contudo, com esta alteração, toda vez que a página for acessada os pixels serão embaralhados de uma maneira diferente. Fica a seu critério se isto é desejável ou não.
 
 <div>
   <img src="
 https://i.ibb.co/M8F9BDZ/20230910-181511.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
 </div>
+
+Contudo, com esta alteração, toda vez que a página for acessada os pixels serão embaralhados de uma maneira diferente. Fica a seu critério se isto é desejável ou não.
 
 <div>
   <img src="https://i.ibb.co/ky6Mk6S/20230910-181606.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
@@ -601,12 +679,9 @@ Sinta-se livre para modificar tamanho dos pixels, assim como o número de pixels
 
 Neste artigo, você aprendeu como criar e executar serviços em segundo plano para processar informações sem fazer que o cliente precise ficar aguardando a conclusão da tarefa.
 
-Você também aprendeu a utilizar recursos de ActionCable, configurando um  canal de transmissão, para atualizar o conteúdo de uma página em tempo real.
+Você também aprendeu a utilizar recursos de TurboStreams, configurando um  canal de transmissão, para atualizar o conteúdo de uma página em tempo real.
 
 Espero que este artigo tenha sido útil para você, e que você possa aplicar estes conceitos em seus projetos. 
-
-Se quiser se desafiar ainda mais, sugiro que tente implementar a renderização de uma imagem através da coleção de pixels.
-
 
 **Gostou deste projeto?** *Deixe seu feedback!*
 

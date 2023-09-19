@@ -435,8 +435,8 @@ Para finalizar, uma tabela comparativa entre o Turbo Frame e Turbo Stream retira
 |---------|:------------:|:-------------:|
 | Lazy-loading | ✔️ | ❌ |
 | Caching | ✔️ | ❌ |
-| Multiplas Atualizações | ❌ | ✔️ |
-| Multiple Ações | ❌ | ✔️ |
+| Múltiplas Atualizações | ❌ | ✔️ |
+| Múltiplas Ações | ❌ | ✔️ |
 | Funciona com WebSockets | ❌ | ✔️ |
 | Fácil de Implementar | ✔️ | 💭 |
 
