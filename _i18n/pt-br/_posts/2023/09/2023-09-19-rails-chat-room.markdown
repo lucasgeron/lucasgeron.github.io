@@ -10,7 +10,7 @@ labels: "Ruby on Rails, Turbo, Hotwire, Stimulus, TIL, Tutorial"
 ---
 
 # Rails Chat Room
-Neste artigo te mostro como é fácil desenvolver sala de bate papo onde as mensagens são entregues a todos que estão conectados.
+Neste artigo te mostro como é fácil desenvolver uma sala de bate papo onde as mensagens são entregues a todos os usuários conectados.
 
 <div>
   <img src="https://i.ibb.co/VNTQvTd/Tab-Rails-Chat-Room-Post-2.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
@@ -23,7 +23,7 @@ Nos dias atuais é super comum utilizarmos recursos disponibilizados pelas aplic
 
 Mas você já parou para pensar como algumas destas ferramentas funcionam ou qual é a complexidade de desenvolver uma aplicação deste tipo?
 
-No exemplo de hoje, vamos implementar uma sala de bate papo onde as mensagens são entregues a todos que estão conectados.
+No exemplo de hoje, vamos implementar uma sala de bate papo onde as mensagens são entregues a todos os usuários conectados.
 
 Esta aplicação será desenvolvida utilizando o framework Ruby on Rails e recursos de Turbo.
 
@@ -232,7 +232,7 @@ por
 <%= turbo_frame_tag 'new_message', src: new_room_message_path(@room), target:'_top' %>
  ```
 
-Observe que o atributo `src` esta indicando o mesmo caminho do link que foi substituído. Contudo, como estamos utilizando um `turbo_frame` é necessário envolver o formulário em um `turbo_frame_tag` com o mesmo id. 
+Observe que o atributo `src` esta indicando o mesmo caminho do link que foi substituído, contudo, como estamos utilizando um `turbo_frame`, é necessário envolver o formulário em um `turbo_frame_tag` com o mesmo id. 
 
 Em `app/views/messages/_form.html.erb`, encapsule todo o conteúdo do arquivo com: 
   
@@ -273,7 +273,7 @@ Apenas incluindo este formato de resposta já é possível perceber a diferença
   <img src="https://i.ibb.co/r34FwGT/Screenshot-2.jpg" alt="" class=" w-75 img-fluid rounded-3 shadow mb-4">
 </div>
 
-Contudo, após esta pequena modificação, é possível notar que a mensagem parece não ter sido listada como antes, a não ser que a página seja atualizada manualmente.
+Após esta pequena modificação, é possível notar que a mensagem parece não ter sido listada como antes, a não ser que a página seja atualizada manualmente.
 
 
 <div>
@@ -301,7 +301,7 @@ Mas agora temos um novo problema, ao realizar a criação da mensagem, a mesma �
 
 Para resolver este isto, será necessário utilizar recursos de Stimulus. Biblioteca complementar de Hotwire que permite a manipulação de elementos HTML através de JavaScript.
 
-De forma resumida, Stimulus trabalha de uma maneira semelhante ao fluxo de rails. Ou seja, uma requisição é enviada para um controlador, que interpreta e responde a requisição da maneira mais adequada. 
+De forma resumida, Stimulus trabalha de uma maneira semelhante ao fluxo de rails. Isto é, uma requisição é enviada para um controlador, que interpreta e responde a requisição da maneira mais adequada. 
 
 A maior diferença, é que Rails responde com uma view, enquanto Stimulus responde com um JavaScript que manipula o DOM.
 
@@ -514,7 +514,7 @@ Com isto, um último problema surge.
 Ao concluir a edição, o botões 'Show this room' e Edit this room' são renderizados. 
 
 Isto acontece pois no arquivo `_room.html.erb` estamos renderizando os botões de forma condicional.
-Contudo, como já movemos os botões para o formulário de edição, não precisamos mais renderizá-los no arquivo `_room.html.erb`, apenas em index. 
+Contudo, como já movemos os botões para a página de exibição, não precisamos mais renderizá-los no arquivo `_room.html.erb`, apenas em index, que será feito em breve. 
 
 Portanto, *remova* a validação condicional de `_room.html.erb` conforme o código abaixo:
 
@@ -556,7 +556,7 @@ Desta forma, ao editar as informações de uma sala, o nome da mesma será atual
 ---
 ### Link do Repositório
 [lucasgeron/rails-chat-room](https://github.com/lucasgeron/rails-chat-room)
----
+
 
 ---
 

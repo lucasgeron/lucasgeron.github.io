@@ -363,7 +363,7 @@ Mas lembre-se! no arquivo `stream_page.turbo_stream.erb`, as atualizações ocor
 Enquanto que `Turbo::StreamsChannel.broadcast_update_to` envia a atualização para todos os clientes conectados.
 
 
-Para exemplicar, vamos adicionar o seguinte código na partial `_stream.html.erb`:
+Para exemplicar, vamos adicionar o seguinte código no arquivo `stream_page.turbo_stream.erb`:
 
 ```erb
 <%= turbo_stream.append "other_stream" do %>
@@ -385,7 +385,7 @@ Agora vamos ver na prática o que acontece!
 - Clique em Load Fist Page (TURBO_STREAM)
   1. A requisição `first_page` no formato `turbo_stream` é feita para o servidor.
   2. O Servidor responde com o arquivo `first_page.turbo_stream.erb`
-  3. A div `my_stream` é **atualizada (update)** com *replaced by turbo*.
+  3. A div `my_stream` é **atualizada (update)** com *'replaced by turbo'*.
   4. A div `remove_me` é **removida (remove)**
   5. a div `other_stream` é **recebe (append)** 3 novos parágrafos ('*something else*').
 
