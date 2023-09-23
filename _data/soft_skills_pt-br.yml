@@ -1,0 +1,21 @@
+- category:  
+  title: Soft Skills 
+  skills: 
+    - title: Comunicação eficaz
+      description: Capacidade de expressar ideias de forma clara e compreensível
+    - title: Trabalho em equipe
+      description: Capacidade de trabalhar bem com os outros para atingir um objetivo comum.
+    - title: Resolução de problemas
+      description: Capacidade de identificar problemas e encontrar soluções eficazes.
+    - title: Gestão do tempo
+      description: Capacidade de gerenciar efetivamente o seu tempo para cumprir prazos.
+    - title: Adaptabilidade
+      description: Capacidade de se adaptar a novos ambientes, situações e desafios.
+    - title: Aprendizado contínuo
+      description: Disposto a aprender novas habilidades e acompanhar as tendências.
+    - title: Liderança
+      description: Capacidade de influenciar, motivar e guiar os colagas de trabalho.
+    - title: Apresentação
+      description: Capacidade de apresentar ideias e projetos de forma clara e persuasiva.
+    
+    

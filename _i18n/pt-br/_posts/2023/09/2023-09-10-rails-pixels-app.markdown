@@ -17,9 +17,7 @@ Para demonstrar essas funcionalidades, colorimos os pixels em segundo plano atra
 
 Seu principal objetivo é simples, colorir pixels. Eu sei, isso pode parecer chato, mas acredite, é divertido e além disto, é uma ótima forma de entender como ActiveJobs e Turbo Streams funcionam.
 
-<div>
-  <img src="https://i.ibb.co/FXhkZsx/20230910-184020.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/FXhkZsx/20230910-184020.gif" alt="" class="">
 
 
 # Introdução
@@ -103,9 +101,7 @@ Agora que já temos o modelo, o controlador e a rota, podemos iniciar o servidor
 
 Ao Acessar [http://127.0.0.1:3000](http://127.0.0.1:3000), você deve ver algo como:
 
-<div>
-  <img src="https://i.ibb.co/K7zgszB/Screenshot-1.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/K7zgszB/Screenshot-1.jpg" alt="" class="">
 
 # 6. Criando e Renderizando Pixels 
 Como nossa aplicação não possui um CRUD, vamos criar vários pixels através do arquivo `db/seeds.rb` e renderizá-los na view `app/views/pixels/index.html.erb`.
@@ -192,9 +188,7 @@ Este arquivo estabelece estilos para os pixels, para o botão que será utilizad
 
 Ao atualizar a página, você deve ver algo como:
 
-<div>
-  <img src="https://i.ibb.co/4prL1Vw/Captura-da-Web-10-9-2023-152346-127-0-0-1.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/4prL1Vw/Captura-da-Web-10-9-2023-152346-127-0-0-1.jpg" alt="" class="">
 
 # 7. Colorindo os Pixels
 Vamos adicionar dois botões logo após a tag `h1` na view `app/views/pixels/index.html.erb`, um para colorir os pixels e outro para redefinir as cores.
@@ -253,9 +247,7 @@ Isto garante que a classe seja incluida na build do arquivo de estilização mes
 
 Agora sim, ao clicar no botão ***Colorize Action***, você deve ver algo como:
 
-<div>
-  <img src="https://i.ibb.co/Kw3mZzL/20230910-154531.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/Kw3mZzL/20230910-154531.gif" alt="" class="">
 
 Ao clicar em reset, as cores devem voltar ao normal em um piscar de olhos.
 
@@ -265,9 +257,7 @@ Ainda com esta implementação, é possível perceber que caso o usuário clique
 
 E caso o usuário acesse outra página ou atualize a página atual no meio da requisição, a barra de progresso é perdida...
 
-<div>
-  <img src="https://i.ibb.co/5Lm2vZQ/20230910-155302.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/5Lm2vZQ/20230910-155302.gif" alt="" class="">
 
 Isto faz tudo parecer um pouco estranho, não é mesmo?
 Agora que as coisas começam a ficar interessantes...
@@ -319,9 +309,7 @@ Ao clicar no botão ***Colorize Job***, algumas coisas devem acontecer:
 - A página NÃO ficará travada em estado de loading;
 - Caso atualize a página ou acesse outra página, o Job continuará sendo executado em segundo plano.
 
-<div>
-  <img src="https://i.ibb.co/yXgRwWg/20230910-160852.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/yXgRwWg/20230910-160852.gif" alt="" class="">
 
 É importante perceber que caso o usuário clique no botão ***Colorize Job*** e em seguida no botão ***Reset*** ou ***Colorize Action***, é possível que o erro `SQLite3::BusyException: database is locked` seja exibido, isto ocorre porque já existem diversas requisições sendo processadas simultaneamente.
 
@@ -353,9 +341,7 @@ end
 Observe que a instrução `Turbo::Stream` está sendo utilizada para enviar uma mensagem para o canal '*pixels*' solicitando que o pixel seja atualizado com o pixel colorido.
 
 
-<div>
-  <img src="https://i.ibb.co/sK3MZVm/20230919-114450.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/sK3MZVm/20230919-114450.gif" alt="" class="">
 
 
 Isto já deixa os pixels sendo coloridos conforme o Job é executado. Mas perceba que o botão 'Colorize Job' continua disponível para ser clicado, o que pode causar alguns problemas...
@@ -405,9 +391,7 @@ end
 
 Desta forma, a cada iteração do loop, o botão será atualizado com o número de pixels já processados. Ao final do loop, o botão será atualizado novamente para o estado inicial.
 
-<div>
-  <img src="https://i.ibb.co/LhMCcKt/20230919-114526.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/LhMCcKt/20230919-114526.gif" alt="" class="">
 
 
 <!-- # 9. Utilizando o ActionCable
@@ -453,9 +437,7 @@ end
 Se tudo correr bem, ao acessar a página e inspecionar o console do navegador, você deve ver a mensagem ***Connected to the colorize_pixel_channel***.
 
 
-<div>
-  <img src="https://i.ibb.co/zZLyPzy/Screenshot-2.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/zZLyPzy/Screenshot-2.jpg" alt="" class="">
 
 Agora, vamos adicionar o código para que nosso Job envie as informações de progresso para o canal.
 
@@ -528,9 +510,7 @@ Além disto, o botão *Colorize Job* será desabilitado e modificado para exibir
 Agora, se você clicar no botão *Colorize Job*, é possível perceber que o progresso do job é refletido ao vivo na página, porém, caso a página seja atualizada, existe um delay até que o cliente seja conectado novamente ao canal. 
 
 
-<div>
-  <img src="https://i.ibb.co/h8JWmHj/20230910-173702.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/h8JWmHj/20230910-173702.gif" alt="" class="">
 
 
 Para Solucionar este problema, basta adicionar um intervalo entre cada interação. 
@@ -547,9 +527,7 @@ end
 ```
 Desta forma, o job será executado com um intervalo de 0.1 segundos entre cada iteração, e caso existe uma nova conexão no canal, ela poderá ser bem-sucedida neste intervalo.
 
-<div>
-  <img src="https://i.ibb.co/Drv1nnc/20230910-174301.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/Drv1nnc/20230910-174301.gif" alt="" class="">
 
 Nota: É nítido que com este intervalo, o job demora mais para ser executado, porém, é possível perceber que o progresso é exibido corretamente. O objetivo deste artigo é exemplificar a utilização destes recursos, contudo, cabe a você decidir se este intervalo é aceitável ou não para sua aplicação, assim como a necessidade de executar a tarefa em segundo plano, ou comunicar em real-time com o cliente. -->
 
@@ -586,15 +564,11 @@ Em `app/views/pixels/index.html.erb`, vamos alterar o código para:
 
 Ao atualizar a página, ela deverá esta semelhante a imagem abaixo:
 
-<div>
-  <img src="https://i.ibb.co/b743wCm/Captura-da-Web-10-9-2023-175242-127-0-0-1.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/b743wCm/Captura-da-Web-10-9-2023-175242-127-0-0-1.jpg" alt="" class="">
 
 Contudo, se você executar o job, verá que o progresso é exibido apenas na primeira seção de pixels.
 
-<div>
-  <img src="https://i.ibb.co/wJr8x2g/20230910-175410.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/wJr8x2g/20230910-175410.gif" alt="" class="">
 
 Isto acontece porque nosso canal esta atualizando o elemento baseado em seu ID, e como todos os pixels possuem o mesmo ID, apenas o primeiro elemento é atualizado.
 
@@ -618,9 +592,7 @@ Perceba também que a palavra precisa estar no plural.
 
 Desta forma, o código atualizará todos os elementos que contenham a classe do pixel. Como estamos repetindo a renderização do pixel diversas vezes, o código irá atualizar todos os elementos que possuem a classe, como podemos ver abaixo:
 
-<div>
-  <img src="https://i.ibb.co/XsRSMK0/20230910-180517.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/XsRSMK0/20230910-180517.gif" alt="" class="">
 
 Apesar de estar processando a coleção de pixels, isto está ocorrendo de forma linear... mas podemos deixar isto mais divertido com apenas uma linha de código! 
 
@@ -630,9 +602,7 @@ Em nosso active job, logo após a linha `pixels = Pixel.all`, vamos adicionar a 
 pixels = pixels.shuffle
 ```
 
-<div>
-  <img src="https://i.ibb.co/ZcKhTzk/20230910-180907.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/ZcKhTzk/20230910-180907.gif" alt="" class="">
 
 Ainda assim, parece existir um certo padrão na forma como os pixels são coloridos, não é mesmo? 
 
@@ -647,15 +617,11 @@ Em ***app/views/pixels/index.html.erb***, vamos alterar o código para:
 ```
 
 <div>
-  <img src="
-https://i.ibb.co/M8F9BDZ/20230910-181511.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+https://i.ibb.co/M8F9BDZ/20230910-181511.gif" alt="" class="">
 
 Contudo, com esta alteração, toda vez que a página for acessada os pixels serão embaralhados de uma maneira diferente. Fica a seu critério se isto é desejável ou não.
 
-<div>
-  <img src="https://i.ibb.co/ky6Mk6S/20230910-181606.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/ky6Mk6S/20230910-181606.gif" alt="" class="">
 
 Por fim, você também pode adicionar mais opções de cores, adicionando as classes de cores em `app/assets/stylesheets/application.tailwind.css`, em seguida adicionando as novas cores na constante `COLORS`, definida em `app/models/pixel.rb`, e forçando o carregamento das novas classes em `config/tailwind.config.js`
 
@@ -667,9 +633,7 @@ Para te ajudar, implementei isto no repositório do projeto, e você pode copiar
 
 Sinta-se livre para modificar tamanho dos pixels, assim como o número de pixels renderizados na página.
 
-<div>
-  <img src="https://i.ibb.co/WWj82Tx/20230910-183055.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/WWj82Tx/20230910-183055.gif" alt="" class="">
 
 # Conclusão
 

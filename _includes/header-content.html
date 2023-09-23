@@ -1,0 +1,74 @@
+<!-- Left Side -->
+<div class="d-flex ps-2">
+  <!-- HOME BTN -->
+  <a class="navbar-brand d-flex align-items-center fw-light"
+    href="{{ site.baseurl_root }}/{% if site.lang=='en' %}en/{% endif %}">
+    Lucas Geron
+  </a>
+
+  <!-- Translate Button -->
+  {%- include translate-button.html -%}
+</div>
+
+<!-- Right Side (<MD) -->
+<div class=" d-inline-flex pe-2">
+  <ul class="navbar-nav gap d-flex d-md-none mx-2">
+    <li class="nav-item">
+      <!-- CV Donwload (Mobile )-->
+      <a class=" btn btn-outline-primary"
+        href="/assets/files/Lucas Fernando Geron - (46) 9 9922 0095 ({{site.lang}}).pdf" target="_blank">
+        <i class="fa-solid fa-cloud-arrow-down"></i> CV </a>
+    </li>
+  </ul>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</div>
+
+<!-- Right Side (>MD) -->
+<div class="collapse navbar-collapse text-center w-full bg-white" id="nav">
+  <ul class="navbar-nav flex-grow-1 justify-content-evenly">
+    <li class="nav-item">
+      <a href="{% tl home %}" class="nav-link {% if page.title == 'Home/Início' %}nav-link-active{% endif %}">
+        {% t navigation.home %}
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="{% tl skills %}" class="nav-link {% if page.title == 'Skills/Habilidades' %}nav-link-active{% endif %}">
+        {% t navigation.skills %}
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="{% tl experiences %}"
+        class="nav-link {% if page.title == 'Experience/Experiências' %}nav-link-active{% endif %}">
+        {% t navigation.experiences %}
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="{% tl projects %}" class="nav-link {% if page.title == 'Projects/Projetos' %}nav-link-active{% endif %}">
+        {% t navigation.projects %}
+      </a>
+    </li>
+    <li class="nav-item d-md-none">
+      <a href="{% tl hire_me %}"
+        class="nav-link {% if page.title == 'Hire Me/Contrate-me' %}nav-link-active{% endif %}">
+        {% t navigation.hire_me %}
+      </a>
+    </li>
+  </ul>
+
+  <ul class="navbar-nav d-none d-md-flex gap-1">
+    <li class="nav-item ">
+      <a class="btn {% if page.title == 'Hire Me/Contrate-me' %} btn-primary {% else %} btn-outline-primary {% endif %}"
+        role="button" href="{% tl hire_me %}"> {% t navigation.hire_me %}
+      </a>
+    </li>
+    <li class="nav-item ">
+      <a class=" btn btn-outline-primary"
+        href="/assets/files/Lucas Fernando Geron - (46) 9 9922 0095 ({{site.lang}}).pdf" target="_blank">
+        <i class="fa-solid fa-cloud-arrow-down"></i> CV </a>
+    </li>
+  </ul>
+</div>

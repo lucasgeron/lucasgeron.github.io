@@ -7,24 +7,25 @@ permalink_en: /hire-me/
 ---
 
 
-<section id="capacitacao-extra">
 
-    <h1 data-aos="fade-up" class="pt-4 text-center"> {% t hire_me.title %}</h1>
-    <p data-aos="fade-up" class="pb-4 text-center fw-light fs-4"> {% t hire_me.first_sub_title %}</p>
+<section id="capacitacao-extra" class="container py-4">
 
-    <div  data-aos="fade-up" class="row gy-4 gx-4  d-flex justify-content-between justify-content-md-start justify-content-lg-between ">
+    <!-- Title -->
+    <div data-aos="fade-up" class=" py-4">
+      <p class="display-6 fw-bold text-center"> {% t hire_me.title %}</p>
+      <p class="pb-4 text-center fw-light fs-4"> {% t hire_me.first_sub_title %}</p>
+    </div>
+
+    <div data-aos="fade-up"
+        class="row g-4 d-flex justify-content-start justify-content-lg-between ">
 
         {% assign items = site.data.social | where: "contact-me", "display" %}
-
         {% for item in items %}
-        <a href="{{ item.link }}" target="_blank" class="col-6 col-md-4 col-lg-2 text-decoration-none ">
-            <div data-aos="fade-up" class="btn-13 custom-btn  bg-light rounded p-4 ">
-                <div class=" text-center py-4">
-                    {% if item.icon %} 
-                    <i class="fa {{item.icon}} fa-lg top-0 fa-4x fa-card"></i> 
-                    {% endif %}
-                    <h3 class="pt-4 text-center align-self-center ">{{ item.name }}</h3>
-                 
+        <a href="{{ item.link }}" target="_blank" class="col-12 col-sm-6 col-md-4 text-decoration-none ">
+            <div data-aos="fade-up" class="btn-custom rounded p-4 card card-animate">
+                <div class="text-center mt-4">
+                    <i class="{{item.icon}} top-0 fa-4x fa-card"></i>
+                    <h3 class="mt-4 text-center align-self-center ">{{ item.name }}</h3>
                 </div>
             </div>
         </a>
@@ -32,9 +33,39 @@ permalink_en: /hire-me/
 
     </div>
 
+    <!-- Footer -->
+    <div data-aos="fade-up" class="py-4 text-center fw-light fs-4">
+      <p class="fw-normal"> 
+        {% t hire_me.second_sub_title %}
+      </p>
+      <p> 
+        &nbsp;<span id="contrate-me"></span>
+      </p>
+    </div>
 
-    <p  data-aos="fade-up" class="py-4 text-center fw-light fs-4"> <strong>{% t hire_me.second_sub_title %} </strong><br> &nbsp;<span id="contrate-me"></span></p>
+</section>
 
-  </section>
+<!-- PAGE SCRIPTS -->
 
-
+<script>
+window.onload = function(){
+  target = document.getElementById('contrate-me');
+  words = []
+  if ( {{ site.lang | jsonify }} == 'pt-br') {
+    words.push('Assessoria', 'Consultoria', 'Desenvolvimento', 'Apps', 'Planejamento', 'Dashboards', 'Apresentações', 'Analytics', 'Relatórios')
+  } else {
+      words.push('Advisory', 'Consulting', 'Development', 'Apps', 'Planning', 'Dashboards', 'Apps', 'Presentations', 'Analytics', 'Reports')
+  }
+  var typewriter = new Typewriter(target, {
+    loop: false,
+    delay: 50,
+    deleteSpeed: 10,
+    skipAddStyles: true,
+    autoStart: true,
+    loop: true,
+    cursor: " ",
+    strings: words,
+  });
+  typewriter.start()
+}
+</script>

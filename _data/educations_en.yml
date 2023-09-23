@@ -1,0 +1,19 @@
+- site: http://www.utfpr.edu.br/campus/patobranco
+  location: Pato Branco, Paraná, Brasil.
+  course: Computer Engineering
+  graduation: Bachelor's Degree in
+  date_in: July 2011
+  date_out: December 2013
+  status_color: danger
+  status: Dropout
+  description: "Reason: Course geared towards hardware and not much towards software."
+
+- site: http://www.utfpr.edu.br/campus/guarapuava
+  location: Guarapuava, Paraná, Brasil.
+  course: Internet Systems
+  graduation: Technology in
+  date_in: July 2015
+  date_out: June 2023
+  status_color: success
+  status: Graduated
+  description: "Note: Locked in 2018/2 and continued in 2022/2 due to pandemic."

@@ -14,9 +14,7 @@ To Do List Turbo é uma aplicação de lista de tarefas que permite você criar,
 
 Neste artigo iremos aprender a fazer esta aplicação com Hotwire Turbo.
 
-<div>
-  <img src="https://i.ibb.co/Ydyx6RS/20230906-142125.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+<img src="https://i.ibb.co/Ydyx6RS/20230906-142125.gif" alt="" class="">
 
 # Introdução
 
@@ -109,9 +107,7 @@ Isto irá compilar os arquivos de configuração do tailwind e estilizar nossa a
 Com isto feito, podemos acessar a página inicial da aplicação em `http://localhost:3000` e verificar se a página está estilizada corretamente.
 
 
-<div>
-  <img src="https://i.ibb.co/cX2G9j2/Screenshot-1.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+<img src="https://i.ibb.co/cX2G9j2/Screenshot-1.jpg" alt="" class="">
 
 
 ## 5. Adaptando o projeto para Turbo
@@ -160,9 +156,7 @@ end
 Com isto feito, a página inicial da aplicação deve estar assim:
 
 
-<div>
-  <img src="https://i.ibb.co/qdpzJqc/Screenshot-2.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+<img src="https://i.ibb.co/qdpzJqc/Screenshot-2.jpg" alt="" class="">
 
 Neste momento, se você tentar criar uma nova task perceberá que nada de diferente acontece. 
 
@@ -272,9 +266,7 @@ As coisas podem parecer um pouco confusa neste momento, mas vamos entender o que
 
 Agora, ao criar uma nova task, a mensagem de sucesso deve ser exibida conforme a imagem a seguir:
 
-<div>
-  <img src="https://i.ibb.co/tKRc9YZ/20230906-123101.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+<img src="https://i.ibb.co/tKRc9YZ/20230906-123101.gif" alt="" class="">
 
 
 Para testarmos se a mensagem de erro esta funcionando, vamos adicionar uma validação de presença no campo `description` do nosso model `task.rb`.
@@ -287,9 +279,7 @@ end
 
 Agora, ao clicar em salvar, a mensagem de deverá ser exibida conforme a imagem a seguir:
 
-<div>
-  <img src="https://i.ibb.co/HP20pdr/Screenshot-3.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+<img src="https://i.ibb.co/HP20pdr/Screenshot-3.jpg" alt="" class="">
 
 
 Dois dos problemas relatados anteriormente já foram resolvidos, mas ainda precisamos resolver o problema de redirecionamento ao editar um registro.
@@ -316,9 +306,7 @@ Lembre-se, Turbo Frames são elementos personalizados que interagem de modo seme
 
 Com esta alteração, é possível perceber que ao clicar em editar, a mensagem **Content missing** é exibida.
 
-<div>
-  <img src="https://i.ibb.co/sQnXDH3/20230906-124527.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+<img src="https://i.ibb.co/sQnXDH3/20230906-124527.gif" alt="" class="">
 
 Isto acontece porque a página que esta sendo requisitada, não possui um elemento com o mesmo ID do elemento que esta sendo substituído. 
 
@@ -334,9 +322,7 @@ Em `views/tasks/edit.html.erb`, adicione o código a seguir:
 
 Se tudo funcionar conforme o esperado, o formulário de edição deve ser exibido sem a necessidade de recarregar a página.
 
-<div>
-  <img src="https://i.ibb.co/K0Hnf6L/20230906-125053.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+<img src="https://i.ibb.co/K0Hnf6L/20230906-125053.gif" alt="" class="">
 
 Para deixar as coisas mais organizadas, podemos simplificar o arquivo `views/tasks/edit.html.erb` para:
 
@@ -378,9 +364,7 @@ end
 Para entender melhor a diferença entre os métodos, acesse a [documentação](https://turbo.hotwire.dev/reference/streams#stream-actions).
 
 
-<div>
-  <img src="https://i.ibb.co/2W1B2h9/20230906-125905.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+<img src="https://i.ibb.co/2W1B2h9/20230906-125905.gif" alt="" class="">
 
 
 ## 10. Excluindo um Registro
@@ -424,9 +408,7 @@ end
 
 Note que agora estamos utilizando o metodo `turbo_stream.remove` para remover o elemento da página, e novamente atualizando o elemento `flash` para exibir a mensagem.
 
-<div>
-  <img src="https://i.ibb.co/F3QcFCp/20230906-131350.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+<img src="https://i.ibb.co/F3QcFCp/20230906-131350.gif" alt="" class="">
 
 
 ## 11. Testando Recursos de Turbo
@@ -436,9 +418,7 @@ Antes de estilizarmos nossa aplicação é interessante observar as requisiçõe
 Abra o console do navegador em seguida, acesse a aba **Network** e faça algumas ações na aplicação.
 
 
-<div>
-  <img src="https://i.ibb.co/CB8NDxq/20230906-132027.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+<img src="https://i.ibb.co/CB8NDxq/20230906-132027.gif" alt="" class="">
 
 
 Observe que ao acessar a página pela primeira vez uma série de recursos como fontes, scripts e folhas de estilo são carregados, porem, ao interagir com a aplicação, apenas uma requisição é feita para o servidor, e o conteúdo é atualizado sem a necessidade de recarregar a página por completo.
@@ -662,8 +642,6 @@ Como nosso controlador já esta configurado para interpretar esta requisição, 
 ## Resultado Final
 
 
-<div>
-  <img src="https://i.ibb.co/gD5tP6d/20230906-141044.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+<img src="https://i.ibb.co/gD5tP6d/20230906-141044.gif" alt="" class="">
 
 O código deste projeto esta disponível no repostório [lucasgeron/to-do-list-turbo](https://github.com/lucasgeron/to-do-list-turbo).

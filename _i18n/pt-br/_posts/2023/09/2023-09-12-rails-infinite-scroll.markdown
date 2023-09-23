@@ -148,9 +148,7 @@ rails db:seed
 ```
 A saída deverá ser algo semelhante há:
 
-<div>
-  <img src="https://i.ibb.co/rFjX2t6/screen-shot-01.png" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/rFjX2t6/screen-shot-01.png" alt="" class="">
 
 Isto nos informa que foi feito apenas uma inserção para cada tabela, contudo, todos os registros foram salvos por uma única query.
 
@@ -163,9 +161,7 @@ Agora que temos registros em nossa base de dados, podemos iniciar o servidor com
 
 Para ver se tudo esta funcionando corretamente, acesse [http://localhost:3000/articles](http://localhost:3000/articles). Você deverá ser algo como:
 
-<div>
-  <img src="https://i.ibb.co/tsNkCpx/Screenshot-1.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/tsNkCpx/Screenshot-1.jpg" alt="" class="">
 
 ## Estilizando a página
 Antes de adicionarmos as funcionalidades, vamos estilizar nossa aplicação para que a interface fique mais amigável. Para isto, vamos utilizar o Tailwind CSS.
@@ -223,15 +219,11 @@ end
 ```
 Agora, nossa página de artigos deve estar com uma aparência melhor. 
 
-<div>
-  <img src="https://i.ibb.co/8rd1dP9/Captura-da-Web-12-9-2023-202434-127-0-0-1.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/8rd1dP9/Captura-da-Web-12-9-2023-202434-127-0-0-1.jpg" alt="" class="">
 
 Além disto, caso você tente editar um artigo, poderá ver o **ActionText** em ação! 
 
-<div>
-  <img src="https://i.ibb.co/89tHxPX/Captura-da-Web-12-9-2023-20260-127-0-0-1.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/89tHxPX/Captura-da-Web-12-9-2023-20260-127-0-0-1.jpg" alt="" class="">
 
 Uma maravílha poder editar seus artigos com Rich Text, não é mesmo? E com Active Storage, tambem **é possível anexar imagens direto do editor!** Dica de ouro ein! 
 
@@ -263,9 +255,7 @@ Agora, no arquivo `app/views/articles/index.html.erb` vamos incluir o trecho de 
 
 Isto deverá renderizar 3 artigos com o efeito de loading.
 
-<div>
-  <img src="https://i.ibb.co/rkP2wvK/20230912-211039.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/rkP2wvK/20230912-211039.gif" alt="" class="">
 
 Continuando... vamos **remover** os artigos que são renderizados na div com id *articles*. Vamos fazer isto porque esta div passará ser um Turbo Frame, e seu conteúdo será atualizado com Turbo.
 
@@ -341,9 +331,7 @@ Tudo pronto para funcionar conforme o esperado. Simples, não? (kk eu sei que n�
 
 Para fins de testes, vamos adicionar a função `sleep 1` nas actions  `index` e em `list`, e fazer uma pausa da entendermos o que está acontecendo até aqui.
 
-<div>
-  <img src="https://i.ibb.co/9t17rJv/20230912-222157.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/9t17rJv/20230912-222157.gif" alt="" class="">
 
 ## O que está acontecendo? 
 

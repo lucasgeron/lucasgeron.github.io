@@ -6,88 +6,87 @@ permalink: /habilidades/
 permalink_en: /skills/
 ---
 
-{% assign google = site.data.skills | where: "group", "Google Workspace" | sort: "title"%}
-{% assign microsoft = site.data.skills | where: "group", "Microsoft Workspace" | sort: "title"%}
-{% assign webdev = site.data.skills | where: "group", "Web Development Workspace" | sort: "title"%}
-{% assign creative = site.data.skills | where: "group", "Creative Workspace" | sort: "title"%}
+{% if site.lang == "pt-br" %}
+{% assign soft_skills = site.data.soft_skills_pt-br %}
+{% assign main_skills = site.data.main_skills_pt-br %}
+{% else %}
+{% assign soft_skills = site.data.soft_skills_en %}
+{% assign main_skills = site.data.main_skills_en %}
+{% endif %}
 
-{% assign skills_group = "Web Development Workspace, Google Workspace, Microsoft Workspace, Creative Workspace"
-| split: ", " %}
-
-{% assign skills = "" | split: "" %}
-{% assign skills = skills | push: webdev %}
-{% assign skills = skills | push: google %}
-{% assign skills = skills | push: microsoft %}
-{% assign skills = skills | push: creative %}
-
-{% assign count = 0 %}
-
-
-
-
-
-{% for group in skills %}
-
-<section class="pb-4">
-
-    <div data-aos="fade-up" class="col-md-12 pb-4">
-        <h1 class="page-header"> {{ skills_group[count] }}</h1>
-    </div>
-
-    <div class="row">
-
-        {% for item in group %}
-
-    
-        <!-- SKILL CARD  -->
-        <div data-aos="fade-up" class="col-sm-6 col-md-6 col-lg-3 p-2  skill">
-
-            <div class="p-2 bg-light rounded d-flex ">
-                <!-- ICON -->
-                <div class="icon">
-                    <img src="{{ item.img_path }}">
-                </div>
-
-                <!-- TEXT  -->
-                <div class="skill-title">
-                    <p class="fs-5 font-medium "> {{ item.title }} </p>
-                    <p class="text-muted"> 
-                        {% if item.category == "Technology" %}
-                        {% t skills.tech %}
-                        {% else %}
-                         {{ item.category }} 
-                        {% endif %}
-                    </p>
-
-                    <div class="skill-legend py-2 ">
-                        {% t skills.level %}: <span class="badge bg-primary">
-                            {% case item.nivel %}
-                            {% when 4 %}
-                            {% t skills.expert %}
-                            {% when 3 %}
-                            {% t skills.advanced %}
-                            {% when 2 %}
-                            {% t skills.intermediate %}
-                            {% else %}
-                            {% t skills.beginner %}
-                            {% endcase %}
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROGRESS BAR -->
-            <div class="progress skill-pg" style="height: 5px;">
-                <div class="progress-bar" role="progressbar" style="width: {{ item.score }}%;"
-                    aria-valuenow="{{ item.score }}" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-
+<!-- MAIN STACK -->
+<div class="bg-body-tertiary shadow">
+    <section class="container py-4">
+        <div data-aos="fade-up" class="py-4">
+            <p class="display-6 fw-bold"> {% t skills.main-technologies %} </p>
         </div>
 
- 
-        {% endfor %}
+        <div data-aos="fade-up" class="row g-4 mb-4">
+            {% for main_skill in main_skills %}
+            <div class="col-12 col-md-4 d-grid">
+                <div class="card card-animate p-4">
+                <div class=" main-tech-img text-center">
+                    <img src="/assets/images/skills/{{main_skill.logo}}" alt="{{stack.logo}}">
+                </div>
+                <p class='fs-7 text-justify fw-light mt-4 mb-0'>{{main_skill.description}}</p>
+            </div>
+            </div>
+            {% endfor %}
+        </div>
+
+
+    </section>
+</div>
+
+
+<!-- SOFT SKILLS -->
+
+
+
+{% for category in soft_skills %}
+<section id="soft-skills" class=" container py-4 ">
+    <div data-aos="fade-up" class="py-4">
+        <p class="display-6 fw-bold"> {{ category.title }}</p>
     </div>
 
+    <section id="soft-skills-content" class=" ">
+        <div class="row g-4 justify-content-center">
+            {% for skill in category.skills %}
+            {% include soft-skill-card.html %}
+            {% endfor %}
+        </div>
+    </section>
+
 </section>
-{% assign count = count | plus: 1 %}
+{% endfor %}
+
+
+
+
+<!-- HARD SKILLS -->
+{% for category in site.data.hard_skills %}
+<section id="hard-skills" class=" container py-4">
+
+    <div data-aos="fade-up" class="py-4">
+        <p class="display-6 fw-bold"> {{ category.title }}</p>
+    </div>
+
+    {% for group in category.groups %}
+    <p data-aos="fade-up" class="display-7 mb-4">
+        {% if site.lang == "en" %}
+        {{ group.description_en}}
+        {% else %}
+        {{ group.description_pt-br}}
+        {% endif %}
+    </p>
+
+    <div class="row g-4 mb-4">
+        {% for skill in group.skills %}
+        {% include hard-skill-card.html %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+
+    </div>
+</section>
 {% endfor %}

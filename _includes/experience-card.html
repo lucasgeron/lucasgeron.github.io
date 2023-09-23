@@ -1,0 +1,33 @@
+        
+<div class="card card-animate bg-body-tertiary" data-aos="fade-up">
+  <img src="/assets/images/experiences/{{experience.logo}}" class="card-img-top card-img-skill " alt="Responsive image">
+  
+  <div class="card-body p-4">
+    <h4 class="fw-bold ">{{ experience.title }}</h4>
+    <h4 class="fw-light lead">{{ experience.company }}</h4>
+    
+    <div class="d-xl-flex fs-8 gap-4">
+      <p class="text-muted my-0 py-0"><i class="fa-solid fa-sign-in" aria-hidden="true"></i> {{ experience.date_in }}</p>
+      <p class="text-muted my-0 py-0"><i class="fa-solid fa-sign-out" aria-hidden="true"></i> {{ experience.date_out }}</p>
+      <p class="text-muted my-0 py-0"><i class="fa-regular fa-clock" aria-hidden="true"></i> {{ experience.duration }}</p>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordion{{experience.accordion}}">
+      <div class="accordion-item mt-2 ">
+        <h2 class="accordion-header ">
+          <button class="accordion-button collapsed fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#flush-{{ experience.accordion}}" aria-expanded="false" aria-controls="flush-{{ experience.accordion}}">
+            {% t experiences.open %}
+          </button>
+        </h2>
+        <div id="flush-{{ experience.accordion}}" class="accordion-collapse collapse" data-bs-parent="#accordion{{experience.accordion}}">
+          <div class="accordion-body">
+            {% for paragraph in experience.description %}
+              <p class="text-justify fs-7">{{ paragraph }}</p>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
