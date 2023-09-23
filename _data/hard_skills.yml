@@ -1,0 +1,125 @@
+- category:  
+  title: Hard Skills 
+  groups: 
+    - description_pt-br: Desenvolvimento Web
+    - description_en: Web Development
+      skills:
+        - title: AWS
+          score: 60
+          nivel: 2
+          img_path: /assets/images/skills/aws.png
+        - title: Bootstrap
+          score: 80
+          nivel: 3
+          img_path: /assets/images/skills/bootstrap.png
+        - title: CSS
+          score: 70
+          nivel: 3
+          img_path: /assets/images/skills/css.png
+        - title: Docker
+          score: 70
+          nivel: 3
+          img_path: /assets/images/skills/docker.png
+        - title: Flowbite
+          score: 90
+          nivel: 4
+          img_path: /assets/images/skills/flowbite.png
+        - title: Github
+          score: 80
+          nivel: 3
+          img_path: /assets/images/skills/github.png
+        - title: Heroku
+          score: 80
+          nivel: 3
+          img_path: /assets/images/skills/heroku.png
+        - title: Html
+          score: 90
+          nivel: 4
+          img_path: /assets/images/skills/html.png
+        - title: Hotwire
+          score: 90
+          nivel: 4
+          img_path: /assets/images/skills/hotwire.png
+        - title: Javascript
+          score: 80
+          nivel: 4
+          img_path: /assets/images/skills/javascript.png
+        - title: MySQL
+          score: 80
+          nivel: 3
+          img_path: /assets/images/skills/mysql.png
+        - title: PostgreSQL
+          score: 80
+          nivel: 3
+          img_path: /assets/images/skills/postgresql.png
+        - title: Python
+          score: 40
+          nivel: 2
+          img_path: /assets/images/skills/python.png
+        - title: Rails
+          score: 90
+          nivel: 4
+          img_path: /assets/images/skills/rails.png
+        - title: Ruby
+          score: 90
+          nivel: 4
+          img_path: /assets/images/skills/ruby.png
+        - title: Tailwind
+          score: 90
+          nivel: 4
+          img_path: /assets/images/skills/tailwind.png
+        - title: VPS Server
+          score: 80
+          nivel: 3
+          img_path: /assets/images/skills/vps-cloud-server.png
+
+    - description_pt-br: Aplicativos do Google
+    - description_en: Google Apps
+      skills:
+      - title: AppSheet
+        score: 90
+        nivel: 4
+        img_path: /assets/images/skills/app-sheet.png
+      - title: Apps Script
+        score: 100
+        nivel: 4
+        img_path: /assets/images/skills/google-apps-script.png
+      - title: Docs
+        score: 100
+        nivel: 4
+        img_path: /assets/images/skills/docs.png
+      - title: Drive
+        score: 100
+        nivel: 4
+        img_path: /assets/images/skills/drive.png
+      - title: Slides
+        score: 100
+        nivel: 4
+        img_path: /assets/images/skills/slides.png
+      - title: Spreadsheets
+        score: 100
+        nivel: 4
+        img_path: /assets/images/skills/spreadsheets.png
+    - description_pt-br: Aplicativos Microsoft
+    - description_en: Microsoft Apps
+      skills:
+      - title: DAX
+        score: 80
+        nivel: 3
+        img_path: /assets/images/skills/dax.png
+      - title: Excel
+        score: 100
+        nivel: 4
+        img_path: /assets/images/skills/excel.png
+      - title: Power BI
+        score: 80
+        nivel: 3
+        img_path: /assets/images/skills/power-bi.png
+      - title: Power Query
+        score: 90
+        nivel: 4
+        img_path: /assets/images/skills/power-query.png
+      - title: World
+        score: 100
+        nivel: 4
+        img_path: /assets/images/skills/world.png

@@ -1,0 +1,27 @@
+<div data-aos="fade-up" class="d-grid align-items-stretch col-12 col-lg-6 col-xl-4 ">
+  <div class="card card-animate bg-body-tertiary d-flex ">
+
+    <div class="card-body">
+      <a href="{{ training.url }}" class="text-decoration-none text-dark " target="_blank">
+        <img src="{{ training.logo_path }}" alt="" class="mb-2 mx-auto" height="65px">
+      </a>
+      <p class="my-0 fw-bold lead text-black">{{ training.title }}
+      </p>
+      <p class="my-0 fs-5 fw-light">{{ training.institution }}</p>
+
+      {% if training.badge_info %}
+        <p class="badge text-bg-primary fs-7 fw-light text-center my-0 "> {{ training.badge_info }}</p>
+      {% endif %}
+
+    </div>
+     
+   
+      
+    <div class="card-footer">
+      <p class="text-muted my-0">{% t global.year %}: {{ training.year }}
+        | {% t global.duration %}: {{ training.duration }} {% t global.hours %}
+      </p>
+    </div>
+  
+  </div>
+</div>

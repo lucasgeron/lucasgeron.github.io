@@ -1,22 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
 
-  {%- include head.html -%}
+{%- include head.html -%}
 
-  <body class="overflow-hidden ">
-
-   
-     
-        {{ content }}
-     
-
-    
-   
-    
-    {%- include scripts.html -%}
-
-    <script src="{{ "/assets/js/p5.min.js" | relative_url }}"></script>
-
-  </body>
+<body class="overflow-hidden ">
+  {{ content }}
+  {%- include scripts.html -%}
+  <script src="{{ " /assets/js/p5.min.js" | relative_url }}"></script>
+</body>
 
 </html>

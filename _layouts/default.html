@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
-
   {%- include head.html -%}
-
-  <body class="bg-gray-200">
-
-    {%- include header.html -%}
-    
-    <main class="container mx-auto pt-5 mt-5" aria-label="Content">
-      <div class="pb-16 pt-4">
-        {{ content }}
-      </div>
+  {%- include header.html -%}
+  <body class="">
+    <main class="container-fluid mx-auto p-0 mt-navbar">
+      {{ content }}
     </main>
-    
     {%- include footer.html -%}
-    
     {%- include scripts.html -%}
   </body>
-
 </html>

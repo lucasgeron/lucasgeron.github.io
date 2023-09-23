@@ -1,0 +1,20 @@
+
+- site: http://www.utfpr.edu.br/campus/patobranco
+  location: Pato Branco, Paraná, Brasil.
+  course: Engenharia de Computação
+  graduation: Bacharelado em
+  date_in: Julho de 2011
+  date_out: Dezembro de 2013
+  status_color: danger
+  status: Desistente
+  description: "Motivo: Curso voltado para hardware e pouco para software."
+
+- site: http://www.utfpr.edu.br/campus/guarapuava
+  location: Guarapuava, Paraná, Brasil.
+  course: Sistemas para Internet
+  graduation: Tecnologia em
+  date_in: Julho de 2015
+  date_out: Junho de 2023
+  status_color: success
+  status: Formado
+  description: "Nota: Trancado em 2018/2 e continuado em 2022/2 devido a pandemia."

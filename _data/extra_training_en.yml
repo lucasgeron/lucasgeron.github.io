@@ -3,7 +3,6 @@
   year: 2022
   duration: 10
   url: https://lp.suno.com.br/cursos/investindo-em-fundos-imobiliarios/
-  badge_type:
   badge_info: 
   logo_path: /assets/images/experiences/suno.png
 
@@ -12,7 +11,6 @@
   year: 2022
   duration: 70
   url: https://www.softgraf.com/site/
-  badge_type: badge bg-dark fw-bold
   badge_info: Outstanding Student Award
   logo_path: /assets/images/experiences/softgraf.png
 
@@ -20,8 +18,7 @@
   institution: Kellen Kretschmer Training
   year: 2021
   duration: 20
-  url: https://kellen-kretschmer-training.negocio.site/
-  badge_type: 
+  url: https://kellentreinamentos.com.br/
   badge_info: 
   logo_path: /assets/images/experiences/kellen_kretschmer_training.png
 
@@ -30,7 +27,6 @@
   year: 2020
   duration: 5
   url: https://onebitcode.com/course/ruby-puro/
-  badge_type:
   badge_info: 
   logo_path: /assets/images/experiences/onebitcode.png
 
@@ -38,8 +34,7 @@
   institution: Kellen Kretschmer Training
   year: 2019
   duration: 24
-  url: https://kellen-kretschmer-training.negocio.site/
-  badge_type: badge bg-dark fw-bold
+  url: https://kellentreinamentos.com.br/
   badge_info: Outstanding Student Award
   logo_path: /assets/images/experiences/kellen_kretschmer_training.png
 
@@ -48,7 +43,6 @@
   year: 2018
   duration: 6
   url: https://academy.especializati.com.br/curso/introducao-ao-laravel-8
-  badge_type:
   badge_info: 
   logo_path: /assets/images/experiences/especializa_ti.png
 
@@ -57,6 +51,5 @@
   year: 2018
   duration: 12
   url: https://plugcitarios.com/socialmediaexpert/
-  badge_type:
   badge_info: 
   logo_path: /assets/images/experiences/plugcitarios.png

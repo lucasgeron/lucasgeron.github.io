@@ -1,104 +1,64 @@
 ---
-layout: experiences
+layout: default
 title: Experience/Experiências
 namespace: experiences
 permalink: /experiencias/
 permalink_en: /experiences/
 
 ---
-
-<hr data-aos="fade-up" class="">
-
-<section class="pb-4" id="formacao-academica">
-
-  <h1 data-aos="fade-up"class="py-4"> {% t experiences.education %}</h1>
-
-  <div class="row gy-4 gx-4">
-
-    <!-- UTFPR-PB -->
-    <div data-aos="fade-up" class="col-12 col-lg-6">
-      <div class=" bg-light rounded p-4 border-start border-secondary border-5 shadow">
-
-        <a href="http://www.utfpr.edu.br/campus/patobranco" class="text-decoration-none text-primary">
-          <img src="/assets/images/experiences/utfpr.png" alt="UTFPR" class="" width="150px">
-        </a>
-        <p class="fw-light">UTFPR - Pato Branco </p>
-
-        <p class="mb-1 fs-5"> {% t experiences.utfpr_pb.graduation %} <strong>{% t experiences.utfpr_pb.course %}
-          </strong></p>
-        <p class="mb-1 text-md">{% t experiences.utfpr_pb.date_in %} - {% t experiences.utfpr_pb.date_out %} <span
-            class="badge bg-danger fw-bold">{% t experiences.utfpr_pb.status %}</span> </p>
-        <p class="text-sm">{% t experiences.utfpr_pb.description %} </p>
-      </div>
-    </div>
-    <!-- UTFPR-GP -->
-    <div data-aos="fade-up" class="col-12 col-lg-6">
-      <div class=" bg-light rounded p-4 border-start border-primary border-5 shadow">
-
-        <a href="http://www.utfpr.edu.br/campus/guarapuava" class="text-decoration-none text-primary">
-          <img src="/assets/images/experiences/utfpr.png" alt="UTFPR" class="" width="150px">
-        </a>
-        <p class="fw-light">UTFPR - Guarapuava </p>
-
-        <p class="mb-1 fs-5"> {% t experiences.utfpr_gp.graduation %} <strong>{% t experiences.utfpr_gp.course %}
-          </strong></p>
-        <p class="mb-1 text-md">{% t experiences.utfpr_gp.date_in %} - {% t experiences.utfpr_gp.date_out %} <span
-            class="badge bg-success fw-bold">{% t experiences.utfpr_gp.status %}</span> </p>
-        <p class="text-sm">{% t experiences.utfpr_gp.description %} </p>
-      </div>
-    </div>
-
+    
+<section class="container py-4"  id="experiencia_profissional">
+  <div data-aos="fade-up" class="d-flex justify-content-between align-items-center py-4">
+    <p class="display-6 fw-bold"> {% t experiences.professional_experience %}</p>
   </div>
 
+  <div class="main-timeline-2" data-aos="fade">
+    {% assign experiences = 'experiences_' | append: site.lang %}
+    {% for experience in site.data[experiences] %}
+    {% assign is_even = forloop.index0 | modulo: 2 %}
+    {% if is_even == 0 %}
+    <div class="timeline-2 left-2">
+      {%- include experience-card.html -%}
+    </div>
+    {% else %}
+    <div class="timeline-2 right-2">
+      {%- include experience-card.html -%}
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
 </section>
 
-<hr data-aos="fade-up" class="">
+<hr data-aos="fade-up" class="container">
 
-<section class="pb-4" id="capacitacao-extra">
-  <h1 data-aos="fade-up" class="py-4"> {% t experiences.extra_training %}</h1>
+<section class="container py-4" id="formacao-academica">
 
-  <div class="row gy-4 gx-4">
+  <div data-aos="fade-up" class="d-flex justify-content-between align-items-center py-4">
+    <p data-aos="fade-up" class="display-6 fw-bold"> {% t experiences.education %}</p>
+  </div>
 
+  <div class="row g-4">
+    {% assign educations = 'educations_' | append: site.lang %}
+    {% for education in site.data[educations] %}
+      {%- include education-card.html -%}
+    {% endfor %}
+  </div>
+</section>
 
-    {% if site.lang == "pt-br" %}
+<hr data-aos="fade-up" class="container">
 
-    {% for item in site.data.extra_training_pt-br %}
-    <div data-aos="fade-up" class="col-12 col-md-4">
-      <div class=" bg-light rounded p-4 border-start border-primary border-5 shadow">
-        
-        <a href="{{ item.url }}" class="text-decoration-none text-dark">
-          <img src="{{ item.logo_path }}" alt="" class="mb-2" height="65px">
-        </a>
-          <p class="mb-1 fw-bold fs-6 text-black">{{ item.title }} <span class="{{ item.badge_type }}"> {{ item.badge_info
-              }}</span></p>
-          <p class="mb-1 text-sm fw-bold">{{ item.institution }}</p>
-          <p class="text-muted text-sm">{% t global.year %}: {{ item.year }} | {% t global.duration %}: {{ item.duration
-            }} {% t global.hours %}</p>
-        </div>
-    
-    </div>
+<section class="container py-4" id="capacitacao-extra">
+
+  <div data-aos="fade-up" class="d-flex justify-content-between align-items-center py-4">
+    <p data-aos="fade-up" class="display-6 fw-bold">  {% t experiences.extra_training %}</p>
+  </div>
+
+  <div class="row g-4">
+    {% assign extra_trainings = 'extra_training_' | append: site.lang %}
+    {% for training in site.data[extra_trainings] %}
+      {%- include extra-training-card.html -%}
     {% endfor %}
 
-    {% else %}
-
-    {% for item in site.data.extra_training_en %}
-    <div data-aos="fade-up" class="col-12 col-md-4">
-      <div class=" bg-light rounded p-4 border-start border-primary border-5 shadow">
-        
-        <a href="{{ item.url }}" class="text-decoration-none text-dark">
-          <img src="{{ item.logo_path }}" alt="" class="mb-2" height="65px">
-        </a>
-          <p class="mb-1 fw-bold fs-6 text-black">{{ item.title }} <span class="{{ item.badge_type }}"> {{ item.badge_info
-              }}</span></p>
-          <p class="mb-1 text-sm fw-bold">{{ item.institution }}</p>
-          <p class="text-muted text-sm">{% t global.year %}: {{ item.year }} | {% t global.duration %}: {{ item.duration
-            }} {% t global.hours %}</p>
-        </div>
-  
-    </div>
-    {% endfor %}
-
-    {% endif %}
 
   </div>
 </section>

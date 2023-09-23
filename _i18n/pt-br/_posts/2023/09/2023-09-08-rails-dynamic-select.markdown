@@ -11,9 +11,7 @@ labels: "Ruby on Rails, Hotwire, Turbo, TIL, Tutorial"
 
 # Select Dinâmico com Rails
 
-<div>
-  <img src="https://i.ibb.co/1QcrgHP/20230908-192607.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/1QcrgHP/20230908-192607.gif" alt="" class="">
 
 
 ## Introdução
@@ -164,9 +162,7 @@ Em seguida, inicie o servidor com o comando abaixo:
 
 Acesse a aplicação em http://localhost:3000 e você verá a tela abaixo:
 
-<div>
-  <img src="https://i.ibb.co/9GSkQHQ/Captura-da-Web-8-9-2023-181735-127-0-0-1.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/9GSkQHQ/Captura-da-Web-8-9-2023-181735-127-0-0-1.jpg" alt="" class="">
 
 
 ## 5. Criando o Formulário Dinâmico
@@ -227,9 +223,7 @@ Em ***app/views/collections/_collection.html.erb*** adicione o código a seguir,
 Desta forma, na ação *index* será exibido o número total de artigos na coleção, enquanto na ação *show*, será exibido o formulário para adicionarmos artigos na coleção.
 
 
-<div>
-  <img src="https://i.ibb.co/cxhmgHQ/20230908-183630.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/cxhmgHQ/20230908-183630.gif" alt="" class="">
 
 
 Observe que estamos populando apenas o select dos autores, enquanto o select de artigos esta vazio. Isso ocorre porque o select de artigos é dinâmico e será populado de acordo com o autor selecionado.
@@ -328,9 +322,7 @@ Desta forma, quando o usuário alterar o autor, o controlador *collection_contro
 
 Com o controlador stimulus configurado corretamente, o formulário deve popular os artigos conforme esperado.
 
-<div>
-  <img src="https://i.ibb.co/1QcrgHP/20230908-192607.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/1QcrgHP/20230908-192607.gif" alt="" class="">
 
 ## 7. Adicionando Artigos na Coleção
 
@@ -392,9 +384,7 @@ Por:
 
 Desta forma, ao acessar a coleção, os artigos serão listados e o usuário poderá adicionar novos registros ou removê-los da coleção.
 
-<div>
-  <img src="https://i.ibb.co/ZcjCj7Z/20230908-195142.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/ZcjCj7Z/20230908-195142.gif" alt="" class="">
 
 ## Conclusão
 

@@ -1,0 +1,58 @@
+- accordion: 
+  company: FORMAgestor / Self-Employed
+  title: Full Stack RoR Developer
+  location: Pato Branco, Paraná, Brasil.
+  date_in: Novembro de 2022
+  date_out: Presente
+  duration: Indisponível 
+  logo: forma-gestor.svg
+  description:
+    - Implementei melhorias significativas na aplicação descrita abaixo (Projeto de Graduação), tornando-a completamente responsiva, otimizando consultas de banco de dados, testes, validações e recursos com hotwire turbo. 
+    - Tornei a aplicação escalável e implantei uma dashboard administrativa para controle de clientes e licenças, viabilizando o uso compartilhado da plataforma para clientes que atuam como franquias.
+    - Além deste projeto, elaborei a documentação de um aplicação que será desenvolvida, sendo uma plataforma educacional com proposta de simular um ‘microscópio virtual’, a qual terá um acervo de laudos médicos com o objetivo de capacitar e avaliar profissionais da área biomédica.
+    - Também desenvolvi alguns projetos de enriquecimento curricular com o uso de diversas tecnologias como landing pages, blog com galeria de imagens, lista de tarefas, gerenciamento de registros através de API’s, entre outros.
+- accordion: Utfpr
+  company: UTFPR (Projeto de Graduação)
+  title: Full Stack RoR Developer
+  location: Guarapuava, Paraná, Brasil.
+  date_in: Novembro de 2022
+  date_out: Abril de 2023
+  duration: 6 Meses
+  logo: utfpr.png
+  description:
+    - Desenvolvi uma aplicação Ruby on Rails, desde a concepção do problema até o lançamento em produção, com o objetivo de gerenciar negociações e realizar o mapeamento de turmas para empresas de formaturas. O projeto foi realizado como Trabalho de Conclusão de Curso na UTFPR.
+    - A aplicação possui suporte para Docker, integração com AWS S3 e faz uso das principais Ruby Gems. Foi hospedada no Heroku e conta com cobertura de testes e configuração de CI/CD.
+- accordion: Crpss
+  company: Cross Formaturas
+  title: Gerente de Processos
+  location: Guarapuava, Paraná, Brasil.
+  date_in: Outubro de 2015
+  date_out: Novembro de 2022
+  duration: 7 Anos e 2 Meses
+  logo: cross.webp
+  description:
+    - Iniciei minha carreira como Arte Finalista e rapidamente fui promovido a Supervisor de Criação. Durante esse período, desempenhei um trabalho operacional e estratégico, desenvolvendo métodos para integrar, automatizar e realizar tarefas rotineiras com mais agilidade. Coordenei três equipes, todas atualmente autogerenciáveis, e liderei projetos de Marketing, como o rebranding da marca e sua nova identidade visual, campanhas de festas renomadas e materiais institucionais. Desenvolvi o site da empresa, que possui blog de notícias, gestão de formulários e upload de imagens, além de estar associado ao Google Analytics e serviços de chat integrado.
+    - Além de gerenciar a demanda do setor de criação, contribuí desenvolvendo planilhas fundamentais para a gestão financeira da empresa, checklists, ordens de serviços e a integração de diversas ferramentas, como calendário de eventos e banco de horas. Ao assumir a gestão do setor de pós-venda, contribuí desenvolvendo organogramas, fluxogramas e diagramas dos processos da empresa, permitindo otimizar a gestão da demanda e inteligência empresarial.
+    - Expandindo minha área de atuação, contribuí com o desenvolvimento de projetos importantes para a empresa, como a elaboração de todos os Cargos e Funções com o objetivo de formalizar a estrutura organizacional e incentivar os colaboradores a avançarem em suas carreiras profissionais. Criei Dashboards Gerenciais utilizando o Microsoft Power BI, compilando dados de planilhas, CRM e aplicativos web para gerar relatórios analíticos. 
+    - Desenvolvi um sistema Gerador de Propostas Comerciais para otimizar a gestão de valores e gerar mais lucro. Liderei um grande projeto com empresas parceiras para estudar e implementar melhorias nos processos da empresa.
+- accordion: Sponte
+  company: Sponte
+  title: Suporte ao Cliente
+  location: Pato Branco, Paraná, Brasil.
+  date_in:  Agosto de 2012
+  date_out: Fevereiro de 2015
+  duration: 2 Anos e 7 Meses
+  logo: sponte.svg
+  description:
+    - Prestei suporte técnico ao cliente por meio de chat, telefone e conexão remota. Criei manuais de instrução do sistema (FAQ), acompanhei chamados e correções, e realizei treinamentos e implantações para novos clientes. 
+    - Após um ano, fui promovido para a área de configuração bancária, onde realizei configurações para emissão de boletos e notas fiscais. Tive mais contato com arquivos CNAB, homologação bancária e adquiri conhecimento em nota fiscal eletrônica.
+# - accordion: A1
+#   company: A1 Formaturas
+#   title: Designer Gráfico
+#   location: Pato Branco, Paraná, Brasil.
+#   date_in: Janeiro de 2011
+#   date_out: Agosto de 2011
+#   duration: 8 Meses
+#   logo: a1.png
+#   description:
+#     - Realizei a criação de convites de formatura, social media, campanhas de marketing e produção de materiais gráficos para uso interno. Adquiri conhecimento em gráfica, tipos de papel, laminação, impressão e perfil de cores

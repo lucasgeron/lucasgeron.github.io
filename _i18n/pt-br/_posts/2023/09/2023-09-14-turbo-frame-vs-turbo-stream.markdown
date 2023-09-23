@@ -12,9 +12,7 @@ labels: "Ruby on Rails, Turbo, Turbo-Frame, Turbo-Stream, TIL"
 # Turbo Frame vs Turbo Stream
 Você sabe qual a diferença entre os recursos que Hotwire Turbo oferece? Então esse artigo pode ser de seu interesse! Este artigo foi inspirado na postagem de [mixandgo.com](https://mixandgo.com/learn/ruby-on-rails/turbo-frames-vs-turbo-streams).
 
-<div>
-  <img src="https://i.ibb.co/J7G8Lyv/20230914-224204.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/J7G8Lyv/20230914-224204.gif" alt="" class="">
 
 ## Introdução
 
@@ -60,9 +58,7 @@ Em seguida, podemos iniciar o servidor e acessar a página inicial do nosso site
 
 Ao acessar [http://localhost:3000](http://localhost:3000), você deve ver esta tela:
 
-<div>
-  <img src="https://i.ibb.co/cNXky9M/Captura-da-Web-14-9-2023-151854-127-0-0-1.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/cNXky9M/Captura-da-Web-14-9-2023-151854-127-0-0-1.jpg" alt="" class="">
 
 Vamos adicionar um botão para acessar a primeira página do nosso site, primeiro, vamos isto do jeito tradicional, utilizando recurso do turbo apenas para navegar entre as páginas, como rails já esta configurado para fazer.
 
@@ -89,9 +85,7 @@ Para entendermos o que esta acontecendo, vamos abrir o menu de inspeção do nav
 
 Logo após a requisição, vamos inspecionar a sub-aba **Resposta**, para ver o que foi retornado pelo servidor.
 
-<div>
-  <img src="https://i.ibb.co/2vyK8JF/Screenshot-1.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/2vyK8JF/Screenshot-1.jpg" alt="" class="">
 
 Observe que ao clicar no botão, uma nova página é carregada, contendo todas as tags necessárias, ou seja, o cabeçalho (*<head>*) com a importação de todos os scripts e estilos necessários para que tudo funcione. 
 
@@ -117,9 +111,7 @@ Perceba que o código é exatamente igual ao anterior, exceto por estar dentro d
 
 Se você clicar no botão, receberá a mensagem **Content missing** como resposta. 
 
-<div>
-  <img src="https://i.ibb.co/VNXvhpL/Screenshot-2.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/VNXvhpL/Screenshot-2.jpg" alt="" class="">
 
 Isto acontece porque a resposta do arquivo solicitar, deve conter um `turbo_frame` com o mesmo id que foi utilizado na requisição.
 
@@ -147,17 +139,13 @@ Portanto, para entendermos o que esta acontencendo, em `first_page.html.erb` sub
 
 Vejamos a imagem a seguir:
 
-<div>
-  <img src="https://i.ibb.co/hd91pCb/20230914-160105.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/hd91pCb/20230914-160105.gif" alt="" class="">
 
 Ao clicarmos no primeiro botão, a url é alterada, e como vimos anteriormente, a resposta é uma página HTML completa, com todos os recursos necessários para que a página funcione.
 
 Ao clicarmos no botão 'turbo frame', a url **não** é alterada, e a resposta é alterada apenas com o conteúdo que esta dentro do `turbo_frame_tag` com id `frame`, mantendo o restante da página sem alterações.
 
-<div>
-  <img src="https://i.ibb.co/DzGLG4Z/Screenshot-3.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/DzGLG4Z/Screenshot-3.jpg" alt="" class="">
 
 Ao inspecionarmos a resposta, é possível perceber algumas mudanças, sendo a principal, a ausência do cabeçalho (<head>).
 
@@ -168,9 +156,7 @@ Também é possível notar que apesar de existir um código HTML fora da tag `tu
 Isto ocorre porque o Turbo Frame não permite que o conteúdo fora da tag correspondente a solicitação seja renderizado.
 
 
-<div>
-  <img src="https://i.ibb.co/4jQXDm3/Screenshot-4.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/4jQXDm3/Screenshot-4.jpg" alt="" class="">
 
 **Nota 1.**: Caso utilize recursos de Turbo Frame, é recomendado que todo o conteúdo seja envolvido por uma tag `turbo_frame_tag`.
 
@@ -203,9 +189,7 @@ Por
 
 Desta forma, o botão não será substituido, e o conteúdo da resposta será renderizado dentro do frame indicado.
 
-<div>
-  <img src="https://i.ibb.co/fvZgDwt/20230914-163531.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/fvZgDwt/20230914-163531.gif" alt="" class="">
 
 Certo, antes de avançarmos para Turbo Streams, vamos falar um pouco sobre as vantagens e desvantagens de utilizar Turbo Frames.
 
@@ -225,9 +209,7 @@ Certo, antes de avançarmos para Turbo Streams, vamos falar um pouco sobre as va
 
 - Uma terceira vantagem, é que através de Turbo, Frames podem ter Caching, ou seja, em alguns casos, é possível atualizar, voltar ou avançar a página sem que o conteúdo do frame seja perdido. (Para testar este recurso, clique no botão 'turbo frame', em seguida, no botão 'html', e depois volte para a página anterior pelo botão do navegador. Você irá perceber que o conteúdo do frame não foi perdido).
 
-<div>
-  <img src="https://i.ibb.co/f4TpRy0/20230914-230204.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/f4TpRy0/20230914-230204.gif" alt="" class="">
 
 
 Certo, agora que já conhecemos um pouco sobre Turbo Frames, vamos falar sobre Turbo Streams.
@@ -258,15 +240,11 @@ Em seguida, crie o arquivo `app/views/site/first_page.turbo_stream.erb` com o se
 
 Simples assim! Ao clicar no botão 'turbo stream', o conteúdo do frame será substituido pelo conteúdo da resposta.
 
-<div>
-  <img src="https://i.ibb.co/TmqSSRr/20230914-174231.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/TmqSSRr/20230914-174231.gif" alt="" class="">
 
 Vamos inspecionar a resposta para entendermos o que aconteceu.
 
-<div>
-  <img src="https://i.ibb.co/wypn6jZ/Screenshot-5.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/wypn6jZ/Screenshot-5.jpg" alt="" class="">
 
 A resposta de Turbo Stream é encapsulada em uma tag `<template>`. Isto é necessário para que o navegador interprete o conteúdo da resposta corretamente.
 
@@ -298,9 +276,7 @@ Agora em `first_page.turbo_stream.erb` vamos adicionar ao final do arquivo o seg
 
 Ao clicar no botão, tudo isso acontece em uma única resposta, e todas as ações são executadas conforme esperado.
 
-<div>
-  <img src="https://i.ibb.co/09M5wyy/20230914-175538.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/09M5wyy/20230914-175538.gif" alt="" class="">
 
 Ótimo, mas além disto, Turbo Stream possui uma outra vantagem muito interessante, que é a possibilidade de receber atualizações via WebSockets, ou seja, é possível atualizar o conteúdo da página sem que o usuário precise fazer uma requisição.
 
@@ -308,9 +284,7 @@ Mais interessante que isso, é que também possível enviar esta atualização p
 
 Com o código atual, se abrirmos dois navegadores e testarmos o recurso de Stream, você vera algo como isto:
 
-<div>
-  <img src="https://i.ibb.co/7zRrYV0/20230914-180658.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/7zRrYV0/20230914-180658.gif" alt="" class="">
 
 Neste caso, os navegadores não estão sincronizados, ou seja, se você clicar no botão em um navegador, o outro não será atualizado.
 
@@ -377,9 +351,7 @@ Agora vamos ver na prática o que acontece!
 
 
 
-<div>
-  <img src="https://i.ibb.co/b3HsCbS/20230914-215526.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/b3HsCbS/20230914-215526.gif" alt="" class="">
 
 ### O que esta acontecendo? 
 - Clique em Load Fist Page (TURBO_STREAM)
@@ -440,9 +412,6 @@ Para finalizar, uma tabela comparativa entre o Turbo Frame e Turbo Stream retira
 | Funciona com WebSockets | ❌ | ✔️ |
 | Fácil de Implementar | ✔️ | 💭 |
 
----
 ### Link do Repositório
-
-[lucasgeron/rails-turbo-frame-vs-turbo-stream](https://github.com/lucasgeron/rails-turbo-frame-vs-turbo-stream)
-====
+## [**lucasgeron/rails-turbo-frame-vs-turbo-stream**](https://github.com/lucasgeron/rails-turbo-frame-vs-turbo-stream)
 

@@ -12,10 +12,7 @@ labels: "Ruby on Rails, Turbo, Hotwire, Stimulus, TIL, Tutorial"
 # Rails Chat Room
 Neste artigo te mostro como é fácil desenvolver uma sala de bate papo onde as mensagens são entregues a todos os usuários conectados.
 
-<div>
-  <img src="https://i.ibb.co/VNTQvTd/Tab-Rails-Chat-Room-Post-2.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
-
+<img src="https://i.ibb.co/VNTQvTd/Tab-Rails-Chat-Room-Post-2.gif" alt="" class="">
 
 ## Introdução
 
@@ -138,7 +135,7 @@ class MessagesController < ApplicationController
 end
 ```
 
-Em seguida, vamos criar as views que serão utilizadas, sendo um formulário para criação de novas menssagens e uma para exibir a mensagem criada.
+Em seguida, vamos criar as views que serão utilizadas, sendo um formulário para criação de novas mensagens e uma para exibir a mensagem criada.
 
 Em `app/views/`, crie o diretório `messages`.
 
@@ -209,11 +206,9 @@ Para isso, em `app/views/rooms/show.html.erb`, adicione o seguinte código antes
   </div>
 </div>
 ```
-Se tudo correu bem até aqui, você já deve ser capaz de criar novas mensagens e visualizar as mensagens criadas, porem, do jeito padrão de rails, isto é, sendo redirecionado a cada requisição, conforme o gif a seguir: 
+Se tudo correu bem até aqui, você já deve ser capaz de criar novas mensagens e visualizar as mensagens criadas, porém, do jeito padrão de rails, isto é, sendo redirecionado a cada requisição, conforme o gif a seguir: 
 
-<div>
-  <img src="https://i.ibb.co/LdRpsKT/Tab-Rails-Chat-Room-Post.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/LdRpsKT/Tab-Rails-Chat-Room-Post.gif" alt="" class="">
 
 ## Turbinando nossa aplicação
 
@@ -244,15 +239,11 @@ Em `app/views/messages/_form.html.erb`, encapsule todo o conteúdo do arquivo co
 
 Agora, ao acessar a página da sala, você poderá criar e ver as mensagens sem ser redirecionado, conforme o gif a seguir:
 
-<div>
-  <img src="https://i.ibb.co/L8GyHbk/Tab-Rails-Chat-Room-Post-1.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/L8GyHbk/Tab-Rails-Chat-Room-Post-1.gif" alt="" class="">
 
-Porem, apesar de não ser redirecionado para outra página, é possível notar que o formulário de criação de mensagens é recarregado a cada requisição.
+Apesar de não ser redirecionado para outra página, é possível notar que o formulário de criação de mensagens é recarregado a cada requisição.
 
-<div class="text-center">
-  <img src="https://i.ibb.co/4mVzjQJ/Screenshot-1.jpg" alt="" class=" w-75 img-fluid rounded-3 shadow mb-4">
-</div>
+<img src="https://i.ibb.co/4mVzjQJ/Screenshot-1.jpg" alt="" class="w-75">
 
 Para resolver este problema, precisamos fazer com que nosso controlador interprete a requisição e responda a mesma em formato turbo.
 
@@ -270,15 +261,13 @@ end
 Apenas incluindo este formato de resposta já é possível perceber a diferença na resposta do servidor.
 
 <div class="text-center">
-  <img src="https://i.ibb.co/r34FwGT/Screenshot-2.jpg" alt="" class=" w-75 img-fluid rounded-3 shadow mb-4">
+  <img src="https://i.ibb.co/r34FwGT/Screenshot-2.jpg" alt="" class=" w-75">
 </div>
 
 Após esta pequena modificação, é possível notar que a mensagem parece não ter sido listada como antes, a não ser que a página seja atualizada manualmente.
 
 
-<div>
-  <img src="https://i.ibb.co/dtK63Vd/Tab-Rails-Chat-Room-Post-3.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/dtK63Vd/Tab-Rails-Chat-Room-Post-3.gif" alt="" class="">
 
 Isto acontece porque não definimos Rails não encontrou nenhuma instrução de resposta para o formato `turbo_stream`.
 
@@ -290,12 +279,10 @@ Para definir uma, vamos criar o arquivo `create.turbo_stream.erb` em `app/views/
 <% end %>
 ```
 
-Agora, ao criar uma nova mensagem, a mesma será adicionada a lista de mensagens sem a necessidade de recaregar o conteúdo da página.
+Agora, ao criar uma nova mensagem, a mesma será adicionada à lista de mensagens sem a necessidade de recaregar o conteúdo da página.
 
 
-<div>
-  <img src="https://i.ibb.co/k8BLfPS/Tab-Rails-Chat-Room-Post-4.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/k8BLfPS/Tab-Rails-Chat-Room-Post-4.gif" alt="" class="">
 
 Mas agora temos um novo problema, ao realizar a criação da mensagem, a mesma é mantida no campo do formulário. 
 
@@ -337,9 +324,7 @@ De acordo com a [documentação](https://turbo.hotwired.dev/reference/events), `
 
 Portanto, assim que o formulário for enviado, o método `reset` do controlador `form` será executado, limpando o formulário.
 
-<div>
-  <img src="https://i.ibb.co/0BNTCPg/Tab-Rails-Chat-Room-Post-5.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/0BNTCPg/Tab-Rails-Chat-Room-Post-5.gif" alt="" class="">
 
 Antes de seguirmos adiante, vamos implementar o mesmo comportamento para a exclusão de mensagens.
 
@@ -363,7 +348,7 @@ Para responder da forma adequada, é necessário criar a view `destroy.turbo_str
 <% end %>
 ```
 
-Com o código acima, a mensagem excluida será substituida pelo texto "Mensagem Apagada". Quando a página for recarregada, a mensagem não estará mais na lista.
+Com o código acima, a mensagem excluída será substituída pelo texto "Mensagem Apagada". Quando a página for recarregada, a mensagem não estará mais na lista.
 
 Se preferir apenas remover a mensagem da lista, basta definir `destroy.turbo_stream.erb` como:
 
@@ -373,11 +358,9 @@ Se preferir apenas remover a mensagem da lista, basta definir `destroy.turbo_str
 
 ## Sincronizando Mensagens
 
-Agora que já temos nossa sala de bate papo implementada de forma eficiênte, é necessário fazer com que ela se comunique com os demais usuários. Afinal, neste momento, se um usuário enviar uma mensagem, apenas ele irá visualizar a mesma.
+Agora que já temos nossa sala de bate papo implementada de forma eficiente, é necessário fazer com que ela se comunique com os demais usuários. Afinal, neste momento, se um usuário enviar uma mensagem, apenas ele irá visualizar a mesma.
 
-<div>
-  <img src="https://i.ibb.co/0rP7sR9/20230919-181753.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/0rP7sR9/20230919-181753.gif" alt="" class="">
 
 Obviamente, ao atualizar a página em outro cliente, a mensagem será recuperada. Mas isto não é o suficiente, pois o objetivo é que a mensagem seja exibida em tempo real.
 
@@ -410,9 +393,7 @@ Agora, sempre que uma mensagem for criada, atualizada ou excluída, o servidor i
 
 Simples, não é mesmo? Vamos testar? 
 
-<div>
-  <img src="https://i.ibb.co/xMWXTkf/20230919-183215.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/xMWXTkf/20230919-183215.gif" alt="" class="">
 
 ## Extra
 
@@ -446,7 +427,7 @@ Agora, em vez de envolver o formulário no turbo_frame, vamos envolver parte do 
 
 Isto será feito porque o formulário de edição será exibido na mesma página, e nela, teremos a ação de 'cancelar' a edição. Recurso que não temos apenas no formulário. 
 
-Portanto, em `...rooms/edit.html.erb` modifique o código para:
+Portanto, em `app/views/rooms/edit.html.erb` modifique o código para:
 
 ```erb
 <div class="mx-auto md:w-2/3 w-full">
@@ -467,9 +448,7 @@ Contudo, ainda não terminamos.
 Se você tentar acessar os botões, perceberá que nada parece funcionar direito. 
 
 
-<div>
-  <img src="https://i.ibb.co/yWqGQ0W/Tab-Rails-Chat-Room-Post-6.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/yWqGQ0W/Tab-Rails-Chat-Room-Post-6.gif" alt="" class="">
 
 Deixo aqui um tempo para você tentar descobrir o que está acontecendo.
 
@@ -503,15 +482,13 @@ class Room < ApplicationRecord
   broadcasts
 end
 ```
-Desta forma, assim que as informações de uma sala for atualizado, o servidor irá enviar uma mensagem para todos os clientes conectados ao canal.
+Desta forma, assim que as informações de uma sala forem atualizadas, o servidor irá enviar uma mensagem para todos os clientes conectados ao canal.
 
 Com isto, um último problema surge. 
 
-<div>
-  <img src="https://i.ibb.co/BB3FZgr/20230919-200736.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/BB3FZgr/20230919-200736.gif" alt="" class="">
 
-Ao concluir a edição, o botões 'Show this room' e Edit this room' são renderizados. 
+Ao concluir a edição, o botões 'Show this room' e 'Edit this room' são renderizados. 
 
 Isto acontece pois no arquivo `_room.html.erb` estamos renderizando os botões de forma condicional.
 Contudo, como já movemos os botões para a página de exibição, não precisamos mais renderizá-los no arquivo `_room.html.erb`, apenas em index, que será feito em breve. 
@@ -549,9 +526,7 @@ Para:
   
 Desta forma, ao editar as informações de uma sala, o nome da mesma será atualizado tanto na página de listagem de salas, quanto na página da sala, e os botões para acessar a sala serão renderizados conforme esperado. 
 
-<div>
-  <img src="https://i.ibb.co/rM8srGG/20230919-202036.gif" alt="" class=" w-100 img-fluid rounded-3 shadow mb-4">
-</div>
+  <img src="https://i.ibb.co/rM8srGG/20230919-202036.gif" alt="" class="">
 
 ---
 ### Link do Repositório
@@ -574,5 +549,7 @@ Ao longo deste artigo, utilizamos:
 Ainda há muito a ser explorado sobre o Turbo, mas espero que este artigo tenha te ajudado a entender um pouco mais sobre o que é o Turbo e como utilizá-lo em uma aplicação Rails.
 
 **Gostou deste projeto?** *Deixe seu feedback!* 
+
+
 
 

@@ -20,12 +20,9 @@ global:
   not_found_title: Página não encontrada
   not_found_description: A página solicitada não pôde ser encontrada
 home:
-  main-title: Olá, eu sou o 
-  main-sub-title: Trabalho com
-  objective-title: Objetivo
-  objective-text: Sou ambicioso e proativo, sempre em busca de desafios que me permitam crescer profissionalmente e contribuir para o sucesso financeiro da empresa em que trabalho. Sou extremamente organizado e gosto de participar de projetos importantes, seja como líder ou como membro ativo da equipe, sempre trabalhando com metas claras.
-  resume-title: Resumo
-  resume-text: Tenho um perfil observador e realista, com facilidade para identificar oportunidades de negócio e analisar informações de forma coerente e fundamentada. Scrum e boa comunicação fazem parte da minha rotina de trabalho.
+  title: Olá, eu sou o 
+  sub-title: Trabalho com
+  description: Sou ambicioso e proativo, sempre em busca de desafios que me permitam crescer profissionalmente e contribuir para o sucesso financeiro da empresa em que trabalho. </br></br> Sou extremamente organizado e gosto de participar de projetos importantes, seja como líder ou como membro ativo da equipe, sempre trabalhando com metas claras. 
   last-projects: Últimos Projetos
   contact-title: Quer saber mais? Vamos conversar!
   contact-text: Você pode me encontrar em várias redes sociais.
@@ -37,56 +34,12 @@ skills:
   expert: Expert
   level: Nível
   tech: Tecnologia
+  main-technologies: Principais Tecnologias
 experiences:
+  open: Ver Detalhes
   professional_experience: Experiência Profissional
   education: Formação Acadêmica
   extra_training: Capacitação Extra
-  utfpr_pb:
-    course: Engenharia de Computação
-    graduation: Bacharelado em
-    date_in: Julho de 2011
-    date_out: Dezembro de 2013
-    status: Desistente
-    description: "Motivo: Curso voltado para hardware e pouco para software."
-  utfpr_gp:
-    course: Sistemas para Internet
-    graduation: Tecnologia em
-    date_in: Julho de 2015
-    date_out: Junho de 2023
-    status: Formado
-    description: "Nota: Trancado em 2018/2 e continuado em 2022/2 devido a pandemia."
-  cross:
-    company: Cross Formaturas
-    title: Arte Finalista à Gerente de Processos
-    location: Guarapuava, Paraná, Brasil.
-    date_in: Outubro de 2015
-    date_out: Novembro de 2022
-    duration: 7 Anos e 2 Meses
-    visit: Conheça alguns trabalhos na seção ‘Projetos’
-  sponte:
-    company: Sponte 
-    title: Suporte ao Cliente
-    location: Pato Branco, Paraná, Brasil.
-    date_in:  Agosto de 2012
-    date_out: Fevereiro de 2015
-    duration: 2 Anos e 7 Meses
-  a1:
-    company: A1 Formaturas
-    title: Designer Gráfico
-    location: Pato Branco, Paraná, Brasil.
-    date_in: Janeiro de 2011
-    date_out: Agosto de 2011
-    duration: 8 Meses
-  tcc-utfpr:
-    company: UTFPR (Projeto de Graduação)
-    title: Full Stack Developer - Ruby on Rails 
-    location: Guarapuava, Paraná, Brasil.
-    date_in: Novembro de 2022
-    date_out: Junho de 2023
-    duration: 8 Meses
-    download: Monografia
-    visit: Conhecer Projeto
-    credentials: Use as seguintes credenciais
 projects:
   all_projects: Todos os Projetos
 hire_me:

@@ -1,0 +1,30 @@
+<!-- LOGIC TO TRANSLATE THE CURRENT PAGE -->
+{% case page.title %}
+  {% when "Skills/Habilidades" %}
+    {% assign target = site.translations[site.lang].navigation.targets.skills %}
+  {% when "Experience/Experiências" %}
+    {% assign target = site.translations[site.lang].navigation.targets.experiences %}
+  {% when "Projects/Projetos" %}
+    {% assign target = site.translations[site.lang].navigation.targets.projects %}
+  {% when "Hire Me/Contrate-me" %}
+    {% assign target = site.translations[site.lang].navigation.targets.hire_me %}
+  {% when "Home/Início" %}
+    {% assign target = site.translations[site.lang].navigation.targets.home %}
+  {% else %}
+    {% if site.lang == "pt-br" %}
+      {% assign target = page.url | prepend: "/en" %}
+    {% else %}
+      {% assign target = page.url | replace: "/en/", "/" %}
+    {% endif %}
+{% endcase %}
+
+<!-- TRANSLATE BUTTON -->
+<a href="{{ target }}" class="text-decoration-none my-auto">
+  {% if site.lang == "pt-br" %}
+  <img src="{{ site.baseurl_root }}/assets/images/languages/en.svg" alt="America-flag" height="32px" width="32px"
+    class="rounded-3">
+  {% elsif site.lang == "en" %}
+  <img src="{{ site.baseurl_root }}/assets/images/languages/pt-br.svg" alt="Brazil-flag" height="32px" width="32px"
+    class="rounded-3">
+  {% endif %}
+</a>

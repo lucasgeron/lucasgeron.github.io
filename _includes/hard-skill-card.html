@@ -1,0 +1,43 @@
+<!-- SKILL CARD  -->
+<div data-aos="fade-up" class="col-sm-6 col-md-6 col-lg-4  col-xl-3 card-skill ">
+  <div class="card card-animate bg-body-tertiary">
+
+    <div class="d-flex align-items-center">
+      <!-- ICON -->
+      <div class="col-4 p-2">
+        <img src="{{ skill.img_path }}" class="img-fluid">
+      </div>
+
+      <!-- TEXT  -->
+      <div class="card-body">
+        <p class="fs-5 fw-medium my-0"> {{ skill.title }} </p>
+
+        <!-- SKILL LEVEL -->
+        <div class=" ">
+          {% t skills.level %}: 
+          <span class="badge bg-primary">
+            {% case skill.nivel %}
+            {% when 4 %}
+            {% t skills.expert %}
+            {% when 3 %}
+            {% t skills.advanced %}
+            {% when 2 %}
+            {% t skills.intermediate %}
+            {% else %}
+            {% t skills.beginner %}
+            {% endcase %}
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PROGRESS BAR -->
+    <div class="progress rounded-bottom-5" style="height: 0.5rem;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-{{skill.score}}"
+        role="progressbar" aria-valuenow="{{ skill.score }}" aria-valuemin="0" aria-valuemax="100">
+      </div>
+    </div>
+
+  </div>
+</div>

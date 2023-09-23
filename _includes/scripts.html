@@ -1,63 +1,34 @@
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  
-<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-    AOS.init();
-  </script>
-
-
-
+<!-- Scripts import -->
+<!-- Bootstrap v5.3 -->
+<script src="{{ '/assets/js/bootstrap.min.js' | prepend: site.baseurl_root }}"></script>
+<!-- FontAwesome 6.4.2-->
+<script src="{{ '/assets/js/fontawesome.min.js' | prepend: site.baseurl_root }}"></script>
+<!-- AOS -->
+<script src="{{ '/assets/js/aos.js' | prepend: site.baseurl_root }}"></script>
+<!-- typewritter-effect.js -->
+<script src="{{ '/assets/js/core.js' | prepend: site.baseurl_root }}"></script>
 
 <script>
+  AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+    
 
-  var app = document.getElementById('app');
-  var quotes = document.getElementById('contrate-me');
-  
-  var capabilities = []
-  if ( {{ site.lang | jsonify }} == 'pt-br' ) {
-    capabilities.push('Desenvolvimento Web', 'Web Apps', 'Design Gráfico', 'Criação de Sites', 'Planilhas Google', 'Power BI', 'Análise de Dados')
-  } else {
-    capabilities.push('Web Development', 'Web Apps', 'Graphic Design', 'Landing Pages', 'Google Sheets', 'Power BI', 'Data Analysis')
-  }
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 100, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-  var capabilities_for = []
-  if ( {{ site.lang | jsonify }} == 'pt-br' ) {
-    capabilities_for.push('Assessoria', 'Consultoria','Desenvolvimento', 'Apps', 'Planejamento', 'Dashboards', 'Apresentações', 'Analytics', 'Relatórios')
-  } else {
-    capabilities_for.push('Advisory', 'Consulting','Development', 'Apps', 'Planning', 'Dashboards', 'Apps', 'Presentations', 'Analytics', 'Reports')
-  }
-
-
-
-  var typewriter = new Typewriter(app, {
-  loop: false,
-  delay: 50,
-  deleteSpeed: 10,
-  skipAddStyles: true,
-  autoStart: true,
-  loop: true,
-  cursor: " ",
-  strings: capabilities,
   });
-
-
-  var typewriter = new Typewriter(quotes, {
-  loop: false,
-  delay: 50,
-  deleteSpeed: 10,
-  skipAddStyles: true,
-  autoStart: true,
-  loop: true,
-  cursor: " ",
-  strings: capabilities_for,
-  });
-
-  typewriter.start()
-  
-
 </script>

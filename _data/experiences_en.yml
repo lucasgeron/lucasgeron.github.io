@@ -1,0 +1,58 @@
+- accordion: 
+  company: FORMAgestor / Self-Employed
+  title: Full Stack RoR Developer
+  location: Pato Branco, Paraná, Brasil.
+  date_in: November 2022
+  date_out: Present
+  duration: Unavailable 
+  logo: forma-gestor.svg
+  description:
+    - I implemented significant improvements to the application described below (Graduation Project), making it fully responsive, optimizing database queries, tests, validations, and resources with hotwire turbo. 
+    - I made the application scalable and implemented an administrative dashboard for customer and license control, enabling shared use of the platform for customers who operate as franchises.
+    - In addition to this project, I developed the documentation for an application that will be developed, being an educational platform with the proposal to simulate a ‘virtual microscope’, which will have a collection of medical reports with the objective of training and evaluating biomedical professionals.
+    - I also developed some curricular enrichment projects using various technologies such as landing pages, blog with image gallery, task list, record management through APIs, among others.
+- accordion: Utfpr
+  company: UTFPR (Graduation Project)
+  title: Full Stack RoR Developer
+  location: Guarapuava, Paraná, Brasil. 
+  date_in: November 2022 
+  date_out: April 2023 
+  duration: 6 Months
+  logo: utfpr.png
+  description:
+    - I developed a Ruby on Rails application, from the conception of the problem to its launch in production, with the goal of managing negotiations and mapping classes for graduation companies. 
+    - The project was carried out as a Final Course Project at UTFPR. The application has support for Docker, integration with AWS S3, and makes use of the main Ruby Gems. It was hosted on Heroku and has test coverage and CI/CD configuration
+- accordion: Cross
+  company: Cross Formaturas
+  title: Process Manager
+  location: Guarapuava, Paraná, Brasil.
+  date_in: October 2015
+  date_out: November 2022
+  duration: 7 Years and 2 Months
+  logo: cross.webp
+  description:
+    - I started my career as a Final Artist and was quickly promoted to Creative Supervisor. During this period, I performed operational and strategic work, developing methods to integrate, automate, and perform routine tasks more efficiently. I coordinated three teams, all currently self-managed, and led Marketing projects such as brand rebranding and its new visual identity, renowned party campaigns, and institutional materials. I developed the company’s website, which has a news blog, form management, and image upload, as well as being associated with Google Analytics and integrated chat services.
+    - In addition to managing the demand of the creative sector, I contributed by developing fundamental spreadsheets for the company’s financial management, checklists, service orders, and the integration of various tools such as event calendar and time bank. Upon taking over the management of the after-sales sector, I contributed by developing organizational charts, flowcharts, and diagrams of the company’s processes, allowing for the optimization of demand management and business intelligence.
+    - Expanding my area of operation, I contributed to the development of important projects for the company, such as the elaboration of all Positions and Functions with the aim of formalizing the organizational structure and encouraging employees to advance in their professional careers. I created Management Dashboards using Microsoft Power BI, compiling data from spreadsheets, CRM, and web applications to generate analytical reports. I developed a Commercial Proposal Generator system to optimize value management and generate more profit. I led a large project with partner companies to study and implement improvements in the company’s processes.
+- accordion: Sponte
+  company: Sponte 
+  title: Customer Support
+  location: Pato Branco, Paraná, Brasil.
+  date_in: August 2012
+  date_out: February 2015
+  duration: 2 Years and 7 Months
+  logo: sponte.png
+  description:
+    - I provided technical support to the client through chat, phone, and remote connection. I created system instruction manuals (FAQ), followed up on calls and corrections, and conducted training and implementations for new clients. 
+    - After a year, I was promoted to the banking configuration area, where I performed configurations for issuing bank slips and invoices. I had more contact with CNAB files, bank homologation, and acquired knowledge in electronic invoicing.
+# - accordion: A1
+#   company: A1 Formaturas
+#   url: http://www.a1formaturas.com.br/
+#   title: Graphic Designer
+#   location: Pato Branco, Paraná, Brasil.
+#   date_in: January 2011
+#   date_out: August 2011
+#   duration: 8 Months
+#   logo: a1.png
+#   description:
+#     - I created graduation invitations, social media content, marketing campaigns, and produced graphic materials for internal use. I acquired knowledge in printing, types of paper, lamination, printing, and color profiles.

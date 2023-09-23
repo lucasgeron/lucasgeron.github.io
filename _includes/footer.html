@@ -1,21 +1,25 @@
 <footer>
-  <div class="container py-4">
-      <hr />
-      <div class="text-muted d-flex justify-content-between align-items-center pt-3">
-          <a href="/" class="footer-link text-decoration-none text-dark mb-0 fw-normal lead">lucasgeron.github.io</a>
-          <ul class="list-inline mb-0">
+  <div class="container">
+    <hr class="my-0"/>
+    <div class="text-muted d-flex justify-content-between align-items-center py-3">
+      
+      <a class="footer-link text-decoration-none text-dark lead"href="{{ site.baseurl_root }}/{% if site.lang=='en' %}en/{% endif %}">
+        <img src="/assets/images/favicon.ico" alt="" class="" style="height: 1.5rem"> lucasgeron.github.io
+      </a>
+      
+      <ul class="list-inline mb-0">
+        {% assign items = site.data.social | where: "footer", "display" %}
+        {% for item in items %}
+        <li class="list-inline-item">
+          <a href="{{ item.link }}" target="_blank" class="text-muted footer-link">
+            {% if item.icon %}
+            <i class="{{item.icon}} fa-lg fa-fotter"></i>
+            {% endif %}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
 
-                  {% assign items = site.data.social | where: "footer", "display" %}
-                  {% for item in items  %}
-                  <li class="list-inline-item">
-                    <a href="{{ item.link }}" target="_blank" class=" text-decoration-none text-muted hover-text-primary hover">
-                        {% if item.icon %} 
-                        <i class="fa {{item.icon}} fa-lg fa-fotter"></i> 
-                        {% endif %}
-                    </a>
-                  </li>
-                {% endfor %}
-          </ul>
-      </div>
-  </div>
+    </div>
+  </div>  
 </footer>
