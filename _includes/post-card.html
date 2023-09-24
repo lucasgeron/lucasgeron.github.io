@@ -2,7 +2,7 @@
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
 <!-- POST CARD -->
- <div class="col-12 col-md-6 col-lg-4 d-flex">
+ <div class="col-12 col-md-6 col-xl-4 d-flex">
   <div data-aos="fade-up" class="card card-animate bg-body-tertiary">
 
     <div class="card-header">
@@ -16,10 +16,10 @@
     </a>
 
     <div class="card-body ">
-      <p class="card-text ">{{ post.short_description }}</p>
-      {% assign labels = post.labels | split: ", " %}
-      {% for label in labels %}
-      <span class="badge bg-dark rounded"> {{ label }}</span>
+      <p class="card-text fs-7">{{ post.short_description }}</p>
+      {% assign sorted_tags = post.tags | sort %}
+      {% for tag in sorted_tags %}
+        <a href="{% tl search %}?q={{tag | remove: '#'}}" class="post-tag"> {{ tag }}</a>
       {% endfor %}
     </div>
 

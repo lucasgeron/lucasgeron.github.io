@@ -1,0 +1,26 @@
+---
+title: Search
+description: "Search this site"
+layout: default
+namespace: search
+permalink: /search/
+permalink_en: /search/
+tipue_search_active: true
+exclude_from_search: true
+---
+<div class="container py-4">
+
+  <div data-aos="fade" class="d-flex justify-content-between align-items-center py-4">
+    <p class="display-6 fw-bold"> {% t search.title %}</p>
+  </div>
+
+  {%- include search-form.html -%}
+
+  <div id="tipue_search_content" class=""></div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('#tipue_search_input').tipuesearch();
+  });
+</script>

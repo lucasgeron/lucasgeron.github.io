@@ -4,14 +4,29 @@ title:  Convites 2019
 date:   2019-12-31
 short_description: Mostra de convites luxo desenvolvidos para Cross Formaturas no ano de 2019.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/f40d2890036137.5e0b97e397e68.jpg
-labels: Design Gráfico, Direção de Arte
+tags:
+# Tech Tags
+# - API
+# - P5
+# - Python
+# - Ruby
+# - Ruby On Rails
+# - Hotwire Turbo
+# - Hotwire Stimulus
+# Common Tags
+# - Tutorial
+# Other Tags
+- Portfilio
+- Design
+- Photoshop
+# - Spreadsheet
 ---
 
-![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/f40d2890036137.5e0b97e397e68.jpg){: .img-fluid}
-![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/aa4a4c90036137.5e0b97e398c0d.jpg){: .img-fluid}
-![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/5caa0490036137.5e0b97e3983d0.jpg){: .img-fluid}
-![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/14d97590036137.5e0b97e39ab56.jpg){: .img-fluid}
-![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/fdc38590036137.5e0b97e39a3c8.jpg){: .img-fluid}
-![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/686ad090036137.5e0b97e399204.jpg){: .img-fluid}
-![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/6e196790036137.5e0b97e399d50.jpg){: .img-fluid}
-![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/35c0a690036137.5e0b97e399814.jpg){: .img-fluid}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/f40d2890036137.5e0b97e397e68.jpg){: .behance}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/aa4a4c90036137.5e0b97e398c0d.jpg){: .behance}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/5caa0490036137.5e0b97e3983d0.jpg){: .behance}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/14d97590036137.5e0b97e39ab56.jpg){: .behance}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/fdc38590036137.5e0b97e39a3c8.jpg){: .behance}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/686ad090036137.5e0b97e399204.jpg){: .behance}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/6e196790036137.5e0b97e399d50.jpg){: .behance}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/35c0a690036137.5e0b97e399814.jpg){: .behance}

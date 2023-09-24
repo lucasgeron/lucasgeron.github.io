@@ -19,6 +19,7 @@ global:
   hours: Horas
   not_found_title: Página não encontrada
   not_found_description: A página solicitada não pôde ser encontrada
+  search_placeholder: Pesquisar...
 home:
   title: Olá, eu sou o 
   sub-title: Trabalho com
@@ -46,3 +47,5 @@ hire_me:
   title: Encontre-me nas redes sociais
   first_sub_title: Será uma ótima experiências poder contribuir para seu negócio!
   second_sub_title: Posso contribuir de diversas maneiras!
+search:
+  title: Resultado da Pesquisa

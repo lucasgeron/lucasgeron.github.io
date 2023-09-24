@@ -4,7 +4,22 @@ title:  AppSheet - Comercial Mapping
 date:   2022-11-16
 short_description: Application developed as a prototype for mapping clients and graduating classes for the Cross Formaturas company
 cover: /assets/images/covers/all/mapeamento-comercial.png
-labels: AppSheet, Spreadsheets.gs, WebApp
+tags:
+# Tech Tags
+# - P5
+# - Python
+# - Ruby
+# - Ruby On Rails
+# - Hotwire Turbo
+# - Hotwire Stimulus
+# Common Tags
+# - Tutorial
+# Other Tags
+- Portfilio
+# - Design
+- Spreadsheet
+# - Useful Gems
+- App Sheet
 ---
 
 

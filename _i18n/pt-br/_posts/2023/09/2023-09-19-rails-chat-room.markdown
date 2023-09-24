@@ -5,8 +5,19 @@ title: "Rails Chat Room"
 date: 2023-09-19
 short_description: "Neste artigo te mostro como é fácil desenvolver sala de bate papo onde as mensagens são entregues a todos que estão conectados."
 cover: https://i.ibb.co/VNTQvTd/Tab-Rails-Chat-Room-Post-2.gif
-labels: "Ruby on Rails, Turbo, Hotwire, Stimulus, TIL, Tutorial"
-
+tags:
+# Tech Tags
+# - P5
+# - Python
+# - Ruby
+- Ruby On Rails
+- Hotwire Turbo
+- Hotwire Stimulus
+# Common Tags
+- Tutorial
+# Other Tags
+# - Design
+# - Spreadsheet
 ---
 
 # Rails Chat Room
