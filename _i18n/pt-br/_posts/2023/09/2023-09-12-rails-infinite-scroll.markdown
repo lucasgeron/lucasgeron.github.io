@@ -3,10 +3,22 @@
 layout: post
 title: "Rails Inifite Scroll with Turbo"
 date: 2023-09-12
-short_description: "Neste artigo te mostro como criar o <b>efeito de rolagem infinita sem utilizar javascript </b>. De bônus também vou te dar mais duas dicas que podem ajudar muito na hora de criar um blog."
+short_description: "Neste artigo te mostro como criar o efeito de rolagem infinita sem utilizar javascript. De bônus também vou te dar mais duas dicas que podem ajudar muito na hora de criar um blog."
 cover: https://i.ibb.co/2ZsCWts/20230913-144634.gif
-labels: "Ruby on Rails, Turbo, Infinite Scroll, ActionText, Active Storage, ActiveRecord Import, Pagy, Faker"
-
+tags:
+# Tech Tags
+# - P5
+# - Python
+# - Ruby
+- Ruby On Rails
+- Hotwire Turbo
+# - Hotwire Stimulus
+# Common Tags
+- Tutorial
+# Other Tags
+# - Design
+# - Spreadsheet
+- Useful Gems
 ---
 
 # Rails Inifite Scroll with Zero Javascript

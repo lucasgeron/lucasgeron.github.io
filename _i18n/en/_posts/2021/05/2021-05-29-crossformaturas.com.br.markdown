@@ -4,7 +4,23 @@ title:  nCross - crossformaturas.com.br
 date:   2021-05-29
 short_description: Dynamic site developed in Laravel 8.0 and MySQL, containing Blog, Image Upload, Online Chat, Google Analytics and more.
 cover: /assets/images/covers/all/crossformaturas.com.br.png
-labels: "Laravel 8.0, MySQL, Web Development"
+tags:
+# Tech Tags
+# - API
+# - P5
+# - Python
+# - Ruby
+# - Ruby On Rails
+# - Hotwire Turbo
+# - Hotwire Stimulus
+# Common Tags
+# - Tutorial
+# Other Tags
+- Portfilio
+- Laravel
+# - Design
+# - Photoshop
+# - Spreadsheet
 ---
 
 

@@ -19,6 +19,7 @@ global:
   hours: Hours
   not_found_title: Page not found
   not_found_description: The requested page could not be found
+  search_placeholder: Search...
 home:
   title: Hello, I'm  
   sub-title: Work with
@@ -46,3 +47,5 @@ hire_me:
   title: Find me on social media
   first_sub_title: It will be a great experience to be able to contribute to your business!
   second_sub_title: I can contribute in many ways!
+search:
+  title: Search Result

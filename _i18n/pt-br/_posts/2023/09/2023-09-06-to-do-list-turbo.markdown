@@ -5,8 +5,20 @@ title: "To Do List Turbo"
 date: 2023-09-06
 short_description: "To Do List Turbo é uma aplicação de lista de tarefas que permite você criar, editar e remover tarefas. Neste artigo te mostro como criar isto com Hotwire Turbo."
 cover: https://i.ibb.co/Ydyx6RS/20230906-142125.gif
-labels: "Ruby on Rails, Hotwire Turbo, TIL, Tutorial"
-
+tags:
+# Tech Tags
+# - P5
+# - Python
+# - Ruby
+- Ruby On Rails
+- Hotwire Turbo
+# - Hotwire Stimulus
+# Common Tags
+- Tutorial
+# Other Tags
+# - Design
+# - Spreadsheet
+# - Useful Gems
 ---
 
 # To Do List Turbo

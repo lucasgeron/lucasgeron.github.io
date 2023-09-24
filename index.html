@@ -38,11 +38,14 @@ permalink_en: /
 <section id="last-projects" class="w-full bg-light ">
   <div class="container py-4">
     <!-- PROJECTS BAR -->
-    <div data-aos="fade-up" class="d-flex justify-content-between align-items-center py-4">
+    <div data-aos="fade-up" class="d-md-flex justify-content-between align-items-center py-4">
       <p data-aos="fade-up" class="display-6 fw-bold"> {% t home.last-projects %}</p>
-      <a href="{% tl  projects %}" class="fs-6 btn btn-outline-primary">
-        {% t global.see_all %} 
-      </a>
+      <div class="flex-grow-1 justify-content-between justify-content-md-end d-flex gap-2">
+        {%- include search-form.html -%}
+        <a href="{% tl  projects %}" class="fs-6 btn btn-outline-primary">
+          {% t global.see_all %} 
+        </a>
+      </div>
     </div>
 
     <!-- POSTS  -->

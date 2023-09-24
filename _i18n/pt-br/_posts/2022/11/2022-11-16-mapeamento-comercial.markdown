@@ -4,7 +4,22 @@ title:  Mapeamento Comercial
 date:   2022-11-16
 short_description: Aplicativo desenvolvido como protótipo para mapeamento de clientes e turmas de formandos para a empresa Cross Formaturas.
 cover: /assets/images/covers/all/mapeamento-comercial.png
-labels: AppSheet, Spreadsheets.gs, WebApp
+tags:
+# Tech Tags
+# - P5
+# - Python
+# - Ruby
+# - Ruby On Rails
+# - Hotwire Turbo
+# - Hotwire Stimulus
+# Common Tags
+# - Tutorial
+# Other Tags
+- Portfilio
+# - Design
+- Spreadsheet
+# - Useful Gems
+- App Sheet
 ---
 
 

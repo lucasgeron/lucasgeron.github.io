@@ -19,9 +19,6 @@ read LANGUAGE
 echo "Short Description:"
 read SHORT_DESCRIPTION
 
-echo "Labels:"
-read LABEL
-
 # Create year and month directories if they don't exist
 mkdir -p _i18n/$LANGUAGE/_posts/$YEAR/$MONTH
 
@@ -34,8 +31,21 @@ title: "$TITLE"
 date: $DATE
 short_description: "$SHORT_DESCRIPTION"
 cover: /assets/images/covers/$LANGUAGE/$SLUG.png
-labels: "$LABEL"
-
+tags:
+# Tech Tags
+# - API
+# - P5
+# - Python
+# - Ruby
+# - Ruby On Rails
+# - Hotwire Turbo
+# - Hotwire Stimulus
+# Common Tags
+# - Tutorial
+# Other Tags
+# - Portfilio
+# - Design
+# - Spreadsheet
 ---
 
 # $TITLE

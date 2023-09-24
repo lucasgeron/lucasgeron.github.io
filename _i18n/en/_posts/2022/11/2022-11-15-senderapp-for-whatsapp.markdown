@@ -4,7 +4,22 @@ title:  SenderApp for WhatsApp
 date:   2022-11-15
 short_description: Send hundreds of personalized text messages in minutes without adding contacts to your mobile device with SenderApp for WhatsApp.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/384f5f157902067.63815a43aa8e8.png
-labels: Bot, GAS, Python, Spreadsheets.gs, WhatsApp API
+tags:
+# Tech Tags
+- API
+# - P5
+- Python
+- Google Apps Scripts
+# - Ruby
+# - Ruby On Rails
+# - Hotwire Turbo
+# - Hotwire Stimulus
+# Common Tags
+# - Tutorial
+# Other Tags
+# - Portfilio
+# - Design
+- Spreadsheet
 ---
 
 
@@ -107,10 +122,10 @@ As a way to limit the misuse of the tool, a shipping quota system is established
 # Product Presentation (PT-BR)
 
 
-![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/3c18ec157902067.63815a43a623d.png){: .img-fluid}
-![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/4c62a7157902067.63815a43a9672.png){: .img-fluid}
-![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/cd92bc157902067.63815a43a8524.png){: .img-fluid}
-![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/88b3a8157902067.63815a43a7426.png){: .img-fluid}
-![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/0f5063157902067.63815a43a3f17.png){: .img-fluid}
-<!-- ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/79736e157902067.63815a43a50ac.png){: .img-fluid} -->
-<!-- ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/d4837c157902067.63815a43aba5f.png){: .img-fluid} -->
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/3c18ec157902067.63815a43a623d.png){: .behance}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/4c62a7157902067.63815a43a9672.png){: .behance}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/cd92bc157902067.63815a43a8524.png){: .behance}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/88b3a8157902067.63815a43a7426.png){: .behance}
+![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/0f5063157902067.63815a43a3f17.png){: .behance}
+<!-- ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/79736e157902067.63815a43a50ac.png){: .behance} -->
+<!-- ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/d4837c157902067.63815a43aba5f.png){: .behance} -->
