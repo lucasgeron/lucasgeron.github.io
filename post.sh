@@ -46,6 +46,7 @@ tags:
 # - Portfilio
 # - Design
 # - Spreadsheet
+# - Useful Gems
 ---
 
 # $TITLE
@@ -59,7 +60,7 @@ $SHORT_DESCRIPTION
 --- 
 
 > ### Link do Repositório:
-> ## [*lucasgeron/rails-chat-room*](https://github.com/lucasgeron/rails-chat-room)
+> ## [*lucasgeron/$SLUG*](https://github.com/lucasgeron/$SLUG)
 
 --- 
 #### **Gostou deste projeto?** *Deixe seu feedback!* 
