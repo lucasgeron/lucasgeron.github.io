@@ -1,0 +1,21 @@
+<div id="tags" data-aos="fade-up" class="d-flex flex-wrap mb-4 gap-1 justify-content-center align-items-center ">
+  {% assign tags = '' | split: '' %}
+  {% for t in site.tags %}
+  {% assign tags = tags | push: t[0] %}
+  {% endfor %}
+
+  {% assign sorted_tags = tags | sort_natural %}
+
+  {% for t in sorted_tags %}
+
+  <a class="badge bg-body-secondary text-dark fw-light fs-6 text-decoration-none tag-link"
+    href="{{ t | url_encode | prepend: '/search?q=' | relative_url }}">
+    
+    <i class="fa-solid fa-tag "></i>
+    {{ t }}
+    <span class="ms-2 badge rounded-pill text-bg-primary ">{{ site.tags[t].size }}</span>
+  </a>
+
+  {% endfor %}
+
+</div>

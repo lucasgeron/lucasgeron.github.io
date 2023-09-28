@@ -32,3 +32,4 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # Other gems
 gem "webrick"
+gem 'jekyll-archives'

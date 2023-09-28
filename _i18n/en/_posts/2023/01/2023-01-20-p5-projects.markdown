@@ -6,7 +6,7 @@ short_description: p5.js is a JavaScript library for creative coding, with a foc
 cover: /assets/images/covers/all/p5-projects.png
 tags:
 # Tech Tags
-- P5
+- P5.js
 # - Python
 # - Ruby
 # - Ruby On Rails

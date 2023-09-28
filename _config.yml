@@ -6,6 +6,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-multiple-languages-plugin
+  - jekyll-archives
 
 languages: ["pt-br", "en"]
 
@@ -16,3 +17,7 @@ description:  Bem-vindo ao meu site, onde você encontrará informações sobre 
 
 highlighter: rouge
 
+jekyll-archives:
+  enabled: [tags]
+  layouts:
+    tag: default

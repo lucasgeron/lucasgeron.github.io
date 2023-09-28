@@ -34,7 +34,7 @@ cover: /assets/images/covers/$LANGUAGE/$SLUG.png
 tags:
 # Tech Tags
 # - API
-# - P5
+# - P5.js
 # - Python
 # - Ruby
 # - Ruby On Rails

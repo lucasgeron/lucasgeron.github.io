@@ -61,4 +61,26 @@ body .btn-outline-dark:hover {
 }
 
 
+/* STYLES FOR TIPUE SEARCH */
+#tipue_search_foot_boxes li a
+{
+  background-color: var(--bs-dark) !important;
+  border-radius: var(--bs-border-radius);
+	color: #FFF !important;
+}
+#tipue_search_foot_boxes li.current
+{
+  background-color: var(--bs-dark) !important;
+}
+#tipue_search_foot_boxes li a:hover
+{
+     background: #f6f6f6;
+}
 
+
+/* STYLE FOR ARTICLES (POSTS) */
+
+
+article blockquote {
+  background-color: var(--bs-dark-bg-subtle);
+}
