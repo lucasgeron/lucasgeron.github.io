@@ -1,7 +1,7 @@
 - title: Ruby on Rails
   description: Rails is a framework written in the Ruby language that provides all the necessary tools to build amazing web applications on both the front-end and back-end. With Rails, you can create robust and feature-rich web applications.
   logo: rails.svg
-  logo: rails.svg
+  logo-dark: rails.svg
 - title: Hotwire
   description: Hotwire is an innovative approach to building modern web applications. It allows you to create interactive web applications with the speed and fluidity but without the additional complexity of a heavy JavaScript client.
   logo: hotwire-white.svg
