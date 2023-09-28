@@ -5,7 +5,10 @@
     <div class="d-flex align-items-center">
       <!-- ICON -->
       <div class="col-4 p-2">
-        <img src="{{ skill.img_path }}" class="img-fluid">
+        <img src="{{ skill.img_path }}" class="img-fluid {% if skill.img_path_dark %} theme-light {% endif %}">
+        {% if skill.img_path_dark %}
+          <img src="{{ skill.img_path_dark }}" class="img-fluid theme-dark d-none">
+        {% endif %}
       </div>
 
       <!-- TEXT  -->

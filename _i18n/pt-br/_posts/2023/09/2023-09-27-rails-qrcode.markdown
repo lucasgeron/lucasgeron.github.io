@@ -142,7 +142,7 @@ class Contact < ApplicationRecord
 end
 ```	
 
-Vamos fazer uma pausa para entender o que esta acontecendo aqui. 
+Vamos fazer uma pausa para entender o que está acontecendo aqui. 
 
 A instrução `before_commit` é executada antes de um registro ser salvo no banco de dados.
 

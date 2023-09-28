@@ -1,13 +1,16 @@
 <!-- Left Side -->
 <div class="d-flex ps-2">
   <!-- HOME BTN -->
-  <a class="navbar-brand d-flex align-items-center fw-light"
+  <a class="navbar-brand d-flex align-items-center fw-light fs-6"
     href="{{ site.baseurl_root }}/{% if site.lang=='en' %}en/{% endif %}">
     Lucas Geron
   </a>
 
   <!-- Translate Button -->
   {%- include translate-button.html -%}
+
+  <!-- Dark Mode Button -->
+  {%- include dark-mode-toggler.html -%}
 </div>
 
 <!-- Right Side (<MD) -->
@@ -28,7 +31,7 @@
 </div>
 
 <!-- Right Side (>MD) -->
-<div class="collapse navbar-collapse text-center w-full bg-white" id="nav">
+<div class="collapse navbar-collapse text-center w-full" id="nav">
   <ul class="navbar-nav flex-grow-1 justify-content-evenly">
     <li class="nav-item">
       <a href="{% tl home %}" class="nav-link {% if page.title == 'Home/Início' %}nav-link-active{% endif %}">

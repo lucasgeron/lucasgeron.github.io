@@ -1,9 +1,12 @@
 - title: Ruby on Rails
   description: Rails é um framework escrito na linguagem Ruby que fornece todas as ferramentas necessárias para construir aplicações web incríveis em ambas as extremidades, front-end e back-end. Com Rails, você pode criar aplicações web robustas e ricas em recursos.
   logo: rails.svg
+  logo-dark: rails.svg
 - title: Hotwire
   description: Hotwire é uma abordagem inovadora para a construção de aplicações web modernas. Ele permite que você crie aplicações web interativas com a velocidade e a fluidez, mas sem a complexidade adicional de um cliente JavaScript pesado.
-  logo: hotwire.svg
+  logo: hotwire-white.svg
+  logo-dark: hotwire-dark.svg
 - title: Tailwind
   description: Tailwind CSS é um framework CSS altamente personalizável que dá aos desenvolvedores o poder de criar designs únicos sem sair do seu HTML. Com Tailwind, você tem controle total sobre o design do seu site ou aplicação sem restrições de estilos predefinidos.
-  logo: tailwind.svg
+  logo: tailwind-white.svg
+  logo-dark: tailwind-dark.svg

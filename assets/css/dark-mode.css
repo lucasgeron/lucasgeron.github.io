@@ -1,0 +1,64 @@
+ /* STYLES FOR DARK MODE */
+
+ /* if bootstrap default has !important, the code must be specific and have !important to overwrite successfuly */
+body .bg-white {
+  background-color: var(--bs-dark-bg-subtle) !important;
+}
+
+body .text-dark{
+  color: white !important;
+}
+
+body .btn-outline-primary {
+  color: white;
+  background-color: var(--bs-body-bg);
+  border: var(--bs-border-width) solid var(--bs-border-color)
+}
+
+body .btn-outline-dark {
+  color: white;
+  /* border-color: white; */
+  background-color: var(--bs-dark);
+}
+body .btn-outline-dark:hover {
+  border-color: white;
+}
+
+.footer-link:hover{
+  color: var(--bs-primary) !important
+}
+
+/* STYLES FOR EXPERIENCE */
+
+#experiencia_profissional::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1000px;
+  right: 0;
+  bottom: -2000px;
+  z-index: -1;
+  background-image: linear-gradient(to top, var(--bs-body-bg), rgba(255, 255, 255, 0)), url("https://static.vecteezy.com/system/resources/previews/000/952/756/original/gray-modern-lines-pattern-vector.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  opacity: 0.05;
+}
+
+.card-img-skill{
+  /* background-color: var(--bs-dark); */
+}
+
+
+/* STYLES FOR POST */
+.text-link, .post-link {
+  color: white;
+}
+
+ /* STYLES FOR CONTACT */
+.btn-custom {
+  background-color: var(--bs-body-bg) !important;
+  color: white;
+}
+
+
+

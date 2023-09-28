@@ -151,6 +151,10 @@ a.post-tag:hover {
   transform: scale(1.025) !important;
 }
 
+.text-link, .post-link {
+  color : var(--bs-dark);
+}
+
 .card:hover .post-link {
   color: var(--bs-primary) !important;
 }
@@ -251,7 +255,7 @@ a.post-tag:hover {
   height: 10rem;
   object-fit: contain;
   border-bottom: 0.25rem solid var(--bs-dark);
-  padding: 1rem 1rem;
+  padding: 2rem 2rem;
 }
 
 #experiencia_profissional::before {
@@ -474,6 +478,10 @@ a.post-tag:hover {
 
 .card-skill:hover .progress-bar-100 {
   width: 100%;
+}
+
+.extra-training-img{
+  height: 65px;
 }
 
 
@@ -750,11 +758,8 @@ article table tbody tr:hover{
      background: #f6f6f6;
 }
 
+// STYLES FOR DARK MODE
 
-
-// .skill:hover .icon img {
-//   transform: scale(1.1); 
-// }
 
 
 

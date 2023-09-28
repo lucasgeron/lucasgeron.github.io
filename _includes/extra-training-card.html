@@ -2,10 +2,12 @@
   <div class="card card-animate bg-body-tertiary d-flex ">
 
     <div class="card-body">
-      <a href="{{ training.url }}" class="text-decoration-none text-dark " target="_blank">
-        <img src="{{ training.logo_path }}" alt="" class="mb-2 mx-auto" height="65px">
-      </a>
-      <p class="my-0 fw-bold lead text-black">{{ training.title }}
+      <div class="px-4 bg-light rounded mb-2 ">
+        <a href="{{ training.url }}" class="text-decoration-none"  target="_blank">
+          <img src="{{ training.logo_path }}" alt="" class="extra-training-img"  >
+        </a>
+      </div>
+      <p class="my-0 fw-bold lead ">{{ training.title }}
       </p>
       <p class="my-0 fs-5 fw-light">{{ training.institution }}</p>
 

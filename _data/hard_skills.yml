@@ -8,6 +8,7 @@
           score: 60
           nivel: 2
           img_path: /assets/images/skills/aws.png
+          img_path_dark: /assets/images/skills/aws-dark.png
         - title: Bootstrap
           score: 80
           nivel: 3
@@ -16,6 +17,7 @@
           score: 70
           nivel: 3
           img_path: /assets/images/skills/css.png
+          img_path_dark: /assets/images/skills/css-dark.png
         - title: Docker
           score: 70
           nivel: 3
@@ -28,18 +30,22 @@
           score: 80
           nivel: 3
           img_path: /assets/images/skills/github.png
+          img_path_dark: /assets/images/skills/github-dark.png
         - title: Heroku
           score: 80
           nivel: 3
           img_path: /assets/images/skills/heroku.png
+          img_path_dark: /assets/images/skills/heroku-dark.png
         - title: Html
           score: 90
           nivel: 4
           img_path: /assets/images/skills/html.png
+          img_path_dark: /assets/images/skills/html-dark.png
         - title: Hotwire
           score: 90
           nivel: 4
           img_path: /assets/images/skills/hotwire.png
+          img_path_dark: /assets/images/skills/hotwire-dark.png
         - title: Javascript
           score: 80
           nivel: 4
@@ -52,6 +58,7 @@
           score: 80
           nivel: 3
           img_path: /assets/images/skills/postgresql.png
+          img_path_dark: /assets/images/skills/postgresql-dark.png
         - title: Python
           score: 40
           nivel: 2
