@@ -5,21 +5,10 @@ title: "Rails QR Code"
 date: 2023-09-27
 short_description: "Neste artigo de leitura rápida vamos implementar o uso de QR Code para uma lista de contatos."
 cover: https://i.ibb.co/mCgW0Fx/Tab-Rails-Qrcode.gif
-tags:
-# Tech Tags
-# - API
-# - P5
-# - Python
-# - Ruby
-- Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
+categories:
 - Tutorial
-# Other Tags
-# - Portfilio
-# - Design
-# - Spreadsheet
+tags:
+- Ruby On Rails
 - Useful Gems
 ---
 

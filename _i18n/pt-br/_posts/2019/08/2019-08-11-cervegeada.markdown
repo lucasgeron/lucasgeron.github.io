@@ -4,22 +4,11 @@ title:  Cervegeada
 date:   2019-08-11
 short_description: Projeto desenvolvido para promover a segunda edição da festa "CerveGeada 2019" organizado pela empresa Cross Formaturas.
 cover: https://mir-s3-cdn-cf.behance.net/projects/original/86141384041211.Y3JvcCwxMzk5LDEwOTUsMCww.jpg
+categories:
+- Portfolio
 tags:
-# Tech Tags
-# - API
-# - P5
-# - Python
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-# - Tutorial
-# Other Tags
-- Portfilio
 - Design
 - Photoshop
-# - Spreadsheet
 ---
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/1171c884041211.5d507b8ed3670.jpg){: .behance}

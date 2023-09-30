@@ -1,21 +1,25 @@
-<div id="tags" data-aos="fade-up" class="d-flex flex-wrap mb-4 gap-1 justify-content-center align-items-center ">
-  {% assign tags = '' | split: '' %}
-  {% for t in site.tags %}
-  {% assign tags = tags | push: t[0] %}
-  {% endfor %}
-
-  {% assign sorted_tags = tags | sort_natural %}
-
-  {% for t in sorted_tags %}
-
-  <a class="badge bg-body-secondary text-dark fw-light fs-6 text-decoration-none tag-link"
-    href="{{ t | url_encode | prepend: '/search?q=' | relative_url }}">
+<div class="my-0 archive-container rounded py-3 px-2 my-4 {% if page.type != 'tag'%} collapse {% endif %}" id="site-tags">
+  <p class="display-8 lead text-center"> {% t projects.site_tags %}</p> 
+  <div id="tags" class="d-flex flex-wrap gap-1 justify-content-center align-items-center ">
+    {% assign tags = '' | split: '' %}
+    {% for t in site.tags %}
+    {% assign tags = tags | push: t[0] %}
+    {% endfor %}
+    {% assign sorted_tags = tags | sort_natural %}
     
-    <i class="fa-solid fa-tag "></i>
-    {{ t }}
-    <span class="ms-2 badge rounded-pill text-bg-primary ">{{ site.tags[t].size }}</span>
-  </a>
-
-  {% endfor %}
-
+    
+    {% assign prepend_url = "/tag/" %}
+    {% if site.lang == "en" %}
+       {% assign prepend_url = prepend_url | prepend: "/en" %}
+    {% endif %}
+    
+    
+    {% for t in sorted_tags %}
+      <a class="fw-light fs-7 text-decoration-none  {% if page.title == t %} archive-link-active {% else %} archive-link {% endif %}"
+      href="{{ t | slugify | url_encode | prepend: prepend_url | append: '/' | site_url }}">
+        {{ t }}
+        <span class="ms-2 badge rounded-pill {% if page.title == t %} text-bg-light {% else %} text-bg-secondary {% endif %}  ">{{ site.tags[t].size }}</span>
+      </a>
+    {% endfor %}
+  </div>
 </div>

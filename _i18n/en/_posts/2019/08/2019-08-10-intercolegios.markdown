@@ -4,22 +4,11 @@ title:  Inter Colégios - 2º Edição
 date:   2019-08-10
 short_description: Project developed to promote the second edition of the Inter Colégios party organized by Cross Formaturas company.
 cover: https://mir-s3-cdn-cf.behance.net/projects/original/86620384027477.Y3JvcCwxMzk5LDEwOTUsMCww.jpg
+categories:
+- Portfolio
 tags:
-# Tech Tags
-# - API
-# - P5
-# - Python
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-# - Tutorial
-# Other Tags
-- Portfilio
 - Design
 - Photoshop
-# - Spreadsheet
 ---
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/d46fac84027477.5d4edca454c98.jpg){: .behance}

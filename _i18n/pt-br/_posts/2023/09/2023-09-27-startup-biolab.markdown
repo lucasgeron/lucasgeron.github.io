@@ -5,21 +5,10 @@ title: "Startup BIOLAB"
 date: 2023-09-27
 short_description: "A BIOLAB é uma startup que tem como objetivo capacitar profissionais da área da saúde. Leia mais e conheço este projeto!"
 cover: https://i.ibb.co/ZdbBs5p/Projeto-de-Sa-de-01.png
+categories:
+- Portfolio
+- Product
 tags:
-# Tech Tags
-# - API
-# - P5
-# - Python
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-# - Tutorial
-# Other Tags
-- Portfilio
-# - Design
-# - Spreadsheet
 - Startup
 ---
 

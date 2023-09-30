@@ -1,0 +1,23 @@
+<div class="my-0 archive-container rounded py-3 px-2 my-4 {% if page.type != 'category'%} collapse {% endif %}" id="site-categories">
+  <p class="display-8 lead text-center"> {% t projects.site_categories %}</p>
+  <div id="categories" class="d-flex flex-wrap gap-1 justify-content-center align-items-center ">
+    {% assign categories = '' | split: '' %}
+    {% for t in site.categories %}
+    {% assign categories = categories | push: t[0] %}
+    {% endfor %}
+    {% assign sorted_categories = categories | sort_natural %}
+
+    {% assign prepend_url = "/category/" %}
+    {% if site.lang == "en" %}
+       {% assign prepend_url = prepend_url | prepend: "/en" %}
+    {% endif %}
+    
+    {% for c in sorted_categories %}
+      <a class="fw-light fs-7 text-decoration-none  {% if page.title == c %} archive-link-active {% else %} archive-link {% endif %}"
+        href="{{ c | slugify | url_encode | prepend: prepend_url | append: '/' | site_url }}">
+        {{ c }}
+        <span class="ms-2 badge rounded-pill {% if page.title == c %} text-bg-light {% else %} text-bg-secondary {% endif %}  ">{{ site.categories[c].size }}</span>
+      </a>
+    {% endfor %}
+  </div>
+</div>

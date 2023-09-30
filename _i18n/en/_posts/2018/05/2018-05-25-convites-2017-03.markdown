@@ -4,22 +4,11 @@ title:  Convites 2017 - III
 date:   2018-05-25
 short_description: Exhibition of luxury invitations developed for Cross Graduations in the year 2017.
 cover: https://mir-s3-cdn-cf.behance.net/projects/original/87792763625501.Y3JvcCw4NzIsNjgzLDI2NSww.png
+categories:
+- Portfolio
 tags:
-# Tech Tags
-# - API
-# - P5
-# - Python
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-# - Tutorial
-# Other Tags
-- Portfilio
 - Design
 - Photoshop
-# - Spreadsheet
 ---
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/a6f23263625501.5ab7eb6f1c3a7.png){: .behance}

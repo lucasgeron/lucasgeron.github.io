@@ -4,22 +4,11 @@ title:  Convites 2017 - II
 date:   2018-05-25
 short_description: Mostra de convites luxo desenvolvidos para Cross Formaturas no ano de 2017.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/e2b4aa63624621.5ab7dc588621c.png
+categories:
+- Portfolio
 tags:
-# Tech Tags
-# - API
-# - P5
-# - Python
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-# - Tutorial
-# Other Tags
-- Portfilio
 - Design
 - Photoshop
-# - Spreadsheet
 ---
 {: .behance}
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/8a1f0963624621.5ab7dc5888158.png){: .behance}

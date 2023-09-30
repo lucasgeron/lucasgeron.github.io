@@ -1,0 +1,74 @@
+{% if site.lang == "en" %}
+{% assign month_names = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" | split: "," %}
+{% else %}
+{% assign month_names = "Jan,Fev,Mar,Abr,Mai,Jun,Jul,Ago,Set,Out,Nov,Dez" | split: "," %}
+{% endif %}
+
+{% assign page_year = page.date | date: '%Y' %}
+{% assign page_month = page.date | date: '%m' %}
+
+
+<div class="my-0 archive-container rounded py-3 px-2 my-4 {% if page.type != 'month' and page.type != 'year' %} collapse {% endif %}" id="site-dates">
+  <p class="display-8 lead text-center"> {% t projects.site_dates %}</p>
+
+  <!-- CODE FOR BUTTONS  -->
+  {% assign sorted_posts = site.posts | sort: 'date' %}
+  {% assign grouped_posts = sorted_posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+
+  <div class="d-flex justify-content-center">
+  {% for year in grouped_posts %}
+
+  {% assign year_prepend_url = year.name | prepend: '/' | append: '/' %}
+  {% if site.lang == "en" %}
+  {% assign year_prepend_url = year_prepend_url | prepend: "/en" %}
+  {% endif %}
+
+    <a class="me-2 fw-light fs-7 text-decoration-none archive-link" data-bs-toggle="collapse" href="#collapse{{year.name}}" role="button" aria-expanded="false" aria-controls="collapse{{year.name}}">
+      {{ year.name }}
+    </a>
+    {% endfor %}
+  </div>
+
+
+  <!-- CODE FOR DIVS -->
+
+  {% for year in grouped_posts %}
+
+  {% assign year_prepend_url = year.name | prepend: '/' | append: '/' %}
+  {% if site.lang == "en" %}
+  {% assign year_prepend_url = year_prepend_url | prepend: "/en" %}
+  {% endif %}
+
+  {% assign posts_in_year = year.items | sort: 'date' %}
+  {% assign grouped_posts_in_year = posts_in_year | group_by_exp:"post", "post.date | date: '%m'" %}
+
+
+  <div id="collapse{{year.name}}" class=" {% if page_year != year.name %} collapse {% endif %}">
+    <div class="d-flex flex-wrap gap-2 my-2 justify-content-center">
+      <a class="fw-light fs-7 text-decoration-none  {% if page_year == year.name and page.type == 'year' %} archive-link-active {% else %} archive-link {% endif %}"
+        href="{{  slugify | url_encode | prepend: year_prepend_url | site_url }}">
+        {{ year.name }}
+        <span
+          class="ms-2 badge rounded-pill {% if page_year == year.name and page.type =='year' %} text-bg-light {% else %} text-bg-secondary {% endif %}  ">{{
+          year.items.size }}</span>
+      </a>
+      </a>
+
+      {% for month in grouped_posts_in_year %}
+      {% assign month_prepend_url = month.name | prepend: year_prepend_url | append: '/' %}
+
+
+      <a class="fw-light fs-7 text-decoration-none  {% if page_month == month.name and page_year == year.name and page.type == 'month' %} archive-link-active {% else %} archive-link {% endif %}"
+        href="{{ slugify | url_encode | prepend: month_prepend_url | site_url }}">
+        {% assign index = month.name | minus: 1 %}
+        {{ month_names[index] }}
+        <span
+          class="ms-2 badge rounded-pill {% if page_month == month.name and page_year == year.name and page.type == 'month' %} text-bg-light {% else %} text-bg-secondary {% endif %}  ">{{
+          month.items.size }}</span>
+      </a>
+     
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

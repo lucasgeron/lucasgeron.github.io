@@ -50,7 +50,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a href="{% tl projects %}" class="nav-link {% if page.title == 'Projects/Projetos' %}nav-link-active{% endif %}">
+      <a href="{% tl projects %}" class="nav-link {% if page.title == 'Projects/Projetos' or 'tag category year' contains page.type  %}nav-link-active{% endif %}">
         {% t navigation.projects %}
       </a>
     </li>

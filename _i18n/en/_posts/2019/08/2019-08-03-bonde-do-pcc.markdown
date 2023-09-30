@@ -4,22 +4,11 @@ title:  Bonde do PCC
 date:   2019-08-03
 short_description: The Bonde do P.C.C is the union of the 'Pandemia', 'Cacique' and 'Calango' Athletic Associations. The project arose from the union of the three athletic associations to participate in the excursion to Universipraia 2019.
 cover: https://mir-s3-cdn-cf.behance.net/projects/original/be305885266585.Y3JvcCwxMDIyLDgwMCw2NSww.jpg
+categories:
+- Portfolio
 tags:
-# Tech Tags
-# - API
-# - P5
-# - Python
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-# - Tutorial
-# Other Tags
-- Portfilio
 - Design
 - Photoshop
-# - Spreadsheet
 ---
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/61b47785266585.5d968665c1e90.jpg){: .behance}

@@ -4,22 +4,11 @@ title:  Bonde do PCC
 date:   2019-08-03
 short_description: O Bonde do P.C.C é a união das Atléticas Pandemia, Cacique e Calango. O projeto surgiu pela união das três atléticas para participar da excursão para o Universipraia 2019.
 cover: https://mir-s3-cdn-cf.behance.net/projects/original/be305885266585.Y3JvcCwxMDIyLDgwMCw2NSww.jpg
+categories:
+- Portfolio
 tags:
-# Tech Tags
-# - API
-# - P5
-# - Python
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-# - Tutorial
-# Other Tags
-- Portfilio
 - Design
 - Photoshop
-# - Spreadsheet
 ---
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/61b47785266585.5d968665c1e90.jpg){: .behance}

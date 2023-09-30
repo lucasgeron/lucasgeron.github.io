@@ -1,5 +1,12 @@
 
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+{% assign category_prepend_url = "/category/" %}
+{% assign tag_prepend_url = "/tag/" %}
+
+{% if site.lang == "en" %}
+  {% assign category_prepend_url = category_prepend_url | prepend: "/en" %}
+  {% assign tag_prepend_url = tag_prepend_url | prepend: "/en" %}
+{% endif %}
 
 <!-- POST CARD -->
  <div class="col-12 col-md-6 col-xl-4 d-flex">
@@ -15,12 +22,22 @@
       <img src="{{ post.cover | prepend: site.baseurl_root }}" class="card-img">
     </a>
 
-    <div class="card-body ">
-      <p class="card-text fs-7">{{ post.short_description }}</p>
-      {% assign sorted_tags = post.tags | sort %}
-      {% for tag in sorted_tags %}
-        <a href="{% tl search %}?q={{tag | remove: '#'}}" class="post-tag"> {{ tag }}</a>
-      {% endfor %}
+    <div class="card-body gy-4">
+      <p class="card-text fs-7 my-1">{{ post.short_description }}</p>
+      <div class="my-1">
+        {% assign sorted_categories = post.categories | sort %}
+        <i class="fa-regular fa-folder-open fa-sm"></i>
+        {% for category in sorted_categories %}
+        <a href="{{ category | slugify | url_encode | prepend: category_prepend_url | append: '/' | site_url }}" class="post-tag"> {{ category }}</a>
+        {% endfor %}
+      </div>
+      <div class="my-1">
+        {% assign sorted_tags = post.tags | sort %}
+        <i class="fa-solid fa-tag fa-sm"></i>
+        {% for tag in sorted_tags %}
+        <a href="{{ tag | slugify | url_encode | prepend: tag_prepend_url | append: '/' | site_url }}" class="post-tag"> {{ tag }}</a>
+        {% endfor %}
+      </div>
     </div>
 
     <div class="card-footer justify-content-between">

@@ -31,6 +31,10 @@ title: "$TITLE"
 date: $DATE
 short_description: "$SHORT_DESCRIPTION"
 cover: /assets/images/covers/$LANGUAGE/$SLUG.png
+categories:
+# - Portifolio
+# - Tutorial
+# - Article
 tags:
 # Tech Tags
 # - API
@@ -40,10 +44,7 @@ tags:
 # - Ruby On Rails
 # - Hotwire Turbo
 # - Hotwire Stimulus
-# Common Tags
-# - Tutorial
 # Other Tags
-# - Portfilio
 # - Design
 # - Spreadsheet
 # - Useful Gems

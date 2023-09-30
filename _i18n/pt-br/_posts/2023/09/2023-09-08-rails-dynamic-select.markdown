@@ -5,20 +5,11 @@ title: "Select Dinâmico com Rails"
 date: 2023-09-08
 short_description: "Aprenda como implementar um select dinâmico com Rails e Hotwire. Neste tutorial te ensino a fazer isto do zero com um exemplo prático e muitos detalhes."
 cover: https://i.ibb.co/fXTPZ6P/20230908-200356.gif
+categories:
+- Tutorial
 tags:
-# Tech Tags
-# - P5
-# - Python
-# - Ruby
 - Ruby On Rails
 - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-- Tutorial
-# Other Tags
-# - Design
-# - Spreadsheet
-# - Useful Gems
 ---
 
 # Select Dinâmico com Rails
