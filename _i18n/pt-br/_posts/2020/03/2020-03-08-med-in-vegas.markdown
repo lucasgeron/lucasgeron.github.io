@@ -4,22 +4,11 @@ title:  Med in Vegas
 date:   2020-03-08
 short_description: Projeto desenvolvido para festa de 1/3 Médico com a temática Med in Vegas. Cliente Cross Premium | Cross Formaturas Turma Medicina T1 - Campo Real - Guarapuava.
 cover: /assets/images/covers/all/med-in-vegas.png
+categories:
+- Portfolio
 tags:
-# Tech Tags
-# - API
-# - P5
-# - Python
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-# - Tutorial
-# Other Tags
-- Portfilio
 - Design
 - Photoshop
-# - Spreadsheet
 ---
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/3a1ebf93455281.5e657557d5a73.png){: .behance}

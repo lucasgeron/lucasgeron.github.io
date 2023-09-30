@@ -81,6 +81,17 @@ body .btn-outline-dark:hover {
 /* STYLE FOR ARTICLES (POSTS) */
 
 
+
 article blockquote {
+  background-color: var(--bs-dark-bg-subtle);
+}
+
+
+.archive-link{
+  color: white;
+}
+
+.archive-link:hover{
+  color: white;
   background-color: var(--bs-dark-bg-subtle);
 }

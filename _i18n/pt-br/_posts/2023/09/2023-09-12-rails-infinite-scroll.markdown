@@ -5,19 +5,11 @@ title: "Rails Inifite Scroll with Turbo"
 date: 2023-09-12
 short_description: "Neste artigo te mostro como criar o efeito de rolagem infinita sem utilizar javascript. De bônus também vou te dar mais duas dicas que podem ajudar muito na hora de criar um blog."
 cover: https://i.ibb.co/2ZsCWts/20230913-144634.gif
+categories:
+- Tutorial
 tags:
-# Tech Tags
-# - P5
-# - Python
-# - Ruby
 - Ruby On Rails
 - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-- Tutorial
-# Other Tags
-# - Design
-# - Spreadsheet
 - Useful Gems
 ---
 

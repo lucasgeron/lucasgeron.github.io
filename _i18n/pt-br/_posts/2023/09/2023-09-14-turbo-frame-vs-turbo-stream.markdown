@@ -5,19 +5,12 @@ title: "Turbo Frame vs Turbo Stream"
 date: 2023-09-14
 short_description: "Você sabe qual a diferença entre os recursos que Hotwire Turbo oferece? Então esse artigo pode ser de seu interesse!"
 cover: https://i.ibb.co/J7G8Lyv/20230914-224204.gif
+categories:
+- Tutorial
 tags:
-# Tech Tags
-# - P5
-# - Python
-# - Ruby
 - Ruby On Rails
 - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-- Tutorial
-# Other Tags
-# - Design
-# - Spreadsheet
+
 ---
 
 # Turbo Frame vs Turbo Stream

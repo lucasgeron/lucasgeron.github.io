@@ -4,22 +4,11 @@ title:  Mais que uma Atlética
 date:   2019-04-26
 short_description: This project was developed for the Academic Athletic Association of Applied Social Sciences Unicentro Guarapuava, for the Econo 2019 event.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/5aa6b979467533.5cc3a02ee4964.png
+categories:
+- Portfolio
 tags:
-# Tech Tags
-# - API
-# - P5
-# - Python
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-# - Tutorial
-# Other Tags
-- Portfilio
 - Design
 - Photoshop
-# - Spreadsheet
 ---
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/5aa6b979467533.5cc3a02ee4964.png){: .behance}

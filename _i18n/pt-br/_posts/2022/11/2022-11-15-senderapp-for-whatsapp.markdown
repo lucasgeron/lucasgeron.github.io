@@ -4,21 +4,13 @@ title:  SenderApp for WhatsApp
 date:   2022-11-15
 short_description: Envie centenas de mensagens de texto personalizadas em minutos sem adicionar contatos em seu dispositivo móvel com o SenderApp for WhatsApp.
 cover: /assets/images/covers/all/senderapp-for-whatsapp.png
+categories: 
+- Portfolio
+- Product
 tags:
-# Tech Tags
 - API
-# - P5
 - Python
 - Google Apps Scripts
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-# - Tutorial
-# Other Tags
-# - Portfilio
-# - Design
 - Spreadsheet
 ---
 
@@ -41,14 +33,6 @@ Envie centenas de mensagens de texto personalizadas em minutos sem adicionar con
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/0f5063157902067.63815a43a3f17.png){: .behance}
 <!-- ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/79736e157902067.63815a43a50ac.png){: .behance} -->
 <!-- ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/d4837c157902067.63815a43aba5f.png){: .behance} -->
-
-
-
-##### Server Specifications:  
-![](https://img.shields.io/static/v1?label=Hosted%20on&message=Google%20Apps%20Scripts%20%2F%20Google%20Cloud%20Project&color=important)
-
-##### Client Specifications:
-![](https://img.shields.io/static/v1?label=SenderApp&message=v1.1&color=blue) ![](https://img.shields.io/static/v1?label=Python&message=v.3.7&color=brightgreen)
 
 
 *SenderApp for WhatsApp* é um bot de envio de mensagem em lote que possibilita o envio de até **100 mensagens de texto** em poucos segundos, **a cada hora**. 

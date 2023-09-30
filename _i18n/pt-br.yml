@@ -43,6 +43,13 @@ experiences:
   extra_training: Capacitação Extra
 projects:
   all_projects: Todos os Projetos
+  archive_with: Projetos com 
+  archive_from: Projetos de  
+  site_tags: Etiquetas
+  site_categories: Categorias
+  site_dates: Datas
+  tag: etiqueta
+  category: categoria
 hire_me:
   title: Encontre-me nas redes sociais
   first_sub_title: Será uma ótima experiências poder contribuir para seu negócio!

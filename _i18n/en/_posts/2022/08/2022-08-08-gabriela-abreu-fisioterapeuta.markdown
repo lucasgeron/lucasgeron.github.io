@@ -4,22 +4,11 @@ title:  Gabriela Abreu Fisioterapeuta
 date:   2022-08-08
 short_description: Development of logo and visual identity for a physiotherapy professional, with a focus on highlighting her name in the segment.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/e09cc3146465033.62f1aa92906e6.png
+categories: 
+- Portfolio
 tags:
-# Tech Tags
-# - API
-# - P5
-# - Python
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-# - Tutorial
-# Other Tags
-- Portfilio
 - Design
 - Photoshop
-# - Spreadsheet
 ---
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/047099146465033.62f1aa9290e07.png){: .behance}

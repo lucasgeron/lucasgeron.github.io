@@ -1,0 +1,64 @@
+---
+layout: default
+title: Projects/Projetos
+---
+<!-- POSTS BY TAG -->
+{%- if site.posts.size > 0 -%}
+<section id="last-posts" class=" container py-4">
+
+  <!-- PROJECTS BAR -->
+  <div data-aos="fade-up" class="d-md-flex justify-content-between align-items-center pt-4">
+    <p class="display-6 fw-bold">
+      {% case page.type %}
+      {% when 'year' %}
+      {% t projects.archive_from %} {{ page.date | date: "%Y" }}
+      {% when 'month' %}
+      {% t projects.archive_from %} {{ page.date | date: "%B %Y" }}
+      {% when 'category' %}
+      {% t projects.archive_with %} {% t projects.category %} '{{ page.title }}'
+      {% when 'tag' %}
+      {% t projects.archive_with %} {% t projects.tag %} '{{ page.title }}'
+      {% endcase %}
+    </p>
+    <div class="flex-grow-1 gap-2 justify-content-between justify-content-md-end d-lg-flex flex-warp mb-3">
+
+      <div class="flex-nowrap">
+        <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#site-dates"
+          aria-expanded="false" aria-controls="site-categories">
+          {% t projects.site_dates %}
+        </button>
+
+        <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+          data-bs-target="#site-categories" aria-expanded="false" aria-controls="site-categories">
+          {% t projects.site_categories %}
+        </button>
+
+        <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#site-tags"
+          aria-expanded="false" aria-controls="site-categories">
+          {% t projects.site_tags %}
+        </button>
+      </div>
+
+      <div class=" mt-2 mt-lg-0">
+        {%- include search-form.html -%}
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DATES -->
+  {%- include site-dates.html -%}
+  <!-- CATEGORIES -->
+  {%- include site-categories.html -%}
+  <!-- TAGS -->
+  {%- include site-tags.html -%}
+
+
+  <!-- POSTS  -->
+  <div class="row g-4">
+    {% for post in page.posts %}
+    {%- include post-card.html -%}
+    {%- endfor -%}
+  </div>
+</section>
+{%- endif -%}

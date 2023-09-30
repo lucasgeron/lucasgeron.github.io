@@ -4,22 +4,11 @@ title:  Branding Cross Formaturas
 date:   2018-04-23
 short_description: Criação da identidade visual para a marca Cross Formaturas.
 cover: https://mir-s3-cdn-cf.behance.net/projects/original/796a8163556219.Y3JvcCwxMjQ5LDk3Nyw5Miww.png
+categories:
+- Portfolio
 tags:
-# Tech Tags
-# - API
-# - P5
-# - Python
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-# - Tutorial
-# Other Tags
-- Portfilio
 - Design
 - Photoshop
-# - Spreadsheet
 ---
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/6db87a63556219.5ab42ad2cffc2.png){: .behance}

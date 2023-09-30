@@ -5,20 +5,13 @@ title: "Rails Pixels App"
 date: 2023-09-10
 short_description: "Rails Pixels é uma aplicação criativa feita para exemplicar o funcionamento de ActiveJobs e de TurboStreams. Vamos colorir alguns pixels juntos?"
 cover: https://i.ibb.co/FXhkZsx/20230910-184020.gif
+categories:
+- Tutorial
 tags:
-# Tech Tags
-# - P5
-# - Python
-# - Ruby
 - Ruby On Rails
 - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-- Tutorial
-# Other Tags
 - Design
-# - Spreadsheet
-# - Useful Gems
+
 ---
 
 

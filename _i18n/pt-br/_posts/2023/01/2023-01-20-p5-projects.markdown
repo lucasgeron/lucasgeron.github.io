@@ -4,21 +4,11 @@ title:  Projetos P5
 date:   2023-01-20
 short_description: p5.js é uma biblioteca JavaScript para codificação criativa, com foco em tornar a codificação acessível e inclusiva para artistas, designers, educadores, iniciantes e qualquer outra pessoa!
 cover: /assets/images/covers/all/p5-projects.png
+categories:
+- Portfolio
 tags:
-# Tech Tags
 - P5.js
-# - Python
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-- Portfilio
-# - Tutorial
-# Other Tags
 - Design
-# - Spreadsheet
-# - Useful Gems
 ---
 
 # Projetos P5

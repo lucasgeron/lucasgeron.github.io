@@ -43,6 +43,13 @@ experiences:
   extra_training: Extra Training
 projects:
   all_projects: All Projects
+  archive_with: Projects with 
+  archive_from: Projects from 
+  site_tags: Tags
+  site_categories: Categories
+  site_dates: Dates
+  tag: tag
+  category: category
 hire_me:
   title: Find me on social media
   first_sub_title: It will be a great experience to be able to contribute to your business!

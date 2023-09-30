@@ -4,22 +4,11 @@ title:  Fome de Ação
 date:   2020-06-28
 short_description: Material developed for the Solidarity Campaign Hunger for Action - Feeding Lives and Warming Hearts.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/ec022099703611.5ef8e55004a27.gif
+categories:
+- Portfolio
 tags:
-# Tech Tags
-# - API
-# - P5
-# - Python
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-# - Tutorial
-# Other Tags
-- Portfilio
 - Design
 - Photoshop
-# - Spreadsheet
 ---
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/fs/ec022099703611.5ef8e55004a27.gif){: .behance}

@@ -4,27 +4,16 @@ title:  AppSheet - Comercial Mapping
 date:   2022-11-16
 short_description: Application developed as a prototype for mapping clients and graduating classes for the Cross Formaturas company
 cover: /assets/images/covers/all/mapeamento-comercial.png
+categories: 
+- Portfolio
+- Product
 tags:
-# Tech Tags
-# - P5
-# - Python
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-# - Tutorial
-# Other Tags
-- Portfilio
-# - Design
 - Spreadsheet
-# - Useful Gems
 - App Sheet
 ---
 
 
 # Comercial Mapping (Mapeamento Comercial)
-![version](https://img.shields.io/badge/version-1.0-blue)
 
 Application developed as a prototype for mapping clients and graduating classes for the Cross Formaturas company
 

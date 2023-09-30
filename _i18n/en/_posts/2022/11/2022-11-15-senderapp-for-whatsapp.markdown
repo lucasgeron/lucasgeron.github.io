@@ -4,21 +4,13 @@ title:  SenderApp for WhatsApp
 date:   2022-11-15
 short_description: Send hundreds of personalized text messages in minutes without adding contacts to your mobile device with SenderApp for WhatsApp.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/384f5f157902067.63815a43aa8e8.png
+categories: 
+- Portfolio
+- Product
 tags:
-# Tech Tags
 - API
-# - P5
 - Python
 - Google Apps Scripts
-# - Ruby
-# - Ruby On Rails
-# - Hotwire Turbo
-# - Hotwire Stimulus
-# Common Tags
-# - Tutorial
-# Other Tags
-# - Portfilio
-# - Design
 - Spreadsheet
 ---
 
@@ -35,12 +27,6 @@ Send hundreds of personalized text messages in minutes without adding contacts t
 </div>
 
 
-
-##### Server Specifications:  
-![](https://img.shields.io/static/v1?label=Hosted%20on&message=Google%20Apps%20Scripts%20%2F%20Google%20Cloud%20Project&color=important)
-
-##### Client Specifications:
-![](https://img.shields.io/static/v1?label=SenderApp&message=v1.1&color=blue) ![](https://img.shields.io/static/v1?label=Python&message=v.3.7&color=brightgreen)
 
 
 **SenderApp for WhatsApp* is a batch messaging bot that allows you to send up to **100 text messages** in a few seconds, **every hour**.
