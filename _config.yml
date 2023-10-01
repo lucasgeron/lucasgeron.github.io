@@ -7,6 +7,7 @@ plugins:
   - jekyll-paginate
   - jekyll-multiple-languages-plugin
   - jekyll-archives
+  - jekyll-seo-tag
 
 languages: ["pt-br", "en"]
 

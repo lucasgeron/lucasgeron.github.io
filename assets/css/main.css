@@ -511,6 +511,23 @@ a.post-tag:hover {
 
 
 /* // STYLES FOR POSTS (ARTICLES)  */
+
+/* github discussions */
+.giscus{
+ 
+  border-radius: var(--bs-border-radius);
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  padding: 1rem;
+  max-width: var(--bs-breakpoint-md);
+  margin: auto;
+}
+
+.giscus-frame{
+  /* background-color: blue; */
+}
+/* ---  */
+
+
 .container article {
   max-width: var(--bs-breakpoint-md);
   margin: auto;

@@ -9,7 +9,7 @@
 
 
 <div class="my-0 archive-container rounded py-3 px-2 my-4 {% if page.type != 'month' and page.type != 'year' %} collapse {% endif %}" id="site-dates">
-  <p class="display-8 lead text-center"> {% t projects.site_dates %}</p>
+  <p class="display-8 lead text-center"><i class="fa-regular fa-calendar-check"></i> {% t projects.site_dates %}</p>
 
   <!-- CODE FOR BUTTONS  -->
   {% assign sorted_posts = site.posts | sort: 'date' %}

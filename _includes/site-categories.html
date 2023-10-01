@@ -1,6 +1,6 @@
 <div class="my-0 archive-container rounded py-3 px-2 my-4 {% if page.type != 'category'%} collapse {% endif %}" id="site-categories">
-  <p class="display-8 lead text-center"> {% t projects.site_categories %}</p>
-  <div id="categories" class="d-flex flex-wrap gap-1 justify-content-center align-items-center ">
+  <p class="display-8 lead text-center"><i class="fa-regular fa-folder-open"></i> {% t projects.site_categories %}</p>
+  <div id="categories" class="d-flex flex-wrap gap-1 justify-content-center align-items-center px-4">
     {% assign categories = '' | split: '' %}
     {% for t in site.categories %}
     {% assign categories = categories | push: t[0] %}

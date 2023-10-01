@@ -1,6 +1,6 @@
 <div class="my-0 archive-container rounded py-3 px-2 my-4 {% if page.type != 'tag'%} collapse {% endif %}" id="site-tags">
-  <p class="display-8 lead text-center"> {% t projects.site_tags %}</p> 
-  <div id="tags" class="d-flex flex-wrap gap-1 justify-content-center align-items-center ">
+  <p class="display-8 lead text-center"><i class="fa-solid fa-tags"></i> {% t projects.site_tags %}</p> 
+  <div id="tags" class="d-flex flex-wrap gap-1 justify-content-center align-items-center px-4">
     {% assign tags = '' | split: '' %}
     {% for t in site.tags %}
     {% assign tags = tags | push: t[0] %}
