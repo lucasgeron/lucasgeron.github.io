@@ -50,9 +50,12 @@ projects:
   site_dates: Dates
   tag: tag
   category: category
+  filter_by: Filter by
 hire_me:
   title: Find me on social media
   first_sub_title: It will be a great experience to be able to contribute to your business!
   second_sub_title: I can contribute in many ways!
 search:
   title: Search Result
+
+date_format: "%B %d, %Y"

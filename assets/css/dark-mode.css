@@ -95,3 +95,10 @@ article blockquote {
   color: white;
   background-color: var(--bs-dark-bg-subtle);
 }
+
+
+.post-tag {
+  background-color: var(--bs-dark-bg-subtle) ;
+  color: white;
+}
+
