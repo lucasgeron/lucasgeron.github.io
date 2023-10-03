@@ -5,6 +5,9 @@ title: "Rails Inifite Scroll with Turbo"
 date: 2023-09-12
 short_description: "Neste artigo te mostro como criar o efeito de rolagem infinita sem utilizar javascript. De bônus também vou te dar mais duas dicas que podem ajudar muito na hora de criar um blog."
 cover: https://i.ibb.co/2ZsCWts/20230913-144634.gif
+read_time: true
+toc: true
+github_repo: rails-infinite-scroll
 categories:
 - Tutorial
 tags:
@@ -13,7 +16,7 @@ tags:
 - Useful Gems
 ---
 
-# Rails Inifite Scroll with Zero Javascript
+# Rails Inifite Scroll
 
 <div class="w-full img-fluid rounded-3 mb-4 text-center">
  <iframe width="560" height="315" src="https://www.youtube.com/embed/b7j8jEAd2sc?si=zxuGFeGd-j7alaJz&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -120,7 +123,7 @@ end
 ```
 Não há nada de errado em fazer isto desta forma, contudo, com o código acima, serão executadas **100 queries no banco de dados**. 
 
-##### Com Active Record Import podemos criar os 100 registros (ou mais) com apenas uma query.
+<h4 data-toc-skip> Com Active Record Import podemos criar os 100 registros (ou mais) com apenas uma query.</h4>
 
 Para fazer isto, no arquivo `db/seeds.rb` adicione o código abaixo:
 
@@ -337,7 +340,7 @@ Para fins de testes, vamos adicionar a função `sleep 1` nas actions  `index` e
 
   <img src="https://i.ibb.co/9t17rJv/20230912-222157.gif" alt="" class="">
 
-## O que está acontecendo? 
+## Entendendo o Fluxo de Requisições 
 
 1. A requisição `/articles` é feita e o servidor responde com o html da página `index.html.erb`.
 

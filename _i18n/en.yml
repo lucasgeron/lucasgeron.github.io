@@ -20,6 +20,19 @@ global:
   not_found_title: Page not found
   not_found_description: The requested page could not be found
   search_placeholder: Search...
+  months_abbreviation: 
+    Jan: Jan
+    Feb: Feb
+    Mar: Mar
+    Apr: Apr
+    May: May
+    Jun: Jun
+    Jul: Jul
+    Aug: Aug
+    Sep: Sep
+    Oct: Oct
+    Nov: Nov
+    Dec: Dec
 home:
   title: Hello, I'm  
   sub-title: Work with
@@ -58,4 +71,25 @@ hire_me:
 search:
   title: Search Result
 
-date_format: "%B %d, %Y"
+
+
+# ----- Posts related labels -----
+
+post:
+  written_by: By
+  posted: Posted
+  github_repo: GitHub Repository 
+  leave_feedback: <b> Like this Project? </b> <em> Give your Feedback </em> 
+  words: words
+  read_time:
+    unit: min
+    plural: s
+    prompt: read
+  relate_posts: Further Reading
+  share: Share
+  button:
+    next: Newer
+    previous: Older
+
+
+

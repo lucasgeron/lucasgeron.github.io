@@ -3,6 +3,8 @@ layout: post
 title:  AppSheet - Comercial Mapping
 date:   2022-11-16
 short_description: Application developed as a prototype for mapping clients and graduating classes for the Cross Formaturas company
+github_repo: Mapeamento-Comercial
+read_time: true
 cover: /assets/images/covers/all/mapeamento-comercial.png
 categories: 
 - Portfolio
@@ -30,7 +32,7 @@ This project is an app builded on AppSheet and has the main objective of mapping
 This project was developed to a company who works with graduations party in brazil. 
 This repository is a empty sample of the app.
 
-## [LIVE DEMO - Mapeamento Comercial Sample](https://www.appsheet.com/templates/Sistema-de-Intelig%C3%AAncia-Comercial-para-Empresas-de-Formaturas?appGuidString=a9436ec2-a586-494d-8352-bf38b8efe3af)
+### [LIVE DEMO - Mapeamento Comercial Sample](https://www.appsheet.com/templates/Sistema-de-Intelig%C3%AAncia-Comercial-para-Empresas-de-Formaturas?appGuidString=a9436ec2-a586-494d-8352-bf38b8efe3af)
 
 ----
 

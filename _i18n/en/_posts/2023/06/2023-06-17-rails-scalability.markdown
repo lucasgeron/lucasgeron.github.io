@@ -4,6 +4,8 @@ layout: post
 title: "How to scale a RoR Application"
 date: 2023-06-17
 short_description: "Know the difference between scaling an application horizontally or vertically and find out why scalability is important for a Ruby on Rails application."
+read_time: true
+toc: true
 cover: /assets/images/covers/en/rails-scalability.png
 categories:
 - Article
@@ -36,7 +38,7 @@ Scalability is the ability of an application to grow without affecting performan
 
 
 
-#### 5 Tips on scalability
+## 5 Tips on scalability
 
 
 - **Plan scalability from the start**: When designing the architecture of the application, take into account how it can be scaled in the future. This may include choosing technologies and approaches that facilitate scalability.
@@ -95,7 +97,7 @@ Considering the data flow of a web application, i.e., Browser / Server / Applica
 
 --------
 
-# When to scale?
+## When to scale?
 
 Despite the improvements mentioned above, at some point it will be necessary to scale the application. But when?
 The answer is simple: **when the application starts to get slow**.
@@ -126,7 +128,7 @@ There are several tools that can be used to monitor the application. Some of the
     <div class="col-md-3 d-flex flex-column align-items-center">
       <div class="h-auto" >
       <a href="https://newrelic.com/" target="_blank" class="text-decoration-none image-container mb-2" >
-        <img class="" height="40" src="https://th.bing.com/th/id/R.6a779bbf448d50da3e93c19e07d9821c?rik=1HPOi08fhv7ucg&pid=ImgRaw&r=0" alt="New Relic" > 
+        <img class="shadow-none border-0" height="40" src="https://th.bing.com/th/id/R.6a779bbf448d50da3e93c19e07d9821c?rik=1HPOi08fhv7ucg&pid=ImgRaw&r=0" alt="New Relic" > 
       </a>
       </div>
       <p><strong>New Relic</strong>: is a performance monitoring platform that provides real-time insights into the performance of your application, database, and servers.</p>
@@ -134,7 +136,7 @@ There are several tools that can be used to monitor the application. Some of the
     <div class="col-md-3 d-flex flex-column align-items-center">
       <div class="h-auto" >
       <a href="https://scoutapm.com/" target="_blank" class="text-decoration-none image-container mb-2" >
-        <img class="" height="80" src="https://assets.scoutapm.com/assets/public/scout_logo-f2ab3019302500d22b77f24685298b91e8b1fd4778ba5f67368cde418476f513.png" alt="Scout APM" > 
+        <img class="shadow-none border-0" height="80" src="https://assets.scoutapm.com/assets/public/scout_logo-f2ab3019302500d22b77f24685298b91e8b1fd4778ba5f67368cde418476f513.png" alt="Scout APM" > 
       </a>
       </div>
       <p><strong>Scout APM</strong>: is a performance monitoring tool that offers features such as transaction tracing, custom metrics monitoring, and real-time alerts.</p>
@@ -142,7 +144,7 @@ There are several tools that can be used to monitor the application. Some of the
     <div class="col-md-3 d-flex flex-column align-items-center">
       <div class="h-auto" >
       <a href="https://accedian.com/platform/skylight/" target="_blank" class="text-decoration-none image-container mb-2" >
-        <img class="" height="30" src="https://i.ibb.co/N7sLjKw/A-SKYLIGHT-Gold-White.png" alt="Skylight" > 
+        <img class="shadow-none border-0" height="30" src="https://i.ibb.co/N7sLjKw/A-SKYLIGHT-Gold-White.png" alt="Skylight" > 
       </a>
       </div>
       <p><strong>Skylight</strong>: is a performance monitoring tool designed specifically for Ruby on Rails applications. It provides insights into the performance of your database queries, view rendering, and more.</p>
@@ -150,8 +152,8 @@ There are several tools that can be used to monitor the application. Some of the
     <div class="col-md-3 d-flex flex-column align-items-center">
       <div class="h-auto" >
       <a href="https://www.datadoghq.com/" class="text-decoration-none image-container mb-2" >
-        <img class="" height="75" src="https://imgix.datadoghq.com/img/dd_logo_n_70x75.png?ch=Width,DPR&fit=max&auto=format&w=70&h=75" alt="DataDog">
-        <img class="" height="14" src="https://imgix.datadoghq.com/img/dd-logo-n-200.png?ch=Width,DPR&fit=max&auto=format&h=14&auto=format&w=807" alt="DataDog">
+        <img class="shadow-none border-0" height="75" src="https://imgix.datadoghq.com/img/dd_logo_n_70x75.png?ch=Width,DPR&fit=max&auto=format&w=70&h=75" alt="DataDog">
+        <img class="shadow-none border-0" height="14" src="https://imgix.datadoghq.com/img/dd-logo-n-200.png?ch=Width,DPR&fit=max&auto=format&h=14&auto=format&w=807" alt="DataDog">
       </a>
       </div>
       <p><strong>Datadog</strong>: is a monitoring and analysis platform that allows you to monitor the performance of your application, infrastructure, and logs in one place.</p>
@@ -198,7 +200,7 @@ Scaling an application horizontally can help ensure that your application can ha
 
 ------
 
-# How to automate scalability when necessary?
+# How to automate scalability?
 
 Nowadays it is very common for applications to be developed to run in a cloud environment, such as AWS, for example. In this environment, it is possible for the application to be scaled automatically. Doing this on a cloud-hosted server is much simpler than on a local server, as it is done in an integrated way, i.e., without human intervention, provided that the auto-scalability service is correctly configured.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Convites 2017 - I
+title:  Invitations 2017 - I
 date:   2018-05-25
 short_description: Exhibition of luxury invitations developed for Cross Graduations in the year 2017.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/e5fccd63621027.5ab7ca0646db9.png

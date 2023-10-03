@@ -18,6 +18,7 @@ description:  Bem-vindo ao meu site, onde você encontrará informações sobre 
 
 highlighter: rouge
 
+
 jekyll-archives:
   enabled: 
     - year

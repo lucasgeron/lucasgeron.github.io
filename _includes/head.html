@@ -21,6 +21,9 @@
   <link rel="stylesheet" href=" {{ '/assets/fontawesome/css/regular.min.css' | prepend: site.baseurl_root }}">
   <link rel="stylesheet" href=" {{ '/assets/fontawesome/css/solid.min.css' | prepend: site.baseurl_root }}">
 
+  <!-- TOC -->
+  <link rel="stylesheet" href=" {{ '/assets/css/tocbot.css' | prepend: site.baseurl_root }}">
+
   {%- feed_meta -%}
   {%- include google-analytics.html -%}
   {% seo %}
@@ -29,5 +32,6 @@
   <script src="{{ '/assets/js/jquery-3.7.1.min.js' | prepend: site.baseurl_root }}"></script>
   <!-- Color Mode Toggler -->
   <script src="{{ "/assets/js/color-mode-toggler.js" | relative_url }}"></script>
+  
   
 </head>

@@ -5,6 +5,9 @@ title: "Rails Pixels App"
 date: 2023-09-10
 short_description: "Rails Pixels é uma aplicação criativa feita para exemplicar o funcionamento de ActiveJobs e de TurboStreams. Vamos colorir alguns pixels juntos?"
 cover: https://i.ibb.co/FXhkZsx/20230910-184020.gif
+read_time: true
+toc: true
+github_repo: rails-pixels-app
 categories:
 - Tutorial
 tags:
@@ -15,7 +18,7 @@ tags:
 ---
 
 
-# Rails Pixels App com Turbo
+# Rails Pixels App
 Rails Pixels App é uma forma criativa de demonstrar o uso de **ActiveJobs** e **Turbo Streams** em uma aplicação Rails.
 
 Para demonstrar essas funcionalidades, colorimos os pixels em segundo plano através de um ActiveJob e enviamos o resultado ao cliente via TurboStream em real-time.
@@ -25,12 +28,12 @@ Seu principal objetivo é simples, colorir pixels. Eu sei, isso pode parecer cha
   <img src="https://i.ibb.co/FXhkZsx/20230910-184020.gif" alt="" class="">
 
 
-# Introdução
+## Introdução
 Se você é iniciante em Rails, provavelmente deve estar habituado com os CRUD's tradicionais, afinal, scaffold é uma das primeiras coisas que aprendemos quando começamos a estudar Rails.
 
 Mas a medida nossas aplicações vão crescendo e se tornando mais complexas, outros recursos do Rails começam a se tornar necessários, como por exemplo, **ActiveJobs** e **Turbo Streams**. 
 
-## ActiveJobs
+### ActiveJobs
 Sabe quando você precisa executar uma tarefa que leva muito tempo para ser concluída? 
 
 Por exemplo, enviar um e-mail para todos os usuários do seu sistema. Você não vai querer que o usuário fique esperando até que todos os e-mails sejam enviados, certo?
@@ -44,12 +47,12 @@ ActionCable é uma ferramenta que nos permite criar funcionalidades que utilizam
 
 A aplicação mais comum de ActionCable é ser utilizado para criar chats em tempo real, mas este recurso também pode ser utilizado para muitas outras coisas, como por exemplo, barra de progresso, notificações, salvamentos automáticos, sincronização de pastas e até mesmo dashboards interativas. -->
 
-## Turbo Streams
+### Turbo Streams
 Turbo Streams é uma ferramenta que nos permite atualizar partes específicas de uma página HTML, sem que o usuário precise atualizar a página.
 
 Nesta aplicação, utilizamos o recursos de Turbo Stream para estabelecer um canal de comunicação que transmite informação dos pixels coloridos em tempo real para o cliente. A partir das informações recebidas, Turbo Stream também se encarrega de atualizar os pixels coloridas na pagina. 
 
-# 1. Criando o Projeto
+## Criando o Projeto
 
 Para criar o projeto, vamos utilizar o comando `rails new` com o framework CSS `tailwind`, para isto, em seu ambiente de trabalho, execute o comando:
 
@@ -63,7 +66,7 @@ Em seguida, acesse o diretório criado:
 cd rails-pixels-app
 ```
 
-# 2. Criando o Modelo
+## Criando o Modelo
 
 Diferente dos outros projetos, não vamos utilizar recursos de Scaffold, até porque, não queremos criar um CRUD de pixels, mas sim, apenas um modelo para armazenar os pixels.
 
@@ -80,14 +83,14 @@ Em seguida, execute o comando `rails db:migrate` para criar a tabela no banco de
 rails db:migrate
 ```
 
-# 3. Criando o Controller
+## Criando o Controller
 Vamos criar inicialmente um controlador contendo apenas a action ***index***, que será utilizado como tela principal da aplicação.
 
 ```bash
 rails g controller Pixels index 
 ```
 
-# 4. Configurando as Rotas
+## Configurando as Rotas
 
 Após criar o controlador, é possível editar o arquivo `config/routes.rb` e definir a rota padrão para a action ***index*** do `pixels_controller.rb`.
 
@@ -97,7 +100,7 @@ Rails.application.routes.draw do
 end
 ```
 
-# 5. Iniciando o Servidor
+## Iniciando o Servidor
 Agora que já temos o modelo, o controlador e a rota, podemos iniciar o servidor e acessar a aplicação.
 
 ```bash
@@ -108,7 +111,7 @@ Ao Acessar [http://127.0.0.1:3000](http://127.0.0.1:3000), você deve ver algo c
 
   <img src="https://i.ibb.co/K7zgszB/Screenshot-1.jpg" alt="" class="">
 
-# 6. Criando e Renderizando Pixels 
+## Criando e Renderizando Pixels 
 Como nossa aplicação não possui um CRUD, vamos criar vários pixels através do arquivo `db/seeds.rb` e renderizá-los na view `app/views/pixels/index.html.erb`.
 
 Em `db/seeds.rb`, adicione o trecho de código abaixo.
@@ -195,7 +198,7 @@ Ao atualizar a página, você deve ver algo como:
 
   <img src="https://i.ibb.co/4prL1Vw/Captura-da-Web-10-9-2023-152346-127-0-0-1.jpg" alt="" class="">
 
-# 7. Colorindo os Pixels
+## Colorindo os Pixels
 Vamos adicionar dois botões logo após a tag `h1` na view `app/views/pixels/index.html.erb`, um para colorir os pixels e outro para redefinir as cores.
 
 ```erb
@@ -267,7 +270,7 @@ E caso o usuário acesse outra página ou atualize a página atual no meio da re
 Isto faz tudo parecer um pouco estranho, não é mesmo?
 Agora que as coisas começam a ficar interessantes...
 
-# 8. Utilizando o Active Jobs
+## Utilizando o Active Jobs
 
 Para resolver o problema de requisições concorrentes, vamos utilizar o **Active Jobs**, que é uma biblioteca do Rails que permite executar tarefas em segundo plano.
 
@@ -320,7 +323,7 @@ Ao clicar no botão ***Colorize Job***, algumas coisas devem acontecer:
 
 Certo, agora que já temos nosso Job esteja rodando em segundo plano, ainda é necessário atualizar a página de forma manual para acompanhar o processo de colorização dos pixels, o que não é muito legal...
 
-# 9. Utilizando Stream Channels
+## Utilizando Stream Channels
 
 Para fazer com que os pixels sejam coloridos em tempo real, vamos utilizar o **Turbo Streams**, que é uma biblioteca do Rails que permite a comunicação em tempo real entre o servidor e o cliente de forma simples.
 
@@ -399,7 +402,7 @@ Desta forma, a cada iteração do loop, o botão será atualizado com o número 
   <img src="https://i.ibb.co/LhMCcKt/20230919-114526.gif" alt="" class="">
 
 
-<!-- # 9. Utilizando o ActionCable
+<!-- ## Utilizando o ActionCable
 
 Para resolver este problema, vamos utilizar o **ActionCable**, que é uma biblioteca do Rails que permite a comunicação em tempo real entre o servidor e o cliente.
 
@@ -536,7 +539,7 @@ Desta forma, o job será executado com um intervalo de 0.1 segundos entre cada i
 
 Nota: É nítido que com este intervalo, o job demora mais para ser executado, porém, é possível perceber que o progresso é exibido corretamente. O objetivo deste artigo é exemplificar a utilização destes recursos, contudo, cabe a você decidir se este intervalo é aceitável ou não para sua aplicação, assim como a necessidade de executar a tarefa em segundo plano, ou comunicar em real-time com o cliente. -->
 
-# 10. Deixando a aplicação mais divertida
+## Deixando a aplicação mais divertida
 
 Agora que já temos uma aplicação funcional, vamos adicionar alguns recursos para deixá-la mais legal. 
 
@@ -621,8 +624,7 @@ Em ***app/views/pixels/index.html.erb***, vamos alterar o código para:
 <%end%>
 ```
 
-<div>
-https://i.ibb.co/M8F9BDZ/20230910-181511.gif" alt="" class="">
+<img src="https://i.ibb.co/M8F9BDZ/20230910-181511.gif" alt="" class="">
 
 Contudo, com esta alteração, toda vez que a página for acessada os pixels serão embaralhados de uma maneira diferente. Fica a seu critério se isto é desejável ou não.
 
@@ -632,19 +634,16 @@ Por fim, você também pode adicionar mais opções de cores, adicionando as cla
 
 Para te ajudar, implementei isto no repositório do projeto, e você pode copiar o conteudo através dos arquivos raw a seguir:
 
-- [app/assets/stylesheets/application.tailwind.css](https://raw.githubusercontent.com/lucasgeron/rails-pixels-app/main/app/assets/stylesheets/application.tailwind.css)
-- [config/tailwind.config.js](https://raw.githubusercontent.com/lucasgeron/rails-pixels-app/main/config/tailwind.config.js)
-- [app/models/pixel.rb](https://raw.githubusercontent.com/lucasgeron/rails-pixels-app/main/app/models/pixel.rb)
+- [app/assets/stylesheets/application.tailwind.css](https://raw.githubusercontent.com/lucasgeron/rails-pixels-app/main/app/assets/stylesheets/application.tailwind.css){: .text-link-sm }
+- [config/tailwind.config.js](https://raw.githubusercontent.com/lucasgeron/rails-pixels-app/main/config/tailwind.config.js){: .text-link-sm }
+- [app/models/pixel.rb](https://raw.githubusercontent.com/lucasgeron/rails-pixels-app/main/app/models/pixel.rb){: .text-link-sm }
 
 Sinta-se livre para modificar tamanho dos pixels, assim como o número de pixels renderizados na página.
 
   <img src="https://i.ibb.co/WWj82Tx/20230910-183055.gif" alt="" class="">
 
-# Conclusão
+## Conclusão
 
-### Links do Repositório do Projeto
-### [lucasgeron/rails-pixels-app](https://github.com/lucasgeron/rails-pixels-app)
--- -
 
 Neste artigo, você aprendeu como criar e executar serviços em segundo plano para processar informações sem fazer que o cliente precise ficar aguardando a conclusão da tarefa.
 
@@ -652,6 +651,5 @@ Você também aprendeu a utilizar recursos de TurboStreams, configurando um  can
 
 Espero que este artigo tenha sido útil para você, e que você possa aplicar estes conceitos em seus projetos. 
 
-**Gostou deste projeto?** *Deixe seu feedback!*
 
 Até a próxima!

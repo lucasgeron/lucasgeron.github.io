@@ -1,5 +1,5 @@
 ---
-layout: blank
+layout: p5
 title: Início
 ---
 
@@ -131,8 +131,8 @@ input[type="range"]::-ms-fill-upper {
             <input type="range" min="-50" max="50" value="5" class="mt-2 w-100" id="maxXs" onchange="setup();">
           </div>
          <div class=" col-md-3 d-flex justify-content-between">
-           <button class="btn btn-light col-5" onclick="stopX()"> <i class="fa fa-icon fa-stop"></i></button>
-           <button class="btn btn-light col-5" onclick="resetX()"> <i class="fa fa-icon fa-refresh"></i></button>
+           <button class="btn btn-light col-5" onclick="stopX()"> <i class="fa-solid fa-icon fa-stop"></i></button>
+           <button class="btn btn-light col-5" onclick="resetX()"> <i class="fa-solid fa-icon fa-refresh"></i></button>
          </div>
         </div>
 
@@ -148,8 +148,8 @@ input[type="range"]::-ms-fill-upper {
         
           </div>
           <div class="col-md-3 d-flex justify-content-between">
-            <button class="btn btn-light col-5" onclick="stopY()"> <i class="fa fa-icon fa-stop"></i></button>
-            <button class="btn btn-light col-5" onclick="resetY()"> <i class="fa fa-icon fa-refresh"></i></button>
+            <button class="btn btn-light col-5" onclick="stopY()"> <i class="fa-solid fa-icon fa-stop"></i></button>
+            <button class="btn btn-light col-5" onclick="resetY()"> <i class="fa-solid fa-icon fa-refresh"></i></button>
           </div>
         </div>
 
@@ -183,7 +183,7 @@ input[type="range"]::-ms-fill-upper {
         <li class="list-inline-item">
           <a href="{{ item.link }}" target="_blank" class=" text-decoration-none text-muted hover-text-primary hover">
               {% if item.icon %} 
-              <i class="fa {{item.icon}} fa-lg fa-fotter"></i> 
+              <i class="fa-brands {{item.icon}} fa-lg fa-fotter"></i> 
               {% endif %}
           </a>
         </li>
@@ -195,7 +195,7 @@ input[type="range"]::-ms-fill-upper {
   </div>
 
   <div id="logo" class="position-absolute top-2 left-1 " style="display: none;">
-    <button class="btn btn-outline-none" onclick="showDialog()"><i class="fa fa-info"></i></button>
+    <button class="btn btn-outline-none" onclick="showDialog()"><i class="fa-solid fa-info"></i></button>
   </div>
 
 

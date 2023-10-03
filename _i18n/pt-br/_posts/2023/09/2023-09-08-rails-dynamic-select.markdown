@@ -5,6 +5,9 @@ title: "Select Dinâmico com Rails"
 date: 2023-09-08
 short_description: "Aprenda como implementar um select dinâmico com Rails e Hotwire. Neste tutorial te ensino a fazer isto do zero com um exemplo prático e muitos detalhes."
 cover: https://i.ibb.co/fXTPZ6P/20230908-200356.gif
+read_time: true
+toc: true
+github_repo: rails-dynamic-select
 categories:
 - Tutorial
 tags:
@@ -28,24 +31,7 @@ Para isto, vamos criar uma aplicação Rails simples, com cadastro de autores e 
 O usuário poderá adicionar/remover artigos a coleção, filtrando os artigos por autor antes de adicioná-los.
 
 
-# Índice
-<ul>
-<li> <a href="#1-criando-o-projeto"> 1. Criando o Projeto </a> </li>
-<li> <a href="#2-criando-os-modelos"> 2. Criando os Modelos </a> </li>
-<li> <a href="#3-populando-a-base-de-dados"> 3. Populando a Base de Dados </a> </li>
-<li> <a href="#4-iniciando-a-aplicação"> 4. Iniciando a Aplicação </a> </li>
-<li> <a href="#5-criando-o-formulário-dinâmico">  5. Criando o Formulário Dinâmico </a> </li>
-<li> <a href="#6-populando-o-select-de-artigos"> 6. Populando o Select de Artigos</a> </li>
-<li> <a href="#7-adicionando-artigos-na-coleção"> 7. Adicionando Artigos na Coleção </a> </li>
-<li> <a href="#8-listando-e-removendo-artigos-da-coleção">8. Listando e Removendo Artigos da Coleção </a> </li>
-
-</ul>
-
-# Vamos começar
----------
-
-
-## 1. Criando o Projeto
+## Criando o Projeto
 
 Em seu ambiente de Trabalho execute o comando abaixo para criar um novo projeto Rails:
 ```bash
@@ -57,7 +43,7 @@ Em seguida, acesse a pasta do projeto com o comando:
 cd rails-dynamic-select
 ```
 
-## 2. Criando os Modelos
+## Criando os Modelos
 
 Os modelos da aplicação serão:
 - **Author**, contendo apenas o atributo *name*
@@ -107,7 +93,7 @@ Para completar a criação dos modelos, execute o comando abaixo para criar as t
 rails db:migrate
 ```
 
-## 3. Populando a Base de Dados
+## Populando a Base de Dados
 
 Como a intenção deste tutorial é demonstrar o select dinâmico, vamos criar alguns registros para popular o banco de dados diretamente no arquivo seed.
 
@@ -142,7 +128,7 @@ Em seguida, execute o comando abaixo para popular o banco de dados:
 rails db:seed
 ```
 
-## 4. Iniciando a Aplicação
+## Iniciando a Aplicação
 
 Antes de iniciarmos o servidor, vamos configurar as rotas da aplicação.
 
@@ -168,7 +154,7 @@ Acesse a aplicação em http://localhost:3000 e você verá a tela abaixo:
   <img src="https://i.ibb.co/9GSkQHQ/Captura-da-Web-8-9-2023-181735-127-0-0-1.jpg" alt="" class="">
 
 
-## 5. Criando o Formulário Dinâmico
+## Criando o Formulário Dinâmico
 
 Agora que já temos a aplicação funcionando, vamos criar o formulário dinâmico. 
 
@@ -231,7 +217,7 @@ Desta forma, na ação *index* será exibido o número total de artigos na cole�
 
 Observe que estamos populando apenas o select dos autores, enquanto o select de artigos esta vazio. Isso ocorre porque o select de artigos é dinâmico e será populado de acordo com o autor selecionado.
 
-## 6. Populando o Select de Artigos
+## Populando o Select de Artigos
 
 Agora que já temos o formulário, vamos implementar a lógica para popular o select de artigos de acordo com o autor selecionado.
 
@@ -327,7 +313,7 @@ Com o controlador stimulus configurado corretamente, o formulário deve popular 
 
   <img src="https://i.ibb.co/1QcrgHP/20230908-192607.gif" alt="" class="">
 
-## 7. Adicionando Artigos na Coleção
+## Adicionando Artigos na Coleção
 
 Para concluir o formulário, vamos implementar a lógica para adicionar artigos na coleção.
 
@@ -363,7 +349,7 @@ Uma observação importante nesta etapa é que devido a implementação feita ad
 Em outros cenários onde é possível vincular uma coleção de elementos em uma única vez, é recomendado utilizar uma array de elementos, como article_ids: [ ].
 
 
-## 8. Listando e Removendo Artigos da Coleção
+## Listando e Removendo Artigos da Coleção
 
 Para concluirmos este tutorial, vamos implementar a listagem e remoção de artigos da coleção. 
 
@@ -394,8 +380,6 @@ Desta forma, ao acessar a coleção, os artigos serão listados e o usuário pod
 Neste tutorial, aprendemos como criar um formulário com campos dinâmicos utilizando o framework Ruby on Rails e Hotwire Turbo/Stimulus.
 
 O código fonte deste tutorial está disponível no repositorio do GitHub
-
-### [lucasgeron/rails-dynamic-select](http://github.com/lucasgeron/rails-dynamic-select)
 
 Fique a vontade para personalizar o código e implementar novas funcionalidades, assim como customizar os estilos da aplicação.
 

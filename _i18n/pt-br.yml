@@ -20,6 +20,19 @@ global:
   not_found_title: Página não encontrada
   not_found_description: A página solicitada não pôde ser encontrada
   search_placeholder: Pesquisar...
+  months_abbreviation: 
+    Jan: Jan
+    Feb: Feb
+    Mar: Mar
+    Apr: Apr
+    May: May
+    Jun: Jun
+    Jul: Jul
+    Aug: Aug
+    Sep: Sep
+    Oct: Oct
+    Nov: Nov
+    Dec: Dec
 home:
   title: Olá, eu sou o 
   sub-title: Trabalho com
@@ -59,3 +72,24 @@ search:
   title: Resultado da Pesquisa
 
 
+
+
+
+
+# ----- Posts related labels -----
+
+post:
+  posted: Postado em
+  written_by: Por
+  github_repo: Repósitório no Github
+  leave_feedback: <b> Gostou deste Projeto? </b> <em> Deixe seu Feedback </em> 
+  words: palavras
+  read_time:
+    unit: min
+    plural: s
+    prompt: " de leitura"
+  relate_posts: Leia também
+  share: Compartilhar
+  button:
+    next: Próximo
+    previous: Anterior

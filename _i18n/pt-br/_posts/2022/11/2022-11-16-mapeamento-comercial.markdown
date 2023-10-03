@@ -3,6 +3,8 @@ layout: post
 title:  Mapeamento Comercial
 date:   2022-11-16
 short_description: Aplicativo desenvolvido como protótipo para mapeamento de clientes e turmas de formandos para a empresa Cross Formaturas.
+github_repo: Mapeamento-Comercial
+read_time: true
 cover: /assets/images/covers/all/mapeamento-comercial.png
 categories: 
 - Portfolio
@@ -11,7 +13,6 @@ tags:
 - Spreadsheet
 - App Sheet
 ---
-
 
 # Mapeamento-Comercial
 

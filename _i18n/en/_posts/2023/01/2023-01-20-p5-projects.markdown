@@ -4,6 +4,8 @@ title:  P5 Projects
 date:   2023-01-20
 short_description: p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else! 
 cover: /assets/images/covers/all/p5-projects.png
+read_time: true
+toc: false
 categories:
 - Portfolio
 tags:
@@ -37,3 +39,9 @@ This project is a simple web app that generates a dynamic background with circle
   </a>
 </div>
 
+------
+
+<div>
+ <a href="/p5/terrain-generator" target="_blank" class="text-decoration-none">
+  <img src="https://i.ibb.co/N3hy3f7/Captura-da-Web-3-10-2023-114020-127-0-0-1.jpg" alt="" class=" w-100 img-fluid rounded-3 shadow mt-4">
+  </a>

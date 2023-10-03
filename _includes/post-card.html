@@ -41,7 +41,13 @@
     </div>
 
     <div class="card-footer justify-content-between">
-      {{ post.date | date: date_format }}
+      
+      {% include date.html %}
+
+      {% if post.read_time %}
+        {% include read-time.html content=post.content prompt=true lang=site.lang %}
+      {% endif %}
+      
       <a href="{{ post.url | relative_url }}" class="float-end  btn btn-outline-dark btn-sm" type="button">
         {% t global.see_more %}
       </a>

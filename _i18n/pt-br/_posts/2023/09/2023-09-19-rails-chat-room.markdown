@@ -5,6 +5,9 @@ title: "Rails Chat Room"
 date: 2023-09-19
 short_description: "Neste artigo te mostro como é fácil desenvolver sala de bate papo onde as mensagens são entregues a todos que estão conectados."
 cover: https://i.ibb.co/VNTQvTd/Tab-Rails-Chat-Room-Post-2.gif
+read_time: true
+toc: true
+github_repo: rails-chat-room
 categories:
 - Tutorial
 tags:
@@ -400,7 +403,7 @@ Simples, não é mesmo? Vamos testar?
 
   <img src="https://i.ibb.co/xMWXTkf/20230919-183215.gif" alt="" class="">
 
-## Extra
+# Extra
 
 Certo, já temos nossa sala de bate papo funcionando, mas ainda podemos melhorar um pouco mais.
 
@@ -408,7 +411,9 @@ As *Mensagens* da aplicação estão sendo exibidas baseado em Turbo, contudo, a
 
 Isto quer dizer, que ao tentar *editar* uma sala, você será redirecionado, e os usuários conectados não serão notificados.
 
-Portanto, vamos fazer estas configurações para que as alterações da sala também sejam exibida de forma dinâmica.
+## Sincronizando Salas
+
+Vamos fazer estas configurações para que as alterações da sala também sejam exibida de forma dinâmica.
 
 De forma semelhante ao que fizemos com as mensagens, vamos envolver a renderização da sala em um `turbo_frame_tag` com um id específico.
 
@@ -534,11 +539,6 @@ Desta forma, ao editar as informações de uma sala, o nome da mesma será atual
   <img src="https://i.ibb.co/rM8srGG/20230919-202036.gif" alt="" class="">
 
 ---
-### Link do Repositório
-[lucasgeron/rails-chat-room](https://github.com/lucasgeron/rails-chat-room)
-
-
----
 
 ## Conclusão
  
@@ -552,9 +552,4 @@ Ao longo deste artigo, utilizamos:
 - Turbo Stimulus: `turbo:submit-end->form#reset`
   
 Ainda há muito a ser explorado sobre o Turbo, mas espero que este artigo tenha te ajudado a entender um pouco mais sobre o que é o Turbo e como utilizá-lo em uma aplicação Rails.
-
-**Gostou deste projeto?** *Deixe seu feedback!* 
-
-
-
 

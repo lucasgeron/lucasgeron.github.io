@@ -31,21 +31,26 @@ title: "$TITLE"
 date: $DATE
 short_description: "$SHORT_DESCRIPTION"
 cover: /assets/images/covers/$LANGUAGE/$SLUG.png
+
+read_time: true
+toc: true
+github_repo:
+
 categories:
 # - Portifolio
 # - Tutorial
 # - Article
+
 tags:
 # Tech Tags
 # - API
-# - P5.js
-# - Python
-# - Ruby
-# - Ruby On Rails
+# - Design
 # - Hotwire Turbo
 # - Hotwire Stimulus
-# Other Tags
-# - Design
+# - Python
+# - P5.js
+# - Ruby
+# - Ruby On Rails
 # - Spreadsheet
 # - Useful Gems
 ---
@@ -58,14 +63,9 @@ $SHORT_DESCRIPTION
 </div>
 
 
---- 
 
-> ### Link do Repositório:
-> ## [*lucasgeron/$SLUG*](https://github.com/lucasgeron/$SLUG)
 
---- 
-#### **Gostou deste projeto?** *Deixe seu feedback!* 
-
+  {%- include github.markdown -%}
 
 EOL
 

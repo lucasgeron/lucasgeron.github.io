@@ -5,11 +5,15 @@ title: "Rails QR Code"
 date: 2023-09-27
 short_description: "Neste artigo de leitura rápida vamos implementar o uso de QR Code para uma lista de contatos."
 cover: https://i.ibb.co/mCgW0Fx/Tab-Rails-Qrcode.gif
+read_time: true
+toc: true
+github_repo: rails-qrcode
 categories:
 - Tutorial
 tags:
 - Ruby On Rails
 - Useful Gems
+
 ---
 
 # Rails QR Code
@@ -40,6 +44,7 @@ Portanto, vamos implementar uma aplicação Rails simples para demonstrar o uso 
 
 ## Criando a aplicação 
 Em seu terminal, execute o comando abaixo para criar uma nova aplicação Rails:
+
 
 ```bash
 rails new rails-qrcode --css=tailwind
@@ -149,7 +154,7 @@ Para fazer isto, utilizamos o método `.as_png` que recebe como parâmetro o tam
 Vale destacar que o método `.as_png` retorna um objeto `ChunkyPNG::Image`, e que é possível informar mais argumentos para este método. (Consulte a [documentação](https://github.com/whomwah/rqrcode))
 
 
-# Importante
+### Importante
 O objeto **ChunkyPNG::Image é uma representação em memória de uma imagem PNG**. Quando você chama o método `.as_png`, ele retorna uma `string` de bytes que representa a imagem PNG. 
 
 Por último, o PNG é anexado ao modelo através do método `attach`. Neste caso, `self` é representa o contato que esta sendo criado, `qrcode` seu atributo, e `attach` o método que anexa o arquivo.
@@ -202,11 +207,13 @@ Espero que este artigo tenha sido útil para você.
 Vale lembrar que este QR Code ficará hospedado em seu servidor, e que você pode utilizá-lo para diversas finalidades.
 Neste cenário, como o link esta associado ao `id` do contato, é possível realizar alterações no registro, como por exemplo, alterar o nome do contato, que o QR Code continuará funcionando.
 
-## Extra - Gerando Link Personalizado
+# Extra
 
 Até o momento, a aplicação esta utilizando o link baseado em `id`, isto é: **http://127.0.0.1:3000/contacts/2**, mas você pode utilizar o link baseado em slug, algo como **http://127.0.0.1:3000/contacts/john-doe**.
 
-Para isto, é necessário fazer algumas alterações no código. 
+## Gerando Link Personalizado
+
+Para criar o link baseado no atributo `name`, é necessário fazer algumas alterações no código. 
 
 No arquivo `config/routes.rb` modifique o código para: 
 
@@ -303,15 +310,6 @@ before_commit :generate_qrcode, on: [:create, :update]
 validates :name, presence: true, uniqueness: true
 ```
 
-Pronto!, Agora ao criar ou editar um registro, um novo QR Code será gerado com base no Slug, enquanto as demais ação continuam funcionando normalmente.
-
-
---- 
-
-> ### Link do Repositório:
-> ## [*lucasgeron/rails-qrcode*](https://github.com/lucasgeron/rails-qrcode)
-
---- 
-#### **Gostou deste projeto?** *Deixe seu feedback!* 
+Pronto! Agora ao criar ou editar um registro, um novo QR Code será gerado com base no Slug, enquanto as demais ação continuam funcionando normalmente.
 
 

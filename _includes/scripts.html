@@ -1,7 +1,7 @@
 <!-- Scripts import -->
 
 <!-- Bootstrap v5.3 -->
-<script src="{{ '/assets/js/bootstrap.min.js' | prepend: site.baseurl_root }}"></script>
+<script src="{{ '/assets/js/bootstrap.bundle.min.js' | prepend: site.baseurl_root }}"></script>
 <!-- FontAwesome 6.4.2-->
 <script src="{{ '/assets/js/fontawesome.min.js' | prepend: site.baseurl_root }}"></script>
 <!-- AOS -->
@@ -14,6 +14,31 @@
 <script src="{{ "/assets/js/tipuesearch_set.js" | relative_url }}"></script>
 <script src="{{ "/assets/js/tipuesearch.js" | relative_url }}"></script>
 
+
+{% if page.toc %}
+<!-- toc.js -->
+<script src="{{ '/assets/js/tocbot.min.js' | prepend: site.baseurl_root }}"></script>
+<script>
+  tocbot.init({
+  tocSelector: '.toc',
+  contentSelector: 'article',
+  ignoreSelector: '[data-toc-skip]',
+  headingSelector: 'h1, h2, h3, h4, h5, h6',
+  headingsOffset: 100,
+  orderedList: false,
+  scrollSmooth: true,
+  scrollSmoothOffset: -80,
+  scrollSmoothDuration: 0,
+});
+</script>
+{% endif %}
+
+
+<!-- Code for Init Bootstrap Tooltips -->
+<script>
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
 
 <script>
   AOS.init({

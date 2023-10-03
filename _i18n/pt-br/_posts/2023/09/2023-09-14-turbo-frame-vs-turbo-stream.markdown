@@ -5,6 +5,9 @@ title: "Turbo Frame vs Turbo Stream"
 date: 2023-09-14
 short_description: "Você sabe qual a diferença entre os recursos que Hotwire Turbo oferece? Então esse artigo pode ser de seu interesse!"
 cover: https://i.ibb.co/J7G8Lyv/20230914-224204.gif
+read_time: true
+toc: true
+github_repo: rails-turbo-frame-vs-turbo-stream
 categories:
 - Tutorial
 tags:
@@ -357,7 +360,7 @@ Agora vamos ver na prática o que acontece!
 
   <img src="https://i.ibb.co/b3HsCbS/20230914-215526.gif" alt="" class="">
 
-### O que esta acontecendo? 
+### Entendendo o Fluxo 
 - Clique em Load Fist Page (TURBO_STREAM)
   1. A requisição `first_page` no formato `turbo_stream` é feita para o servidor.
   2. O Servidor responde com o arquivo `first_page.turbo_stream.erb`
@@ -415,7 +418,4 @@ Para finalizar, uma tabela comparativa entre o Turbo Frame e Turbo Stream retira
 | Múltiplas Ações | ❌ | ✔️ |
 | Funciona com WebSockets | ❌ | ✔️ |
 | Fácil de Implementar | ✔️ | 💭 |
-
-### Link do Repositório
-## [**lucasgeron/rails-turbo-frame-vs-turbo-stream**](https://github.com/lucasgeron/rails-turbo-frame-vs-turbo-stream)
 

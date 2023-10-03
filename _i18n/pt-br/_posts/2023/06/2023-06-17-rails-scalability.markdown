@@ -5,6 +5,8 @@ title: "Como escalar uma aplicação RoR"
 date: 2023-06-17
 short_description: "Saiba a diferença entre escalar uma aplicação de forma horizontal ou vertical e descubra porque escalabilidade é importante para uma aplicação Ruby on Rails"
 cover: /assets/images/covers/pt-br/rails-scalability.png
+read_time: true
+toc: true
 categories:
 - Article
 tags:
@@ -69,7 +71,7 @@ Uma coisa é certa, sua aplicação irá ficar lenta ou até mesmo quebrar a med
 
 Escalabilidade é a capacidade de uma aplicação crescer sem que isso afete a performance. É importante ter em mente que escalar uma aplicação não é apenas adicionar mais recursos. Para que a aplicação seja escalável, é necessário que a aplicação seja desenvolvida de forma adequada.
 
-#### 5 Dicas em relação a escalabilidade
+## 5 Dicas em relação a escalabilidade
 
 - **Planeje a escalabilidade desde o início**: Ao projetar a arquitetura da aplicação, leve em consideração como ela pode ser escalada no futuro. Isso pode incluir escolher tecnologias e abordagens que facilitem a escalabilidade.
 
@@ -127,7 +129,7 @@ Considerando o fluxo de dados de uma aplicação web, isto é, Browser / Servido
 
 --------
 
-# Quando escalar?
+## Quando escalar?
 
 Apesar das melhorias citadas acima, em algum momento será necessário escalar a aplicação. Mas quando? 
 A resposta é simples: **quando a aplicação começar a ficar lenta**.
@@ -158,7 +160,7 @@ Existem diversas ferramentas que podem ser usadas para monitorar a aplicação. 
     <div class="col-md-3 d-flex flex-column align-items-center">
       <div class="h-auto" >
       <a href="https://newrelic.com/" target="_blank" class="text-decoration-none image-container mb-2" >
-        <img class="" height="40" src="https://th.bing.com/th/id/R.6a779bbf448d50da3e93c19e07d9821c?rik=1HPOi08fhv7ucg&pid=ImgRaw&r=0" alt="New Relic" > 
+        <img class="shadow-none border-0" height="40" src="https://th.bing.com/th/id/R.6a779bbf448d50da3e93c19e07d9821c?rik=1HPOi08fhv7ucg&pid=ImgRaw&r=0" alt="New Relic" > 
       </a>
       </div>
       <p><strong>New Relic</strong>: é uma plataforma de monitoramento de desempenho que oferece insights em tempo real sobre o desempenho de sua aplicação, banco de dados e servidores.</p>
@@ -166,7 +168,7 @@ Existem diversas ferramentas que podem ser usadas para monitorar a aplicação. 
     <div class="col-md-3 d-flex flex-column align-items-center">
       <div class="h-auto" >
       <a href="https://scoutapm.com/" target="_blank" class="text-decoration-none image-container mb-2" >
-        <img class="" height="80" src="https://assets.scoutapm.com/assets/public/scout_logo-f2ab3019302500d22b77f24685298b91e8b1fd4778ba5f67368cde418476f513.png" alt="Scout APM" > 
+        <img class="shadow-none border-0" height="80" src="https://assets.scoutapm.com/assets/public/scout_logo-f2ab3019302500d22b77f24685298b91e8b1fd4778ba5f67368cde418476f513.png" alt="Scout APM" > 
       </a>
       </div>
       <p><strong>Scout APM</strong>: é uma ferramenta de monitoramento de desempenho que oferece recursos como rastreamento de transações, monitoramento de métricas personalizadas e alertas em tempo real.</p>
@@ -174,7 +176,7 @@ Existem diversas ferramentas que podem ser usadas para monitorar a aplicação. 
     <div class="col-md-3 d-flex flex-column align-items-center">
       <div class="h-auto" >
       <a href="https://accedian.com/platform/skylight/" target="_blank" class="text-decoration-none image-container mb-2" >
-        <img class="" height="30" src="https://i.ibb.co/N7sLjKw/A-SKYLIGHT-Gold-White.png" alt="Skylight" > 
+        <img class="shadow-none border-0" height="30" src="https://i.ibb.co/N7sLjKw/A-SKYLIGHT-Gold-White.png" alt="Skylight" > 
       </a>
       </div>
       <p><strong>Skylight</strong>: é uma ferramenta de monitoramento de desempenho projetada especificamente para aplicações Ruby on Rails. Ela oferece insights sobre o desempenho de suas consultas ao banco de dados, renderização de views e muito mais.</p>
@@ -182,8 +184,8 @@ Existem diversas ferramentas que podem ser usadas para monitorar a aplicação. 
     <div class="col-md-3 d-flex flex-column align-items-center">
       <div class="h-auto" >
       <a href="https://www.datadoghq.com/" class="text-decoration-none image-container mb-2" >
-        <img class="" height="75" src="https://imgix.datadoghq.com/img/dd_logo_n_70x75.png?ch=Width,DPR&fit=max&auto=format&w=70&h=75" alt="DataDog">
-        <img class="" height="14" src="https://imgix.datadoghq.com/img/dd-logo-n-200.png?ch=Width,DPR&fit=max&auto=format&h=14&auto=format&w=807" alt="DataDog">
+        <img class="shadow-none border-0" height="75" src="https://imgix.datadoghq.com/img/dd_logo_n_70x75.png?ch=Width,DPR&fit=max&auto=format&w=70&h=75" alt="DataDog">
+        <img class="shadow-none border-0" height="14" src="https://imgix.datadoghq.com/img/dd-logo-n-200.png?ch=Width,DPR&fit=max&auto=format&h=14&auto=format&w=807" alt="DataDog">
       </a>
       </div>
       <p><strong>Datadog</strong>: é uma plataforma de monitoramento e análise que permite que você monitore o desempenho de sua aplicação, infraestrutura e logs em um único lugar.</p>
@@ -234,7 +236,7 @@ Escalar um aplicativo horizontalmente pode ajudar a garantir que seu aplicativo 
 
 ------
 
-# Como automatizar a escalabilidade quando for necessário?
+# Como automatizar a escalabilidade?
 
 Nos dias atuais é muito comum que as aplicações sejam desenvolvidas para rodar em um ambiente de nuvem, como o AWS, por exemplo. Nesse ambiente, é possível que a aplicação seja escalada de forma automática. Fazer isto em um servidor hospedado na núvem é muito mais simples do que em um servidor local, pois é feito de forma integrada, isto é, sem a necessidade de intervenção humana, desde que o serviço de auto-escalabilidade esteja configurado corretamente.
 

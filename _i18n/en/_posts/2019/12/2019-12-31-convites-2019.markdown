@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Convites 2019
+title:  Invitations 2019
 date:   2019-12-31
 short_description: Exhibition of luxury invitations developed for Cross Graduations in the year 2019.
 cover: https://mir-s3-cdn-cf.behance.net/project_modules/fs/f40d2890036137.5e0b97e397e68.jpg

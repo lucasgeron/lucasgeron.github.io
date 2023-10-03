@@ -109,3 +109,24 @@ article blockquote {
 .giscus-frame{
   /* background-color: blue; */
 }
+
+.toc-list {
+  color: var(--bs-gray);
+}
+
+.toc-link::before {
+  background-color: var(--bs-gray) !important;
+}
+
+.is-active-link::before {
+  background-color: var(--bs-primary) !important;
+}
+
+a.is-active-link {
+  color: white !important;
+}
+
+
+.text-link-sm {
+  color: var(--bs-white);
+}

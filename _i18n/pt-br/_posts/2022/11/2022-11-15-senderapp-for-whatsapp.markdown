@@ -4,6 +4,8 @@ title:  SenderApp for WhatsApp
 date:   2022-11-15
 short_description: Envie centenas de mensagens de texto personalizadas em minutos sem adicionar contatos em seu dispositivo móvel com o SenderApp for WhatsApp.
 cover: /assets/images/covers/all/senderapp-for-whatsapp.png
+toc: true
+read_time: true
 categories: 
 - Portfolio
 - Product
@@ -52,18 +54,18 @@ Para utilizar o serviço, basta [criar sua conta](https://script.google.com/macr
 
 > **IMPORTANTE**: Caso deseje implementar seu próprio servidor ao invés de utilizar a versão citada acima, siga as orientações disponíveis em  './scripts/more-info.md'
 
-## Proximos Passos - Planilha
 
 Ao finalizar seu cadastro, uma planilha google será compartilhada com seu endereço de email.
 
-#### Configurações da Planilha
+## Configurações da Planilha
 O menu de configurações da planilha esta oculta por padrão. Para acessá-lo, clique no botão menu, nas abas da planilha e seleciona a planilha "Configurações". Todas as configurações possuem notas com orientações.
 
-#### Dados Variáveis
+<h3 data-toc-skip> Dados Variáveis </h3>
+
 O SenderApp permite a utilização de `02 Dados Variáveis`, sendo `@Nome` e `@Info`.
 **Dica**: Deve-se respeitar a letra maiúscula da variável para que a mesma seja substituida corretamente. 
 
-#### Configurando Mensagem
+<h3 data-toc-skip> Configurando Mensagem </h3>
 A mensagem a ser enviada deve ser informada em `'Mensagens!A3'` da planilha.
 A mensagem pode conter um tamanho máximo de caracteres, e caso exceda este limite, a célula ficará vermelha e o bot não poderá ser iniciado.
 
@@ -75,19 +77,20 @@ A mensagem são apenas em formato `TEXTO` e  podem conter `links` e `formataçã
 **IMPORTANTE**: Para que tudo funcione corretamente, todos os dados das planilhas **Mensagem** e **Contatos**, devem ser formatados como `Texto simples`. Ao colar informações de outras fontes de dados, verifique se os dados estão formatados em texto simples. 
 
 
- ## Próximos Passos - SenderApp Desktop
+## SenderApp Desktop
+
 
 Após fazer o [download do aplicativo](https://mega.nz/file/xcpnkZqb#stGI2EibhJ7b3rmou6reKFLXrxI5cpuy6v6alyDV8kU), não se esqueça de **executa-lo como administrador.**
 
 Finalize a configuração informando seu `email` e seu `token de ativação`. 
 **Dica**: Seu token de ativação é enviado para seu email no momento em que você finaliza seu cadastro.
 
-### SenderApp.conf
+<h3 data-toc-skip> SenderApp.conf</h3>
 Para alterar o endereço de email registrado, é possível excluir o arquivo de configuração e fazer uma nova configuração, ou apenas alterá-lo com o bloco de notas.  
 
      C:\Program Files\Common Files\SenderApp.conf
 
-## Próximos Passos - Primeiro envio
+## Primeiro envio
 
 É necessário possui o WhatsApp Desktop instalado e aberto em seu computador. 
 Não se preocupe, o primeiro envio será enviado para um número teste preparado para receber estas mensagens. 
@@ -96,7 +99,7 @@ Com o WhatsApp logado, pronto para ser utilizado, e o SenderApp sendo executado 
 
 Ao finalizar o envio, uma mensagem de sucesso será exibida e você terá utilizado `10 cotas`.
 
-#  Cotas de Mensagens
+##  Cotas de Mensagens
 Como uma forma de limitar o uso indevido da ferramenta, um sistemas de cotas de envio é estabelecido, onde as regras são
 - Cada usuário possui `100 cotas por padrão`.
 - **Cada mensagem enviada, onde a requisição de envio é realizada com sucesso, independente da resposta do solicitação, consome** `01 cota`.
@@ -104,10 +107,3 @@ Como uma forma de limitar o uso indevido da ferramenta, um sistemas de cotas de 
 - O Servidor *SenderApp for WhatsApp* recicla `02 cotas a cada minuto`. Portanto, não é necessário esperar 01 hora obrigatoriamente para realizar o próximo envio, basta ter no mínimo 10 cotas disponíveis e contatos válidos para realizar envios com mais frequência. 
 - O servidor não possui autenticação segura, como oAuth ou API's de Autenticação, ao fazer uma requisição ao servidor, seu **e-mail** e **token** são validados antes de terem seus dados retornados a aplicação. Por mais que não seja uma autenticação completamente segura, o envio da mensagem é realizado pelo número que estiver logado no WhatsApp Desktop, ou seja, não faria sentido outra pessoa mandar a sua mensagem de outro número, considerando que só você possui acesso a planilha e pode editar a mensagem.
 
-
-# Roadmap - Futuras Implementações:
-
- - [ ] Envio de Imagens
- - [ ] Envio de Audios
- - [ ] Envios Agendados / Programados - com Notificações
- 

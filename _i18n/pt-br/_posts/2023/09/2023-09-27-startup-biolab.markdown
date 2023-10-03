@@ -58,7 +58,5 @@ Este projeto já possui levantamento de requisitos, diagramas UML e seu protóti
 
 Caso tenha interesse em conhecer detalhes técnicos a respeito do projeto, entre em contato conosco! 
 
---- 
-#### **Gostou deste projeto?** *Deixe seu feedback!* 
 
 

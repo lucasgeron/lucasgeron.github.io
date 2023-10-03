@@ -5,6 +5,9 @@ title: "To Do List Turbo"
 date: 2023-09-06
 short_description: "To Do List Turbo é uma aplicação de lista de tarefas que permite você criar, editar e remover tarefas. Neste artigo te mostro como criar isto com Hotwire Turbo."
 cover: https://i.ibb.co/Ydyx6RS/20230906-142125.gif
+read_time: true
+toc: true
+github_repo: to-do-list-turbo
 categories:
 - Tutorial
 tags:
@@ -19,36 +22,14 @@ Neste artigo iremos aprender a fazer esta aplicação com Hotwire Turbo.
 
 <img src="https://i.ibb.co/Ydyx6RS/20230906-142125.gif" alt="" class="">
 
-# Introdução
+## Introdução
 
 Neste artigo vamos desenvolver juntos uma aplicação de lista de tarefas usando o framework Hotwire Turbo. Esta aplicação é bem simples, mas é o suficiente para demonstrar o poder do Hotwire Turbo.
 
 De forma bem resumida, o Hotwire Turbo é um framework que permite que partes de uma página sejam atualizadas mediante uma solicitação, sem a necessidade de recarregar a página inteira. Ele é uma alternativa ao uso de APIs REST e JavaScript e um poderoso aliado ao alto desempenho. Leia mais sobre o [Hotwire Turbo](https://turbo.hotwired.dev/handbook/introduction).
 
 
-# Índice
-<ul>
-<li> <a href="#1-criando-o-projeto"> 1. Criando o Projeto </a> </li>
-<li> <a href="#2-criando-o-modelo"> 2. Criando o Modelo </a> </li>
-<li> <a href="#3-configurando-as-rotas"> 3. Configurando as Rotas </a> </li>
-<li> <a href="#4-configurando-o-tailwind"> 4. Configurando o Tailwind </a> </li>
-<li> <a href="#5-adaptando-o-projeto-para-turbo">  5. Adaptando o projeto para Turbo </a> </li>
-<li> <a href="#6-modificando-a-página-inicial"> 6. Modificando a Página Inicial </a> </li>
-<li> <a href="#7-configurando-o-formulário"> 7. Configurando o Formulário </a> </li>
-<li> <a href="#8-adicionando-notificações"> 8. Adicionando Notificações </a> </li>
-<li> <a href="#9-editando-um-registro"> 9. Editando um Registro </a> </li>
-<li> <a href="#10-excluindo-um-registro"> 10. Excluindo um Registro </a> </li>
-<li> <a href="#11-testando-recursos-de-turbo"> 11. Testando Recursos de Turbo </a> </li>
-<li> <a href="#12-estilizando-a-aplicação"> 12. Estilizando a Aplicação </a> </li>
-<li> <a href="#13-marcando-tarefas-como-completadasincompletas"> 13. Marcando tarefas como Completadas/Incompletas </a> </li>
-<li> <a href="#resultado-final"> Resultado Final </a> </li>
-</ul>
-
-# Vamos começar
----------
-
-
-## 1. Criando o Projeto
+## Criando o Projeto
 
 Em seu ambiente de trabalho, crie um novo projeto, usando o comando `rails new` com a opção `--css=tailwind`. Isso vai criar um projeto Rails com o framework CSS Tailwind instalado. 
 
@@ -60,7 +41,7 @@ Em seguida, acesse a pasta do projeto criado.
 cd to-do-list-turbo
 ```
 
-## 2. Criando o Modelo
+## Criando o Modelo
 
 Para criar o modelo, vamos usar o gerador de `scaffold` do Rails. 
 
@@ -87,7 +68,7 @@ Em seguida, execute as migrações do banco de dados através do comando.
 rails db:migrate
 ```
 
-## 3. Configurando as Rotas
+## Configurando as Rotas
 
 Abra o arquivo `config/routes.rb` e defina o root da aplicação para `tasks#index`. 
 
@@ -99,7 +80,7 @@ Rails.application.routes.draw do
 end
 ```
 
-## 4. Configurando o Tailwind
+## Configurando o Tailwind
 
 Para que o tailwind funcione corretamente, vamos instanciar o servidor utilizando o comando:
 ``` shell
@@ -113,7 +94,7 @@ Com isto feito, podemos acessar a página inicial da aplicação em `http://loca
 <img src="https://i.ibb.co/cX2G9j2/Screenshot-1.jpg" alt="" class="">
 
 
-## 5. Adaptando o projeto para Turbo
+## Adaptando o projeto para Turbo
 
 Até este momento, temos nossas rotas configuradas, o modelo criado e a página inicial estilizada do jeito padrão que rails funciona. 
 
@@ -124,7 +105,7 @@ Até este momento, temos nossas rotas configuradas, o modelo criado e a página 
 
 Agora, vamos começar a adaptar nossa aplicação para utilizar recursos Hotwire Turbo, modificando o código e adicionando Turbo Frames e Turbo Streams onde for necessário.
 
-## 6. Modificando a Página Inicial
+## Modificando a Página Inicial
 
 Nossa aplicação terá o formulário de criação de novas tasks sendo exibido na pagina inicial, desta forma, poderemos criar novas tarefas sem a necessidade de ser redirecionado para outra página.
 
@@ -165,7 +146,7 @@ Neste momento, se você tentar criar uma nova task perceberá que nada de difere
 
 Isto ocorre porque ainda não configuramos o formulário para enviar os dados via Turbo, e nem a view para receber os dados via Turbo.
 
-## 7. Configurando o Formulário
+## Configurando o Formulário
 
 No arquivo `_form.html.erb`, vamos adicionar o atributo `data-turbo-stream` ao formulário, para que ele seja enviado via Turbo. 
 
@@ -204,7 +185,7 @@ Antes de continuarmos, é importante percebermos algumas situações:
 
 Iremos resolver estes problemas em seguida.
 
-## 8. Adicionando Notificações
+## Adicionando Notificações
 
 Como estamos trabalhando com recursos de Turbo, vamos utilizar o componente `turbo_frame_tag` para exibir as notificações de sucesso e erro.
 
@@ -287,7 +268,7 @@ Agora, ao clicar em salvar, a mensagem de deverá ser exibida conforme a imagem 
 
 Dois dos problemas relatados anteriormente já foram resolvidos, mas ainda precisamos resolver o problema de redirecionamento ao editar um registro.
 
-## 9. Editando um Registro
+## Editando um Registro
 
 Para resolvermos o problema de redirecionamento ao editar um registro, vamos utilizar o componente `turbo_frame_tag` para fazer com que cada tarefa renderizada (`@tasks`), atue como um componente individual. 
 
@@ -370,7 +351,7 @@ Para entender melhor a diferença entre os métodos, acesse a [documentação](h
 <img src="https://i.ibb.co/2W1B2h9/20230906-125905.gif" alt="" class="">
 
 
-## 10. Excluindo um Registro
+## Excluindo um Registro
 
 Por padrão, o botão para excluir um registro é exibido na action `show`, recurso que excluímos da nossa aplicação. 
 
@@ -414,7 +395,7 @@ Note que agora estamos utilizando o metodo `turbo_stream.remove` para remover o 
 <img src="https://i.ibb.co/F3QcFCp/20230906-131350.gif" alt="" class="">
 
 
-## 11. Testando Recursos de Turbo
+## Testando Recursos de Turbo
 
 Antes de estilizarmos nossa aplicação é interessante observar as requisições e respostas diretamente do navegador. 
 
@@ -430,11 +411,11 @@ Com isto, podemos perceber que a aplicação esta muito mais rápida e que o con
 
 Agora que nossa aplicação esta funcionando, podemos estiliza-la utilizando o framework [Tailwind CSS](https://tailwindcss.com/).
 
-## 12. Estilizando a Aplicação
+## Estilizando a Aplicação
 
 Como o foco deste artigo não aborda conceitos de front-end, você pode personalizar a estilização da maneira que preferir, ou apenas substituir o código dos arquivos, pelos código abaixo:
 
-### `app/assets/stylesheets/application.tailwind.css`
+`app/assets/stylesheets/application.tailwind.css`
 ``` scss
 @tailwind base;
 @tailwind components;
@@ -506,7 +487,7 @@ Como o foco deste artigo não aborda conceitos de front-end, você pode personal
 }
 ```
 
-### `app/views/layouts/application.html.erb`
+`app/views/layouts/application.html.erb`
 ``` erb
 <!DOCTYPE html>
 <html>
@@ -530,7 +511,7 @@ Como o foco deste artigo não aborda conceitos de front-end, você pode personal
 </html>
 ```
 
-### `app/views/tasks/_form.html.erb`
+`app/views/tasks/_form.html.erb`
 ``` erb
 <%= form_with(model: task, class: "contents sm:flex", data: { turbo_stream: true }) do |form| %>
 
@@ -545,7 +526,7 @@ Como o foco deste artigo não aborda conceitos de front-end, você pode personal
 <% end %>
 ```
 
-### `app/views/tasks/_task.html.erb`
+`app/views/tasks/_task.html.erb`
 ``` erb 
 <turbo-frame id="<%= dom_id task %>" class="task" >
 
@@ -608,7 +589,7 @@ Como o foco deste artigo não aborda conceitos de front-end, você pode personal
 </turbo-frame>
 ```
 
-### `app/views/tasks/index.html.erb`
+`app/views/tasks/index.html.erb`
 
 ``` erb 
 <div class="inner-container">
@@ -623,7 +604,7 @@ Como o foco deste artigo não aborda conceitos de front-end, você pode personal
 </div>
 ```
 
-## 13. Marcando tarefas como Completadas/Incompletas
+## Concluíndo Tarefas
 
 Perceba que o checkbox referente ao atributo `complete` foi removido do formulário. Isso porque agora vamos marcar as tarefas como completas ou incompletas diretamente na lista de tarefas, sem ser necessário editar o registro para alterar seu status.
 
@@ -647,4 +628,3 @@ Como nosso controlador já esta configurado para interpretar esta requisição, 
 
 <img src="https://i.ibb.co/gD5tP6d/20230906-141044.gif" alt="" class="">
 
-O código deste projeto esta disponível no repostório [lucasgeron/to-do-list-turbo](https://github.com/lucasgeron/to-do-list-turbo).

@@ -1,0 +1,86 @@
+{% assign tag_prepend_url = "/tag/" %}
+{% assign category_prepend_url = "/category/" %}
+
+{% if site.lang == "en" %}
+{% assign tag_prepend_url = tag_prepend_url | prepend: "/en" %}
+{% assign category_prepend_url = category_prepend_url | prepend: "/en" %}
+{% endif %}
+
+{% if page.author %}
+{% assign authors = page.author %}
+{% elsif page.authors %}
+{% assign authors = page.authors %}
+{% endif %}
+
+
+<!-- Post sharing snippet -->
+<hr class="my-4" />
+
+<div class="d-md-flex justify-content-between align-items-center my-2 ">
+
+  <div class="">
+    {% t post.leave_feedback %}
+  </div>
+
+  <div class="">
+    <span class="text-muted me-1">{% t post.share %}</span>
+    <span class="">
+      {% capture title %}{{ page.title }} - {{ site.title }}{% endcapture %}
+      {% assign title = title | uri_escape %}
+      {% assign url = page.url | absolute_url | url_encode %}
+
+      {% for share in site.data.share.platforms %}
+      {% assign link = share.link | replace: 'TITLE', title | replace: 'URL', url %}
+      <a href="{{ link }}" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ share.type }}" target="_blank"
+        rel="noopener" aria-label="{{ share.type }}" class="text-muted footer-link text-decoration-none fs-5">
+        <i class="fa-fw {{ share.icon }}"></i>
+      </a>
+      {% endfor %}
+
+    </span>
+  </div>
+</div>
+
+<div class="d-md-flex justify-content-between align-items-center my-2 ">
+
+  <div class="d-flex flex-wrap gap-1 justify-content-start align-items-center">
+    <i class="fa-regular fa-folder-open"></i>
+    {% for category in page.categories %}
+    <a href="{{ category | slugify | url_encode | prepend: category_prepend_url | append: '/' | site_url }}"
+      class="fw-light fs-7 text-decoration-none archive-link">
+      {{ category }}
+    </a>
+    {% endfor %}
+
+    <i class="fa-solid fa-tags ms-2"></i>
+    {% for tag in page.tags %}
+    <a href="{{ tag | slugify | url_encode | prepend: tag_prepend_url | append: '/' | site_url }}"
+      class="fw-light fs-7 text-decoration-none archive-link">
+      {{ tag }}
+    </a>
+    {% endfor %}
+  </div>
+
+  <div class="">
+
+    <span class="text-muted">
+      {% t post.posted %}: 
+      {% include date.html %}
+    </span>
+
+    <span class="text-muted">
+      | {% t post.written_by %}:
+      {% if authors %}
+    </span>
+      {% for author in authors %}
+      <a href="{{ site.data.authors[author].url }}" class="text-link-sm">{{ site.data.authors[author].name }}</a>
+      {% endfor %}
+      {% else %}
+      <a href="{{ site.data.authors['lucasgeron'].url }}" class="text-link-sm">{{ site.data.authors['lucasgeron'].name
+        }}</a>
+      {% endif %}
+
+  </div>
+</div>
+
+<hr class="my-4" />

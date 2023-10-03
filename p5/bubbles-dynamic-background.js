@@ -35,8 +35,8 @@ function keyPressed(){
 }
 
 class Bubble {
+  
   constructor() {
-    
     this.x = random(-width/2,width/2);
     this.y = random(-height / 2, height / 2);
     
@@ -61,8 +61,6 @@ class Bubble {
   moveBubble() {
 
     rotate(frameCount * speed);
-
-
 
     if (this.r > this.size) { 
       this.expand = false;
@@ -123,8 +121,6 @@ function changeBackground() {
 function draw() {
 
   translate(width / 2, height / 2);
-
-
   background(bg);
   
   for(let i = 0;i<circles.length;i++) {

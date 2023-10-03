@@ -1,0 +1,35 @@
+<!-- Navigation buttons at the bottom of the post. -->
+
+<p class="display-8 fw-bold pt-4"> {% t post.relate_posts %}</p>
+
+<nav>
+  <ul class="pagination d-flex justify-content-between mx-0 d-grid text-center" aria-label="Post Navigation">
+    <li class="page-item w-50 d-grid">
+      {% if page.previous.url %}
+      <a href="{{ site.baseurl }}{{ page.previous.url }}" class="page-link py-4" aria-label="{% t post.button.previous %}">
+        <span class="text-muted fs-7">{% t post.button.previous %}</span>
+        <p class="fw-bold fs-5 mt-2 text-center">{{ page.previous.title }}</p>
+      </a>
+      {% else %}
+      <div class="page-link py-4 disabled" aria-label="{% t post.button.previous %}">
+        <span class="text-muted fs-7">{% t post.button.previous %}</span>
+        <p class="fw-bold fs-5 mt-2 text-center">-</p>
+      </div>
+      {% endif %}
+    </li>
+
+    <li class="page-item w-50 d-grid">
+      {% if page.next.url %}
+      <a href="{{ site.baseurl }}{{page.next.url}}" class="page-link py-4" aria-label="{% t post.button.next %}">
+        <span class="text-muted fs-7">{% t post.button.next %}</span>
+        <p class="fw-bold fs-5 mt-2 text-center">{{ page.next.title }}</p>
+      </a>
+      {% else %}
+      <div class="page-link py-4 disabled" aria-label="{% t post.button.next %}">
+        <span class="text-muted fs-7">{% t post.button.next %}</span>
+        <p class="fw-bold fs-5 mt-2 text-center">-</p>
+      </div>
+      {% endif %}
+    </li>
+  </ul>
+</nav>

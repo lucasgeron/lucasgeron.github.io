@@ -1,0 +1,15 @@
+{% if post == nil %}
+{% assign post = page %}
+{% endif %}
+
+{% assign m = post.date | date: "%-m" | minus: 1 %}
+{% assign day = post.date | date: "%d" %}
+{% assign year = post.date | date: "%Y" %}
+
+{% if site.lang == 'en' %}
+{% assign months = "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec" | split: "|" %}
+{{ months[m] }} {{ day }}, {{ year }}
+{% else %}
+{% assign months = "Jan|Fev|Mar|Abr|Mai|Jun|Jul|Ago|Set|Out|Nov|Dez" | split: "|" %}
+{{ day }} de {{ months[m] }}, {{ year }}
+{% endif %}
