@@ -1,0 +1,59 @@
+
+
+@mixin prompt($type, $fa-content, $fa-style: 'solid') {
+
+  --prompt-text-color: rgb(46, 46, 46, 0.77);
+  --prompt-tip-bg: rgb(123, 247, 144, 0.2);
+  --prompt-tip-icon-color: #03b303;
+  --prompt-info-bg: #e1f5fe;
+  --prompt-info-icon-color: #0070cb;
+  --prompt-warning-bg: rgb(255, 243, 205);
+  --prompt-warning-icon-color: #ef9c03;
+  --prompt-danger-bg: rgb(248, 215, 218, 0.56);
+  --prompt-danger-icon-color: #df3c30;
+
+  &.prompt-#{$type} {
+    background-color: var(--prompt-#{$type}-bg);
+
+    &::before {
+      content: $fa-content;
+      color: var(--prompt-#{$type}-icon-color);
+      font: var(--fa-font-#{$fa-style});
+    }
+  }
+}
+
+blockquote {
+  border-left: 5px solid var(--blockquote-border-color);
+  padding-left: 1rem;
+  color: var(--blockquote-text-color);
+
+  &[class^='prompt-'] {
+    border-left: 0;
+    position: relative;
+    padding: 1rem 1rem 1rem 3rem;
+    color: var(--prompt-text-color);
+
+    // @extend %rounded;
+    border-radius: var(--bs-border-radius);
+
+    &::before {
+      text-align: center;
+      width: 3rem;
+      position: absolute;
+      left: 0.25rem;
+      margin-top: 0.4rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    > p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include prompt('tip', '\f0eb', 'regular');
+  @include prompt('info', '\f06a');
+  @include prompt('warning', '\f06a');
+  @include prompt('danger', '\f071');
+}

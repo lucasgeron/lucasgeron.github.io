@@ -13,6 +13,13 @@ tags:
 ---
 
 
+  ```ruby
+  def foo
+    puts 'foo'
+  end
+  ```
+  {: file='file.rb' .nolineno}
+
 # Startup BIOLAB
 
 
