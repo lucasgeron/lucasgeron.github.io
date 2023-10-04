@@ -18,9 +18,9 @@ tags:
 
 # Rails Infinite Scroll
 
-<div class="w-full img-fluid rounded-3 mb-4 text-center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b7j8jEAd2sc?si=zxuGFeGd-j7alaJz&controls=0" title="YouTube video player" frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+
+
+{% include youtube.html id="b7j8jEAd2sc" %}
 
 This time, let's get straight to the point, without beating around the bush. Let's create a blog with infinite scrolling, without using javascript. For this, we will only use [Turbo](https://turbo.hotwire.dev/) and some gems like [Pagy](https://ddnexus.github.io/pagy/), [ActionText](https:/ /github.com/rails/rails/tree/main/actiontext) and [Active Record Import](https://github.com/zdennis/activerecord-import).
 
@@ -368,9 +368,7 @@ Okay, now that we understand what's going on, let's create more articles and get
 
 Change the number of articles you want to generate - I recommend 50 - in `db/seeds.rb` and run `rails db:reset`, then remove `sleep 1` from `index` and `list` test again.
 
-<div class="w-full img-fluid rounded-3 mb-4 text-center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b7j8jEAd2sc?si=zxuGFeGd-j7alaJz&controls=0" title="YouTube video player" frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+{% include youtube.html id="b7j8jEAd2sc" %}
 
 Now you can see infinite scroll working as expected, and best of all, without writing a line of javascript.
 
@@ -380,9 +378,9 @@ If you've gotten here, you might still be confused about Turbo, since we're not 
 
 Open the browser console and navigate through your application to monitor the requests being made. Furthermore, this implementation guarantees that `Turbo.visit()` is executed as expected, this means that after accessing an article and then clicking the back button on your browser, the articles that have already been loaded will continue on the screen, and the `page` attribute will be retained, allowing you to continue scrolling where you left off.
 
-<div class="w-full img-fluid rounded-3 mb-4 text-center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d5aT4VQz368?si=Sjf7dbg9gAuISeJx&controls=0" title="YouTube video player" frameborder="0" allow ="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+
+{% include youtube.html id="d5aT4VQz368" %}
+
 
 **Tip**: **The other implementations you find out there may not have this behavior implemented, some of them only work if you go back to the list from the beginning - trust me, I tested it!**
 

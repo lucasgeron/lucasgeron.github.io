@@ -18,9 +18,7 @@ tags:
 
 # Rails Inifite Scroll
 
-<div class="w-full img-fluid rounded-3 mb-4 text-center">
- <iframe width="560" height="315" src="https://www.youtube.com/embed/b7j8jEAd2sc?si=zxuGFeGd-j7alaJz&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+{% include youtube.html id="b7j8jEAd2sc" %}
 
 Desta vez, vamos direto ao assunto, sem enrolação. Vamos criar um blog com rolagem infinita, sem utilizar javascript. Para isso, vamos utilizar apenas [Turbo](https://turbo.hotwire.dev/) e algumas gems como [Pagy](https://ddnexus.github.io/pagy/), [ActionText](https://github.com/rails/rails/tree/main/actiontext) e [Active Record Import](https://github.com/zdennis/activerecord-import).
 
@@ -368,9 +366,7 @@ Certo, agora que entendemos o que esta ocorrendo, vamos criar mais artigos e rol
 
 Altere o número de artigos que deseja gerar - recomendo 50 - em `db/seeds.rb` e execute `rails db:reset`, em seguida, remova `sleep 1` de `index` e `list` teste novamente.
 
-<div class="w-full img-fluid rounded-3 mb-4 text-center">
- <iframe width="560" height="315" src="https://www.youtube.com/embed/b7j8jEAd2sc?si=zxuGFeGd-j7alaJz&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+{% include youtube.html id="b7j8jEAd2sc" %}
 
 Agora é possível ver o scroll infinito funcionando como esperado, e o melhor de tudo, sem escrever uma linha de javascript.
 
@@ -380,9 +376,10 @@ Se você chegou aqui, talvez ainda esteja confuso em relação ao Turbo, já que
 
 Abra o console do navegador e navegue pela sua aplicação para acompanhar as requisições que estão sendo feitas. Além disto, esta implementação garante que `Turbo.visit()` seja executado conforme o esperado, isto significa que após acessar um artigo em seguida clicar no botão voltar do seu navegador, os artigos que já foram carregados, continuarão na tela, e o atributo `page` será mantido, permitindo que voce continue a rolar a página de onde parou. 
 
-<div class="w-full img-fluid rounded-3 mb-4 text-center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d5aT4VQz368?si=Sjf7dbg9gAuISeJx&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+
+{% include youtube.html id="d5aT4VQz368" %}
+
+
 
 **Dica**: **As outras implementações que voce encontra por ai, talvez não tenham este comportamento implementado, algumas delas, só funcionam se você voltar a listagem desde o começo - vai por mim, eu testei!**
 

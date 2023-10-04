@@ -16,8 +16,6 @@ exclude_from_localizations: ["javascript", "images", "css"]
 email: lucasf.geron@gmail.com
 description:  Bem-vindo ao meu site, onde você encontrará informações sobre meus projetos e habilidades em desenvolvimento web. Explore meus últimos projetos e entre em contato para saber mais.
 
-highlighter: rouge
-
 
 jekyll-archives:
   enabled: 
@@ -31,8 +29,7 @@ jekyll-archives:
     tag: '/tag/:name/'
     category: '/category/:name/'
   layout: archive
-  # layouts:
-  #   year: year-archive
-  #   month: month-archive
-  #   category: category-archive
-  #   tag: tag-archive
+
+
+kramdown:
+  footnote_backlink: 🔗
