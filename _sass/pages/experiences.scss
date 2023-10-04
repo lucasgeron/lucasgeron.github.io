@@ -1,0 +1,38 @@
+.accordion-header button {
+  background-color: var(--bs-tertiary-bg) !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--bs-tertiary-bg) !important;
+}
+
+.accordion-body,
+.accordion-button {
+  padding: 0.5rem 0 !important;
+  background-color: var(--bs-tertiary-bg) !important;
+}
+
+.card-img-skill {
+  height: 10rem;
+  object-fit: contain;
+  border-bottom: 0.25rem solid var(--bs-dark);
+  padding: 2rem 2rem;
+}
+
+#experiencia_profissional::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1000px;
+  right: 0;
+  bottom: -2000px;
+  z-index: -1;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("https://static.vecteezy.com/system/resources/previews/000/952/756/original/gray-modern-lines-pattern-vector.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  opacity: 0.1;
+}

@@ -90,6 +90,10 @@ post:
   button:
     next: Newer
     previous: Older
-
+    copy_code:
+      succeed: Copied!
+    share_link:
+      title: Copy link
+      succeed: Link copied successfully!
 
 

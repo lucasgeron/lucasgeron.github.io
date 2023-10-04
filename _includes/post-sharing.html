@@ -36,6 +36,17 @@
         <i class="fa-fw {{ share.icon }}"></i>
       </a>
       {% endfor %}
+      <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="text-muted footer-link text-decoration-none fs-5 border-0 bg-transparent px-1"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="{% t post.button.share_link.title %}"
+      data-title-succeed="{% t post.button.share_link.succeed %}"
+    >
+      <i class="fa-solid fa-link fa-sm"></i>
+    </button>
 
     </span>
   </div>

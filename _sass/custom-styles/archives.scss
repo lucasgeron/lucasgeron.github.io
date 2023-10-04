@@ -1,0 +1,28 @@
+.archive-container {
+  border-radius: var(--bs-border-radius);
+  border: 1px solid var(--bs-border-color);
+}
+
+.archive-link{
+  background-color: var(--bs-secondary-bg);
+  color: var(--bs-dark);
+  border-radius: var(--bs-border-radius);
+  padding: 0.25rem 0.5rem;
+}
+
+.archive-link:hover{
+  color: var(--bs-primary);
+  background-color: var(--bs-dark-bg-subtle);
+}
+
+.archive-link-active{
+  color: white;
+  background-color: var(--bs-primary) !important;
+  border-radius: var(--bs-border-radius);
+  padding: 0.25rem 0.5rem;
+}
+
+.archive-link-active:hover {
+  color: white;
+  background-color: var(--bs-link-hover-color);
+}

@@ -1,0 +1,12 @@
+// STYLES FOR FOOTER
+.footer-link:hover {
+  color: var(--bs-link-color) !important;
+}
+
+.footer-link i {
+  transition-duration: 0.3s;
+}
+
+.footer-link:hover i {
+  transform: scale(1.5);
+}

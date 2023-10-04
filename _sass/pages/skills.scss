@@ -1,0 +1,108 @@
+
+.main-tech-img img {
+  height: 10vh !important;
+  width: 70%;
+  object-fit: scale-down;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+}
+
+.card:hover .main-tech-img img {
+  transform: scale(1.1);
+}
+
+.card-soft-skill {
+  position: relative;
+}
+
+.card-soft-skill .card-body {
+  height: 50%;
+  color: inherit;
+  transition: transform 0.3s, color 0.3s;
+  transform: translate(0%, 50%);
+}
+
+.card-soft-skill:hover .card-body {
+  transform: translate(0%, 0%);
+  border-bottom: var(--bs-primary) 1px solid;
+  color: var(--bs-primary)
+}
+
+
+.card-soft-skill .card-footer {
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.card-soft-skill .card-footer {
+  opacity: 0;
+  transform: translate(0%, 10%);
+  border-top: var(--vs-primary) 1px solid;
+}
+
+.card-soft-skill:hover .card-footer {
+  opacity: 1;
+  transform: translate(0%, 0%);
+}
+
+.progress {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card-skill:hover .progress {
+  opacity: 1;
+}
+
+.progress-bar {
+  transition: width 0.1s;
+  width: 0%;
+}
+
+.card-skill:hover .progress-bar-0 {
+  width: 0%;
+}
+
+.card-skill:hover .progress-bar-10 {
+  width: 10%;
+}
+
+.card-skill:hover .progress-bar-20 {
+  width: 20%;
+}
+
+.card-skill:hover .progress-bar-30 {
+  width: 30%;
+}
+
+.card-skill:hover .progress-bar-40 {
+  width: 40%;
+}
+
+.card-skill:hover .progress-bar-50 {
+  width: 50%;
+}
+
+.card-skill:hover .progress-bar-60 {
+  width: 60%;
+}
+
+.card-skill:hover .progress-bar-70 {
+  width: 70%;
+}
+
+.card-skill:hover .progress-bar-80 {
+  width: 80%;
+}
+
+.card-skill:hover .progress-bar-90 {
+  width: 90%;
+}
+
+.card-skill:hover .progress-bar-100 {
+  width: 100%;
+}
+
+.extra-training-img {
+  height: 65px;
+}
+

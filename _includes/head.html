@@ -9,7 +9,6 @@
   <!-- Stylesheets import -->
   <!-- Custom CSS -->
   <link rel="stylesheet" href=" {{ '/assets/css/main.css' | prepend: site.baseurl_root }}">
-  <link rel="stylesheet" href=" {{ '/assets/css/monokai.css' | prepend: site.baseurl_root }}">
   <link rel="stylesheet" id="custom-dark-mode-link" href="">
   <!-- Bootstrap 5.3 -->
   <link rel="stylesheet" href=" {{ '/assets/css/bootstrap.min.css' | prepend: site.baseurl_root }}">
@@ -22,7 +21,9 @@
   <link rel="stylesheet" href=" {{ '/assets/fontawesome/css/solid.min.css' | prepend: site.baseurl_root }}">
 
   <!-- TOC -->
+  {% if page.toc %}
   <link rel="stylesheet" href=" {{ '/assets/css/tocbot.css' | prepend: site.baseurl_root }}">
+  {% endif %}
 
   {%- feed_meta -%}
   {%- include google-analytics.html -%}
@@ -32,6 +33,8 @@
   <script src="{{ '/assets/js/jquery-3.7.1.min.js' | prepend: site.baseurl_root }}"></script>
   <!-- Color Mode Toggler -->
   <script src="{{ "/assets/js/color-mode-toggler.js" | relative_url }}"></script>
+
+  
   
   
 </head>

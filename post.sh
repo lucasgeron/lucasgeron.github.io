@@ -58,14 +58,23 @@ tags:
 # $TITLE
 $SHORT_DESCRIPTION
 
-<div>
-  <img src="" alt="" class="">
-</div>
 
+  <!-- IMG -->
+  ![](){: }
 
+  <!-- VÍDEO -->
+  {% include youtube.html id='' %}
 
+  <!-- FOOTNOTE -->
+  This is a Footnote[^1]
 
+  [^1]: This is a Footnote.
+
+  
+  <!-- GITHUB REPO -->
   {%- include github.markdown -%}
+
+
 
 EOL
 

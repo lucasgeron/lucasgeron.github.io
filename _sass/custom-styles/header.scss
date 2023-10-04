@@ -1,0 +1,28 @@
+
+// CUSTOM-STYLE.SCSS
+
+//  STYLES FOR HEADER 
+.navbar {
+  height: 4rem;
+}
+
+.mt-navbar {
+  margin-top: 4rem;
+}
+
+.nav-link-active {
+  color: var(--bs-primary) !important;
+  font-weight: 500 !important;
+}
+
+.nav-link:hover {
+  color: var(--bs-link-color) !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 1rem !important;
+}

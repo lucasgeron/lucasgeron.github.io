@@ -93,3 +93,8 @@ post:
   button:
     next: Próximo
     previous: Anterior
+    copy_code:
+      succeed: Copiado!
+    share_link:
+      title: Copie o link
+      succeed: Link copiado com sucesso!

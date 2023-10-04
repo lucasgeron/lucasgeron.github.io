@@ -1,0 +1,55 @@
+
+.text-link {
+  position: relative;
+  transition-duration: 0.3s;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  color: var(--bs-primary) !important;
+}
+
+.text-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0.5rem;
+  bottom: -0.25rem;
+  left: 0;
+  background-color: var(--bs-primary);
+  transition: width 0.3s;
+}
+.text-link:hover::after {
+  width: 100%;
+}
+
+a.footnote {
+  margin-left: 0.1rem;
+}
+
+.text-link-sm, .footnote, .reversefootnote {
+  position: relative;
+  transition-duration: 0.3s;
+  color: var(--bs-dark);
+  text-decoration: none;
+}
+
+.text-link-sm:hover, .footnote:hover {
+  color: var(--bs-primary) !important;
+}
+
+.text-link-sm::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0.25rem;
+  bottom: -0.25rem;
+  left: 0;
+  background-color: var(--bs-primary);
+  transition: width 0.3s;
+
+}
+
+.text-link-sm:hover::after {
+  width: 100%;
+}
