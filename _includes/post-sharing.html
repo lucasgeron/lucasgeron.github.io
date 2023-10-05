@@ -22,9 +22,9 @@
     {% t post.leave_feedback %}
   </div>
 
-  <div class="">
-    <span class="text-muted me-1">{% t post.share %}</span>
-    <span class="">
+  <div class="flex-grow-1">
+    <div class="d-md-flex justify-content-end flex-nowrap align-items-center">
+      <span class="text-muted me-1">{% t post.share %}</span>
       {% capture title %}{{ page.title }} - {{ site.title }}{% endcapture %}
       {% assign title = title | uri_escape %}
       {% assign url = page.url | absolute_url | url_encode %}
@@ -36,19 +36,16 @@
         <i class="fa-fw {{ share.icon }}"></i>
       </a>
       {% endfor %}
-      <button
-      id="copy-link"
-      aria-label="Copy link"
-      class="text-muted footer-link text-decoration-none fs-5 border-0 bg-transparent px-1"
-      data-bs-toggle="tooltip"
-      data-bs-placement="top"
-      title="{% t post.button.share_link.title %}"
-      data-title-succeed="{% t post.button.share_link.succeed %}"
-    >
-      <i class="fa-solid fa-link fa-sm"></i>
-    </button>
-
-    </span>
+      <button id="copy-link" aria-label="Copy link"
+        class="text-muted footer-link text-decoration-none fs-5 border-0 bg-transparent px-1" data-bs-toggle="tooltip"
+        data-bs-placement="top" title="{% t post.button.share_link.title %}"
+        data-title-succeed="{% t post.button.share_link.succeed %}">
+        <i class="fa-solid fa-link fa-sm"></i>
+      </button>
+        
+      {% include hitcounter.html %}
+    
+    </div>
   </div>
 </div>
 
@@ -75,7 +72,7 @@
   <div class="">
 
     <span class="text-muted">
-      {% t post.posted %}: 
+      {% t post.posted %}:
       {% include date.html %}
     </span>
 
@@ -83,13 +80,13 @@
       | {% t post.written_by %}:
       {% if authors %}
     </span>
-      {% for author in authors %}
-      <a href="{{ site.data.authors[author].url }}" class="text-link-sm">{{ site.data.authors[author].name }}</a>
-      {% endfor %}
-      {% else %}
-      <a href="{{ site.data.authors['lucasgeron'].url }}" class="text-link-sm">{{ site.data.authors['lucasgeron'].name
-        }}</a>
-      {% endif %}
+    {% for author in authors %}
+    <a href="{{ site.data.authors[author].url }}" class="text-link-sm">{{ site.data.authors[author].name }}</a>
+    {% endfor %}
+    {% else %}
+    <a href="{{ site.data.authors['lucasgeron'].url }}" class="text-link-sm">{{ site.data.authors['lucasgeron'].name
+      }}</a>
+    {% endif %}
 
   </div>
 </div>

@@ -84,6 +84,7 @@ post:
   github_repo: Repósitório no Github
   leave_feedback: <b> Gostou deste Projeto? </b> <em> Deixe seu Feedback </em> 
   words: palavras
+  pageview_measure: Views
   read_time:
     unit: min
     plural: s

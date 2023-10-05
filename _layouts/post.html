@@ -7,6 +7,7 @@ layout: default
   <article id="article"
     class="col-12 {% if page.toc %} col-lg-9 col-xl-10 {% else %} col-md-8 mx-auto {% endif %} py-4 ">
 
+ 
     {% include refactor-content.html content=content %}
 
     {% capture github_repo %}
@@ -17,10 +18,11 @@ layout: default
     {%- include post-sharing.html -%}
 
     <!-- GISCUS.APP  # COMENTS ON DISCUSSIONS AT GITHUB -->
-    {%- include giscus.html -%}
+    {% unless page.giscus == false %}
+      {%- include giscus.html -%}
+    {% endunless %}
 
     {%- include post-nav.html -%}
-
 
   </article>
 
@@ -31,4 +33,6 @@ layout: default
   {% endif %}
 
 </div>
+
+
 

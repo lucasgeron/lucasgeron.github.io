@@ -1,0 +1,8 @@
+
+{% assign file = include.file | default: page.name %}
+{% assign filename = file | split: '.' %}
+{% assign length = filename[0] | size %}
+{% assign name = filename[0] | slice: 11, length %}
+{% assign url = name | prepend: 'https://hits.dwyl.com/lucasgeron/' %}
+
+<img alt="Dynamic Hitcount Badge" src="https://img.shields.io/badge/dynamic/json?url={{ url | url_encode }}&query=%24.message&style=for-the-badge&label={% t post.pageview_measure %}&color=%230d6efd" class="img-badge ms-1">

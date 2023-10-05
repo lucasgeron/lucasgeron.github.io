@@ -118,6 +118,13 @@ article img {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+img.img-badge {
+  border: none !important;
+  box-shadow: none;
+  width: auto;
+  margin: 0;
+}
+
 .behance {
   margin: 0 !important;
   border: none !important;
