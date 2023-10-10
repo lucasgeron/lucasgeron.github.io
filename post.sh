@@ -61,7 +61,6 @@ tags:
 $SHORT_DESCRIPTION
 
   
-  <!-- GITHUB REPO -->
-  {%- include github.markdown -%}
+
 EOL
 
