@@ -220,8 +220,8 @@ Another point worth highlighting is that `broadscast` also follows the Rails con
 {: file='app/views/visitors/import.html.erb'}
 
 So you can test this in practice, create your .CSV file or download the example files:
-- [**data_set_01.csv**](){: .text-link-sm} : Contains 30 valid records
-- [**data_set_02.csv**](){: .text-link-sm} : Contains 7 valid and 3 invalid records.
+- [**data_set_01.csv**](https://raw.githubusercontent.com/lucasgeron/rails-import-by-csv/main/data_set_01.csv){: .text-link-sm} : Contains 30 valid records
+- [**data_set_02.csv**](https://raw.githubusercontent.com/lucasgeron/rails-import-by-csv/main/data_set_02.csv){: .text-link-sm} : Contains 7 valid and 3 invalid records.
 
 Now, try to import **data_set_01.csv** and you should see the following result.
 
