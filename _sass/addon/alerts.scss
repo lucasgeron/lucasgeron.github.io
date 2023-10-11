@@ -34,7 +34,6 @@ blockquote {
     padding: 1rem 1rem 1rem 3rem;
     color: var(--prompt-text-color);
 
-    // @extend %rounded;
     border-radius: var(--bs-border-radius);
 
     &::before {
