@@ -300,7 +300,7 @@ Outro ponto que vale destacar, é que `broadscast` também segue a convensão de
 Para que você possa testar isso na prática, elabore seu arquivo .CSV ou baixe os arquivos de exemplo: 
 - [**data_set_01.csv**](https://raw.githubusercontent.com/lucasgeron/rails-import-by-csv/main/data_set_01.csv){: .text-link-sm} : Contém 30 registros válidos
 - [**data_set_02.csv**](https://raw.githubusercontent.com/lucasgeron/rails-import-by-csv/main/data_set_02.csv){: .text-link-sm} : Contém 7 registros válidos e 3 inválidos.
-- [**data_set_03.csv**](https://raw.githubusercontent.com/lucasgeron/rails-import-by-csv/main/data_set_03.csv){: .text-link-sm} : Contém 250 registros válidos e 3 inválidos.
+- [**data_set_03.csv**](https://raw.githubusercontent.com/lucasgeron/rails-import-by-csv/main/data_set_03.csv){: .text-link-sm} : Contém 250 registros válidos
 
 Agora, tente importar o **data_set_01.csv** e você deverá ver o seguinte resultado.
 
