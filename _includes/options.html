@@ -1,0 +1,37 @@
+<!-- HTML OPTIONS -->
+<div class="flex justify-end gap-2 -my-4">
+  <!-- REGION / LANGUAGE -->
+  <div class="flex">
+    <button type="button" id="en" data-active="true" onclick="setLanguage('en')"
+      class="px-4 py-2 text-sm font-medium text-slate-300 dark:text-slate-600 bg-white dark:bg-slate-800 border-slate-300 dark:border-slate-700 data-[active=true]:text-slate-850 dark:data-[active=true]:text-slate-200 rounded-l-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-all border-l border-y">
+      EN
+    </button>
+    <button type="button" id="pt" data-active="false" onclick="setLanguage('pt')"
+      class="px-4 py-2 text-sm font-medium text-slate-300 dark:text-slate-600 bg-white dark:bg-slate-800 border-slate-300 dark:border-slate-700 data-[active=true]:text-slate-850 dark:data-[active=true]:text-slate-200 rounded-r-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition-all border">
+      BR
+    </button>
+  </div>
+
+  <!-- DARK MODE TOGGLE -->
+  <button type="button" onclick="toggleDarkMode()"
+    class="px-2 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-300 dark:border-slate-700 rounded-lg hover:bg-slate-200 transition-all dark:bg-slate-800 dark:text-slate-200 dark:border-slate-600 dark:hover:bg-slate-700">
+    <!-- Moon Icon (Visible in Light Mode) -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 block dark:hidden" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+    </svg>
+    <!-- Sun Icon (Visible in Dark Mode) -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden dark:block" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2" />
+      <path d="M12 20v2" />
+      <path d="m4.93 4.93 1.41 1.41" />
+      <path d="m17.66 17.66 1.41 1.41" />
+      <path d="M2 12h2" />
+      <path d="M20 12h2" />
+      <path d="m6.34 17.66-1.41 1.41" />
+      <path d="m19.07 4.93-1.41 1.41" />
+    </svg>
+  </button>
+</div>

@@ -5,8 +5,23 @@ module.exports = {
     './_posts/*.md',
     './*.html',
   ],
+  darkMode: 'class',
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        slate: {
+          150: '#f1f5f9',
+          850: '#1e293b',
+        }
+      },
+      backgroundSize: {
+        'size-200': '200% 200%',
+      },
+      backgroundPosition: {
+        'pos-0': '0% 0%',
+        'pos-100': '100% 100%',
+      },
+    }
   },
   variants: {},
   plugins: [],
