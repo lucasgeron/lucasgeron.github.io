@@ -1,9 +1,3 @@
-
-
-// Set current year in footer
-document.getElementById('year-copy').textContent = new Date().getFullYear() + ' Lucas Geron.';
-
-
 function toggleSection(id) {
   const content = document.getElementById(id);
   const icon = document.getElementById('icon-' + id);
