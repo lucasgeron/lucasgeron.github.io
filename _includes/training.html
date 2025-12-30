@@ -1,0 +1,62 @@
+<!-- TRAINING SECTION -->
+<section
+  class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border  border-slate-300 dark:border-slate-700 overflow-hidden mb-6 hover:shadow-md">
+
+  <button onclick="toggleSection('training')"
+    class="w-full flex items-center justify-between p-5 md:bg-gradient-to-r md:from-slate-100 md:to-white md:dark:bg-gradient-to-l md:dark:from-slate-850 md:dark:to-slate-900 cursor-pointer focus:outline-none">
+    <div class="flex items-center gap-3">
+      <div
+        class="  p-2  text-blue-500 bg-white border border-slate-300 dark:border-slate-700 rounded-lg transition-all dark:bg-slate-800 dark:text-blue-500 ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="8" r="6" />
+          <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+        </svg>
+      </div>
+      <h2 class="text-xl font-bold tracking-tight">
+        {% t training.title %}
+      </h2>
+    </div>
+    <div id="icon-training" class="text-slate-400 chevron">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m6 9 6 6 6-6" />
+      </svg>
+    </div>
+  </button>
+
+  <div id="training" class="accordion-content">
+    <div class="p-px bg-gradient-to-r from-blue-500 dark:from-blue-800 to-transparent">
+    </div>
+    <div class="p-5 md:p-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+
+        {% for training in site.data.[site.lang].training %}
+        <div
+          class="gap-3 p-5 rounded-lg transition-all duration-500 bg-gradient-to-l to-slate-150 via-slate-150 from-slate-300 dark:to-slate-850 dark:via-slate-850 dark:from-slate-700 bg-size-200 bg-pos-0 hover:bg-pos-100 dark:border-slate-800 ">
+          <div class="gap-1 flex items-center md:justify-between">
+            <h4 class="font-bold text-sm">
+              {{ training.title }}
+            </h4>
+            {% if training.award %}
+            <div class=" bg-inherit text-yellow-600 rounded flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+              </svg>
+              <p class="text-xs text-blue-500 font-bold">
+                {{ training.award }}
+              </p>
+            </div>
+            {% endif %}
+          </div>
+          <p class="text-sm text-slate-500 mt-0.5">{{ training.institution }} &bull; {{ training.year }}</p>
+          <p class="text-xs text-slate-400 mt-0.5 font-mono"> {{ training.duration }} {% t global.hours %}</p>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,21 +1,8 @@
 ---
 layout: default
-title: "It's alive!"
+title: "Curriculum"
 ---
 
-
-
-
-{%- include options.html -%}
-
-{% assign experiences = 'foo' | prepend: site.lang %}
-
-{% for item in site.data[site.lang].codeminer %}
-<h2>
-  {{ item.title }}
-</h2>
-{% endfor %}
-
-
+{%- include training.html -%}
 
 {%- include footer.html -%}
