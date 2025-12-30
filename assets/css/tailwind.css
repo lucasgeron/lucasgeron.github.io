@@ -4,3 +4,29 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@layer components {
+  .accordion-content {
+    @apply transition-all duration-500 ease-in-out max-h-0 opacity-0 overflow-hidden;
+  }
+
+  .accordion-content.open {
+    @apply max-h-[9999px] opacity-100;
+  }
+
+  .achievement-card {
+    @apply hover:border-blue-500 border border-slate-200 dark:border-slate-700 dark:hover:border-blue-500 bg-white dark:bg-slate-800 dark:text-slate-200 rounded-lg p-3 cursor-pointer transition-all;
+  }
+
+  .achievement-content {
+    @apply transition-all duration-500 ease-out max-h-0 opacity-0 overflow-hidden text-slate-600 dark:text-slate-300 text-xs leading-relaxed;
+  }
+
+  .achievement-content.open {
+    @apply max-h-[9999px] opacity-100 mt-1;
+  }
+
+  .chevron {
+    @apply transition-transform duration-500 ease-in-out;
+  }
+}

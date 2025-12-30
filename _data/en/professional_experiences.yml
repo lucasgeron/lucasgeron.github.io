@@ -1,0 +1,450 @@
+# CODEMINER42
+- 
+  id: code
+  company:
+    name: CodeMiner42
+    website: 
+      url: https://www.codeminer42.com/
+      label: codeminer42.com
+    logo:
+      light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/1807647eed7d566fbdedac0d12375054a32e351e/public/assets/images/code-miner-white.svg
+      dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/1807647eed7d566fbdedac0d12375054a32e351e/public/assets/images/code-miner-black.svg
+  position: Software Engineer
+  main_stack: Ruby on Rails
+  mode: Remote
+  location: 
+    city: São Paulo
+    state: SP
+    country: Brazil
+  start_date: January 2024
+  end_date: Present
+  duration: +2 years
+  details:
+    - type: text
+      content: >
+        I joined CodeMiner42's team through the trainee program (2024). I underwent a three-month
+        training and mentoring process, during which I honed my skills by solving weekly coding 
+        challenges and participating in a series of internal workshops. I was assigned to assist 
+        clients while also contributing to the 
+        <a href='https://blog.codeminer42.com/author/lucas-geron/'
+          class='text-blue-500 hover:underline underline-offset-2 decoration-blue-500' target="_blank"
+          rel="noopener noreferrer">CodeMiner42 blog</a>
+        writing posts that include tutorials, helpful tips, event recaps, and more.
+    - type: highlight
+      content: >
+        In December 2024, I won the internal 
+        <a href='https://blog.codeminer42.com/author/lucas-geron/'
+          class='text-blue-500 hover:underline underline-offset-2 decoration-blue-500' target="_blank"
+          rel="noopener noreferrer">Hackathon CodeMiner</a>
+        where I contributed to the development of a password manager application successfully without
+        leaking any sensitive data, a relevant challenge worth mentioning here.
+  projects:
+    - 
+      id: sentrel
+      product:
+        name: Sentrel
+        website: 
+          url: http://sentrel.com/
+          label: sentrel.com
+        logo: 
+          light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/a0bc1d88105412568c0de6f822c4ff5a1e2d477a/public/assets/images/sentrel-logo.svg
+          dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/a0bc1d88105412568c0de6f822c4ff5a1e2d477a/public/assets/images/sentrel-logo.svg
+      position: Software Engineer
+      main_stack: Ruby on Rails, Python
+      mode: Remote
+      location: 
+        city: New York City
+        state: NY
+        country: USA
+      start_date: September 2025
+      end_date: December 2025
+      duration: 4 months
+      about_the_project: >
+        Sentrel is a solution that integrates AI agents into government organizations. The
+        product focuses on handling inbound phone calls and, through an AI agent, providing
+        support for requested inquiries with access to internal information and the ability to
+        respond appropriately, collect relevant data, create requests, send notifications, and
+        escalate issues to the responsible departments when necessary.
+      about_the_experience: >
+        At Sentrel, I worked on the full-stack engineering and development team, actively
+        participating in decisions about the application's architecture, including technologies,
+        database schema, hosting and monitoring services, as well as coordinating development
+        tasks and demands for the team. The application went from scratch to production
+        deployment in just over a month.
+      main_contributions: 
+        - 
+          title: Real-time dashboard without reload
+          content: > 
+            In addition to the main application layout, I developed the core pages with real-time 
+            updates using Hotwire. The call dashboard and live call transcriptions were updated 
+            without requiring page reloads.
+        - 
+          title: RAG capabilities for the agents
+          content: > 
+            Implemented functionality enabling the agent to consume information using RAG
+            (Retrieval-Augmented Generation). The search flow leveraged keywords to improve
+            retrieval, delivering highly accurate responses.
+        - 
+          title: UI componentization
+          content: > 
+            Using View Components in a Rails monolith, I created a set of reusable
+            components to standardize the interface and accelerate development.
+        - 
+          title: On-demand SMS delivery
+          content: > 
+            Through Twilio integration, implemented the ability to send limited
+            information such as addresses, phone numbers, emails, and links via SMS.
+        - 
+          title: Playground and Sandbox environments
+          content: > 
+            Given that the core of the application operates via phone calls, I developed a
+            playground environment where users could interact with the agent via text or place
+            calls before production. A sandbox environment was also configured with partner
+            service integrations, enabling function calling, knowledge base queries, and the
+            use of custom credentials.
+        - 
+          title: Multi-environment deployment and CI/CD
+          content: > 
+            Designed and implemented CI/CD workflows for GitHub and Heroku, automating
+            deployments. The pipeline included test verification (RSpec), code quality checks
+            (RuboCop), vulnerability scanning (Brakeman and Audit), and coverage reporting
+            (SimpleCov).
+        - 
+          title: Usage reports and metrics
+          content: > 
+            Leveraging application data, I developed metrics visualizations, including
+            heatmaps of calls by hour and day of the week, rankings of the most frequent topics
+            discussed, call volume by department, and resolution rates by AI versus escalations,
+            with multiple filtering options.
+        - 
+          title: Multi-agent configuration
+          content: > 
+            As each client could choose different providers for TTS (Text-to-Speech), LLM
+            (Large Language Model), and STT (Speech-to-Text), and each agent had access to its
+            own toolset, I designed an orchestration approach to manage these configurations
+            reliably and efficiently.
+    - 
+      id: vanta
+      product:
+        name: Vanta
+        website: 
+          url: https://www.vantaesports.com/
+          label: vantaesports.com
+        logo: 
+          light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/02420f8c5e7d3d2f3c0191f6bc9a155807e0ab51/public/assets/images/vanta-logo.svg
+          dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/02420f8c5e7d3d2f3c0191f6bc9a155807e0ab51/public/assets/images/vanta-logo.svg
+      position: Full Stack Developer
+      main_stack: Ruby on Rails, React
+      mode: Remote
+      location: 
+        city: Boston
+        state: MA
+        country: USA
+      start_date: April 2024
+      end_date: August 2024
+      duration: 1 year, 5 months
+      about_the_project: >
+        Vanta is a platform specialized in e-sports coaching for schools that also promotes
+        tournaments across multiple modalities and games within local, state, and national
+        leagues. The application provides a virtual environment that enables simultaneous
+        streaming of players and their gameplays.
+      about_the_experience: >
+        At Vanta I worked primarily as a back-end developer with frequent contributions to the
+        front-end.
+      main_contributions: 
+        - 
+          title: Verizon Innovative Learning Integration
+          content: > 
+            I developed an OAuth-like API to securely link user accounts with VIL Integration
+            with their Vanta Accounts, enabling exclusive access to leagues sponsored by
+            Verizon.
+        - 
+          title: Check-in System
+          content: > 
+            I was responsible for implementing the backend logic for the match check-in process,
+            which included automated reminders and real-time notifications to users. This system
+            significantly reduced the number of forfeits, improving overall engagement and
+            reliability of the platform.
+        - 
+          title: Event Page Redesign
+          content: > 
+            I was responsible for implementing the new event navigation experience based on
+            layouts provided by the design team in Figma. My work focused on translating the
+            visual concepts into a fully responsive and intuitive interface, ensuring
+            consistency across devices.
+        - 
+          title: Marketplace
+          content: > 
+            I built a flexible marketplace module where items and content could be managed via
+            YAML files, allowing for rapid updates without code changes. Products are managed by
+            the marketing team through the admin dashboard, making it easy to launch new offers.
+            The marketplace was integrated with HubSpot for purchase tracking and order
+            management, streamlining the sales process for both users and admins.
+        - 
+          title: Arena Enhancements
+          content: > 
+            I implemented advanced features in the Arena module using Stream.io, such as ‘remote
+            mute’, ‘raise hand’, and individual audio controls. Additionally, I improved the
+            device preview and selection process, making the virtual event experience more
+            interactive and accessible for all participants.
+        - 
+          title: Demo Environment
+          content: > 
+            To support the sales team, I designed and deployed a sandbox environment that
+            allowed for safe demonstrations of the platform. This included automated data resets
+            and a custom logger to track setup steps, ensuring each demo started from a clean
+            state and reducing manual preparation time.
+        - 
+          title: Google OAuth Integration
+          content: > 
+            I integrated Google authentication using NextAuth.js, supporting multiple user roles
+            and custom onboarding flows. Each user role required different information and
+            registration steps, which made the authentication flow more complex and challenging
+            to implement. By mapping out and handling these scenarios, I ensured a seamless
+            onboarding experience for all user types. This not only simplified the registration
+            process but also led to a measurable increase in new user sign-ups.
+        - 
+          title: Quantum League
+          content: > 
+            I led the redesign and implementation of most pages related to the Quantum League, a
+            sponsored league that required extensive changes to the platform. My work included
+            creating and customizing new components to match the league's branding, as well as
+            adding features such as live broadcasts directly within the platform and custom ad
+            transitions between the lobby and the arena. All these features were fully managed
+            by the marketing team through the admin dashboard, providing greater flexibility and
+            promoting visibility for the sponsored ads.
+        - 
+          title: Queue Matchmaker System
+          content: > 
+            I developed the backend for a real-time matchmaking system using Redis and Pusher,
+            ensuring that matches were balanced and that the system could handle high traffic
+            without performance degradation. This feature was submitted to a stress test, and
+            the results were impressive.
+        - 
+          title: General Improvements
+          content: > 
+            Throughout my time at Vanta, I proactively upgraded core dependencies (Ruby, Rails,
+            ActiveAdmin, and others), introduced impersonation features for support staff,
+            optimized CI/CD pipelines, refactored Next.js codebase from Pages Router to App
+            Router, for better maintainability, enforced code standards with ESLint, and set up
+            preview deployments branches on Vercel for faster feedback during development.
+    - 
+      id: codeminer
+      product:
+        name: Trainee 2024/01
+        website: 
+          url: https://trainee.codeminer42.com/
+          label: treainee.codeminer42.com
+        logo: 
+          light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/1807647eed7d566fbdedac0d12375054a32e351e/public/assets/images/code-miner-white.svg
+          dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/1807647eed7d566fbdedac0d12375054a32e351e/public/assets/images/code-miner-black.svg
+      position: Backend Developer 
+      main_stack: Ruby on Rails
+      mode: Remoto
+      location: 
+        city: São Paulo
+        state: SP
+        country: Brazil
+      start_date: January 2024
+      end_date: March 2024
+      duration: 3 months
+      about_the_project: >
+        The Codeminer42 Trainee Program is a continuous education project lasting 3 months where 
+        we learn to solve real problems, improve research skills, teamwork,
+        communication, and software development accompanied by experienced mentors from the company.
+      about_the_experience: >
+        During the trainee program, I participated in weekly training sessions, programming challenges,
+        and internal workshops that helped me improve my technical skills and teamwork skills in software development.
+# LIMBER
+- 
+  id: limber
+  company:
+    name: Limber Software
+    website: 
+      url: https://limbersoftware.com.br/
+      label: limbersoftware.com.br
+    logo:
+      light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/71532e894c343c39c9c107b93500100796904709/public/assets/images/limber-logo-white.svg
+      dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/971112700c7be67d0a19c00c20fab226d9de2f3f/public/assets/images/limber-logo.svg
+  position: Backend Developer
+  main_stack: Ruby on Rails
+  mode: On Site
+  location: 
+    city: Pato Branco
+    state: PR
+    country: Brazil
+  start_date: September 2023
+  end_date: December 2023
+  duration: 4 months
+  details:
+    - type: text
+      content: >
+        Limber Software was a gateway to my professional software development experience, where I learned
+        to work in a team, to handle deadlines and demands in a manageable way, managing and estimating
+        deadlines for the delivery of my tasks. I also learned to open and review PRs taking into account
+        the project and the maintainability of the code, and how to use Git resources in collaborative
+        projects.
+    - type: text
+      content: >
+        During my experience at Limber Software, I explored the project to the fullest, learning a lot
+        about the standards and best practices of a mature codebase, as well as improving my skills in
+        Ruby on Rails and other complementary technologies. I worked on various features, bug fixes and
+        performance improvements, always striving to deliver high-quality code and contribute to the
+        success of the product.
+  projects:
+    - 
+      id: wayv
+      product:
+        name: WayV
+        website: 
+          url: https://way-v.com/
+          label: way-v.com
+        logo: 
+          light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/refs/heads/main/public/assets/images/wayv-logo-white.png
+          dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/refs/heads/main/public/assets/images/wayv-logo-black.png
+      position: Backend Developer
+      main_stack: Ruby on Rails
+      mode: Remote
+      location: 
+        city: Pato Branco
+        state: PR
+        country: Brazil
+      start_date: September 2023
+      end_date: December 2023
+      duration: 4 months
+      about_the_project: >
+        WayV is an enterprise-level and industrial form management platform.
+        The application allows the creation and distribution of customized forms, with various
+        field types, conditional logic, and response validation. Forms can be
+        answered in stages, publicly or privately, and responses are stored in a non-relational
+        way, allowing flexibility in the structure of the collected data.
+      about_the_experience: >
+        I contributed to the platform's development by implementing improvements to the form
+        questions' settings, adding conditional validation rules as well as validation of the
+        responses. Throughout the work period, I prepared a report with 28 possible
+        improvements, presenting the problem to be solved, the solution that should be applied,
+        and the benefits of each for the repository/product.
+
+# FORMAgestor
+- 
+  id: forma
+  company:
+    name: Self-Employed
+    logo:
+      light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/1807647eed7d566fbdedac0d12375054a32e351e/public/assets/images/forma-gestor-logo-white.svg
+      dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/99d7d3a4529b22378d1cadaa378c733c9f735159/public/assets/images/forma-gestor-logo-dark.svg
+  position: Full Stack Developer
+  main_stack: Ruby on Rails
+  mode: On Site
+  location: 
+    city: Guarapuava
+    state: PR
+    country: Brazil
+  start_date: November 2022
+  end_date: September 2023
+  duration: 11 months
+  details:
+    - type: highlight
+      content: >
+        After 7 years working as a manager at a graduation company, I decided to change careers and
+        pursue my passion for software development. Since then, I have been working as a freelance
+        backend developer, primarily focusing on projects with Ruby on Rails.
+    - type: text
+      content: >
+        I completed my degree and turned my final project into a product. I ventured into the world of
+        start-ups in search of practical experience and learning, where I was able to enhance my
+        technical and business skills.
+  projects:
+    - 
+      id: biolab
+      product:
+        name: BioLab
+        website: 
+          url: https://drive.google.com/file/d/1k20pk-g6oRyebVVCoiO5WlwstNQOaiUA/view
+          label: biolab.pdf
+        logo: 
+          light: TODO
+          dark: TODO
+      position: Software Engineer
+      main_stack: Ruby on Rails, React
+      mode: On Site
+      location: 
+        city: Pato Branco
+        state: PR
+        country: Brazil
+      start_date: September 2023
+      end_date: December 2023
+      duration: 4 months
+      about_the_project: >
+        BIOLAB was a start-up conceived to offer a training platform and simulated training for
+        biomedical professionals. The platform aimed to provide a broad collection of clinical
+        cases and medical reports, as well as the corresponding microscopic samples, allowing
+        professionals to improve their diagnostic and laboratory analysis skills in a virtual
+        environment.
+      about_the_experience: >
+        I prepared the documentation for an application that will be developed, with artifacts
+        such as: database schema, user interface (UI/UX) prototypes, requirements gathering, and
+        product roadmap. I also prepared the material used to present the project in investment
+        rounds and the plan to enter and scale product sales to the target audience.
+    - 
+      id: formagestor
+      product:
+        name: FORMAgestor
+        logo: 
+          light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/ac94254f2b3c79ddfd3cc7cff4ba99c5b0bb19aa/public/assets/images/forma-gestor-text-white.svg
+          dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/ac94254f2b3c79ddfd3cc7cff4ba99c5b0bb19aa/public/assets/images/forma-gestor-text-black.svg
+      position: Full Stack Developer
+      main_stack: Ruby on Rails
+      mode: On Site
+      location: 
+        city: Pato Branco
+        state: PR
+        country: Brazil
+      start_date: April 2023
+      end_date: December 2023
+      duration: 9 months
+      about_the_project: >
+        FORMAgestor is a web application developed to be used by the commercial sector of
+        graduation companies, proposing significant improvements in the way of managing their
+        negotiations through the proper registration of information in the system. By
+        registering both successful and unsuccessful negotiations, the application enables
+        the extraction of valuable market statistics and insights about the graduation market.
+      about_the_experience: >
+        I implemented significant improvements to the application described below (Graduation
+        Project), making it fully responsive, optimizing database queries, tests, validations,
+        and resources with hotwire. I made the application scalable and implemented an
+        administrative dashboard for customer and license control, enabling shared use of the
+        platform for customers who operate as franchises. I also developed some curricular 
+        enrichment projects using various technologies such as landing pages, blog with image gallery,
+        task list, record management through APIs, among others.
+    - 
+      id: utfpr
+      product:
+        name: Graduation Project
+        website: 
+          url: https://www.utfpr.edu.br/campus/guarapuava
+          label: utfpr.edu.br
+        logo: 
+          light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/refs/heads/main/public/assets/images/utfpr-white.png
+          dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/refs/heads/main/public/assets/images/utfpr-black.png
+      position: Full Stack Developer
+      main_stack: Ruby on Rails
+      mode: On Site
+      location: 
+        city: Guarapuava
+        state: PR
+        country: Brazil
+      start_date: November 2022
+      end_date: June 2023
+      duration: 8 months
+      about_the_project: >
+        Based on my experience in the graduation market, where I worked for 7 years as a
+        manager of a graduation company, I developed the project that was carried out as a Final
+        Course Project at UTFPR, developing an application capable of managing negotiations and
+        mapping classes for graduation companies. Given the market potential, this project became the
+        FORMAgestor product.
+      about_the_experience: >
+        I developed a Ruby on Rails application, from problem conception to production launch.
+        The application has Docker support, AWS S3 integration, and uses the main Ruby Gems,
+        and was hosted on Heroku. The application has test coverage and CI/CD configuration.
+

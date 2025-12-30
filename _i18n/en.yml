@@ -5,6 +5,12 @@ profile:
     important projects, whether as a leader or as an active member of the team, always working with clear
     goals. Good communication and respect are parts of my work routine.
 
+professional_experience:
+  title: 'Professional Experience'
+  about_the_project: 'About the Project'
+  about_the_experience: 'About the Experience'
+  main_contributions: 'Main Contributions'
+
 academic_background:
   title: 'Academic Background'
   english_proficiency: 'English Proficiency'
