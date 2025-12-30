@@ -1,44 +1,26 @@
-url: "https://lucasgeron.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Lucas Geron" # the name of your site, e.g. ACME Corp.
+title: "Jekyll + Tailwind" # the name of your site, e.g. ACME Corp.
 
 plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-multiple-languages-plugin
-  - jekyll-archives
-  - jekyll-seo-tag
+  - jekyll-postcss
 
-languages: ["pt-br", "en"]
+sass:
+  sourcemap: never
 
-exclude_from_localizations: ["javascript", "images", "css"]
+postcss:
+  cache: false
 
-email: lucasf.geron@gmail.com
-description:  Bem-vindo ao meu site, onde você encontrará informações sobre meus projetos e habilidades em desenvolvimento web. Explore meus últimos projetos e entre em contato para saber mais.
+exclude:
+  - .gitignore
+  - bin
+  - node_modules
+  - package-lock.json
+  - postcss.config.js
+  - README.md
+  # - assets/css/tailwind.scss
 
-
-jekyll-archives:
-  enabled: 
-    - year
-    - month
-    - tags
-    - categories
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    tag: '/tag/:name/'
-    category: '/category/:name/'
-  layout: archive
-
-
-kramdown:
-  footnote_backlink: 🔗
-  syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: highlight
-    # default_lang: console
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+# files Jekyll should not delete from .site
+keep_files:
+  - assets/css/tailwind.css
+  - assets/css/tailwind.css.map

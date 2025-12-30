@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}" data-bs-theme="light">
-  {%- include head.html -%}
-  {%- include header.html -%}
-  <body class="">
-    <main class="container-fluid mx-auto p-0 mt-navbar">
-      {{ content }}
-    </main>
-    {%- include footer.html -%}
-    {%- include scripts.html -%}
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/tailwind.css" | relative_url }}">
+    <!-- <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}"> -->
+  </head>
+  <body>
+    {{ content }}
   </body>
 </html>
