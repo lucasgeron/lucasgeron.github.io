@@ -3,7 +3,19 @@ layout: default
 title: "It's alive!"
 ---
 
-{%- include options.html -%}
-{%- include footer.html -%}
 
-<h1 class="text-green-500 dark:text-yellow-500">It's alive!</h1>
+
+
+{%- include options.html -%}
+
+{% assign experiences = 'foo' | prepend: site.lang %}
+
+{% for item in site.data[site.lang].codeminer %}
+<h2>
+  {{ item.title }}
+</h2>
+{% endfor %}
+
+
+
+{%- include footer.html -%}

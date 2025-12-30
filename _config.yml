@@ -11,6 +11,13 @@ sass:
 postcss:
   cache: false
 
+# Configuration for jekyll-multiple-languages-plugin
+languages: ["en", "br"]
+# To avoid redundancy, it is possible to exclude files and folders from being copied to the localization folders.
+exclude_from_localizations: ["javascript", "images", "css"]
+
+
+
 exclude:
   - .gitignore
   - bin

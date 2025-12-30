@@ -5,4 +5,5 @@ gem "webrick", "~> 1.7"
 
 group :jekyll_plugins do
   gem "jekyll-postcss"
+  gem 'jekyll-multiple-languages-plugin'
 end

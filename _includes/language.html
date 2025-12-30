@@ -1,0 +1,28 @@
+<div class="flex">
+  <a href="{{ page.url | replace: " /br/", "/" }}" class="
+      px-4 py-2 text-sm font-medium 
+      rounded-l-lg transition-all
+      border-l border-y
+      text-slate-300 dark:text-slate-600 
+      bg-white dark:bg-slate-800 
+      border-slate-300 dark:border-slate-700 
+      hover:bg-slate-200 dark:hover:bg-slate-700 
+      {% if site.lang == 'en' %}
+      text-slate-850 dark:text-slate-200 
+      {% endif %}">
+    EN
+  </a>
+  <a href="{{ assign target = page.url | prepend: " /br/" }}" class="
+      px-4 py-2 text-sm font-medium
+      rounded-r-lg transition-all
+      border
+       text-slate-300 dark:text-slate-600 
+       bg-white dark:bg-slate-800 
+       border-slate-300 dark:border-slate-700 
+       hover:bg-slate-200 dark:hover:bg-slate-700
+       {% if site.lang == 'br' %}
+        text-slate-850 dark:text-slate-200 
+       {% endif %}">
+    BR
+  </a>
+</div>
