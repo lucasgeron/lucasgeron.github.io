@@ -41,11 +41,11 @@
           <div class="mt-4">
             <div class="flex justify-between items-center text-xs">
               <div class="font-semibold text-slate-1500">{{ item.start_date }} - {{ item.end_date }}</div>
-              <div class="px-2 py-0.5 rounded text-xs font-bold bg-green-100
+              <div class="px-2 py-0.5 rounded text-xs font-bold 
               {% if item.graduated %}
-               text-green-700 border border-green-200
+               bg-green-100 text-green-700 border border-green-100
                {% else %}
-               text-red-500 border border-red-100
+               bg-red-100 text-red-500 border border-red-100
               {% endif %} ">
                 {{ item.status }}
               </div>
@@ -61,7 +61,7 @@
 
       <div class="mt-4 flex justify-end">
         <div
-          class="text-xs font-bold px-4 py-2 rounded-full flex justify-start items-center gap-1 p-5 transition-all duration-500 bg-gradient-to-l to-slate-150 via-slate-150 from-slate-300 dark:to-slate-850 dark:via-slate-850 dark:from-slate-700 bg-size-200 bg-pos-0 hover:bg-pos-100">
+          class="text-xs font-bold px-4 py-2 rounded-lg flex justify-start items-center gap-1 p-5 transition-all duration-500 bg-gradient-to-l to-slate-150 via-slate-150 from-slate-300 dark:to-slate-850 dark:via-slate-850 dark:from-slate-700 bg-size-200 bg-pos-0 hover:bg-pos-100">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-blue-500" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="m5 8 6 6" />
