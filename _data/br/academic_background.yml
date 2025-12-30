@@ -1,0 +1,17 @@
+- 
+  institution: U.T.F.P.R - Campus Guarapuava
+  degree: Tecnologia em Sistemas para Internet
+  start_date: Julho 2015
+  end_date: Junho 2023
+  note: Trancado em 2018/2 e continuado em 2022/2 devido a pandemia.
+  status: Formado
+  graduated: true
+
+- 
+  institution: U.T.F.P.R - Campus Pato Branco
+  degree: Bacharelado em Engenharia da Computação
+  start_date: Julho 2011
+  end_date: Dezembro 2013
+  note: Curso voltado para hardware e pouco para software.
+  status: Desistente
+  graduated: false

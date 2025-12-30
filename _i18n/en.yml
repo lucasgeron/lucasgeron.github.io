@@ -1,4 +1,8 @@
-training:
+academic_background:
+  title: 'Academic Background'
+  english_proficiency: 'English Proficiency'
+
+course_and_awards:
   title: 'Courses & Awards'
 
 footer:
