@@ -270,7 +270,7 @@
       url: https://www.python.org/
       group: Languages
     -
-      title: RAG (Retrieval-Augmented Generation)
+      title: RAG
       url: https://platform.openai.com/docs/guides/retrieval
       group: AI tools and Frameworks
     -

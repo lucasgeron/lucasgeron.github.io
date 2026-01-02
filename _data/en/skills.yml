@@ -272,7 +272,7 @@
       url: https://www.python.org/
       group: Languages
     -
-      title: RAG (Retrieval-Augmented Generation)
+      title: RAG
       url: https://platform.openai.com/docs/guides/retrieval
       group: AI tools and Frameworks
     -
@@ -416,7 +416,7 @@
       url: https://vitest.dev/
       group: Testing
     -
-      title: VPS (Virtual Private Server)
+      title: VPS
       url: https://en.wikipedia.org/wiki/Virtual_private_server
       group: DevOps and Infrastructure
     -

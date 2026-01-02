@@ -240,7 +240,7 @@
                         <div class="contribution-card"
                           onclick="toggleContent('contribution-{{ project.id }}-{{ forloop.index }}', 'chevron-contribution-{{ project.id }}-{{ forloop.index }}')">
                           <div class="flex justify-between items-center">
-                            <div class="text-sm font-bold text-slate-700 dark:text-slate-200">
+                            <div class="text-[10px] md:text-sm font-bold text-slate-700 dark:text-slate-200">
                               {{ contribution.title }}
                             </div>
                             <svg id="chevron-{{ project.id | prepend: 'contribution-' }}-{{ forloop.index }}"
