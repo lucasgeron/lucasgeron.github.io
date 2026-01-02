@@ -1,8 +1,7 @@
 <section
-  class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border  border-slate-300 dark:border-slate-700 overflow-hidden hover:shadow-md">
+  class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border  border-slate-300 dark:border-slate-700 overflow-hidden hover:shadow-md group/section">
 
-  <button onclick="toggleContent('course')"
-    class="w-full flex items-center justify-between p-5 md:bg-gradient-to-r md:from-slate-100 md:to-white md:dark:bg-gradient-to-l md:dark:from-slate-850 md:dark:to-slate-900 cursor-pointer focus:outline-none">
+  <button onclick="toggleContent('course')" class="w-full flex items-center justify-between p-5 section-gradient">
     <div class="flex items-center gap-3">
       <div
         class="p-2 text-blue-500 bg-white border border-slate-300 dark:border-slate-700 rounded-lg dark:bg-slate-800 dark:text-blue-500 ">
@@ -32,7 +31,7 @@
 
         {% for item in site.data.[site.lang].courses_and_awards %}
         <div
-          class="gap-3 p-5 rounded-lg  bg-gradient-to-l to-slate-150 via-slate-150 from-slate-300 dark:to-slate-850 dark:via-slate-850 dark:from-slate-700 bg-size-200 bg-pos-0 hover:bg-pos-100 dark:border-slate-800 transition-all duration-300">
+          class="gap-3 p-5 rounded-lg bg-gradient-to-l to-slate-150 via-slate-150 from-slate-300 dark:to-slate-850 dark:via-slate-850 dark:from-slate-700 bg-size-200 bg-pos-0 hover:bg-pos-100 dark:border-slate-800 transition-all duration-300">
           <div class="gap-1 flex items-center md:justify-between">
             <h4 class="font-bold text-sm text-slate-800 dark:text-slate-100">
               {{ item.title }}

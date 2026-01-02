@@ -1,3 +1,6 @@
+skills:
+  title: 'Principais Habilidades'
+
 profile:
   professional_summary: >
     Sou ambicioso e proativo, sempre buscando desafios que me permitam crescer profissionalmente e
@@ -24,3 +27,4 @@ footer:
 
 global:
   hours: 'Horas'
+  last_updated: 'Última atualização'

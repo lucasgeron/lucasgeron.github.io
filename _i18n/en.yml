@@ -1,3 +1,6 @@
+skills:
+  title: 'Main Skills'
+
 profile:
   professional_summary: >
     I am ambitious and proactive, always seeking challenges that allow me to grow professionally and contribute
@@ -24,3 +27,4 @@ footer:
 
 global:
   hours: 'Hours'
+  last_updated: 'Last updated'

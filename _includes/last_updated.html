@@ -1,0 +1,23 @@
+{% t global.last_updated %}:
+{% if site.lang == 'en' %}
+{{ "2026-01-01" | date: "%b %-d, %Y" }}
+{% elsif site.lang == 'br' %}
+{% assign day = "2026-01-01" | date: "%d" %}
+{% assign year = "2026-01-01" | date: "%Y" %}
+{% assign month = "2026-01-01" | date: "%m" %}
+
+{% case month %}
+{% when "01" %}{{ day }} de Jan de {{ year }}
+{% when "02" %}{{ day }} de Fev de {{ year }}
+{% when "03" %}{{ day }} de Mar de {{ year }}
+{% when "04" %}{{ day }} de Abr de {{ year }}
+{% when "05" %}{{ day }} de Mai de {{ year }}
+{% when "06" %}{{ day }} de Jun de {{ year }}
+{% when "07" %}{{ day }} de Jul de {{ year }}
+{% when "08" %}{{ day }} de Ago de {{ year }}
+{% when "09" %}{{ day }} de Set de {{ year }}
+{% when "10" %}{{ day }} de Out de {{ year }}
+{% when "11" %}{{ day }} de Nov de {{ year }}
+{% when "12" %}{{ day }} de Dez de {{ year }}
+{% endcase %}
+{% endif %}

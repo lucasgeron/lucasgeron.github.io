@@ -1,0 +1,431 @@
+- 
+  title: "Habilidades Interpessoais"
+  layout: list
+  skills:
+    - 
+      title: Pensamento Analítico
+    - 
+      title: Resolução de Problemas
+    - 
+      title: Comunicação Técnica Clara
+    - 
+      title: Responsabilidade e Prestação de Contas
+    - 
+      title: Colaboração em Equipes Multifuncionais
+    - 
+      title: Mentalidade de Aprendizado Contínuo
+- 
+  title: "Competências Centrais"
+  layout: list
+  skills:
+    - 
+      title: Desenvolvimento Web Full Stack
+    - 
+      title: Design e Integração de API (REST / GraphQL)
+    - 
+      title: Design e Automação de Workflow CI/CD
+    - 
+      title: Integração de Recursos de IA e Engenharia de Prompt
+    - 
+      title: Sistemas de Comunicação em Tempo Real
+    - 
+      title: Observabilidade, Monitoramento e Análise de Desempenho
+    - 
+      title: Arquitetura Escalável e Design de Sistemas
+-
+  title: "Stack Técnico"
+  layout: badge
+  skills:
+    -
+      title: Action Cable
+      url: https://guides.rubyonrails.org/action_cable_overview.html
+      group: Back-end tools and Frameworks
+    -
+      title: Action Mailer
+      url: https://guides.rubyonrails.org/action_mailer_basics.html
+      group: Back-end tools and Frameworks
+    -
+      title: Active Job
+      url: https://guides.rubyonrails.org/active_job_basics.html
+      group: Background Processing
+    -
+      title: Active Storage
+      url: https://guides.rubyonrails.org/active_storage_overview.html
+      group: Back-end tools and Frameworks
+    -
+      title: Action Text
+      url: https://guides.rubyonrails.org/action_text_overview.html
+      group: Back-end tools and Frameworks
+    -
+      title: Agora.io
+      url: https://www.agora.io/
+      group: Services and Tools
+    -
+      title: Amplitude
+      url: https://amplitude.com/
+      group: Monitoring and Analytics
+    -
+      title: Apollo Server
+      url: https://www.apollographql.com/docs/apollo-server/
+      group: Back-end tools and Frameworks
+    -
+      title: AppSignal
+      url: https://www.appsignal.com/
+      group: Monitoring and Analytics
+    -
+      title: Asana
+      url: https://asana.com/
+      group: Services and Tools
+    -
+      title: Auth.js 
+      url: https://authjs.dev/
+      group: Authentication and Authorization
+    -
+      title: Next-Auth
+      url: https://next-auth.js.org/
+      group: Authentication and Authorization
+    -
+      title: AWS IAM
+      url: https://aws.amazon.com/iam/
+      group: DevOps and Infrastructure
+    -
+      title: AWS S3
+      url: https://aws.amazon.com/s3/
+      group: DevOps and Infrastructure
+    -
+      title: Bootstrap
+      url: https://getbootstrap.com/
+      group: Styling
+    -
+      title: Cookie/session-based authentication
+      url: 
+      group: Authentication and Authorization
+    -
+      title: CSS
+      url: https://developer.mozilla.org/en-US/docs/Web/CSS
+      group: Languages
+    -
+      title: Devise
+      url: https://github.com/heartcombo/devise
+      group: Authentication and Authorization
+    -
+      title: Docker
+      url: https://www.docker.com/
+      group: DevOps and Infrastructure
+    -
+      title: Docker Composer
+      url: https://docs.docker.com/compose/
+      group: DevOps and Infrastructure
+    -
+      title: Evals
+      url: https://platform.openai.com/docs/guides/evals
+      group: AI tools and Frameworks
+    -
+      title: Fastify
+      url: https://www.fastify.io/
+      group: Back-end tools and Frameworks
+    -
+      title: Figma
+      url: https://www.figma.com/
+      group: Services and Tools
+    -
+      title: File Search
+      url: https://platform.openai.com/docs/assistants/tools/file-search
+      group: AI tools and Frameworks
+    -
+      title: Fine Tuning
+      url: https://platform.openai.com/docs/guides/fine-tuning
+      group: AI tools and Frameworks
+    -
+      title: Function Calling
+      url: https://platform.openai.com/docs/guides/function-calling
+      group: AI tools and Frameworks
+    -
+      title: GitHub Actions
+      url: https://github.com/features/actions
+      group: DevOps and Infrastructure
+    -
+      title: GitHub CI/CD
+      url: 
+      group: DevOps and Infrastructure
+    -
+      title: GitHub Issues
+      url: https://github.com/features/issues
+      group: Services and Tools
+    -
+      title: Google Cloud Platform
+      url: https://cloud.google.com/
+      group: DevOps and Infrastructure
+    -
+      title: GraphQL
+      url: https://graphql.org/
+      group: Back-end tools and Frameworks
+    -
+      title: Heroku
+      url: https://www.heroku.com/
+      group: DevOps and Infrastructure
+    -
+      title: Hotwire Stimulus
+      url: https://stimulus.hotwired.dev/
+      group: Front-end Tools and Frameworks
+    -
+      title: Hotwire Turbo
+      url: https://turbo.hotwired.dev/
+      group: Front-end Tools and Frameworks
+    -
+      title: HTML
+      url: https://developer.mozilla.org/en-US/docs/Web/HTML
+      group: Languages
+    -
+      title: JavaScript
+      url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+      group: Languages
+    -
+      title: Jest
+      url: https://jestjs.io/
+      group: Testing
+    -
+      title: Jira
+      url: https://www.atlassian.com/software/jira
+      group: Services and Tools
+    -
+      title: JWT
+      url: https://jwt.io/
+      group: Authentication and Authorization
+ 
+    -
+      title: Linear
+      url: https://linear.app/
+      group: Services and Tools
+    -
+      title: Lookbook
+      url: https://lookbook.build/
+      group: Front-end Tools and Frameworks
+    -
+      title: Material UI
+      url: https://mui.com/
+      group: Styling
+    -
+      title: Mobile-first CSS
+      url: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
+      group: Styling
+    -
+      title: MongoDB
+      url: https://www.mongodb.com/
+      group: Technologies and Techniques of Persistence
+    -
+      title: MySQL
+      url: https://www.mysql.com/
+      group: Technologies and Techniques of Persistence
+    -
+      title: n8n
+      url: https://n8n.io/
+      group: AI tools and Frameworks
+    -
+      title: Next.js (App Router)
+      url: https://nextjs.org/docs/app
+      group: Front-end Tools and Frameworks
+    -
+      title: Next.js (Page Router)
+      url: https://nextjs.org/docs/pages
+      group: Front-end Tools and Frameworks
+    -
+      title: Node.js
+      url: https://nodejs.org/
+      group: Back-end tools and Frameworks
+    -
+      title: OAuth
+      url: https://oauth.net/2/
+      group: Authentication and Authorization
+    -
+      title: OmniAuth
+      url: https://github.com/omniauth/omniauth
+      group: Authentication and Authorization
+    -
+      title: OpenAI API
+      url: https://platform.openai.com/docs
+      group: AI tools and Frameworks
+    -
+      title: Phlex
+      url: https://phlex.fun/
+      group: Front-end Tools and Frameworks
+    -
+      title: Pipecat
+      url: https://github.com/pipecat-ai/pipecat
+      group: Back-end tools and Frameworks
+    -
+      title: Playwright
+      url: https://playwright.dev/
+      group: Testing
+    -
+      title: PostgreSQL
+      url: https://www.postgresql.org/
+      group: Technologies and Techniques of Persistence
+    -
+      title: Prompt Engineering
+      url: https://platform.openai.com/docs/guides/prompt-engineering
+      group: AI tools and Frameworks
+    -
+      title: Python
+      url: https://www.python.org/
+      group: Languages
+    -
+      title: RAG (Retrieval-Augmented Generation)
+      url: https://platform.openai.com/docs/guides/retrieval
+      group: AI tools and Frameworks
+    -
+      title: React
+      url: https://react.dev/
+      group: Front-end Tools and Frameworks
+    -
+      title: React Server Components
+      url: https://react.dev/reference/react-server
+      group: Front-end Tools and Frameworks
+    -
+      title: React Testing Library
+      url: https://Testing-library.com/docs/react-Testing-library/intro/
+      group: Testing
+    -
+      title: Redis
+      url: https://redis.io/
+      group: Technologies and Techniques of Persistence
+    -
+      title: Remix
+      url: https://remix.run/
+      group: Front-end Tools and Frameworks
+    -
+      title: REST
+      url: https://restfulapi.net/
+      group: Back-end tools and Frameworks
+    -
+      title: RSpec
+      url: https://rspec.info/
+      group: Testing
+    -
+      title: Ruby
+      url: https://www.ruby-lang.org/
+      group: Languages
+    -
+      title: Ruby on Rails
+      url: https://rubyonrails.org/
+      group: Back-end tools and Frameworks
+    -
+      title: RubiUI
+      url: https://github.com/ruby-ui/rubui
+      group: Front-end Tools and Frameworks
+    -
+      title: Sentry
+      url: https://sentry.io/
+      group: Monitoring and Analytics
+    -
+      title: Shadcn
+      url: https://ui.shadcn.com/
+      group: Styling
+    -
+      title: ShouldaMatchers
+      url: https://matchers.shoulda.io/
+      group: Testing
+    -
+      title: Sidekiq
+      url: https://sidekiq.org/
+      group: Background Processing
+    -
+      title: Sinatra
+      url: https://sinatrarb.com/
+      group: Back-end tools and Frameworks
+    -
+      title: Solid Cache
+      url: https://guides.rubyonrails.org/caching_with_rails.html
+      group: Technologies and Techniques of Persistence
+    -
+      title: Solid Cable
+      url: https://github.com/rails/solid_cable
+      group: Back-end tools and Frameworks
+    -
+      title: Solid Queue
+      url: https://github.com/rails/solid_queue
+      group: Background Processing
+    -
+      title: SQL
+      url: https://en.wikipedia.org/wiki/SQL
+      group: Languages
+    -
+      title: SQL Indexes
+      url: https://use-the-index-luke.com/
+      group: Technologies and Techniques of Persistence
+    -
+      title: SQLite
+      url: https://www.sqlite.org/
+      group: Technologies and Techniques of Persistence
+    -
+      title: SSE (Server-Sent Events)
+      url: https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events
+      group: Back-end tools and Frameworks
+    -
+      title: Stream.io
+      url: https://getstream.io/
+      group: Services and Tools
+    -
+      title: Svelte / SvelteKit
+      url: https://svelte.dev/
+      group: Front-end Tools and Frameworks
+    -
+      title: Swagger / OpenAPI
+      url: https://swagger.io/specification/
+      group: Back-end tools and Frameworks
+    -
+      title: Tailwind
+      url: https://tailwindcss.com/
+      group: Styling
+    -
+      title: TanStack Query
+      url: https://tanstack.com/query
+      group: Front-end Tools and Frameworks
+    -
+      title: Thor
+      url: http://whatisthor.com/
+      group: Back-end tools and Frameworks
+    -
+      title: Trello
+      url: https://trello.com/
+      group: Services and Tools
+    -
+      title: Twilio
+      url: https://www.twilio.com/
+      group: Services and Tools
+    -
+      title: TypeScript
+      url: https://www.typescriptlang.org/
+      group: Languages
+    -
+      title: VCR
+      url: https://github.com/vcr/vcr
+      group: Testing
+    -
+      title: Vercel
+      url: https://vercel.com/
+      group: DevOps and Infrastructure
+    -
+      title: View Components
+      url: https://viewcomponent.org/
+      group: Front-end Tools and Frameworks
+    -
+      title: Vitest
+      url: https://vitest.dev/
+      group: Testing
+    -
+      title: VPS (Virtual Private Server)
+      url: https://en.wikipedia.org/wiki/Virtual_private_server
+      group: DevOps and Infrastructure
+    -
+      title: Webhooks
+      url: 
+      group: Back-end tools and Frameworks
+    -
+      title: WebMock
+      url: https://github.com/bblimke/webmock
+      group: Testing
+    -
+      title: Websockets
+      url: https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
+      group: Back-end tools and Frameworks
