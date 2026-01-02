@@ -8,37 +8,15 @@ function updateStorage(id, isOpen) {
   localStorage.setItem('expandedItems', JSON.stringify(expanded));
 }
 
-function toggleSection(id) {
+function toggleContent(id, chevronId = null) {
   const content = document.getElementById(id);
-  const icon = document.getElementById('icon-' + id);
-  const isOpen = content.classList.toggle('open');
-  icon.classList.toggle('rotate-180');
-  updateStorage(id, isOpen);
-}
+  const chevron = chevronId ? document.getElementById(chevronId) : null;
 
-function toggleCard(id) {
-  const content = document.getElementById(id);
-  const icon = document.getElementById('chevron-' + id);
+  console.log(chevron)
+  if (!content) return;
+  
+  if (chevron) chevron.classList.toggle('rotate-180');
   const isOpen = content.classList.toggle('open');
-  if (icon) icon.classList.toggle('rotate-180');
-  updateStorage(id, isOpen);
-}
-
-function toggleSubCard(id) {
-  event.stopPropagation();
-  const content = document.getElementById(id);
-  const icon = document.getElementById('chevron-' + id);
-  const isOpen = content.classList.toggle('open');
-  if (icon) icon.classList.toggle('rotate-180');
-  updateStorage(id, isOpen);
-}
-
-function toggleAchievement(id) {
-  event.stopPropagation();
-  const content = document.getElementById(id);
-  const icon = document.getElementById('chev-' + id);
-  const isOpen = content.classList.toggle('open');
-  icon.classList.toggle('rotate-180');
   updateStorage(id, isOpen);
 }
 
@@ -48,10 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const content = document.getElementById(id);
     if (content) {
       content.classList.add('open');
-      const icon = document.getElementById('icon-' + id) || 
-                   document.getElementById('chevron-' + id) || 
-                   document.getElementById('chev-' + id);
-      if (icon) icon.classList.add('rotate-180');
+      const chevron = document.getElementById('chevron-' + id) ||
+          document.getElementById('chevron-company-' + id) ||
+          document.getElementById('chevron-project-' + id) ||
+          document.getElementById('chevron-contribution-' + id);
+
+      if (chevron) chevron.classList.add('rotate-180');
     }
   });
 });

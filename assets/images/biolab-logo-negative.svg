@@ -1,0 +1,29 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="91"
+  height="19"
+  viewBox="0 4 91 19"
+  role="img"
+  aria-label="BIOLAB logo"
+>
+  <style>
+    .bio {
+      fill: white;
+      font-weight: 900;
+    }
+    .lab {
+      fill: #38bdf8; /* text-sky-400 */
+      font-weight: 900;
+    }
+    text {
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji",
+                   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 24px;
+      dominant-baseline: middle;
+    }
+  </style>
+
+  <text x="0" y="16" class="bio">BIO</text>
+  <text x="43" y="16" class="lab">LAB</text>
+</svg>

@@ -7,8 +7,8 @@
       url: https://www.codeminer42.com/
       label: codeminer42.com
     logo:
-      light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/1807647eed7d566fbdedac0d12375054a32e351e/public/assets/images/code-miner-white.svg
-      dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/1807647eed7d566fbdedac0d12375054a32e351e/public/assets/images/code-miner-black.svg
+      light: assets/images/codeminer-logo-default.svg
+      dark: assets/images/codeminer-logo-negative.svg
   position: Software Engineer
   main_stack: Ruby on Rails
   mode: Remote
@@ -16,9 +16,9 @@
     city: São Paulo
     state: SP
     country: Brazil
-  start_date: January 2024
+  start_date: Jan 2024
   end_date: Present
-  duration: +2 years
+  duration: 2+ yrs
   details:
     - type: text
       content: >
@@ -47,8 +47,8 @@
           url: http://sentrel.com/
           label: sentrel.com
         logo: 
-          light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/a0bc1d88105412568c0de6f822c4ff5a1e2d477a/public/assets/images/sentrel-logo.svg
-          dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/a0bc1d88105412568c0de6f822c4ff5a1e2d477a/public/assets/images/sentrel-logo.svg
+          light: assets/images/sentrel-logo-default.svg
+          dark: assets/images/sentrel-logo-negative.svg
       position: Software Engineer
       main_stack: Ruby on Rails, Python
       mode: Remote
@@ -56,9 +56,9 @@
         city: New York City
         state: NY
         country: USA
-      start_date: September 2025
-      end_date: December 2025
-      duration: 4 months
+      start_date: Sep 2025
+      end_date: Dec 2025
+      duration: 4 mos
       about_the_project: >
         Sentrel is a solution that integrates AI agents into government organizations. The
         product focuses on handling inbound phone calls and, through an AI agent, providing
@@ -131,8 +131,8 @@
           url: https://www.vantaesports.com/
           label: vantaesports.com
         logo: 
-          light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/02420f8c5e7d3d2f3c0191f6bc9a155807e0ab51/public/assets/images/vanta-logo.svg
-          dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/02420f8c5e7d3d2f3c0191f6bc9a155807e0ab51/public/assets/images/vanta-logo.svg
+          light: assets/images/vanta-logo-default.svg
+          dark: assets/images/vanta-logo-negative.svg
       position: Full Stack Developer
       main_stack: Ruby on Rails, React
       mode: Remote
@@ -140,9 +140,9 @@
         city: Boston
         state: MA
         country: USA
-      start_date: April 2024
-      end_date: August 2024
-      duration: 1 year, 5 months
+      start_date: Apr 2024
+      end_date: Aug 2025
+      duration: 1 yr, 5 mos
       about_the_project: >
         Vanta is a platform specialized in e-sports coaching for schools that also promotes
         tournaments across multiple modalities and games within local, state, and national
@@ -236,8 +236,8 @@
           url: https://trainee.codeminer42.com/
           label: treainee.codeminer42.com
         logo: 
-          light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/1807647eed7d566fbdedac0d12375054a32e351e/public/assets/images/code-miner-white.svg
-          dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/1807647eed7d566fbdedac0d12375054a32e351e/public/assets/images/code-miner-black.svg
+          light: assets/images/codeminer-logo-default.svg
+          dark: assets/images/codeminer-logo-negative.svg
       position: Backend Developer 
       main_stack: Ruby on Rails
       mode: Remoto
@@ -245,9 +245,9 @@
         city: São Paulo
         state: SP
         country: Brazil
-      start_date: January 2024
-      end_date: March 2024
-      duration: 3 months
+      start_date: Jan 2024
+      end_date: Mar 2024
+      duration: 3 mos
       about_the_project: >
         The Codeminer42 Trainee Program is a continuous education project lasting 3 months where 
         we learn to solve real problems, improve research skills, teamwork,
@@ -264,8 +264,8 @@
       url: https://limbersoftware.com.br/
       label: limbersoftware.com.br
     logo:
-      light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/71532e894c343c39c9c107b93500100796904709/public/assets/images/limber-logo-white.svg
-      dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/971112700c7be67d0a19c00c20fab226d9de2f3f/public/assets/images/limber-logo.svg
+      light: assets/images/limber-logo-default.svg
+      dark: assets/images/limber-logo-negative.svg
   position: Backend Developer
   main_stack: Ruby on Rails
   mode: On Site
@@ -273,9 +273,9 @@
     city: Pato Branco
     state: PR
     country: Brazil
-  start_date: September 2023
-  end_date: December 2023
-  duration: 4 months
+  start_date: Sep 2023
+  end_date: Dec 2023
+  duration: 4 mos
   details:
     - type: text
       content: >
@@ -300,8 +300,8 @@
           url: https://way-v.com/
           label: way-v.com
         logo: 
-          light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/refs/heads/main/public/assets/images/wayv-logo-white.png
-          dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/refs/heads/main/public/assets/images/wayv-logo-black.png
+          light: assets/images/wayv-logo-default.svg
+          dark: assets/images/wayv-logo-negative.svg
       position: Backend Developer
       main_stack: Ruby on Rails
       mode: Remote
@@ -309,9 +309,9 @@
         city: Pato Branco
         state: PR
         country: Brazil
-      start_date: September 2023
-      end_date: December 2023
-      duration: 4 months
+      start_date: Sep 2023
+      end_date: Dec 2023
+      duration: 4 mos
       about_the_project: >
         WayV is an enterprise-level and industrial form management platform.
         The application allows the creation and distribution of customized forms, with various
@@ -331,8 +331,8 @@
   company:
     name: Self-Employed
     logo:
-      light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/1807647eed7d566fbdedac0d12375054a32e351e/public/assets/images/forma-gestor-logo-white.svg
-      dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/99d7d3a4529b22378d1cadaa378c733c9f735159/public/assets/images/forma-gestor-logo-dark.svg
+      light: assets/images/forma-gestor-logo-default.svg
+      dark: assets/images/forma-gestor-logo-negative.svg
   position: Full Stack Developer
   main_stack: Ruby on Rails
   mode: On Site
@@ -340,9 +340,9 @@
     city: Guarapuava
     state: PR
     country: Brazil
-  start_date: November 2022
-  end_date: September 2023
-  duration: 11 months
+  start_date: Nov 2022
+  end_date: Sep 2023
+  duration: 11 mos
   details:
     - type: highlight
       content: >
@@ -363,8 +363,8 @@
           url: https://drive.google.com/file/d/1k20pk-g6oRyebVVCoiO5WlwstNQOaiUA/view
           label: biolab.pdf
         logo: 
-          light: TODO
-          dark: TODO
+          light: assets/images/biolab-logo-default.svg
+          dark: assets/images/biolab-logo-negative.svg
       position: Software Engineer
       main_stack: Ruby on Rails, React
       mode: On Site
@@ -372,9 +372,9 @@
         city: Pato Branco
         state: PR
         country: Brazil
-      start_date: September 2023
-      end_date: December 2023
-      duration: 4 months
+      start_date: Sep 2023
+      end_date: Dec 2023
+      duration: 4 mos
       about_the_project: >
         BIOLAB was a start-up conceived to offer a training platform and simulated training for
         biomedical professionals. The platform aimed to provide a broad collection of clinical
@@ -391,8 +391,8 @@
       product:
         name: FORMAgestor
         logo: 
-          light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/ac94254f2b3c79ddfd3cc7cff4ba99c5b0bb19aa/public/assets/images/forma-gestor-text-white.svg
-          dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/ac94254f2b3c79ddfd3cc7cff4ba99c5b0bb19aa/public/assets/images/forma-gestor-text-black.svg
+          light: assets/images/forma-gestor-text-default.svg
+          dark: assets/images/forma-gestor-text-negative.svg
       position: Full Stack Developer
       main_stack: Ruby on Rails
       mode: On Site
@@ -400,9 +400,9 @@
         city: Pato Branco
         state: PR
         country: Brazil
-      start_date: April 2023
-      end_date: December 2023
-      duration: 9 months
+      start_date: Apr 2023
+      end_date: Dec 2023
+      duration: 9 mos
       about_the_project: >
         FORMAgestor is a web application developed to be used by the commercial sector of
         graduation companies, proposing significant improvements in the way of managing their
@@ -425,8 +425,8 @@
           url: https://www.utfpr.edu.br/campus/guarapuava
           label: utfpr.edu.br
         logo: 
-          light: https://raw.githubusercontent.com/lucasgeron/lucasgeron/refs/heads/main/public/assets/images/utfpr-white.png
-          dark: https://raw.githubusercontent.com/lucasgeron/lucasgeron/refs/heads/main/public/assets/images/utfpr-black.png
+          light: assets/images/utfpr-logo-default.svg
+          dark: assets/images/utfpr-logo-negative.svg
       position: Full Stack Developer
       main_stack: Ruby on Rails
       mode: On Site
@@ -434,9 +434,9 @@
         city: Guarapuava
         state: PR
         country: Brazil
-      start_date: November 2022
-      end_date: June 2023
-      duration: 8 months
+      start_date: Nov 2022
+      end_date: Jun 2023
+      duration: 8 mos
       about_the_project: >
         Based on my experience in the graduation market, where I worked for 7 years as a
         manager of a graduation company, I developed the project that was carried out as a Final

@@ -1,20 +1,21 @@
 <section
-  class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-300 dark:border-slate-700 overflow-hidden transition-all duration-500 hover:shadow-md">
+  class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-300 dark:border-slate-700 overflow-hidden hover:shadow-md">
 
-  <button onclick="toggleSection('experience')"
+  <button onclick="toggleContent('experience', 'chevron-experience')"
     class="w-full flex items-center justify-between p-5 md:bg-gradient-to-r md:from-slate-100 md:to-white md:dark:bg-gradient-to-l md:dark:from-slate-850 md:dark:to-slate-900 cursor-pointer focus:outline-none">
     <div class="flex items-center gap-3">
       <div
-        class="p-2 text-blue-500 bg-white border border-slate-300 dark:border-slate-700 rounded-lg transition-all dark:bg-slate-800 dark:text-blue-500">
+        class="p-2 text-blue-500 bg-white border border-slate-300 dark:border-slate-700 rounded-lg dark:bg-slate-800 dark:text-blue-500">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
           stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
           <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
         </svg>
       </div>
-      <h2 class="text-xl font-bold tracking-tight">{% t professional_experience.title %}</h2>
+      <h2 class="text-xl font-bold tracking-tight text-slate-800 dark:text-slate-100">{% t professional_experience.title
+        %}</h2>
     </div>
-    <div id="icon-experience" class="text-slate-400 chevron">
+    <div id="chevron-experience" class="text-slate-400 transition-transform ease-in-out">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="m6 9 6 6 6-6" />
@@ -22,27 +23,27 @@
     </div>
   </button>
 
-  <div id="experience" class="accordion-content ">
+  <div id="experience" class="accordion-content">
     <div class="p-px bg-gradient-to-r from-blue-300 dark:from-blue-800 to-transparent"></div>
 
     <div class="p-5 md:p-6 space-y-6">
 
       {% for item in site.data.[site.lang].professional_experiences %}
       <div
-        class="group relative bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden transition-all duration-500">
+        class="group relative bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden ">
         <div
-          class="p-5 cursor-pointer transition-all duration-500 bg-gradient-to-l to-slate-50 via-slate-50 from-slate-200 dark:to-slate-850 dark:via-slate-850 dark:from-slate-700 bg-size-200 bg-pos-0 group-hover:bg-pos-100"
-          onclick="toggleCard('company-{{ item.id }}')">
+          class="p-5 cursor-pointer bg-gradient-to-l to-slate-50 via-slate-50 from-slate-200 dark:to-slate-850 dark:via-slate-850 dark:from-slate-700 bg-size-200 bg-pos-0 group-hover:bg-pos-100"
+          onclick="toggleContent('company-{{ item.id }}', 'chevron-company-{{ item.id }}')">
           <div class="flex flex-col md:flex-row md:justify-between md:items-start">
             <div class="flex items-center gap-4">
               <div class="w-28">
-                <img src="{{ item.company.logo.dark}}" alt="{{ item.company.name }} Logo"
-                  class="object-contain dark:hidden" />
                 <img src="{{ item.company.logo.light}}" alt="{{ item.company.name }} Logo"
+                  class="object-contain dark:hidden" />
+                <img src="{{ item.company.logo.dark}}" alt="{{ item.company.name }} Logo"
                   class="object-contain hidden dark:block" />
               </div>
               <div>
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100">
                   {{ item.company.name }}
                   {% if item.company.website %}
                   <a href="{{ item.company.website.url }}"
@@ -72,8 +73,8 @@
                 ({{ item.duration }})
               </div>
               <svg id="chevron-{{ item.id | prepend: 'company-'}}" xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 text-slate-400 chevron rotate-180 mt-1" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                class="w-5 h-5 text-slate-800 dark:text-slate-400 transition-transform ease-in-out" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="m6 9 6 6 6-6" />
               </svg>
             </div>
@@ -87,7 +88,7 @@
             <div class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed space-y-2">
               {% for detail in item.details %}
               <p
-                class="{%if detail.type == 'highlight'%} border-l-4 pl-2 border-slate-300 dark:border-slate-600 {% endif %}">
+                class="{% if detail.type == 'highlight' %} border-l-4 pl-2 border-slate-300 dark:border-slate-600 {% endif %}">
                 {{ detail.content}}
               </p>
               {% endfor %}
@@ -104,8 +105,8 @@
                 <div
                   class="bg-slate-50 dark:bg-slate-850 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-sm group/sentrel">
                   <div
-                    class="p-4 cursor-pointer gap-3 transition-all duration-500 bg-gradient-to-l to-slate-50 via-slate-50 from-slate-200 dark:to-slate-850 dark:via-slate-850 dark:from-slate-700 bg-size-200 bg-pos-0 group-hover/sentrel:bg-pos-100"
-                    onclick="toggleSubCard('project-{{ project.id }}')">
+                    class="p-4 cursor-pointer gap-3  bg-gradient-to-l to-slate-50 via-slate-50 from-slate-200 dark:to-slate-850 dark:via-slate-850 dark:from-slate-700 bg-size-200 bg-pos-0 group-hover/sentrel:bg-pos-100"
+                    onclick="toggleContent('project-{{ project.id }}', 'chevron-project-{{ project.id }}')">
                     <div class="p-2 flex flex-col md:flex-row md:justify-between md:items-start">
                       <div class="flex items-center gap-4">
                         <div>
@@ -143,8 +144,8 @@
                           ({{ project.duration }})
                         </div>
                         <svg id="chevron-{{ project.id | prepend: 'project-'}}"
-                          class="w-4 h-4 text-slate-400 chevron rotate-180" viewBox="0 0 24 24" fill="none"
-                          stroke="currentColor" stroke-width="2">
+                          class="w-5 h-5 text-slate-800 dark:text-slate-400 transition-transform ease-in-out"
+                          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                           <path d="m6 9 6 6 6-6" />
                         </svg>
                       </div>
@@ -156,9 +157,9 @@
                     </div>
                     <div class="p-5 md:p-6 space-y-4">
                       <div class="">
-                        <img src="{{ project.product.logo.dark}}" alt="{{ project.product.name }} Logo"
-                          class="object-contain dark:hidden h-5" />
                         <img src="{{ project.product.logo.light}}" alt="{{ project.product.name }} Logo"
+                          class="object-contain dark:hidden h-5" />
+                        <img src="{{ project.product.logo.dark}}" alt="{{ project.product.name }} Logo"
                           class="object-contain hidden dark:block h-5" />
                       </div>
 
@@ -186,20 +187,23 @@
                         </h5>
 
                         {% for contribution in project.main_contributions %}
-                        <div class="achievement-card"
-                          onclick="toggleAchievement('contribution-{{ project.id }}-{{ forloop.index }}')">
+                        <div class="contribution-card"
+                          onclick="toggleContent('contribution-{{ project.id }}-{{ forloop.index }}', 'chevron-contribution-{{ project.id }}-{{ forloop.index }}')">
                           <div class="flex justify-between items-center">
-                            <div class="text-sm font-bold text-slate-800 dark:text-slate-400">
+                            <div class="text-sm font-bold text-slate-700 dark:text-slate-200">
                               {{ contribution.title }}
                             </div>
-                            <svg id="chev-contribution-{{ project.id }}-{{ forloop.index }}"
-                              class="w-4 h-4 text-slate-800 dark:text-slate-400 chevron" viewBox="0 0 24 24" fill="none"
-                              stroke="currentColor" stroke-width="2">
+                            <svg id="chevron-{{ project.id | prepend: 'contribution-' }}-{{ forloop.index }}"
+                              class="w-5 h-5 text-slate-800 dark:text-slate-400 transition-transform ease-in-out "
+                              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                               <path d="m6 9 6 6 6-6" />
                             </svg>
                           </div>
-                          <div id="contribution-{{ project.id }}-{{ forloop.index }}" class="achievement-content">
-                            {{ contribution.content }}
+                          <div id="{{ project.id | prepend: 'contribution-'}}-{{ forloop.index }}"
+                            class="contribution-content">
+                            <span class="text-slate-600 dark:text-slate-300">
+                              {{ contribution.content }}
+                            </span>
                           </div>
                         </div>
                         {% endfor %}
