@@ -18,7 +18,7 @@
     country: Brazil
   start_date: Jan 2024
   end_date: Present
-  duration: 2+ yrs
+  duration: +2 years
   details:
     - type: text
       content: >
@@ -58,7 +58,7 @@
         country: USA
       start_date: Sep 2025
       end_date: Dec 2025
-      duration: 4 mos
+      duration: 4 months
       about_the_project: >
         Sentrel is a solution that integrates AI agents into government organizations. The
         product focuses on handling inbound phone calls and, through an AI agent, providing
@@ -142,7 +142,7 @@
         country: USA
       start_date: Apr 2024
       end_date: Aug 2025
-      duration: 1 yr, 5 mos
+      duration: 1 year, 5 months
       about_the_project: >
         Vanta is a platform specialized in e-sports coaching for schools that also promotes
         tournaments across multiple modalities and games within local, state, and national
@@ -247,7 +247,7 @@
         country: Brazil
       start_date: Jan 2024
       end_date: Mar 2024
-      duration: 3 mos
+      duration: 3 months
       about_the_project: >
         The Codeminer42 Trainee Program is a continuous education project lasting 3 months where 
         we learn to solve real problems, improve research skills, teamwork,
@@ -268,14 +268,14 @@
       dark: assets/images/limber-logo-negative.svg
   position: Backend Developer
   main_stack: Ruby on Rails
-  mode: On Site
+  mode: On-Site
   location: 
     city: Pato Branco
     state: PR
     country: Brazil
   start_date: Sep 2023
   end_date: Dec 2023
-  duration: 4 mos
+  duration: 4 months
   details:
     - type: text
       content: >
@@ -311,7 +311,7 @@
         country: Brazil
       start_date: Sep 2023
       end_date: Dec 2023
-      duration: 4 mos
+      duration: 4 months
       about_the_project: >
         WayV is an enterprise-level and industrial form management platform.
         The application allows the creation and distribution of customized forms, with various
@@ -335,14 +335,14 @@
       dark: assets/images/forma-gestor-logo-negative.svg
   position: Full Stack Developer
   main_stack: Ruby on Rails
-  mode: On Site
+  mode: On-Site
   location: 
     city: Guarapuava
     state: PR
     country: Brazil
   start_date: Nov 2022
   end_date: Sep 2023
-  duration: 11 mos
+  duration: 11 months
   details:
     - type: highlight
       content: >
@@ -367,14 +367,14 @@
           dark: assets/images/biolab-logo-negative.svg
       position: Software Engineer
       main_stack: Ruby on Rails, React
-      mode: On Site
+      mode: On-Site
       location: 
         city: Pato Branco
         state: PR
         country: Brazil
       start_date: Sep 2023
       end_date: Dec 2023
-      duration: 4 mos
+      duration: 4 months
       about_the_project: >
         BIOLAB was a start-up conceived to offer a training platform and simulated training for
         biomedical professionals. The platform aimed to provide a broad collection of clinical
@@ -395,14 +395,14 @@
           dark: assets/images/forma-gestor-text-negative.svg
       position: Full Stack Developer
       main_stack: Ruby on Rails
-      mode: On Site
+      mode: On-Site
       location: 
         city: Pato Branco
         state: PR
         country: Brazil
       start_date: Apr 2023
       end_date: Dec 2023
-      duration: 9 mos
+      duration: 9 months
       about_the_project: >
         FORMAgestor is a web application developed to be used by the commercial sector of
         graduation companies, proposing significant improvements in the way of managing their
@@ -429,14 +429,14 @@
           dark: assets/images/utfpr-logo-negative.svg
       position: Full Stack Developer
       main_stack: Ruby on Rails
-      mode: On Site
+      mode: On-Site
       location: 
         city: Guarapuava
         state: PR
         country: Brazil
       start_date: Nov 2022
       end_date: Jun 2023
-      duration: 8 mos
+      duration: 8 months
       about_the_project: >
         Based on my experience in the graduation market, where I worked for 7 years as a
         manager of a graduation company, I developed the project that was carried out as a Final

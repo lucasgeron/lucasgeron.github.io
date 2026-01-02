@@ -25,6 +25,6 @@
   }
 
   .contribution-content.open {
-    @apply max-h-[100px] opacity-100 mt-1;
+    @apply max-h-[250px] md:max-h-[150px] opacity-100 mt-1;
   }
 }

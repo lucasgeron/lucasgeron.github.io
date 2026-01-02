@@ -5,6 +5,9 @@ module.exports = {
     './_posts/*.md',
     './*.html',
   ],
+  safelist: [
+    'rotate-180'
+  ],
   darkMode: 'class',
   theme: {
     extend: {

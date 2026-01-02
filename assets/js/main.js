@@ -10,12 +10,13 @@ function updateStorage(id, isOpen) {
 
 function toggleContent(id, chevronId = null) {
   const content = document.getElementById(id);
-  const chevron = chevronId ? document.getElementById(chevronId) : null;
+  const chevrons = chevronId ? document.querySelectorAll('#' + chevronId) : [];
 
-  console.log(chevron)
   if (!content) return;
   
-  if (chevron) chevron.classList.toggle('rotate-180');
+  if (chevrons.length > 0) {
+    chevrons.forEach(chevron => chevron.classList.toggle('rotate-180'));
+  }
   const isOpen = content.classList.toggle('open');
   updateStorage(id, isOpen);
 }
@@ -26,12 +27,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const content = document.getElementById(id);
     if (content) {
       content.classList.add('open');
-      const chevron = document.getElementById('chevron-' + id) ||
-          document.getElementById('chevron-company-' + id) ||
-          document.getElementById('chevron-project-' + id) ||
-          document.getElementById('chevron-contribution-' + id);
-
-      if (chevron) chevron.classList.add('rotate-180');
+      const chevronSelectors = [
+        '#chevron-' + id,
+        '#chevron-company-' + id,
+        '#chevron-project-' + id,
+        '#chevron-contribution-' + id
+      ].join(',');
+      
+      const chevrons = document.querySelectorAll(chevronSelectors);
+      if (chevrons.length > 0) {
+        chevrons.forEach(chevron => chevron.classList.add('rotate-180'));
+      }
     }
   });
 });
