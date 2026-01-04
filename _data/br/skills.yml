@@ -97,7 +97,7 @@
       url: https://getbootstrap.com/
       group: Styling
     -
-      title: Cookie/session-based authentication
+      title: Cookie/Session-based Authentication
       url: 
       group: Authentication and Authorization
     -
@@ -310,7 +310,7 @@
       url: https://rubyonrails.org/
       group: Back-end tools and Frameworks
     -
-      title: RubiUI
+      title: RubyUI
       url: https://github.com/ruby-ui/rubui
       group: Front-end Tools and Frameworks
     -
@@ -358,7 +358,7 @@
       url: https://www.sqlite.org/
       group: Technologies and Techniques of Persistence
     -
-      title: SSE (Server-Sent Events)
+      title: SSE
       url: https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events
       group: Back-end tools and Frameworks
     -
@@ -366,11 +366,11 @@
       url: https://getstream.io/
       group: Services and Tools
     -
-      title: Svelte / SvelteKit
+      title: Svelte/SvelteKit
       url: https://svelte.dev/
       group: Front-end Tools and Frameworks
     -
-      title: Swagger / OpenAPI
+      title: Swagger/OpenAPI
       url: https://swagger.io/specification/
       group: Back-end tools and Frameworks
     -
