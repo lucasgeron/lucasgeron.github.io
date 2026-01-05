@@ -1,41 +1,32 @@
 - 
+  id: soft-skills
   title: "Soft Skills"
   layout: list
   skills:
-    - 
-      title: Analytical Thinking
-    - 
-      title: Problem Solving
-    - 
-      title: Clear Technical Communication
-    - 
-      title: Ownership and Accountability
-    - 
-      title: Collaboration in Cross-functional Teams
-    - 
-      title: Continuous Learning Mindset
+    - Analytical Thinking
+    - Problem Solving
+    - Clear Technical Communication
+    - Ownership and Accountability
+    - Collaboration in Cross-functional Teams
+    - Continuous Learning Mindset
 
 - 
+  id: core-competencies
   title: "Core Competencies"
   layout: list
   skills:
-    - 
-      title: Full Stack Web Development
-    - 
-      title: API Design and Integration (REST / GraphQL)
-    - 
-      title: CI/CD Workflow Design and Automation
-    - 
-      title: AI Feature Integration and Prompt Engineering
-    - 
-      title: Real-time Communication Systems
-    - 
-      title: Observability, Monitoring, and Performance Analysis
-    - 
-      title: Scalable Architecture and System Design
+    - Full Stack Web Development
+    - API Design and Integration
+    - CI/CD Workflow Design and Automation
+    - Real-time Communication Systems
+    - Scalable Architecture and System Design
+    - AI Integration and Prompt Engineering
+    - Observability and Monitoring
+    - Performance Analysis
 
 -
-  title: "Technical Stack"
+  id: technical-stack
+  title: "Tech Stack"
   layout: badge
   skills:
     -

@@ -24,80 +24,99 @@
   </button>
 
   <div id="skill" class="accordion-content">
-    <div class="p-px bg-gradient-to-r from-blue-500 dark:from-blue-800 to-transparent">
-    </div>
+    <div class="p-px bg-gradient-to-r from-blue-500 dark:from-blue-800 to-transparent"></div>
+
     <div class="p-4 md:p-6 space-y-4">
-
       {% for collection in site.data[site.lang].skills %}
-
-      <section
-        class="group relative overflow-hidden rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-850 p-4 space-y-2 group/collection ">
-
-        <!-- Accent bar -->
+      <div
+        class="group relative bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden">
         <div
-          class="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-l to-slate-50 via-slate-50 from-blue-500 dark:to-slate-850 dark:via-slate-850 dark:from-blue-700 bg-size-200 bg-pos-0 group-hover/collection:bg-pos-100 transition-all duration-500">
-        </div>
-
-        <div class="flex items-center justify-between">
-          <h3 class="text-lg font-semibold tracking-tight text-slate-800 dark:text-slate-100 flex items-center">
-            {{ collection.title }}
-          </h3>
-        </div>
-
-        <!-- LIST -->
-        {% if collection.layout == 'list' %}
-        <ul class="gap-2 grid grid-cols-1 md:grid-cols-2">
-          {% for skill in collection.skills %}
-          <li class="flex items-start gap-1.5 text-sm text-slate-600 dark:text-slate-300">
-            <div class="flex h-5 w-5 items-center justify-center rounded-lg
-                   bg-blue-100 text-blue-600
-                   dark:bg-blue-900/40 dark:text-blue-400">
-              ✓
+          class="p-4 cursor-pointer bg-gradient-to-l to-slate-50 via-slate-50 from-slate-200 dark:to-slate-850 dark:via-slate-850 dark:from-slate-700 bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-300"
+          onclick="toggleContent('skill-{{ collection.id }}', 'chevron-skill-{{ collection.id }}')">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+            <div class="w-full flex flex-col">
+              <div class="md:flex justify-start gap-1.5 items-baseline">
+                <div class="flex items-center justify-between">
+                  <div class="text-lg font-bold text-slate-800 dark:text-slate-100">
+                    {{ collection.title }}
+                  </div>
+                  <svg id="chevron-{{ collection.id | prepend: 'skill-'}}" xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 text-slate-400 transition-transform ease-in-out md:hidden" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </div>
+              </div>
             </div>
-            <span class="leading-snug">
-              {{skill.title }}
-            </span>
-          </li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-
-        <!-- BADGES -->
-        {% if collection.layout == 'badge' %}
-        {% assign grouped_skills = collection.skills | group_by: "group" %}
-
-        <div class="space-y-4">
-          {% for group in grouped_skills %}
-          <div class="space-y-2">
-            <h4 class=" font-semibold text-slate-700 dark:text-slate-300 uppercase text-[10px] tracking-wider">
-              {{ group.name }}
-            </h4>
-
-            <div class="flex flex-wrap gap-1">
-              {% for skill in group.items %}
-              {% if skill.url %}
-              <a href="{{ skill.url }}" target="_blank" rel="noopener noreferrer" class="">
-                {% endif %}
-                <span class="
-                  inline-flex items-center gap-1.5 px-2 py-1 text-xs font-medium rounded-lg  
-                bg-slate-150 text-slate-600 dark:bg-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-600 
-                  {% if skill.url %}
-                      hover:underline underline-offset-2 decoration-blue-500
-                  {% endif %}">
-                  {{ skill.title }}
-                </span>
-                {% if skill.url %}
-              </a>
-              {% endif %}
-              {% endfor %}
+            <div class="hidden md:flex items-end justify-end mt-2 md:mt-0 gap-2">
+              <svg id="chevron-{{ collection.id | prepend: 'skill-'}}" xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-slate-400 transition-transform ease-in-out self-center" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
             </div>
           </div>
-          {% endfor %}
         </div>
-        {% endif %}
 
+        <div id="{{ collection.id | prepend: 'skill-'}}" class="accordion-content group/collection">
+          <div class="p-px bg-gradient-to-r from-blue-300 dark:from-blue-800 to-transparent"></div>
+          <div class="p-4 md:p-6 space-y-6">
 
-      </section>
+            <!-- LIST -->
+            {% if collection.layout == 'list' %}
+            <ul class="gap-2 grid grid-cols-1 md:grid-cols-2">
+              {% for skill in collection.skills %}
+              <li class="flex items-start gap-1.5 text-sm text-slate-600 dark:text-slate-300">
+                <div class="flex h-5 w-5 items-center justify-center rounded-lg
+                   bg-blue-100 text-blue-600
+                   dark:bg-blue-900/40 dark:text-blue-400">
+                  ✓
+                </div>
+                <span class="leading-snug">
+                  {{skill }}
+                </span>
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+
+            <!-- BADGES -->
+            {% if collection.layout == 'badge' %}
+            {% assign grouped_skills = collection.skills | group_by: "group" %}
+
+            <div class="space-y-4">
+              {% for group in grouped_skills %}
+              <div class="space-y-2">
+                <h4 class=" font-semibold text-slate-700 dark:text-slate-300 uppercase text-[10px] tracking-wider">
+                  {{ group.name }}
+                </h4>
+
+                <div class="flex flex-wrap gap-1">
+                  {% for skill in group.items %}
+                  {% if skill.url %}
+                  <a href="{{ skill.url }}" target="_blank" rel="noopener noreferrer" class="">
+                    {% endif %}
+                    <span class="
+                      inline-flex items-center gap-1.5 px-2 py-1 text-xs font-medium rounded-lg  
+                    bg-slate-50 text-slate-600 dark:bg-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-600 
+                      {% if skill.url %}
+                          hover:underline underline-offset-2 decoration-blue-500
+                      {% endif %}">
+                      {{ skill.title }}
+                    </span>
+                    {% if skill.url %}
+                  </a>
+                  {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
       {% endfor %}
     </div>
+  </div>
 </section>

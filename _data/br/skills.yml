@@ -1,38 +1,30 @@
 - 
+  id: soft-skills
   title: "Habilidades Interpessoais"
   layout: list
   skills:
-    - 
-      title: Pensamento Analítico
-    - 
-      title: Resolução de Problemas
-    - 
-      title: Comunicação Técnica Clara
-    - 
-      title: Responsabilidade e Prestação de Contas
-    - 
-      title: Colaboração em Equipes Multifuncionais
-    - 
-      title: Mentalidade de Aprendizado Contínuo
+   - Pensamento Analítico
+   - Resolução de Problemas
+   - Comunicação Técnica Clara
+   - Responsabilidade e Prestação de Contas
+   - Colaboração em Equipes Multifuncionais
+   - Mentalidade de Aprendizado Contínuo
 - 
-  title: "Competências Centrais"
+  id: core-competencies
+  title: "Principais Competências"
   layout: list
   skills:
-    - 
-      title: Desenvolvimento Web Full Stack
-    - 
-      title: Design e Integração de API (REST / GraphQL)
-    - 
-      title: Design e Automação de Workflow CI/CD
-    - 
-      title: Integração de Recursos de IA e Engenharia de Prompt
-    - 
-      title: Sistemas de Comunicação em Tempo Real
-    - 
-      title: Observabilidade, Monitoramento e Análise de Desempenho
-    - 
-      title: Arquitetura Escalável e Design de Sistemas
+    - Desenvolvimento Web Full Stack
+    - Design e Integração de API
+    - Design e Automação de Workflow CI/CD
+    - Sistemas de Comunicação em Tempo Real
+    - Arquitetura Escalável e Design de Sistemas
+    - Integração de IA e Engenharia de Prompt
+    - Observabilidade e Monitoramento
+    - Análise de Desempenho
+
 -
+  id: technical-stack
   title: "Stack Técnico"
   layout: badge
   skills:

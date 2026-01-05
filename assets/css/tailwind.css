@@ -29,7 +29,7 @@
   }
 
   .contribution-content {
-    @apply transition-all duration-500 ease-out max-h-0 opacity-0 overflow-hidden text-xs leading-relaxed;
+    @apply transition-all duration-500 ease-out max-h-0 opacity-0 overflow-hidden;
   }
 
   .contribution-content.open {
