@@ -3,7 +3,7 @@
 
   <button onclick="toggleContent('experience', 'chevron-experience')"
     class="w-full flex items-center justify-between p-5 section-gradient">
-    <div class="flex items-center gap-3">
+    <div class="flex items-center gap-4">
       <div
         class="p-2 text-blue-500 bg-white border border-slate-300 dark:border-slate-700 rounded-lg dark:bg-slate-800 dark:text-blue-500">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -27,7 +27,7 @@
   <div id="experience" class="accordion-content">
     <div class="p-px bg-gradient-to-r from-blue-300 dark:from-blue-800 to-transparent"></div>
 
-    <div class="p-5 md:p-6 space-y-6">
+    <div class="p-4 md:p-6 space-y-4">
 
       {% for item in site.data.[site.lang].professional_experiences %}
       <div
@@ -61,10 +61,10 @@
               </div>
 
               <div
-                class="text-slate-500 dark:text-slate-300 font-bold text-[10px]  md:tracking-wide sm:flex sm:space-x-1 uppercase">
-                {{ item.position }}
-                &bull;
-                {{ item.main_stack }}
+                class="text-slate-500 dark:text-slate-300 font-bold text-[10px] md:tracking-wide md:flex md:gap-1 uppercase">
+                <p>{{ item.position }}</p>
+                <span class="hidden md:block">&bull;</span>
+                <p>{{ item.main_stack }}</p>
               </div>
 
               <div
@@ -80,9 +80,6 @@
                 &vert;
                 <span class="uppercase md:tracking-wide">{{ item.mode }}</span>
               </div>
-
-
-
             </div>
 
             <div class="hidden md:flex items-end justify-end mt-2 md:mt-0 gap-2">
@@ -105,7 +102,7 @@
         <div id="{{ item.id | prepend: 'company-'}}" class="accordion-content ">
           <div class="p-px bg-gradient-to-r from-blue-300 dark:from-blue-800 to-transparent"></div>
 
-          <div class="p-5 md:p-6 space-y-6">
+          <div class="p-4 md:p-6 space-y-6">
 
             <div class="h-10 md:h-16 my-4">
               <img src="{{ item.company.logo.light}}" alt="{{ item.company.name }} Logo"
@@ -124,17 +121,17 @@
             </div>
 
             <!-- PROJECTS -->
-            <div class="border-l-4 border-blue-500 space-y-6 relative">
+            <div class="border-l-4 border-blue-500 space-y-4 relative">
               {% for project in item.projects %}
               <div class="pl-3 md:pl-6 relative">
                 <div
-                  class="absolute -left-[10px] md:-left-[14px] top-6 md:top-5 w-4 h-4 md:w-6 md:h-6 bg-blue-500 rounded-full border-2 md:border-4 border-white shadow-sm flex items-center justify-center">
+                  class="absolute -left-[12px] md:-left-[14px] top-6 md:top-5 w-5 h-5 md:w-6 md:h-6 bg-blue-500 rounded-full border-2 md:border-4 border-white shadow-sm flex items-center justify-center">
                   <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
                 </div>
                 <div
                   class="bg-slate-50 dark:bg-slate-850 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-sm group/project">
                   <div
-                    class="p-4 cursor-pointer gap-3 bg-gradient-to-l to-slate-50 via-slate-50 from-slate-200 dark:to-slate-850 dark:via-slate-850 dark:from-slate-700 bg-size-200 bg-pos-0 group-hover/project:bg-pos-100 transition-all duration-300"
+                    class="p-4 cursor-pointer gap-4 bg-gradient-to-l to-slate-50 via-slate-50 from-slate-200 dark:to-slate-850 dark:via-slate-850 dark:from-slate-700 bg-size-200 bg-pos-0 group-hover/project:bg-pos-100 transition-all duration-300"
                     onclick="toggleContent('project-{{ project.id }}', 'chevron-project-{{ project.id }}')">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start">
                       <div class="w-full flex flex-col">
@@ -163,10 +160,10 @@
                         </div>
 
                         <div
-                          class="text-slate-500 dark:text-slate-300 font-bold text-[10px]  md:tracking-wide sm:flex sm:space-x-1 uppercase">
-                          {{ project.position }}
-                          &bull;
-                          {{ project.main_stack }}
+                          class="text-slate-500 dark:text-slate-300 font-bold text-[10px] md:tracking-wide md:flex md:gap-1 uppercase">
+                          <p>{{ project.position }}</p>
+                          <span class="hidden md:block">&bull;</span>
+                          <p>{{ project.main_stack }}</p>
                         </div>
 
                         <div

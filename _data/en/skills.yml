@@ -59,7 +59,7 @@
       url: https://guides.rubyonrails.org/action_text_overview.html
       group: Back-end tools and Frameworks
     -
-      title: Agora.io
+      title: Agora
       url: https://www.agora.io/
       group: Services and Tools
     -
@@ -252,6 +252,10 @@
       url: https://phlex.fun/
       group: Front-end Tools and Frameworks
     -
+      title: Pusher
+      url: https://pusher.com/
+      group: Services and Tools
+    -
       title: Pipecat
       url: https://github.com/pipecat-ai/pipecat
       group: Back-end tools and Frameworks
@@ -364,7 +368,7 @@
       url: https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events
       group: Back-end tools and Frameworks
     -
-      title: Stream.io
+      title: Stream
       url: https://getstream.io/
       group: Services and Tools
     -
