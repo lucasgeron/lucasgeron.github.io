@@ -30,7 +30,7 @@ bin/setup
 
 ```bash
 # Start a live-reload server at http://localhost:4000
-bin/start
+bin/dev
 ```
 
 ### Production

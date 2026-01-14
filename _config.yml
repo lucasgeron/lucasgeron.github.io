@@ -1,9 +1,11 @@
 url: "https://lucasgeron.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Lucas Geron" # the name of your site, e.g. ACME Corp.
+description: Portfolio of Lucas Geron - Software Engineer. Explore my professional experience, skills and projects.
 
 plugins:
   - jekyll-postcss
+  - jekyll-seo-tag
 
 sass:
   sourcemap: never
@@ -15,7 +17,6 @@ postcss:
 languages: ["en", "br"]
 # To avoid redundancy, it is possible to exclude files and folders from being copied to the localization folders.
 exclude_from_localizations: ["javascript", "images", "css"]
-
 
 
 exclude:
