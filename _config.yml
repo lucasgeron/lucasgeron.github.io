@@ -1,7 +1,14 @@
-url: "https://lucasgeron.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "Lucas Geron" # the name of your site, e.g. ACME Corp.
-description: Portfolio of Lucas Geron - Software Engineer. Explore my professional experience, skills and projects.
+url: "https://lucasgeron.github.io" 
+baseurl: "" 
+title: "Lucas Geron"
+tagline: "Software Engineer"
+description: Explore my professional experience, skills and projects.
+logo: "/assets/images/favicon.ico"
+author: 
+  name: "Lucas Geron"
+  email: "lucasf.geron@gmail.com"
+  github: "lucasgeron"
+  linkedin: "lucasgeron"
 
 plugins:
   - jekyll-postcss
