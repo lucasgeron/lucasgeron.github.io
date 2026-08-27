@@ -28,3 +28,4 @@ footer:
 global:
   hours: 'Hours'
   last_updated: 'Last updated'
+  months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
