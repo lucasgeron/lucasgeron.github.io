@@ -4,7 +4,7 @@
   layout: list
   skills:
     - Analytical Thinking
-    - Problem Solving
+    - Problem Solving, Mentoring and Code Review
     - Clear Technical Communication
     - Ownership and Accountability
     - Collaboration in Cross-functional Teams
@@ -22,7 +22,7 @@
     - Scalable Architecture and System Design
     - AI Integration and Prompt Engineering
     - Observability and Monitoring
-    - Performance Analysis
+    - Third-Party Integration
 
 -
   id: technical-stack
@@ -97,6 +97,10 @@
       title: CSS
       url: https://developer.mozilla.org/en-US/docs/Web/CSS
       group: Languages
+    -
+      title: DataDog
+      url: https://www.datadoghq.com/
+      group: Monitoring and Analytics
     -
       title: Devise
       url: https://github.com/heartcombo/devise
@@ -307,6 +311,10 @@
       url: https://rubyonrails.org/
       group: Back-end tools and Frameworks
     -
+      title: Ruby DRY
+      url: https://hanakai.org/dry
+      group: Back-end tools and Frameworks
+    -
       title: RubyUI
       url: https://github.com/ruby-ui/rubui
       group: Front-end Tools and Frameworks
@@ -378,6 +386,10 @@
       title: TanStack Query
       url: https://tanstack.com/query
       group: Front-end Tools and Frameworks
+    -
+      title: Temporal.io
+      url: https://temporal.io/
+      group: Background Processing
     -
       title: Thor
       url: http://whatisthor.com/

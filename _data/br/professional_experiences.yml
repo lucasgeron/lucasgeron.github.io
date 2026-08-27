@@ -42,6 +42,79 @@
         sucesso, um desafio relevante que vale a pena ser citado aqui.
   projects:
     - 
+      id: gls
+      product:
+        name: GLS Solutions
+        website: 
+          url: http://gls.ai/
+          label: gls.ai
+        logo: 
+          light: assets/images/gls-logo-default.svg
+          dark: assets/images/gls-logo-negative.svg
+      position: Software Engineer
+      main_stack: Ruby on Rails
+      mode: Remote
+      location: 
+        city: Castle Rock
+        state: CO
+        country: USA
+      start_date: Jan 2025
+      end_date: Aug 2025
+      duration: 8 months
+      about_the_project: >
+        A GLS Solutions é uma plataforma especializada em gestão de empréstimos. O produto é altamente
+        robusto e possui uma base de código sólida que sustenta múltiplos ambientes de produção, 
+        incluindo portal, plataforma, workflows, ferramentas de administração, BI e muito mais. 
+        Tudo isso com foco em proporcionar uma experiência integrada para o acompanhamento de empréstimos.
+      about_the_experience: >
+        Na GLS, integrei a equipe de engenharia de software, trabalhando com mais de 30 engenheiros no mesmo 
+        repositório, com foco principal no back-end. Ao longo do tempo, fiz parte de três equipes diferentes,
+        nas quais os requisitos eram definidos e alinhados com a hierarquia dos times da organização.
+      main_contributions: 
+        -
+          title: Isenção/postergação parcial de taxas e juros
+          content: >
+           Uma funcionalidade que permitia a isenção ou postergação parcial de taxas ou juros
+           acumulados sobre pagamentos, incluindo o rastreamento completo de todas as transações relacionadas.
+        -
+          title: Restrição de funcionalidades baseada em permissões
+          content: >
+            Atualizações de políticas (baseadas em OSO) referentes à usabilidade de diversas funcionalidades e ao
+            lançamento de novos recursos utilizando feature flags.
+        -
+          title: Melhorias no painel administrativo utilizando AVO
+          content: >
+           Criação e aprimoramento de modelos da aplicação para transformá-los em recursos AVO,
+           incluindo o desenvolvimento de ações, associações entre recursos e políticas customizadas.
+        -
+          title: Criação de ferramentas de desenvolvimento
+          content: >
+            Implementação de pequenas ferramentas, desde a criação de seeds automatizados, Rake tasks,
+            migrações de dados e scripts de backfill até relatórios de métricas e exportação customizada de CSV para o AVO.
+        -
+          title: Desenvolvimento da página MyDesk
+          content: >
+            Uma nova área na plataforma onde os usuários podiam acompanhar suas tarefas de forma mais interativa.
+            As tarefas recebiam identificadores e eram listadas por data de vencimento, contando com indicadores de
+            prioridade e métricas sobre o desempenho da tarefa e do agente responsável. Também permitia
+            escalar a tarefa para o líder da equipe.
+        -
+          title: Automações de workflow
+          content: >
+            Integração automatizada de tarefas, notificações, workflows e atividades, onde a aplicação envia
+            sinais para executar operações específicas após uma determinada ação. Também inclui automações
+            agendadas, como lembretes de tarefas pendentes e atrasadas.
+        -
+          title: Notificações no Slack
+          content: >
+            Configuração de um bot do Slack para entregar mensagens via DMs e canais com notificações importantes
+            sobre a atividade da aplicação.
+        -
+          title: Abstrações de pequena escala e refatoração de scripts
+          content: >
+           Criação de abstrações e refatoração de scripts que antes eram utilizados via console e
+           passaram a se tornar ferramentas na plataforma.
+    - 
       id: sentrel
       product:
         name: Sentrel

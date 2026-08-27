@@ -39,6 +39,79 @@
         leaking any sensitive data, a relevant challenge worth mentioning here.
   projects:
     - 
+      id: gls
+      product:
+        name: GLS Solutions
+        website: 
+          url: http://gls.ai/
+          label: gls.ai
+        logo: 
+          light: assets/images/gls-logo-default.svg
+          dark: assets/images/gls-logo-negative.svg
+      position: Software Engineer
+      main_stack: Ruby on Rails
+      mode: Remote
+      location: 
+        city: Castle Rock
+        state: CO
+        country: USA
+      start_date: Jan 2025
+      end_date: Aug 2025
+      duration: 8 months
+      about_the_project: >
+        GLS Solutions is a platform specializing in loan management. The product is highly 
+        robust and features a solid codebase that supports multiple production environments,
+        including a portal, platform, workflows, administration tools, BI, and more. All of
+        it focuses on delivering a seamless experience for tracking loans.
+      about_the_experience: >
+        At GLS, I joined the software engineering team, working with over 30 engineers on the same 
+        repository and focusing primarily on the back-end. Over time, I was part of three different
+        teams, where requirements were clearly defined and aligned with the organization's hierarchy.
+      main_contributions: 
+        - 
+          title: Partially waiving/deferring fees and interest
+          content: > 
+           A feature that allowed for the waiver or partial deferral of accrued fees or interest 
+           on payments, including full tracking of all related transactions.
+        - 
+          title: Feature restriction based on permissions
+          content: > 
+            Policy updates (based on OSO) regarding the usability of various features and the 
+            rollout of new features using feature flags.
+        - 
+          title: Admin panel enhancements using AVO
+          content: > 
+           Creation and improvement of application models to turn them into AVO resources, 
+           including the development of actions, associations between resources, and custom policies.
+        - 
+          title: Creation of development tools
+          content: > 
+            Implementation of small tools, ranging from the creation of automated seeds, Rake tasks,
+            data migrations, and backfill scripts to metrics reports and custom CSV exporting for AVO.
+        - 
+          title: Development of the MyDesk page
+          content: > 
+            A new area on the platform where users could track their tasks in a more interactive way.
+            Tasks were assigned identifiers and listed by due date, featuring priority indicators and
+            metrics regarding both task performance and the assigned agent. It also allowed for
+            escalating the task to the team leader.
+        - 
+          title: Workflow automations
+          content: > 
+            Automated integration of tasks, notifications, workflows, and activities, where the app sends
+            signals to execute specific operations following a given action. It also includes scheduled
+            automations, such as reminders for pending and overdue tasks.
+        - 
+          title: Slack Notifications
+          content: > 
+            Slack bot configuration to deliver messages via DMs and channels with important notifications
+            about app activity.
+        - 
+          title: Small-scale abstractions and script refactoring
+          content: > 
+           Creating abstractions and refactoring scripts that were previously used via the console and 
+           have become tools on the platform.
+    - 
       id: sentrel
       product:
         name: Sentrel
